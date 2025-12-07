@@ -21,7 +21,7 @@ public class GameEngine {
 
     private final int rows;
     private final int columns;
-    private final List<ModelCard> board = new ArrayList<>();
+    private final ArrayList<ModelCard> board = new ArrayList<>();
     private int firstIndex = -1;
     private int secondIndex = -1;
     private int errorCount = 0;
@@ -70,5 +70,10 @@ public class GameEngine {
         return -1;
     }
 
-    public boolean allMatched() { for (ModelCard m : board) if (!m.matched) return false; return true; }
+    public boolean allMatched() {
+        for (int i = 0; i < board.size(); i++) {
+            if (!board.get(i).matched) return false;
+        }
+        return true;
+    }
 }
