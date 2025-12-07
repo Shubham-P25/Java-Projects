@@ -850,6 +850,951 @@ class java$lang$Object {
 }
 
 
+class java$lang$Readable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Readable,
+        'java.lang.Readable',
+         [java$lang$Readable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$nio$charset$CodingErrorAction extends java$lang$Object {
+  nativeObject = null;
+
+  name = null;
+  static IGNORE = null;
+  static REPLACE = null;
+  static REPORT = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$charset$CodingErrorAction,
+        'java.nio.charset.CodingErrorAction',
+         [java$nio$charset$CodingErrorAction,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$nio$charset$CodingErrorAction.$i;
+    var0 = new java$nio$charset$CodingErrorAction();
+    java$nio$charset$CodingErrorAction.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[9]);
+    java$nio$charset$CodingErrorAction.IGNORE = var0;
+    var1 = new java$nio$charset$CodingErrorAction();
+    java$nio$charset$CodingErrorAction.prototype.V$$init$$Ljava$lang$String$.call(var1,bytecoder.stringconstants[10]);
+    java$nio$charset$CodingErrorAction.REPLACE = var1;
+    var2 = new java$nio$charset$CodingErrorAction();
+    java$nio$charset$CodingErrorAction.prototype.V$$init$$Ljava$lang$String$.call(var2,bytecoder.stringconstants[11]);
+    java$nio$charset$CodingErrorAction.REPORT = var2;
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.name = arg0;
+    return;
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    return (th.name);
+  }
+}
+
+
+class java$util$function$BiFunction extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$function$BiFunction,
+        'java.util.function.BiFunction',
+         [java$util$function$BiFunction,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$ = impl;
+  }
+}
+
+
+class java$util$Dictionary extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Dictionary,
+        'java.util.Dictionary',
+         [java$util$Dictionary,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$io$Flushable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$Flushable,
+        'java.io.Flushable',
+         [java$io$Flushable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$lang$CharSequence extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$CharSequence,
+        'java.lang.CharSequence',
+         [java$lang$CharSequence,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.I$length$$ = impl;
+  }
+
+  Z$isEmpty$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.I$length$$()) != 0) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+}
+
+
+class jdk$internal$misc$Unsafe extends java$lang$Object {
+  nativeObject = null;
+
+  static INSTANCE = null;
+  static ARRAY_BOOLEAN_INDEX_SCALE = 0;
+  static ARRAY_BYTE_INDEX_SCALE = 0;
+  static ARRAY_CHAR_INDEX_SCALE = 0;
+  static ARRAY_SHORT_INDEX_SCALE = 0;
+  static ARRAY_INT_INDEX_SCALE = 0;
+  static ARRAY_LONG_INDEX_SCALE = 0;
+  static ARRAY_FLOAT_INDEX_SCALE = 0;
+  static ARRAY_DOUBLE_INDEX_SCALE = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$misc$Unsafe,
+        'jdk.internal.misc.Unsafe',
+         [jdk$internal$misc$Unsafe,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    jdk$internal$misc$Unsafe.$i;
+    var0 = new jdk$internal$misc$Unsafe();
+    jdk$internal$misc$Unsafe.prototype.V$$init$$$.call(var0);
+    jdk$internal$misc$Unsafe.INSTANCE = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  static Ljdk$internal$misc$Unsafe$$getUnsafe$$() {
+    jdk$internal$misc$Unsafe.$i;
+    return (jdk$internal$misc$Unsafe.INSTANCE);
+  }
+
+  I$arrayBaseOffset$Ljava$lang$Class$(arg0) {
+    return 0;
+  }
+
+  I$arrayIndexScale$Ljava$lang$Class$(arg0) {
+    return 0;
+  }
+
+  Z$isBigEndian$$() {
+    return 0;
+  }
+
+  V$storeFence$$() {
+    return;
+  }
+
+  J$getLongUnaligned$Ljava$lang$Object$$J(arg0,arg1) {
+    return arg1;
+  }
+
+  I$getIntUnaligned$Ljava$lang$Object$$J(arg0,arg1) {
+    return (arg1 | 0);
+  }
+
+  V$copyMemory$Ljava$lang$Object$$J$Ljava$lang$Object$$J$J(arg0,arg1,arg2,arg3,arg4) {
+    return;
+  }
+
+  V$copySwapMemory$Ljava$lang$Object$$J$Ljava$lang$Object$$J$J$J(arg0,arg1,arg2,arg3,arg4,arg5) {
+    return;
+  }
+}
+
+
+class com$example$wasm$GameEngine extends java$lang$Object {
+  nativeObject = null;
+
+  board = null;
+  firstIndex = 0;
+  secondIndex = 0;
+  errorCount = 0;
+  remainingTime = 0;
+  rows = 0;
+  columns = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        com$example$wasm$GameEngine,
+        'com.example.wasm.GameEngine',
+         [com$example$wasm$GameEngine,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    com$example$wasm$GameEngine.prototype.V$$init$$I$I.call(th,4,5);
+    return;
+  }
+
+  V$$init$$I$I(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    java$util$ArrayList.$i;
+    var1 = new java$util$ArrayList();
+    java$util$ArrayList.prototype.V$$init$$$.call(var1);
+    var0.board = var1;
+    var2 = th;
+    var2.firstIndex = -1;
+    var3 = th;
+    var3.secondIndex = -1;
+    var4 = th;
+    var4.errorCount = 0;
+    var5 = th;
+    var5.remainingTime = 60;
+    var6 = th;
+    var6.rows = arg0;
+    var7 = th;
+    var7.columns = arg1;
+    com$example$wasm$GameEngine.prototype.V$initBoard$$.call(th);
+    return;
+  }
+
+  V$initBoard$$() {
+    var th = this;
+    var var0 = 0;
+    var phi1 = 0;
+    var var2 = null;
+    var var3 = null;
+    var var4 = 0;
+    var var5 = null;
+    var var6 = null;
+    var var7 = 0;
+    var var8 = null;
+    var var9 = null;
+    var var10 = null;
+    var var11 = null;
+    (th.board).V$clear$$();
+    var0 = (Math.floor(((th.rows) * (th.columns)) / 2)) | 0;
+    phi1 = (1) | 0;
+    L1607688614: while(true) {
+     if (phi1 > var0) {
+      var8 = th;
+      var8.errorCount = 0;
+      var9 = th;
+      var9.remainingTime = 60;
+      var10 = th;
+      var10.firstIndex = -1;
+      var11 = th;
+      var11.secondIndex = -1;
+      return;
+     } else {
+      var2 = (th.board);
+      var3 = new com$example$wasm$GameEngine$ModelCard();
+      com$example$wasm$GameEngine$ModelCard.prototype.V$$init$$Ljava$lang$String$.call(var3,bytecoder.generated[0](null,phi1));
+      var4 = (var2.Z$add$Ljava$lang$Object$(var3));
+      var5 = (th.board);
+      var6 = new com$example$wasm$GameEngine$ModelCard();
+      com$example$wasm$GameEngine$ModelCard.prototype.V$$init$$Ljava$lang$String$.call(var6,bytecoder.generated[1](null,phi1));
+      var7 = (var5.Z$add$Ljava$lang$Object$(var6));
+      phi1 = ((phi1 + 1)) | 0;
+      // Here was a goto statement
+      continue L1607688614;
+     }
+    }
+  }
+
+  V$shuffle$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.board);
+    java$util$Collections.$i;
+    java$util$Collections.V$shuffle$Ljava$util$List$(var0);
+    return;
+  }
+}
+
+
+class jdk$internal$access$SharedSecrets extends java$lang$Object {
+  nativeObject = null;
+
+  static javaNioAccess = null;
+  static javaIOPrintStreamAccess = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$access$SharedSecrets,
+        'jdk.internal.access.SharedSecrets',
+         [jdk$internal$access$SharedSecrets,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$setJavaNioAccess$Ljdk$internal$access$JavaNioAccess$(arg0) {
+    jdk$internal$access$SharedSecrets.javaNioAccess = arg0;
+    return;
+  }
+
+  static V$setJavaIOCPrintStreamAccess$Ljdk$internal$access$JavaIOPrintStreamAccess$(arg0) {
+    jdk$internal$access$SharedSecrets.javaIOPrintStreamAccess = arg0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$lang$Comparable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Comparable,
+        'java.lang.Comparable',
+         [java$lang$Comparable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.I$compareTo$Ljava$lang$Object$ = impl;
+  }
+}
+
+
+class jdk$internal$foreign$MemorySessionImpl extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$foreign$MemorySessionImpl,
+        'jdk.internal.foreign.MemorySessionImpl',
+         [jdk$internal$foreign$MemorySessionImpl,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$checkValidStateRaw$$() {
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class de$mirkosertic$bytecoder$classlib$java$lang$TMath extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        de$mirkosertic$bytecoder$classlib$java$lang$TMath,
+        'de.mirkosertic.bytecoder.classlib.java.lang.TMath',
+         [de$mirkosertic$bytecoder$classlib$java$lang$TMath,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    de$mirkosertic$bytecoder$classlib$java$lang$TMath.$i;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$lang$Math extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Math,
+        'java.lang.Math',
+         [java$lang$Math,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    java$lang$Math.$i;
+    return;
+  }
+
+  static D$random$$() {
+    return bytecoder.imports['java.lang.Math'].D$random$$();
+  }
+
+  static I$floorMod$I$I(arg0,arg1) {
+    java$lang$Math.$i;
+    return (arg0 - ((java$lang$Math.I$floorDiv$I$I(arg0,arg1)) * arg1));
+  }
+
+  static I$floorDiv$I$I(arg0,arg1) {
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var0 = (Math.floor(arg0 / arg1)) | 0;
+    java$lang$Integer.$i;
+    var1 = ((java$lang$Integer.I$signum$I(arg0))) | 0;
+    If_12_0: {
+     if (var1 == (java$lang$Integer.I$signum$I(arg1))) {
+      phi2 = (var0) | 0;
+      break If_12_0;
+     } else {
+      if ((var0 * arg1) == arg0) {
+       phi2 = (var0) | 0;
+       break If_12_0;
+      } else {
+       phi2 = ((var0 + -1)) | 0;
+       break If_12_0;
+      }
+     }
+    }
+    return phi2;
+  }
+
+  static I$min$I$I(arg0,arg1) {
+    return bytecoder.imports['java.lang.Math'].I$min$I$I(arg0, arg1);
+  }
+
+  static I$max$I$I(arg0,arg1) {
+    return bytecoder.imports['java.lang.Math'].I$max$I$I(arg0, arg1);
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$nio$charset$CharsetEncoder extends java$lang$Object {
+  nativeObject = null;
+
+  static stateNames = null;
+  malformedInputAction = null;
+  unmappableCharacterAction = null;
+  state = 0;
+  cachedDecoder = null;
+  charset = null;
+  replacement = null;
+  averageBytesPerChar = 0.0;
+  maxBytesPerChar = 0.0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$charset$CharsetEncoder,
+        'java.nio.charset.CharsetEncoder',
+         [java$nio$charset$CharsetEncoder,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    java$nio$charset$CharsetEncoder.$i;
+    var0 = bytecoder.newarray((4),null);
+    var0.data[0] = bytecoder.stringconstants[5];
+    var0.data[1] = bytecoder.stringconstants[6];
+    var0.data[2] = bytecoder.stringconstants[7];
+    var0.data[3] = bytecoder.stringconstants[8];
+    java$nio$charset$CharsetEncoder.stateNames = var0;
+    return;
+  }
+
+  V$$init$$Ljava$nio$charset$Charset$$F$F(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = null;
+    var0 = bytecoder.newarray((1),0);
+    var0.data[0] = 63;
+    java$nio$charset$CharsetEncoder.prototype.V$$init$$Ljava$nio$charset$Charset$$F$F$$B.call(th,arg0,arg1,arg2,var0);
+    return;
+  }
+
+  V$$init$$Ljava$nio$charset$Charset$$F$F$$B(arg0,arg1,arg2,arg3) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = null;
+    var var10 = null;
+    var var11 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    java$nio$charset$CodingErrorAction.$i;
+    var0.malformedInputAction = (java$nio$charset$CodingErrorAction.REPORT);
+    var1 = th;
+    var1.unmappableCharacterAction = (java$nio$charset$CodingErrorAction.REPORT);
+    var2 = th;
+    var2.state = 0;
+    var3 = th;
+    var3.cachedDecoder = null;
+    var4 = th;
+    var4.charset = arg0;
+    if (arg1 > 0.0) {
+     if (arg2 > 0.0) {
+      if (arg1 <= arg2) {
+       var8 = th;
+       var8.replacement = arg3;
+       var9 = th;
+       var9.averageBytesPerChar = arg1;
+       var10 = th;
+       var10.maxBytesPerChar = arg2;
+       var11 = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$CharsetEncoder$$replaceWith$$B.call(th,arg3));
+       return;
+      } else {
+       var7 = new java$lang$IllegalArgumentException();
+       java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var7,bytecoder.stringconstants[14]);
+       throw bytecoder.registerStack(var7, new Error().stack);
+      }
+     } else {
+      var6 = new java$lang$IllegalArgumentException();
+      java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var6,bytecoder.stringconstants[13]);
+      throw bytecoder.registerStack(var6, new Error().stack);
+     }
+    } else {
+     var5 = new java$lang$IllegalArgumentException();
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var5,bytecoder.stringconstants[12]);
+     throw bytecoder.registerStack(var5, new Error().stack);
+    }
+  }
+
+  Ljava$nio$charset$CharsetEncoder$$replaceWith$$B(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = 0;
+    if (arg0 != null) {
+     var1 = (arg0.data.length) | 0;
+     if (var1 != 0) {
+      if (var1 <= (th.maxBytesPerChar)) {
+       if ((java$nio$charset$CharsetEncoder.prototype.Z$isLegalReplacement$$B.call(th,arg0)) != 0) {
+        var5 = th;
+        var6 = (arg0.data.length) | 0;
+        java$util$Arrays.$i;
+        var5.replacement = (java$util$Arrays.$B$copyOf$$B$I(arg0,var6));
+        java$nio$charset$CharsetEncoder.prototype.V$implReplaceWith$$B.call(th,(th.replacement));
+        return th;
+       } else {
+        var4 = new java$lang$IllegalArgumentException();
+        java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var4,bytecoder.stringconstants[83]);
+        throw bytecoder.registerStack(var4, new Error().stack);
+       }
+      } else {
+       var3 = new java$lang$IllegalArgumentException();
+       java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var3,bytecoder.stringconstants[17]);
+       throw bytecoder.registerStack(var3, new Error().stack);
+      }
+     } else {
+      var2 = new java$lang$IllegalArgumentException();
+      java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var2,bytecoder.stringconstants[16]);
+      throw bytecoder.registerStack(var2, new Error().stack);
+     }
+    } else {
+     var0 = new java$lang$IllegalArgumentException();
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[15]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  Z$isLegalReplacement$$B(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var phi2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = null;
+    var var10 = null;
+    var phi11 = null;
+    var var12 = null;
+    var var13 = .0;
+    var var14 = null;
+    var var15 = 0;
+    var var16 = null;
+    var var17 = null;
+    var var18 = null;
+    var phi19 = 0;
+    var var20 = null;
+    var0 = (th.cachedDecoder);
+    If_7_0: {
+     If_7_1: {
+      if (var0 == null) {
+       phi2 = null;
+       break If_7_1;
+      } else {
+       var1 = (var0.Ljava$lang$Object$$get$$());
+       if (var1 != null) {
+        var20 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CharsetDecoder$$reset$$.call(var1));
+        phi11 = var1;
+        break If_7_0;
+       } else {
+        phi2 = var1;
+        break If_7_1;
+       }
+      }
+     }
+     var3 = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$Charset$$charset$$.call(th));
+     var4 = (var3.Ljava$nio$charset$CharsetDecoder$$newDecoder$$());
+     java$nio$charset$CodingErrorAction.$i;
+     var5 = (java$nio$charset$CodingErrorAction.REPORT);
+     var6 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CharsetDecoder$$onMalformedInput$Ljava$nio$charset$CodingErrorAction$.call(var4,var5));
+     var7 = (java$nio$charset$CodingErrorAction.REPORT);
+     var8 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CharsetDecoder$$onUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$.call(var4,var7));
+     var9 = th;
+     var10 = new java$lang$ref$WeakReference();
+     java$lang$ref$WeakReference.prototype.V$$init$$Ljava$lang$Object$.call(var10,var4);
+     var9.cachedDecoder = var10;
+     phi11 = var4;
+     break If_7_0;
+    }
+    java$nio$ByteBuffer.$i;
+    var12 = (java$nio$ByteBuffer.Ljava$nio$ByteBuffer$$wrap$$B(arg0));
+    var13 = (var12.I$remaining$$());
+    var14 = phi11;
+    var15 = (((var13 * (java$nio$charset$CharsetDecoder.prototype.F$maxCharsPerByte$$.call(var14))) | 0)) | 0;
+    java$nio$CharBuffer.$i;
+    var16 = (java$nio$CharBuffer.Ljava$nio$CharBuffer$$allocate$I(var15));
+    var17 = phi11;
+    var18 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CoderResult$$decode$Ljava$nio$ByteBuffer$$Ljava$nio$CharBuffer$$Z.call(var17,var12,var16,1));
+    If_75_0: {
+     if ((java$nio$charset$CoderResult.prototype.Z$isError$$.call(var18)) != 0) {
+      phi19 = (0) | 0;
+      break If_75_0;
+     } else {
+      phi19 = (1) | 0;
+      break If_75_0;
+     }
+    }
+    return phi19;
+  }
+
+  Ljava$nio$charset$Charset$$charset$$() {
+    var th = this;
+    return (th.charset);
+  }
+
+  Ljava$nio$charset$CharsetEncoder$$onMalformedInput$Ljava$nio$charset$CodingErrorAction$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    if (arg0 != null) {
+     var1 = th;
+     var1.malformedInputAction = arg0;
+     java$nio$charset$CharsetEncoder.prototype.V$implOnMalformedInput$Ljava$nio$charset$CodingErrorAction$.call(th,arg0);
+     return th;
+    } else {
+     var0 = new java$lang$IllegalArgumentException();
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[18]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  V$implOnMalformedInput$Ljava$nio$charset$CodingErrorAction$(arg0) {
+    return;
+  }
+
+  Ljava$nio$charset$CharsetEncoder$$onUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    if (arg0 != null) {
+     var1 = th;
+     var1.unmappableCharacterAction = arg0;
+     java$nio$charset$CharsetEncoder.prototype.V$implOnUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$.call(th,arg0);
+     return th;
+    } else {
+     var0 = new java$lang$IllegalArgumentException();
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[18]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  V$implOnUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$(arg0) {
+    return;
+  }
+
+  V$implReplaceWith$$B(arg0) {
+    return;
+  }
+}
+
+
+class java$lang$Runnable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Runnable,
+        'java.lang.Runnable',
+         [java$lang$Runnable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
 class java$lang$reflect$Type extends java$lang$Object {
   nativeObject = null;
   constructor() {
@@ -872,7 +1817,7 @@ class java$lang$reflect$Type extends java$lang$Object {
 }
 
 
-class java$util$function$Function extends java$lang$Object {
+class java$util$function$Supplier extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -882,21 +1827,24 @@ class java$util$function$Function extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$function$Function,
-        'java.util.function.Function',
-         [java$util$function$Function,java$lang$Object]);
+        java$util$function$Supplier,
+        'java.util.function.Supplier',
+         [java$util$function$Supplier,java$lang$Object]);
     }
     return this.#rt;
   }
 
   set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
+    this.Ljava$lang$Object$$get$$ = impl;
   }
 }
 
 
-class java$lang$ClassLoader extends java$lang$Object {
+class java$nio$BufferMismatch extends java$lang$Object {
   nativeObject = null;
+
+  static SCOPED_MEMORY_ACCESS = null;
+
   constructor() {
     super();
   }
@@ -905,14 +1853,175 @@ class java$lang$ClassLoader extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$ClassLoader,
-        'java.lang.ClassLoader',
-         [java$lang$ClassLoader,java$lang$Object]);
+        java$nio$BufferMismatch,
+        'java.nio.BufferMismatch',
+         [java$nio$BufferMismatch,java$lang$Object]);
     }
     return this.#rt;
   }
 
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
   set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    jdk$internal$misc$ScopedMemoryAccess.$i;
+    var0 = (jdk$internal$misc$ScopedMemoryAccess.Ljdk$internal$misc$ScopedMemoryAccess$$getScopedMemoryAccess$$());
+    java$nio$BufferMismatch.$i;
+    java$nio$BufferMismatch.SCOPED_MEMORY_ACCESS = var0;
+    return;
+  }
+
+  static I$mismatch$Ljava$nio$ByteBuffer$$I$Ljava$nio$ByteBuffer$$I$I(arg0,arg1,arg2,arg3,arg4) {
+    var var0 = 0;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = 0;
+    var var6 = null;
+    var var7 = 0;
+    var var8 = 0;
+    var var9 = 0;
+    var phi10 = 0;
+    var var11 = 0;
+    var var12 = 0;
+    var var13 = 0;
+    If_8_0: {
+     if (arg4 <= 7) {
+      phi10 = (0) | 0;
+      break If_8_0;
+     } else {
+      var0 = (arg0.B$get$I(arg1));
+      if (var0 == (arg2.B$get$I(arg3))) {
+       java$nio$BufferMismatch.$i;
+       var1 = (java$nio$BufferMismatch.SCOPED_MEMORY_ACCESS);
+       var2 = (arg0.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
+       var3 = (arg2.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
+       var4 = (java$nio$ByteBuffer.prototype.Ljava$lang$Object$$base$$.call(arg0));
+       var5 = ((arg0.address) + (arg1 | 0));
+       var6 = (java$nio$ByteBuffer.prototype.Ljava$lang$Object$$base$$.call(arg2));
+       var7 = ((arg2.address) + (arg3 | 0));
+       jdk$internal$util$ArraysSupport.$i;
+       var8 = ((jdk$internal$util$ArraysSupport.LOG2_ARRAY_BYTE_INDEX_SCALE)) | 0;
+       var9 = ((jdk$internal$misc$ScopedMemoryAccess.prototype.I$vectorizedMismatch$Ljdk$internal$foreign$MemorySessionImpl$$Ljdk$internal$foreign$MemorySessionImpl$$Ljava$lang$Object$$J$Ljava$lang$Object$$J$I$I.call(var1,var2,var3,var4,var5,var6,var7,arg4,var8))) | 0;
+       if (var9 < 0) {
+        phi10 = ((arg4 - (var9 ^ -1))) | 0;
+        break If_8_0;
+       } else {
+        return var9;
+       }
+      } else {
+       return 0;
+      }
+     }
+    }
+    L1220299696: while(true) {
+     if (phi10 >= arg4) {
+      return -1;
+     } else {
+      var11 = ((arg1 + phi10)) | 0;
+      var12 = (arg0.B$get$I(var11));
+      var13 = ((arg3 + phi10)) | 0;
+      if (var12 == (arg2.B$get$I(var13))) {
+       phi10 = ((phi10 + 1)) | 0;
+       // Here was a goto statement
+       continue L1220299696;
+      } else {
+       return phi10;
+      }
+     }
+    }
+  }
+
+  static I$mismatch$Ljava$nio$CharBuffer$$I$Ljava$nio$CharBuffer$$I$I(arg0,arg1,arg2,arg3,arg4) {
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = 0;
+    var var7 = 0;
+    var var8 = null;
+    var var9 = 0;
+    var var10 = 0;
+    var var11 = 0;
+    var phi12 = 0;
+    var var13 = 0;
+    var var14 = 0;
+    var var15 = 0;
+    If_8_0: {
+     if (arg4 <= 3) {
+      phi12 = (0) | 0;
+      break If_8_0;
+     } else {
+      var0 = (arg0.Ljava$nio$ByteOrder$$charRegionOrder$$());
+      if (var0 != (arg2.Ljava$nio$ByteOrder$$charRegionOrder$$())) {
+       phi12 = (0) | 0;
+       break If_8_0;
+      } else {
+       if ((arg0.Ljava$nio$ByteOrder$$charRegionOrder$$()) == null) {
+        phi12 = (0) | 0;
+        break If_8_0;
+       } else {
+        if ((arg2.Ljava$nio$ByteOrder$$charRegionOrder$$()) == null) {
+         phi12 = (0) | 0;
+         break If_8_0;
+        } else {
+         var1 = (arg0.C$get$I(arg1));
+         if (var1 == (arg2.C$get$I(arg3))) {
+          java$nio$BufferMismatch.$i;
+          var2 = (java$nio$BufferMismatch.SCOPED_MEMORY_ACCESS);
+          var3 = (arg0.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
+          var4 = (arg2.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
+          var5 = (java$nio$CharBuffer.prototype.Ljava$lang$Object$$base$$.call(arg0));
+          var6 = (arg0.address);
+          jdk$internal$util$ArraysSupport.$i;
+          var7 = (var6 + ((arg1 << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE)) | 0));
+          var8 = (java$nio$CharBuffer.prototype.Ljava$lang$Object$$base$$.call(arg2));
+          var9 = ((arg2.address) + ((arg3 << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE)) | 0));
+          var10 = ((jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE)) | 0;
+          var11 = ((jdk$internal$misc$ScopedMemoryAccess.prototype.I$vectorizedMismatch$Ljdk$internal$foreign$MemorySessionImpl$$Ljdk$internal$foreign$MemorySessionImpl$$Ljava$lang$Object$$J$Ljava$lang$Object$$J$I$I.call(var2,var3,var4,var5,var7,var8,var9,arg4,var10))) | 0;
+          if (var11 < 0) {
+           phi12 = ((arg4 - (var11 ^ -1))) | 0;
+           break If_8_0;
+          } else {
+           return var11;
+          }
+         } else {
+          return 0;
+         }
+        }
+       }
+      }
+     }
+    }
+    L22491864: while(true) {
+     if (phi12 >= arg4) {
+      return -1;
+     } else {
+      var13 = ((arg1 + phi12)) | 0;
+      var14 = (arg0.C$get$I(var13));
+      var15 = ((arg3 + phi12)) | 0;
+      if (var14 == (arg2.C$get$I(var15))) {
+       phi12 = ((phi12 + 1)) | 0;
+       // Here was a goto statement
+       continue L22491864;
+      } else {
+       return phi12;
+      }
+     }
+    }
   }
 
   V$$init$$$() {
@@ -923,7 +2032,323 @@ class java$lang$ClassLoader extends java$lang$Object {
 }
 
 
-class java$lang$Runnable extends java$lang$Object {
+class jdk$internal$util$Preconditions extends java$lang$Object {
+  nativeObject = null;
+
+  static SIOOBE_FORMATTER = null;
+  static AIOOBE_FORMATTER = null;
+  static IOOBE_FORMATTER = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$util$Preconditions,
+        'jdk.internal.util.Preconditions',
+         [jdk$internal$util$Preconditions,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var0 = new jdk$internal$util$Preconditions$1();
+    jdk$internal$util$Preconditions$1.prototype.V$$init$$$.call(var0);
+    jdk$internal$util$Preconditions.$i;
+    jdk$internal$util$Preconditions.SIOOBE_FORMATTER = (jdk$internal$util$Preconditions.Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(var0));
+    var1 = new jdk$internal$util$Preconditions$2();
+    jdk$internal$util$Preconditions$2.prototype.V$$init$$$.call(var1);
+    jdk$internal$util$Preconditions.AIOOBE_FORMATTER = (jdk$internal$util$Preconditions.Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(var1));
+    var2 = new jdk$internal$util$Preconditions$3();
+    jdk$internal$util$Preconditions$3.prototype.V$$init$$$.call(var2);
+    jdk$internal$util$Preconditions.IOOBE_FORMATTER = (jdk$internal$util$Preconditions.Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(var2));
+    return;
+  }
+
+  static Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(arg0) {
+    var var0 = null;
+    var0 = new jdk$internal$util$Preconditions$4();
+    jdk$internal$util$Preconditions$4.prototype.V$$init$$Ljava$util$function$Function$.call(var0,arg0);
+    return var0;
+  }
+
+  static I$checkFromIndexSize$I$I$I$Ljava$util$function$BiFunction$(arg0,arg1,arg2,arg3) {
+    If_7_0: {
+     if (((arg2 | arg0) | arg1) < 0) {
+      break If_7_0;
+     } else {
+      if (arg1 <= (arg2 - arg0)) {
+       return arg0;
+      } else {
+       break If_7_0;
+      }
+     }
+    }
+    jdk$internal$util$Preconditions.$i;
+    throw bytecoder.registerStack((jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBoundsCheckFromIndexSize$Ljava$util$function$BiFunction$$I$I$I(arg3,arg0,arg1,arg2)), new Error().stack);
+  }
+
+  static Ljava$lang$RuntimeException$$outOfBoundsCheckFromIndexSize$Ljava$util$function$BiFunction$$I$I$I(arg0,arg1,arg2,arg3) {
+    var var0 = null;
+    var0 = bytecoder.newarray((3),null);
+    java$lang$Integer.$i;
+    var0.data[0] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg1));
+    var0.data[1] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg2));
+    var0.data[2] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg3));
+    jdk$internal$util$Preconditions.$i;
+    return (jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBounds$Ljava$util$function$BiFunction$$Ljava$lang$String$$$Ljava$lang$Number$(arg0,bytecoder.stringconstants[41],var0));
+  }
+
+  static Ljava$lang$RuntimeException$$outOfBounds$Ljava$util$function$BiFunction$$Ljava$lang$String$$$Ljava$lang$Number$(arg0,arg1,arg2) {
+    var var0 = null;
+    var phi1 = null;
+    var var2 = null;
+    var var3 = null;
+    var phi4 = null;
+    var0 = (java$util$List.Ljava$util$List$$of$$Ljava$lang$Object$(arg2));
+    If_8_0: {
+     if (arg0 != null) {
+      phi1 = (arg0.Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$(arg1,var0));
+      break If_8_0;
+     } else {
+      phi1 = null;
+      break If_8_0;
+     }
+    }
+    var2 = phi1;
+    If_15_0: {
+     if (var2 != null) {
+      phi4 = var2;
+      break If_15_0;
+     } else {
+      var3 = new java$lang$IndexOutOfBoundsException();
+      jdk$internal$util$Preconditions.$i;
+      java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var3,(jdk$internal$util$Preconditions.Ljava$lang$String$$outOfBoundsMessage$Ljava$lang$String$$Ljava$util$List$(arg1,var0)));
+      phi4 = var3;
+      break If_15_0;
+     }
+    }
+    return phi4;
+  }
+
+  static Ljava$lang$String$$outOfBoundsMessage$Ljava$lang$String$$Ljava$util$List$(arg0,arg1) {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var phi3 = 0;
+    var phi4 = 0;
+    var phi5 = null;
+    var var6 = null;
+    var phi7 = 0;
+    var var8 = null;
+    var var9 = null;
+    var var10 = null;
+    var var11 = null;
+    If_3_0: {
+     if (arg0 != null) {
+      break If_3_0;
+     } else {
+      if (arg1 != null) {
+       break If_3_0;
+      } else {
+       var0 = bytecoder.newarray((0),null);
+       return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[73],var0));
+      }
+     }
+    }
+    if (arg0 != null) {
+     if (arg1 != null) {
+      LookupSwitch_41_0: {
+       switch ((java$lang$String.prototype.I$hashCode$$.call(arg0))) {
+        case 1848935233: {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(arg0,bytecoder.stringconstants[41])) == 0) {
+          phi3 = (-1) | 0;
+          break LookupSwitch_41_0;
+         } else {
+          phi3 = (2) | 0;
+          break LookupSwitch_41_0;
+         }
+        }
+        case -538822486: {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(arg0,bytecoder.stringconstants[80])) == 0) {
+          phi3 = (-1) | 0;
+          break LookupSwitch_41_0;
+         } else {
+          phi3 = (0) | 0;
+          break LookupSwitch_41_0;
+         }
+        }
+        case 1844394469: {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(arg0,bytecoder.stringconstants[79])) == 0) {
+          phi3 = (-1) | 0;
+          break LookupSwitch_41_0;
+         } else {
+          phi3 = (1) | 0;
+          break LookupSwitch_41_0;
+         }
+        }
+        default: {
+         phi3 = (-1) | 0;
+         break LookupSwitch_41_0;
+        }
+       }
+      }
+      TableSwitch_44_0: {
+       if ((phi3) >= 0 && (phi3) <= 2) switch ((phi3) - 0) {
+        case 0: {
+         phi4 = (2) | 0;
+         break TableSwitch_44_0;
+        }
+        case 1: {
+         phi4 = (3) | 0;
+         break TableSwitch_44_0;
+        }
+        case 2: {
+         phi4 = (3) | 0;
+         break TableSwitch_44_0;
+        }
+       } else {
+        phi4 = (0) | 0;
+        break TableSwitch_44_0;
+       }
+      }
+      If_49_0: {
+       if ((arg1.I$size$$()) == phi4) {
+        phi5 = arg0;
+        break If_49_0;
+       } else {
+        phi5 = bytecoder.stringconstants[1];
+        break If_49_0;
+       }
+      }
+      var6 = phi5;
+      LookupSwitch_58_0: {
+       switch ((java$lang$String.prototype.I$hashCode$$.call(var6))) {
+        case 1848935233: {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var6,bytecoder.stringconstants[41])) == 0) {
+          phi7 = (-1) | 0;
+          break LookupSwitch_58_0;
+         } else {
+          phi7 = (2) | 0;
+          break LookupSwitch_58_0;
+         }
+        }
+        case 1844394469: {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var6,bytecoder.stringconstants[79])) == 0) {
+          phi7 = (-1) | 0;
+          break LookupSwitch_58_0;
+         } else {
+          phi7 = (1) | 0;
+          break LookupSwitch_58_0;
+         }
+        }
+        case -538822486: {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var6,bytecoder.stringconstants[80])) == 0) {
+          phi7 = (-1) | 0;
+          break LookupSwitch_58_0;
+         } else {
+          phi7 = (0) | 0;
+          break LookupSwitch_58_0;
+         }
+        }
+        default: {
+         phi7 = (-1) | 0;
+         break LookupSwitch_58_0;
+        }
+       }
+      }
+      if ((phi7) >= 0 && (phi7) <= 2) switch ((phi7) - 0) {
+       case 0: {
+        var10 = bytecoder.newarray((2),null);
+        var10.data[0] = (arg1.Ljava$lang$Object$$get$I(0));
+        var10.data[1] = (arg1.Ljava$lang$Object$$get$I(1));
+        return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[77],var10));
+       }
+       case 1: {
+        var9 = bytecoder.newarray((3),null);
+        var9.data[0] = (arg1.Ljava$lang$Object$$get$I(0));
+        var9.data[1] = (arg1.Ljava$lang$Object$$get$I(1));
+        var9.data[2] = (arg1.Ljava$lang$Object$$get$I(2));
+        return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[76],var9));
+       }
+       case 2: {
+        var8 = bytecoder.newarray((3),null);
+        var8.data[0] = (arg1.Ljava$lang$Object$$get$I(0));
+        var8.data[1] = (arg1.Ljava$lang$Object$$get$I(1));
+        var8.data[2] = (arg1.Ljava$lang$Object$$get$I(2));
+        return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[75],var8));
+       }
+      } else {
+       var11 = bytecoder.newarray((2),null);
+       var11.data[0] = arg0;
+       var11.data[1] = arg1;
+       return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[78],var11));
+      }
+     } else {
+      var2 = bytecoder.newarray((1),null);
+      var2.data[0] = arg0;
+      return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[74],var2));
+     }
+    } else {
+     var1 = bytecoder.newarray((1),null);
+     var1.data[0] = arg1;
+     return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[74],var1));
+    }
+  }
+
+  static I$checkIndex$I$I$Ljava$util$function$BiFunction$(arg0,arg1,arg2) {
+    If_4_0: {
+     if (arg0 < 0) {
+      break If_4_0;
+     } else {
+      if (arg0 < arg1) {
+       return arg0;
+      } else {
+       break If_4_0;
+      }
+     }
+    }
+    jdk$internal$util$Preconditions.$i;
+    throw bytecoder.registerStack((jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBoundsCheckIndex$Ljava$util$function$BiFunction$$I$I(arg2,arg0,arg1)), new Error().stack);
+  }
+
+  static Ljava$lang$RuntimeException$$outOfBoundsCheckIndex$Ljava$util$function$BiFunction$$I$I(arg0,arg1,arg2) {
+    var var0 = null;
+    var0 = bytecoder.newarray((2),null);
+    java$lang$Integer.$i;
+    var0.data[0] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg1));
+    var0.data[1] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg2));
+    jdk$internal$util$Preconditions.$i;
+    return (jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBounds$Ljava$util$function$BiFunction$$Ljava$lang$String$$$Ljava$lang$Number$(arg0,bytecoder.stringconstants[80],var0));
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$io$Serializable extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -933,9 +2358,398 @@ class java$lang$Runnable extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Runnable,
-        'java.lang.Runnable',
-         [java$lang$Runnable,java$lang$Object]);
+        java$io$Serializable,
+        'java.io.Serializable',
+         [java$io$Serializable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$nio$charset$CoderResult extends java$lang$Object {
+  nativeObject = null;
+
+  static names = null;
+  type = 0;
+  length = 0;
+  static UNDERFLOW = null;
+  static OVERFLOW = null;
+  static malformed4 = null;
+  static unmappable4 = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$charset$CoderResult,
+        'java.nio.charset.CoderResult',
+         [java$nio$charset$CoderResult,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = null;
+    var var10 = null;
+    var var11 = null;
+    var var12 = null;
+    java$nio$charset$CoderResult.$i;
+    var0 = bytecoder.newarray((4),null);
+    var0.data[0] = bytecoder.stringconstants[33];
+    var0.data[1] = bytecoder.stringconstants[34];
+    var0.data[2] = bytecoder.stringconstants[35];
+    var0.data[3] = bytecoder.stringconstants[36];
+    java$nio$charset$CoderResult.names = var0;
+    var1 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var1,0,0);
+    java$nio$charset$CoderResult.UNDERFLOW = var1;
+    var2 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var2,1,0);
+    java$nio$charset$CoderResult.OVERFLOW = var2;
+    var3 = bytecoder.newarray((4),null);
+    var4 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var4,2,1);
+    var3.data[0] = var4;
+    var5 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var5,2,2);
+    var3.data[1] = var5;
+    var6 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var6,2,3);
+    var3.data[2] = var6;
+    var7 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var7,2,4);
+    var3.data[3] = var7;
+    java$nio$charset$CoderResult.malformed4 = var3;
+    var8 = bytecoder.newarray((4),null);
+    var9 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var9,3,1);
+    var8.data[0] = var9;
+    var10 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var10,3,2);
+    var8.data[1] = var10;
+    var11 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var11,3,3);
+    var8.data[2] = var11;
+    var12 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var12,3,4);
+    var8.data[3] = var12;
+    java$nio$charset$CoderResult.unmappable4 = var8;
+    return;
+  }
+
+  V$$init$$I$I(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.type = arg0;
+    var1 = th;
+    var1.length = arg1;
+    return;
+  }
+
+  Z$isOverflow$$() {
+    var th = this;
+    var phi0 = 0;
+    If_4_0: {
+     if ((th.type) != 1) {
+      phi0 = (0) | 0;
+      break If_4_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_4_0;
+     }
+    }
+    return phi0;
+  }
+
+  Z$isUnderflow$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.type) != 0) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+
+  static Ljava$nio$charset$CoderResult$$malformedForLength$I(arg0) {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    if (arg0 > 0) {
+     if (arg0 > 4) {
+      java$nio$charset$CoderResult$Cache.$i;
+      var1 = ((java$nio$charset$CoderResult$Cache.INSTANCE).malformed);
+      java$lang$Integer.$i;
+      var2 = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg0));
+      var3 = bytecoder.instanceWithLambdaImpl(java$util$function$Function, function(linkarg0) { return java$nio$charset$CoderResult.Ljava$nio$charset$CoderResult$$lambda$malformedForLength$0$Ljava$lang$Integer$.call(this, linkarg0);});
+      return (var1.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(var2,var3));
+     } else {
+      java$nio$charset$CoderResult.$i;
+      return ((java$nio$charset$CoderResult.malformed4).data[(arg0 - 1)]);
+     }
+    } else {
+     var0 = new java$lang$IllegalArgumentException();
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[39]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  static Ljava$nio$charset$CoderResult$$lambda$malformedForLength$0$Ljava$lang$Integer$(arg0) {
+    var var0 = null;
+    java$nio$charset$CoderResult.$i;
+    var0 = new java$nio$charset$CoderResult();
+    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var0,2,(java$lang$Integer.prototype.I$intValue$$.call(arg0)));
+    return var0;
+  }
+
+  Z$isMalformed$$() {
+    var th = this;
+    var phi0 = 0;
+    If_4_0: {
+     if ((th.type) != 2) {
+      phi0 = (0) | 0;
+      break If_4_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_4_0;
+     }
+    }
+    return phi0;
+  }
+
+  I$length$$() {
+    var th = this;
+    var var0 = null;
+    if ((java$nio$charset$CoderResult.prototype.Z$isError$$.call(th)) != 0) {
+     return (th.length);
+    } else {
+     var0 = new java$lang$UnsupportedOperationException();
+     java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  Z$isError$$() {
+    var th = this;
+    var phi0 = 0;
+    If_4_0: {
+     if ((th.type) < 2) {
+      phi0 = (0) | 0;
+      break If_4_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_4_0;
+     }
+    }
+    return phi0;
+  }
+
+  Z$isUnmappable$$() {
+    var th = this;
+    var phi0 = 0;
+    If_4_0: {
+     if ((th.type) != 3) {
+      phi0 = (0) | 0;
+      break If_4_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_4_0;
+     }
+    }
+    return phi0;
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = 0;
+    var var5 = null;
+    var var6 = null;
+    var phi7 = null;
+    java$nio$charset$CoderResult.$i;
+    var0 = ((java$nio$charset$CoderResult.names).data[(th.type)]);
+    If_10_0: {
+     if ((java$nio$charset$CoderResult.prototype.Z$isError$$.call(th)) == 0) {
+      phi7 = var0;
+      break If_10_0;
+     } else {
+      var1 = new java$lang$StringBuilder();
+      java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
+      var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,var0));
+      var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[81]));
+      var4 = ((th.length)) | 0;
+      var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var3,var4));
+      var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var5,bytecoder.stringconstants[82]));
+      phi7 = (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var6));
+      break If_10_0;
+     }
+    }
+    return phi7;
+  }
+}
+
+
+class java$util$RandomAccess extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$RandomAccess,
+        'java.util.RandomAccess',
+         [java$util$RandomAccess,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$io$FileDescriptor extends java$lang$Object {
+  nativeObject = null;
+
+  fd = 0;
+  static in = null;
+  static out = null;
+  static err = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$FileDescriptor,
+        'java.io.FileDescriptor',
+         [java$io$FileDescriptor,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  I$getFileDescriptorHandle$$() {
+    var th = this;
+    return (th.fd);
+  }
+
+  V$setFileDescriptorHandle$I(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = th;
+    var0.fd = arg0;
+    return;
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$io$FileDescriptor.$i;
+    var0 = new java$io$FileDescriptor();
+    java$io$FileDescriptor.prototype.V$$init$$I.call(var0,0);
+    java$io$FileDescriptor.in = var0;
+    var1 = new java$io$FileDescriptor();
+    java$io$FileDescriptor.prototype.V$$init$$I.call(var1,1);
+    java$io$FileDescriptor.out = var1;
+    var2 = new java$io$FileDescriptor();
+    java$io$FileDescriptor.prototype.V$$init$$I.call(var2,2);
+    java$io$FileDescriptor.err = var2;
+    return;
+  }
+
+  V$$init$$I(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.fd = arg0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.fd = -1;
+    return;
+  }
+}
+
+
+class java$lang$Appendable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Appendable,
+        'java.lang.Appendable',
+         [java$lang$Appendable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -974,13 +2788,10 @@ class java$lang$invoke$MethodHandle extends java$lang$Object {
 }
 
 
-class java$lang$System extends java$lang$Object {
+class java$lang$ref$Reference extends java$lang$Object {
   nativeObject = null;
 
-  static PROPERTIES = null;
-  static in = null;
-  static out = null;
-  static err = null;
+  referent = null;
 
   constructor() {
     super();
@@ -990,9 +2801,126 @@ class java$lang$System extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$System,
-        'java.lang.System',
-         [java$lang$System,java$lang$Object]);
+        java$lang$ref$Reference,
+        'java.lang.ref.Reference',
+         [java$lang$ref$Reference,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  Ljava$lang$Object$$get$$() {
+    var th = this;
+    return (th.referent);
+  }
+
+  static V$reachabilityFence$Ljava$lang$Object$(arg0) {
+    return;
+  }
+}
+
+
+class jdk$internal$misc$CDS extends java$lang$Object {
+  nativeObject = null;
+
+  static isDumpingClassList = 0;
+  static isDumpingArchive = 0;
+  static isSharingEnabled = 0;
+  static excludeFlags = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$misc$CDS,
+        'jdk.internal.misc.CDS',
+         [jdk$internal$misc$CDS,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    jdk$internal$misc$CDS.$i;
+    jdk$internal$misc$CDS.isDumpingClassList = (jdk$internal$misc$CDS.Z$isDumpingClassList0$$());
+    jdk$internal$misc$CDS.isDumpingArchive = (jdk$internal$misc$CDS.Z$isDumpingArchive0$$());
+    jdk$internal$misc$CDS.isSharingEnabled = (jdk$internal$misc$CDS.Z$isSharingEnabled0$$());
+    var0 = bytecoder.newarray((6),null);
+    var0.data[0] = bytecoder.stringconstants[42];
+    var0.data[1] = bytecoder.stringconstants[43];
+    var0.data[2] = bytecoder.stringconstants[44];
+    var0.data[3] = bytecoder.stringconstants[45];
+    var0.data[4] = bytecoder.stringconstants[46];
+    var0.data[5] = bytecoder.stringconstants[47];
+    jdk$internal$misc$CDS.excludeFlags = var0;
+    return;
+  }
+
+  static Z$isDumpingClassList0$$() {
+    return bytecoder.imports['jdk.internal.misc.CDS'].Z$isDumpingClassList0$$();
+  }
+
+  static Z$isDumpingArchive0$$() {
+    return bytecoder.imports['jdk.internal.misc.CDS'].Z$isDumpingArchive0$$();
+  }
+
+  static Z$isSharingEnabled0$$() {
+    return bytecoder.imports['jdk.internal.misc.CDS'].Z$isSharingEnabled0$$();
+  }
+
+  static J$getRandomSeedForDumping$$() {
+    return bytecoder.imports['jdk.internal.misc.CDS'].J$getRandomSeedForDumping$$();
+  }
+
+  static V$initializeFromArchive$Ljava$lang$Class$(arg0) {
+    bytecoder.imports['jdk.internal.misc.CDS'].V$initializeFromArchive$Ljava$lang$Class$(arg0);
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$util$Collections extends java$lang$Object {
+  nativeObject = null;
+
+  static EMPTY_SET = null;
+  static EMPTY_LIST = null;
+  static EMPTY_MAP = null;
+  static r = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Collections,
+        'java.util.Collections',
+         [java$util$Collections,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -1013,344 +2941,407 @@ class java$lang$System extends java$lang$Object {
     var var0 = null;
     var var1 = null;
     var var2 = null;
+    var0 = new java$util$Collections$EmptySet();
+    java$util$Collections$EmptySet.prototype.V$$init$$$.call(var0);
+    java$util$Collections.$i;
+    java$util$Collections.EMPTY_SET = var0;
+    var1 = new java$util$Collections$EmptyList();
+    java$util$Collections$EmptyList.prototype.V$$init$$$.call(var1);
+    java$util$Collections.EMPTY_LIST = var1;
+    var2 = new java$util$Collections$EmptyMap();
+    java$util$Collections$EmptyMap.prototype.V$$init$$$.call(var2);
+    java$util$Collections.EMPTY_MAP = var2;
+    return;
+  }
+
+  static V$shuffle$Ljava$util$List$(arg0) {
+    var var0 = null;
+    var var1 = null;
+    var phi2 = null;
+    java$util$Collections.$i;
+    var0 = (java$util$Collections.r);
+    If_7_0: {
+     if (var0 != null) {
+      phi2 = var0;
+      break If_7_0;
+     } else {
+      var1 = new java$util$Random();
+      java$util$Random.prototype.V$$init$$$.call(var1);
+      java$util$Collections.r = var1;
+      phi2 = var1;
+      break If_7_0;
+     }
+    }
+    java$util$Collections.V$shuffle$Ljava$util$List$$Ljava$util$Random$(arg0,phi2);
+    return;
+  }
+
+  static V$shuffle$Ljava$util$List$$Ljava$util$Random$(arg0,arg1) {
+    var var0 = 0;
+    var phi1 = 0;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = 0;
+    var var5 = null;
+    var phi6 = 0;
+    var var7 = 0;
+    var var8 = 0;
+    var var9 = 0;
+    var var10 = null;
+    var var11 = 0;
+    var phi12 = 0;
+    var var13 = null;
+    var var14 = null;
+    var0 = ((arg0.I$size$$())) | 0;
+    If_7_0: {
+     If_7_1: {
+      if (var0 < 5) {
+       break If_7_1;
+      } else {
+       if (bytecoder.instanceOf(arg0,java$util$RandomAccess) == 0) {
+        var5 = (arg0.$Ljava$lang$Object$$toArray$$());
+        phi6 = (var0) | 0;
+        L1761112767: while(true) {
+         if (phi6 <= 1) {
+          var10 = (arg0.Ljava$util$ListIterator$$listIterator$$());
+          var11 = (var5.data.length) | 0;
+          phi12 = (0) | 0;
+          L274750135: while(true) {
+           if (phi12 >= var11) {
+            break If_7_0;
+           } else {
+            var13 = (var5.data[phi12]);
+            var14 = (var10.Ljava$lang$Object$$next$$());
+            var10.V$set$Ljava$lang$Object$(var13);
+            phi12 = ((phi12 + 1)) | 0;
+            // Here was a goto statement
+            continue L274750135;
+           }
+          }
+         } else {
+          var7 = ((phi6 - 1)) | 0;
+          var8 = (phi6) | 0;
+          var9 = ((java$util$Random.prototype.I$nextInt$I.call(arg1,var8))) | 0;
+          java$util$Collections.$i;
+          java$util$Collections.V$swap$$Ljava$lang$Object$$I$I(var5,var7,var9);
+          phi6 = ((phi6 + -1)) | 0;
+          // Here was a goto statement
+          continue L1761112767;
+         }
+        }
+       } else {
+        break If_7_1;
+       }
+      }
+     }
+     phi1 = (var0) | 0;
+     L2055589579: while(true) {
+      if (phi1 <= 1) {
+       break If_7_0;
+      } else {
+       var2 = ((phi1 - 1)) | 0;
+       var3 = (phi1) | 0;
+       var4 = ((java$util$Random.prototype.I$nextInt$I.call(arg1,var3))) | 0;
+       java$util$Collections.$i;
+       java$util$Collections.V$swap$Ljava$util$List$$I$I(arg0,var2,var4);
+       phi1 = ((phi1 + -1)) | 0;
+       // Here was a goto statement
+       continue L2055589579;
+      }
+     }
+    }
+    return;
+  }
+
+  static V$swap$Ljava$util$List$$I$I(arg0,arg1,arg2) {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var0 = (arg0.Ljava$lang$Object$$get$I(arg1));
+    var1 = (arg0.Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg2,var0));
+    var2 = (arg0.Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg1,var1));
+    return;
+  }
+
+  static V$swap$$Ljava$lang$Object$$I$I(arg0,arg1,arg2) {
+    var var0 = null;
+    var0 = (arg0.data[arg1]);
+    arg0.data[arg1] = (arg0.data[arg2]);
+    arg0.data[arg2] = var0;
+    return;
+  }
+
+  static Ljava$util$ListIterator$$emptyListIterator$$() {
+    java$util$Collections$EmptyListIterator.$i;
+    return (java$util$Collections$EmptyListIterator.EMPTY_ITERATOR);
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  static Ljava$util$Iterator$$emptyIterator$$() {
+    java$util$Collections$EmptyIterator.$i;
+    return (java$util$Collections$EmptyIterator.EMPTY_ITERATOR);
+  }
+
+  static Ljava$util$Set$$emptySet$$() {
+    java$util$Collections.$i;
+    return (java$util$Collections.EMPTY_SET);
+  }
+
+  static Ljava$util$Set$$synchronizedSet$Ljava$util$Set$$Ljava$lang$Object$(arg0,arg1) {
+    var var0 = null;
+    var0 = new java$util$Collections$SynchronizedSet();
+    java$util$Collections$SynchronizedSet.prototype.V$$init$$Ljava$util$Set$$Ljava$lang$Object$.call(var0,arg0,arg1);
+    return var0;
+  }
+}
+
+
+class de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup extends java$lang$Object {
+  nativeObject = null;
+
+  name = null;
+  parent = null;
+  static SYSTEM = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup,
+        'de.mirkosertic.bytecoder.classlib.java.lang.TThreadGroup',
+         [de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.$i;
+    var0 = new de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup();
+    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.prototype.V$$init$$$.call(var0);
+    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.SYSTEM = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.name = bytecoder.stringconstants[66];
+    var1 = th;
+    var1.parent = null;
+    return;
+  }
+}
+
+
+class java$util$HashMap$HashIterator extends java$lang$Object {
+  nativeObject = null;
+
+  this$0 = null;
+  expectedModCount = 0;
+  next = null;
+  current = null;
+  index = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$HashMap$HashIterator,
+        'java.util.HashMap$HashIterator',
+         [java$util$HashMap$HashIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$HashMap$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
     var var3 = null;
     var var4 = null;
     var var5 = null;
     var var6 = null;
     var var7 = null;
-    java$util$Properties.$i;
-    var0 = new java$util$Properties();
-    java$util$Properties.prototype.V$$init$$$.call(var0);
-    java$lang$System.$i;
-    java$lang$System.PROPERTIES = var0;
-    var1 = (java$lang$System.PROPERTIES);
-    var2 = (java$util$Properties.prototype.Ljava$lang$Object$$setProperty$Ljava$lang$String$$Ljava$lang$String$.call(var1,bytecoder.stringconstants[59],bytecoder.stringconstants[60]));
-    var3 = new java$io$FileInputStream();
-    java$io$FileDescriptor.$i;
-    java$io$FileInputStream.prototype.V$$init$$Ljava$io$FileDescriptor$.call(var3,(java$io$FileDescriptor.in));
-    java$lang$System.in = var3;
-    java$io$PrintStream.$i;
-    var4 = new java$io$PrintStream();
-    var5 = new java$io$FileOutputStream();
-    java$io$FileOutputStream.prototype.V$$init$$Ljava$io$FileDescriptor$.call(var5,(java$io$FileDescriptor.out));
-    java$io$PrintStream.prototype.V$$init$$Ljava$io$OutputStream$.call(var4,var5);
-    java$lang$System.out = var4;
-    var6 = new java$io$PrintStream();
-    var7 = new java$io$FileOutputStream();
-    java$io$FileOutputStream.prototype.V$$init$$Ljava$io$FileDescriptor$.call(var7,(java$io$FileDescriptor.err));
-    java$io$PrintStream.prototype.V$$init$$Ljava$io$OutputStream$.call(var6,var7);
-    java$lang$System.err = var6;
+    var var8 = 0;
+    var var9 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var1 = th;
+    var1.expectedModCount = (arg0.modCount);
+    var2 = (arg0.table);
+    var3 = th;
+    var4 = th;
+    var4.next = null;
+    var3.current = null;
+    var5 = th;
+    var5.index = 0;
+    If_25_0: {
+     if (var2 == null) {
+      break If_25_0;
+     } else {
+      If_28_0: {
+       if ((arg0.size) <= 0) {
+        break If_25_0;
+       } else {
+        break If_28_0;
+       }
+      }
+      L428639918: while(true) {
+       if ((th.index) >= var2.data.length) {
+        break If_25_0;
+       } else {
+        var6 = th;
+        var7 = th;
+        var8 = ((var7.index)) | 0;
+        var7.index = (var8 + 1);
+        var9 = (var2.data[var8]);
+        var6.next = var9;
+        if (var9 == null) {
+         continue L428639918;
+        } else {
+         break If_25_0;
+        }
+       }
+      }
+     }
+    }
     return;
   }
 
-  static Ljava$lang$String$$getProperty$Ljava$lang$String$(arg0) {
-    var var0 = null;
-    java$lang$System.$i;
-    var0 = (java$lang$System.PROPERTIES);
-    return (java$util$Properties.prototype.Ljava$lang$String$$getProperty$Ljava$lang$String$.call(var0,arg0));
+  Z$hasNext$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.next) == null) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
   }
 
-  static J$nanoTime$$() {
-    java$lang$System.$i;
-    return ((java$lang$System.J$currentTimeMillis$$()) * 1000000);
-  }
-
-  static J$currentTimeMillis$$() {
-    return bytecoder.imports['java.lang.System'].J$currentTimeMillis$$();
-  }
-
-  static I$identityHashCode$Ljava$lang$Object$(arg0) {
-    return (arg0.I$hashCode$$());
-  }
-
-  static V$arraycopy$Ljava$lang$Object$$I$Ljava$lang$Object$$I$I(arg0,arg1,arg2,arg3,arg4) {
+  Ljava$util$HashMap$Node$$nextNode$$() {
+    var th = this;
     var var0 = null;
     var var1 = null;
-    var phi2 = 0;
-    var0 = arg0;
-    var1 = arg2;
-    phi2 = (0) | 0;
-    L1301150961: while(true) {
-     if (phi2 >= arg4) {
-      return;
-     } else {
-      var1.data[(arg3 + phi2)] = (var0.data[(arg1 + phi2)]);
-      phi2 = ((phi2 + 1)) | 0;
-      // Here was a goto statement
-      continue L1301150961;
-     }
-    }
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  static V$arraycopy$$B$I$$B$I$I(arg0,arg1,arg2,arg3,arg4) {
-    var phi0 = 0;
-    phi0 = (0) | 0;
-    L1536483434: while(true) {
-     if (phi0 >= arg4) {
-      return;
-     } else {
-      arg2.data[(arg3 + phi0)] = (arg0.data[(arg1 + phi0)]);
-      phi0 = ((phi0 + 1)) | 0;
-      // Here was a goto statement
-      continue L1536483434;
-     }
-    }
-  }
-
-  static V$arraycopy$$C$I$$C$I$I(arg0,arg1,arg2,arg3,arg4) {
-    var phi0 = 0;
-    phi0 = (0) | 0;
-    L1663961520: while(true) {
-     if (phi0 >= arg4) {
-      return;
-     } else {
-      arg2.data[(arg3 + phi0)] = (arg0.data[(arg1 + phi0)]);
-      phi0 = ((phi0 + 1)) | 0;
-      // Here was a goto statement
-      continue L1663961520;
-     }
-    }
-  }
-}
-
-
-class java$util$Arrays extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Arrays,
-        'java.util.Arrays',
-         [java$util$Arrays,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    java$util$Arrays.$i;
-    return;
-  }
-
-  static $B$copyOf$$B$I(arg0,arg1) {
-    var var0 = null;
-    var phi1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var0 = bytecoder.newarray((arg1),0);
-    phi1 = (0) | 0;
-    L1170972178: while(true) {
-     var2 = (phi1) | 0;
-     var3 = (arg0.data.length) | 0;
-     java$lang$Math.$i;
-     if (var2 >= (java$lang$Math.I$min$I$I(arg1,var3))) {
-      return var0;
-     } else {
-      var0.data[phi1] = (arg0.data[phi1]);
-      phi1 = ((phi1 + 1)) | 0;
-      // Here was a goto statement
-      continue L1170972178;
-     }
-    }
-  }
-
-  static $Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I(arg0,arg1) {
-    java$util$Arrays.$i;
-    return (java$util$Arrays.$Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I$Ljava$lang$Class$(arg0,arg1,null));
-  }
-
-  static $Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I$Ljava$lang$Class$(arg0,arg1,arg2) {
-    var var0 = null;
-    var phi1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var0 = bytecoder.newarray((arg1),null);
-    phi1 = (0) | 0;
-    L2074866314: while(true) {
-     var2 = (phi1) | 0;
-     var3 = (arg0.data.length) | 0;
-     java$lang$Math.$i;
-     if (var2 >= (java$lang$Math.I$min$I$I(arg1,var3))) {
-      return var0;
-     } else {
-      var0.data[phi1] = (arg0.data[phi1]);
-      phi1 = ((phi1 + 1)) | 0;
-      // Here was a goto statement
-      continue L2074866314;
-     }
-    }
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$ImmutableCollections extends java$lang$Object {
-  nativeObject = null;
-
-  static SALT32L = 0;
-  static REVERSE = 0;
-  static archivedObjects = null;
-  static EMPTY = null;
-  static EMPTY_LIST = null;
-  static EMPTY_LIST_NULLS = null;
-  static EMPTY_SET = null;
-  static EMPTY_MAP = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections,
-        'java.util.ImmutableCollections',
-         [java$util$ImmutableCollections,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = 0;
-    var phi1 = 0;
-    var phi2 = 0;
+    var var2 = null;
     var var3 = null;
     var var4 = null;
     var var5 = null;
     var var6 = null;
     var var7 = null;
     var var8 = null;
-    java$util$ImmutableCollections.$i;
-    jdk$internal$misc$CDS.$i;
-    var0 = (jdk$internal$misc$CDS.J$getRandomSeedForDumping$$());
-    If_12_0: {
-     if (bytecoder.cmp(var0,0) != 0) {
-      phi1 = var0;
-      break If_12_0;
+    var var9 = 0;
+    var var10 = null;
+    var0 = (th.next);
+    if (((th.this$0).modCount) == (th.expectedModCount)) {
+     if (var0 != null) {
+      var3 = th;
+      var4 = th;
+      var4.current = var0;
+      var5 = (var0.next);
+      var3.next = var5;
+      If_33_0: {
+       if (var5 != null) {
+        break If_33_0;
+       } else {
+        var6 = ((th.this$0).table);
+        If_39_0: {
+         if (var6 == null) {
+          break If_33_0;
+         } else {
+          break If_39_0;
+         }
+        }
+        L761046963: while(true) {
+         if ((th.index) >= var6.data.length) {
+          break If_33_0;
+         } else {
+          var7 = th;
+          var8 = th;
+          var9 = ((var8.index)) | 0;
+          var8.index = (var9 + 1);
+          var10 = (var6.data[var9]);
+          var7.next = var10;
+          if (var10 == null) {
+           continue L761046963;
+          } else {
+           break If_33_0;
+          }
+         }
+        }
+       }
+      }
+      return var0;
      } else {
-      java$lang$System.$i;
-      phi1 = (java$lang$System.J$nanoTime$$());
-      break If_12_0;
+      var2 = new java$util$NoSuchElementException();
+      java$util$NoSuchElementException.prototype.V$$init$$$.call(var2);
+      throw bytecoder.registerStack(var2, new Error().stack);
      }
-    }
-    java$util$ImmutableCollections.SALT32L = (((((2611923443488327891 * phi1) >> 16) | 0) | 0) & 4294967295);
-    If_33_0: {
-     if (bytecoder.cmp(((java$util$ImmutableCollections.SALT32L) & 1),0) != 0) {
-      phi2 = (0) | 0;
-      break If_33_0;
-     } else {
-      phi2 = (1) | 0;
-      break If_33_0;
-     }
-    }
-    java$util$ImmutableCollections.REVERSE = phi2;
-    jdk$internal$misc$CDS.V$initializeFromArchive$Ljava$lang$Class$(java$util$ImmutableCollections.$rt);
-    If_43_0: {
-     if ((java$util$ImmutableCollections.archivedObjects) != null) {
-      java$util$ImmutableCollections.EMPTY = ((java$util$ImmutableCollections.archivedObjects).data[0]);
-      java$util$ImmutableCollections.EMPTY_LIST = ((java$util$ImmutableCollections.archivedObjects).data[1]);
-      java$util$ImmutableCollections.EMPTY_LIST_NULLS = ((java$util$ImmutableCollections.archivedObjects).data[2]);
-      java$util$ImmutableCollections.EMPTY_SET = ((java$util$ImmutableCollections.archivedObjects).data[3]);
-      java$util$ImmutableCollections.EMPTY_MAP = ((java$util$ImmutableCollections.archivedObjects).data[4]);
-      break If_43_0;
-     } else {
-      var3 = new java$lang$Object();
-      java$lang$Object.prototype.V$$init$$$.call(var3);
-      java$util$ImmutableCollections.EMPTY = var3;
-      var4 = new java$util$ImmutableCollections$ListN();
-      java$util$ImmutableCollections$ListN.prototype.V$$init$$$Ljava$lang$Object$$Z.call(var4,bytecoder.newarray((0),null),0);
-      java$util$ImmutableCollections.EMPTY_LIST = var4;
-      var5 = new java$util$ImmutableCollections$ListN();
-      java$util$ImmutableCollections$ListN.prototype.V$$init$$$Ljava$lang$Object$$Z.call(var5,bytecoder.newarray((0),null),1);
-      java$util$ImmutableCollections.EMPTY_LIST_NULLS = var5;
-      var6 = new java$util$ImmutableCollections$SetN();
-      java$util$ImmutableCollections$SetN.prototype.V$$init$$$Ljava$lang$Object$.call(var6,bytecoder.newarray((0),null));
-      java$util$ImmutableCollections.EMPTY_SET = var6;
-      var7 = new java$util$ImmutableCollections$MapN();
-      java$util$ImmutableCollections$MapN.prototype.V$$init$$$Ljava$lang$Object$.call(var7,bytecoder.newarray((0),null));
-      java$util$ImmutableCollections.EMPTY_MAP = var7;
-      var8 = bytecoder.newarray((5),null);
-      var8.data[0] = (java$util$ImmutableCollections.EMPTY);
-      var8.data[1] = (java$util$ImmutableCollections.EMPTY_LIST);
-      var8.data[2] = (java$util$ImmutableCollections.EMPTY_LIST_NULLS);
-      var8.data[3] = (java$util$ImmutableCollections.EMPTY_SET);
-      var8.data[4] = (java$util$ImmutableCollections.EMPTY_MAP);
-      java$util$ImmutableCollections.archivedObjects = var8;
-      break If_43_0;
-     }
-    }
-    return;
-  }
-
-  static Ljava$util$List$$listFromArray$$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    var phi1 = 0;
-    var var2 = 0;
-    var var3 = null;
-    var var4 = null;
-    var0 = bytecoder.newarray((arg0.data.length),null);
-    phi1 = (0) | 0;
-    L690182463: while(true) {
-     if (phi1 >= arg0.data.length) {
-      var4 = new java$util$ImmutableCollections$ListN();
-      java$util$ImmutableCollections$ListN.prototype.V$$init$$$Ljava$lang$Object$$Z.call(var4,var0,0);
-      return var4;
-     } else {
-      var2 = (phi1) | 0;
-      var3 = (arg0.data[phi1]);
-      var0.data[var2] = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(var3));
-      phi1 = ((phi1 + 1)) | 0;
-      // Here was a goto statement
-      continue L690182463;
-     }
+    } else {
+     var1 = new java$util$ConcurrentModificationException();
+     java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var1);
+     throw bytecoder.registerStack(var1, new Error().stack);
     }
   }
+}
 
-  static Ljava$lang$UnsupportedOperationException$$uoe$$() {
-    var var0 = null;
-    var0 = new java$lang$UnsupportedOperationException();
-    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
-    return var0;
+
+class java$lang$ClassLoader extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$ClassLoader,
+        'java.lang.ClassLoader',
+         [java$lang$ClassLoader,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
   }
 
   V$$init$$$() {
@@ -1361,7 +3352,104 @@ class java$util$ImmutableCollections extends java$lang$Object {
 }
 
 
-class java$lang$Comparable extends java$lang$Object {
+class jdk$internal$misc$VM extends java$lang$Object {
+  nativeObject = null;
+
+  static lock = null;
+  static directMemory = 0;
+  static initLevel = 0;
+  static savedProps = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$misc$VM,
+        'jdk.internal.misc.VM',
+         [jdk$internal$misc$VM,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var0 = new java$lang$Object();
+    java$lang$Object.prototype.V$$init$$$.call(var0);
+    jdk$internal$misc$VM.$i;
+    jdk$internal$misc$VM.lock = var0;
+    jdk$internal$misc$VM.directMemory = 67108864;
+    var1 = new java$util$HashMap();
+    java$util$HashMap.prototype.V$$init$$$.call(var1);
+    jdk$internal$misc$VM.V$saveProperties$Ljava$util$Map$(var1);
+    return;
+  }
+
+  static V$saveProperties$Ljava$util$Map$(arg0) {
+    var var0 = null;
+    jdk$internal$misc$VM.$i;
+    if ((jdk$internal$misc$VM.I$initLevel$$()) == 0) {
+     If_16_0: {
+      if ((jdk$internal$misc$VM.savedProps) != null) {
+       break If_16_0;
+      } else {
+       jdk$internal$misc$VM.savedProps = arg0;
+       break If_16_0;
+      }
+     }
+     return;
+    } else {
+     var0 = new java$lang$IllegalStateException();
+     java$lang$IllegalStateException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[65]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  static I$initLevel$$() {
+    jdk$internal$misc$VM.$i;
+    return (jdk$internal$misc$VM.initLevel);
+  }
+
+  static Z$isBooted$$() {
+    var phi0 = 0;
+    jdk$internal$misc$VM.$i;
+    If_5_0: {
+     if ((jdk$internal$misc$VM.initLevel) < 4) {
+      phi0 = (0) | 0;
+      break If_5_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_5_0;
+     }
+    }
+    return phi0;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class de$mirkosertic$bytecoder$classlib$Array extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -1371,15 +3459,170 @@ class java$lang$Comparable extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Comparable,
-        'java.lang.Comparable',
-         [java$lang$Comparable,java$lang$Object]);
+        de$mirkosertic$bytecoder$classlib$Array,
+        'de.mirkosertic.bytecoder.classlib.Array',
+         [de$mirkosertic$bytecoder$classlib$Array,java$lang$Object]);
     }
     return this.#rt;
   }
 
   set $lambdaimpl(impl) {
-    this.I$compareTo$Ljava$lang$Object$ = impl;
+  }
+
+  static $Ljava$lang$Object$$newObjectArray$I(arg0) {
+    return bytecoder.newarray((arg0),null);
+  }
+
+  static $C$newCharArray$I(arg0) {
+    return bytecoder.newarray((arg0),0);
+  }
+
+  static I$charArrayLength$$C(arg0) {
+    return arg0.data.length;
+  }
+
+  static C$getCharArrayEntry$$C$I(arg0,arg1) {
+    return (arg0.data[arg1]);
+  }
+
+  static V$setCharArrayEntry$$C$I$C(arg0,arg1,arg2) {
+    arg0.data[arg1] = arg2;
+    return;
+  }
+
+  static $B$newByteArray$I(arg0) {
+    return bytecoder.newarray((arg0),0);
+  }
+
+  static I$byteArrayLength$$B(arg0) {
+    return arg0.data.length;
+  }
+
+  static B$getByteArrayEntry$$B$I(arg0,arg1) {
+    return (arg0.data[arg1]);
+  }
+
+  static V$setByteArrayEntry$$B$I$B(arg0,arg1,arg2) {
+    arg0.data[arg1] = arg2;
+    return;
+  }
+
+  static I$getIntArrayEntry$$I$I(arg0,arg1) {
+    return (arg0.data[arg1]);
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$nio$charset$CoderResult$Cache extends java$lang$Object {
+  nativeObject = null;
+
+  unmappable = null;
+  malformed = null;
+  static INSTANCE = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$charset$CoderResult$Cache,
+        'java.nio.charset.CoderResult$Cache',
+         [java$nio$charset$CoderResult$Cache,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    java$nio$charset$CoderResult$Cache.$i;
+    var0 = new java$nio$charset$CoderResult$Cache();
+    java$nio$charset$CoderResult$Cache.prototype.V$$init$$$.call(var0);
+    java$nio$charset$CoderResult$Cache.INSTANCE = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var1 = new java$util$concurrent$ConcurrentHashMap();
+    java$util$concurrent$ConcurrentHashMap.prototype.V$$init$$$.call(var1);
+    var0.unmappable = var1;
+    var2 = th;
+    var3 = new java$util$concurrent$ConcurrentHashMap();
+    java$util$concurrent$ConcurrentHashMap.prototype.V$$init$$$.call(var3);
+    var2.malformed = var3;
+    return;
+  }
+}
+
+
+class java$util$Iterator extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Iterator,
+        'java.util.Iterator',
+         [java$util$Iterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$util$function$Function extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$function$Function,
+        'java.util.function.Function',
+         [java$util$function$Function,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
   }
 }
 
@@ -1627,112 +3870,6 @@ class jdk$internal$misc$ScopedMemoryAccess extends java$lang$Object {
 }
 
 
-class java$lang$Appendable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Appendable,
-        'java.lang.Appendable',
-         [java$lang$Appendable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class com$example$wasm$WasmBridge extends java$lang$Object {
-  nativeObject = null;
-
-  static engine = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        com$example$wasm$WasmBridge,
-        'com.example.wasm.WasmBridge',
-         [com$example$wasm$WasmBridge,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    com$example$wasm$WasmBridge.$i;
-    com$example$wasm$WasmBridge.engine = null;
-    return;
-  }
-
-  static V$main$$Ljava$lang$String$(arg0) {
-    com$example$wasm$WasmBridge.$i;
-    com$example$wasm$WasmBridge.V$init$$();
-    return;
-  }
-
-  static V$init$$() {
-    var var0 = null;
-    var0 = new com$example$wasm$GameEngine();
-    com$example$wasm$GameEngine.prototype.V$$init$$$.call(var0);
-    com$example$wasm$WasmBridge.$i;
-    com$example$wasm$WasmBridge.engine = var0;
-    com$example$wasm$GameEngine.prototype.V$shuffle$$.call((com$example$wasm$WasmBridge.engine));
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$Iterator extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Iterator,
-        'java.util.Iterator',
-         [java$util$Iterator,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
 class java$lang$invoke$CallSite extends java$lang$Object {
   nativeObject = null;
   constructor() {
@@ -1762,7 +3899,7 @@ class java$lang$invoke$CallSite extends java$lang$Object {
 }
 
 
-class java$lang$Readable extends java$lang$Object {
+class java$lang$Cloneable extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -1772,9 +3909,9 @@ class java$lang$Readable extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Readable,
-        'java.lang.Readable',
-         [java$lang$Readable,java$lang$Object]);
+        java$lang$Cloneable,
+        'java.lang.Cloneable',
+         [java$lang$Cloneable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -1784,7 +3921,7 @@ class java$lang$Readable extends java$lang$Object {
 }
 
 
-class jdk$internal$access$JavaIOPrintStreamAccess extends java$lang$Object {
+class jdk$internal$access$JavaNioAccess extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -1794,9 +3931,9 @@ class jdk$internal$access$JavaIOPrintStreamAccess extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$access$JavaIOPrintStreamAccess,
-        'jdk.internal.access.JavaIOPrintStreamAccess',
-         [jdk$internal$access$JavaIOPrintStreamAccess,java$lang$Object]);
+        jdk$internal$access$JavaNioAccess,
+        'jdk.internal.access.JavaNioAccess',
+         [jdk$internal$access$JavaNioAccess,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -1806,12 +3943,8 @@ class jdk$internal$access$JavaIOPrintStreamAccess extends java$lang$Object {
 }
 
 
-class jdk$internal$access$SharedSecrets extends java$lang$Object {
+class java$util$Random extends java$lang$Object {
   nativeObject = null;
-
-  static javaNioAccess = null;
-  static javaIOPrintStreamAccess = null;
-
   constructor() {
     super();
   }
@@ -1820,24 +3953,14 @@ class jdk$internal$access$SharedSecrets extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$access$SharedSecrets,
-        'jdk.internal.access.SharedSecrets',
-         [java$lang$Object,jdk$internal$access$SharedSecrets]);
+        java$util$Random,
+        'java.util.Random',
+         [java$util$Random,java$lang$Object]);
     }
     return this.#rt;
   }
 
   set $lambdaimpl(impl) {
-  }
-
-  static V$setJavaNioAccess$Ljdk$internal$access$JavaNioAccess$(arg0) {
-    jdk$internal$access$SharedSecrets.javaNioAccess = arg0;
-    return;
-  }
-
-  static V$setJavaIOCPrintStreamAccess$Ljdk$internal$access$JavaIOPrintStreamAccess$(arg0) {
-    jdk$internal$access$SharedSecrets.javaIOPrintStreamAccess = arg0;
-    return;
   }
 
   V$$init$$$() {
@@ -1845,267 +3968,10 @@ class jdk$internal$access$SharedSecrets extends java$lang$Object {
     java$lang$Object.prototype.V$$init$$$.call(th);
     return;
   }
-}
 
-
-class java$util$Objects extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Objects,
-        'java.util.Objects',
-         [java$util$Objects,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    if (arg0 != null) {
-     return arg0;
-    } else {
-     var0 = new java$lang$NullPointerException();
-     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  static I$checkFromIndexSize$I$I$I(arg0,arg1,arg2) {
-    jdk$internal$util$Preconditions.$i;
-    return (jdk$internal$util$Preconditions.I$checkFromIndexSize$I$I$I$Ljava$util$function$BiFunction$(arg0,arg1,arg2,null));
-  }
-
-  static I$checkIndex$I$I(arg0,arg1) {
-    jdk$internal$util$Preconditions.$i;
-    return (jdk$internal$util$Preconditions.I$checkIndex$I$I$Ljava$util$function$BiFunction$(arg0,arg1,null));
-  }
-
-  static Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    var phi0 = 0;
-    If_3_0: {
-     If_3_1: {
-      if (arg0 == arg1) {
-       break If_3_1;
-      } else {
-       If_5_0: {
-        if (arg0 == null) {
-         break If_5_0;
-        } else {
-         if ((arg0.Z$equals$Ljava$lang$Object$(arg1)) == 0) {
-          break If_5_0;
-         } else {
-          break If_3_1;
-         }
-        }
-       }
-       phi0 = (0) | 0;
-       break If_3_0;
-      }
-     }
-     phi0 = (1) | 0;
-     break If_3_0;
-    }
-    return phi0;
-  }
-
-  static I$hashCode$Ljava$lang$Object$(arg0) {
-    var phi0 = 0;
-    If_2_0: {
-     if (arg0 == null) {
-      phi0 = (0) | 0;
-      break If_2_0;
-     } else {
-      phi0 = ((arg0.I$hashCode$$())) | 0;
-      break If_2_0;
-     }
-    }
-    return phi0;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = new java$lang$AssertionError();
-    java$lang$AssertionError.prototype.V$$init$$Ljava$lang$Object$.call(var0,bytecoder.stringconstants[103]);
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$VM extends java$lang$Object {
-  nativeObject = null;
-
-  static SYSTEM_LOADER = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$VM,
-        'de.mirkosertic.bytecoder.classlib.VM',
-         [de$mirkosertic$bytecoder$classlib$VM,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static Ljava$lang$String$$exceptionMessage$Ljava$lang$Exception$(arg0) {
-    return (arg0.Ljava$lang$String$$getMessage$$());
-  }
-
-  static Ljava$lang$String$$objectToString$Ljava$lang$Object$(arg0) {
-    if (arg0 != null) {
-     return (arg0.Ljava$lang$String$$toString$$());
-    } else {
-     return bytecoder.stringconstants[0];
-    }
-  }
-
-  static Z$nullsafeEquals$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    if (arg0 != arg1) {
-     if (arg0 == null) {
-      return 0;
-     } else {
-      return (arg0.Z$equals$Ljava$lang$Object$(arg1));
-     }
-    } else {
-     return 1;
-    }
-  }
-
-  static Ljava$lang$Byte$$toByte$B(arg0) {
-    java$lang$Byte.$i;
-    return (java$lang$Byte.Ljava$lang$Byte$$valueOf$B(arg0));
-  }
-
-  static Ljava$lang$Short$$toShort$S(arg0) {
-    java$lang$Short.$i;
-    return (java$lang$Short.Ljava$lang$Short$$valueOf$S(arg0));
-  }
-
-  static Ljava$lang$Integer$$toInteger$I(arg0) {
-    java$lang$Integer.$i;
-    return (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg0));
-  }
-
-  static Ljava$lang$Long$$toLong$J(arg0) {
-    java$lang$Long.$i;
-    return (java$lang$Long.Ljava$lang$Long$$valueOf$J(arg0));
-  }
-
-  static Ljava$lang$Float$$toFloat$F(arg0) {
-    java$lang$Float.$i;
-    return (java$lang$Float.Ljava$lang$Float$$valueOf$F(arg0));
-  }
-
-  static Ljava$lang$Double$$toDouble$F(arg0) {
-    var var0 = .0;
-    var0 = arg0;
-    java$lang$Double.$i;
-    return (java$lang$Double.Ljava$lang$Double$$valueOf$D(var0));
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var0 = new de$mirkosertic$bytecoder$classlib$VM$1();
-    de$mirkosertic$bytecoder$classlib$VM$1.prototype.V$$init$$$.call(var0);
-    de$mirkosertic$bytecoder$classlib$VM.$i;
-    de$mirkosertic$bytecoder$classlib$VM.SYSTEM_LOADER = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$nio$charset$CoderResult$Cache extends java$lang$Object {
-  nativeObject = null;
-
-  unmappable = null;
-  malformed = null;
-  static INSTANCE = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$charset$CoderResult$Cache,
-        'java.nio.charset.CoderResult$Cache',
-         [java$nio$charset$CoderResult$Cache,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    java$nio$charset$CoderResult$Cache.$i;
-    var0 = new java$nio$charset$CoderResult$Cache();
-    java$nio$charset$CoderResult$Cache.prototype.V$$init$$$.call(var0);
-    java$nio$charset$CoderResult$Cache.INSTANCE = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var1 = new java$util$concurrent$ConcurrentHashMap();
-    java$util$concurrent$ConcurrentHashMap.prototype.V$$init$$$.call(var1);
-    var0.unmappable = var1;
-    var2 = th;
-    var3 = new java$util$concurrent$ConcurrentHashMap();
-    java$util$concurrent$ConcurrentHashMap.prototype.V$$init$$$.call(var3);
-    var2.malformed = var3;
-    return;
+  I$nextInt$I(arg0) {
+    java$lang$Math.$i;
+    return ((java$lang$Math.D$random$$()) | 0);
   }
 }
 
@@ -2498,6 +4364,1567 @@ class java$nio$Buffer extends java$lang$Object {
 }
 
 
+class java$lang$Void extends java$lang$Object {
+  nativeObject = null;
+
+  static TYPE = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Void,
+        'java.lang.Void',
+         [java$lang$Void,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var0 = (java$lang$Class.Ljava$lang$Class$$getPrimitiveClass$Ljava$lang$String$(bytecoder.stringconstants[48]));
+    java$lang$Void.$i;
+    java$lang$Void.TYPE = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference extends java$lang$Object {
+  nativeObject = null;
+
+  referent = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference,
+        'de.mirkosertic.bytecoder.classlib.java.lang.ref.TReference',
+         [de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.referent = arg0;
+    return;
+  }
+}
+
+
+class java$util$Map$Entry extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Map$Entry,
+        'java.util.Map$Entry',
+         [java$util$Map$Entry,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class com$example$wasm$WasmBridge extends java$lang$Object {
+  nativeObject = null;
+
+  static engine = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        com$example$wasm$WasmBridge,
+        'com.example.wasm.WasmBridge',
+         [com$example$wasm$WasmBridge,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    com$example$wasm$WasmBridge.$i;
+    com$example$wasm$WasmBridge.engine = null;
+    return;
+  }
+
+  static V$main$$Ljava$lang$String$(arg0) {
+    com$example$wasm$WasmBridge.$i;
+    com$example$wasm$WasmBridge.V$init$$();
+    return;
+  }
+
+  static V$init$$() {
+    var var0 = null;
+    var0 = new com$example$wasm$GameEngine();
+    com$example$wasm$GameEngine.prototype.V$$init$$$.call(var0);
+    com$example$wasm$WasmBridge.$i;
+    com$example$wasm$WasmBridge.engine = var0;
+    com$example$wasm$GameEngine.prototype.V$shuffle$$.call((com$example$wasm$WasmBridge.engine));
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$util$Objects extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Objects,
+        'java.util.Objects',
+         [java$util$Objects,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    if (arg0 != null) {
+     return arg0;
+    } else {
+     var0 = new java$lang$NullPointerException();
+     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  static I$checkFromIndexSize$I$I$I(arg0,arg1,arg2) {
+    jdk$internal$util$Preconditions.$i;
+    return (jdk$internal$util$Preconditions.I$checkFromIndexSize$I$I$I$Ljava$util$function$BiFunction$(arg0,arg1,arg2,null));
+  }
+
+  static I$checkIndex$I$I(arg0,arg1) {
+    jdk$internal$util$Preconditions.$i;
+    return (jdk$internal$util$Preconditions.I$checkIndex$I$I$Ljava$util$function$BiFunction$(arg0,arg1,null));
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = new java$lang$AssertionError();
+    java$lang$AssertionError.prototype.V$$init$$Ljava$lang$Object$.call(var0,bytecoder.stringconstants[100]);
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  static Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    var phi0 = 0;
+    If_3_0: {
+     If_3_1: {
+      if (arg0 == arg1) {
+       break If_3_1;
+      } else {
+       If_5_0: {
+        if (arg0 == null) {
+         break If_5_0;
+        } else {
+         if ((arg0.Z$equals$Ljava$lang$Object$(arg1)) == 0) {
+          break If_5_0;
+         } else {
+          break If_3_1;
+         }
+        }
+       }
+       phi0 = (0) | 0;
+       break If_3_0;
+      }
+     }
+     phi0 = (1) | 0;
+     break If_3_0;
+    }
+    return phi0;
+  }
+
+  static I$hashCode$Ljava$lang$Object$(arg0) {
+    var phi0 = 0;
+    If_2_0: {
+     if (arg0 == null) {
+      phi0 = (0) | 0;
+      break If_2_0;
+     } else {
+      phi0 = ((arg0.I$hashCode$$())) | 0;
+      break If_2_0;
+     }
+    }
+    return phi0;
+  }
+}
+
+
+class java$util$Map extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Map,
+        'java.util.Map',
+         [java$util$Map,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg1));
+    var1 = (th.Ljava$lang$Object$$get$Ljava$lang$Object$(arg0));
+    If_11_0: {
+     if (var1 != null) {
+      break If_11_0;
+     } else {
+      var2 = (arg1.Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0));
+      if (var2 == null) {
+       break If_11_0;
+      } else {
+       var3 = (th.Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,var2));
+       return var2;
+      }
+     }
+    }
+    return var1;
+  }
+}
+
+
+class java$lang$System extends java$lang$Object {
+  nativeObject = null;
+
+  static PROPERTIES = null;
+  static in = null;
+  static out = null;
+  static err = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$System,
+        'java.lang.System',
+         [java$lang$System,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    java$util$Properties.$i;
+    var0 = new java$util$Properties();
+    java$util$Properties.prototype.V$$init$$$.call(var0);
+    java$lang$System.$i;
+    java$lang$System.PROPERTIES = var0;
+    var1 = (java$lang$System.PROPERTIES);
+    var2 = (java$util$Properties.prototype.Ljava$lang$Object$$setProperty$Ljava$lang$String$$Ljava$lang$String$.call(var1,bytecoder.stringconstants[59],bytecoder.stringconstants[60]));
+    var3 = new java$io$FileInputStream();
+    java$io$FileDescriptor.$i;
+    java$io$FileInputStream.prototype.V$$init$$Ljava$io$FileDescriptor$.call(var3,(java$io$FileDescriptor.in));
+    java$lang$System.in = var3;
+    java$io$PrintStream.$i;
+    var4 = new java$io$PrintStream();
+    var5 = new java$io$FileOutputStream();
+    java$io$FileOutputStream.prototype.V$$init$$Ljava$io$FileDescriptor$.call(var5,(java$io$FileDescriptor.out));
+    java$io$PrintStream.prototype.V$$init$$Ljava$io$OutputStream$.call(var4,var5);
+    java$lang$System.out = var4;
+    var6 = new java$io$PrintStream();
+    var7 = new java$io$FileOutputStream();
+    java$io$FileOutputStream.prototype.V$$init$$Ljava$io$FileDescriptor$.call(var7,(java$io$FileDescriptor.err));
+    java$io$PrintStream.prototype.V$$init$$Ljava$io$OutputStream$.call(var6,var7);
+    java$lang$System.err = var6;
+    return;
+  }
+
+  static Ljava$lang$String$$getProperty$Ljava$lang$String$(arg0) {
+    var var0 = null;
+    java$lang$System.$i;
+    var0 = (java$lang$System.PROPERTIES);
+    return (java$util$Properties.prototype.Ljava$lang$String$$getProperty$Ljava$lang$String$.call(var0,arg0));
+  }
+
+  static J$nanoTime$$() {
+    java$lang$System.$i;
+    return ((java$lang$System.J$currentTimeMillis$$()) * 1000000);
+  }
+
+  static J$currentTimeMillis$$() {
+    return bytecoder.imports['java.lang.System'].J$currentTimeMillis$$();
+  }
+
+  static I$identityHashCode$Ljava$lang$Object$(arg0) {
+    return (arg0.I$hashCode$$());
+  }
+
+  static V$arraycopy$Ljava$lang$Object$$I$Ljava$lang$Object$$I$I(arg0,arg1,arg2,arg3,arg4) {
+    var var0 = null;
+    var var1 = null;
+    var phi2 = 0;
+    var0 = arg0;
+    var1 = arg2;
+    phi2 = (0) | 0;
+    L1658945422: while(true) {
+     if (phi2 >= arg4) {
+      return;
+     } else {
+      var1.data[(arg3 + phi2)] = (var0.data[(arg1 + phi2)]);
+      phi2 = ((phi2 + 1)) | 0;
+      // Here was a goto statement
+      continue L1658945422;
+     }
+    }
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  static V$arraycopy$$B$I$$B$I$I(arg0,arg1,arg2,arg3,arg4) {
+    var phi0 = 0;
+    phi0 = (0) | 0;
+    L1678795189: while(true) {
+     if (phi0 >= arg4) {
+      return;
+     } else {
+      arg2.data[(arg3 + phi0)] = (arg0.data[(arg1 + phi0)]);
+      phi0 = ((phi0 + 1)) | 0;
+      // Here was a goto statement
+      continue L1678795189;
+     }
+    }
+  }
+
+  static V$arraycopy$$C$I$$C$I$I(arg0,arg1,arg2,arg3,arg4) {
+    var phi0 = 0;
+    phi0 = (0) | 0;
+    L1283936949: while(true) {
+     if (phi0 >= arg4) {
+      return;
+     } else {
+      arg2.data[(arg3 + phi0)] = (arg0.data[(arg1 + phi0)]);
+      phi0 = ((phi0 + 1)) | 0;
+      // Here was a goto statement
+      continue L1283936949;
+     }
+    }
+  }
+}
+
+
+class java$lang$AutoCloseable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$AutoCloseable,
+        'java.lang.AutoCloseable',
+         [java$lang$AutoCloseable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class de$mirkosertic$bytecoder$classlib$VM extends java$lang$Object {
+  nativeObject = null;
+
+  static SYSTEM_LOADER = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        de$mirkosertic$bytecoder$classlib$VM,
+        'de.mirkosertic.bytecoder.classlib.VM',
+         [de$mirkosertic$bytecoder$classlib$VM,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static Ljava$lang$String$$exceptionMessage$Ljava$lang$Exception$(arg0) {
+    return (arg0.Ljava$lang$String$$getMessage$$());
+  }
+
+  static Ljava$lang$String$$objectToString$Ljava$lang$Object$(arg0) {
+    if (arg0 != null) {
+     return (arg0.Ljava$lang$String$$toString$$());
+    } else {
+     return bytecoder.stringconstants[0];
+    }
+  }
+
+  static Z$nullsafeEquals$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    if (arg0 != arg1) {
+     if (arg0 == null) {
+      return 0;
+     } else {
+      return (arg0.Z$equals$Ljava$lang$Object$(arg1));
+     }
+    } else {
+     return 1;
+    }
+  }
+
+  static Ljava$lang$Byte$$toByte$B(arg0) {
+    java$lang$Byte.$i;
+    return (java$lang$Byte.Ljava$lang$Byte$$valueOf$B(arg0));
+  }
+
+  static Ljava$lang$Short$$toShort$S(arg0) {
+    java$lang$Short.$i;
+    return (java$lang$Short.Ljava$lang$Short$$valueOf$S(arg0));
+  }
+
+  static Ljava$lang$Integer$$toInteger$I(arg0) {
+    java$lang$Integer.$i;
+    return (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg0));
+  }
+
+  static Ljava$lang$Long$$toLong$J(arg0) {
+    java$lang$Long.$i;
+    return (java$lang$Long.Ljava$lang$Long$$valueOf$J(arg0));
+  }
+
+  static Ljava$lang$Float$$toFloat$F(arg0) {
+    java$lang$Float.$i;
+    return (java$lang$Float.Ljava$lang$Float$$valueOf$F(arg0));
+  }
+
+  static Ljava$lang$Double$$toDouble$F(arg0) {
+    var var0 = .0;
+    var0 = arg0;
+    java$lang$Double.$i;
+    return (java$lang$Double.Ljava$lang$Double$$valueOf$D(var0));
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var0 = new de$mirkosertic$bytecoder$classlib$VM$1();
+    de$mirkosertic$bytecoder$classlib$VM$1.prototype.V$$init$$$.call(var0);
+    de$mirkosertic$bytecoder$classlib$VM.$i;
+    de$mirkosertic$bytecoder$classlib$VM.SYSTEM_LOADER = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class com$example$wasm$GameEngine$ModelCard extends java$lang$Object {
+  nativeObject = null;
+
+  name = null;
+  matched = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        com$example$wasm$GameEngine$ModelCard,
+        'com.example.wasm.GameEngine$ModelCard',
+         [com$example$wasm$GameEngine$ModelCard,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.name = arg0;
+    var1 = th;
+    var1.matched = 0;
+    return;
+  }
+}
+
+
+class jdk$internal$misc$InternalLock extends java$lang$Object {
+  nativeObject = null;
+
+  static CAN_USE_INTERNAL_LOCK = 0;
+  lock = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$misc$InternalLock,
+        'jdk.internal.misc.InternalLock',
+         [jdk$internal$misc$InternalLock,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    java$lang$System.$i;
+    var0 = (java$lang$System.Ljava$lang$String$$getProperty$Ljava$lang$String$(bytecoder.stringconstants[63]));
+    If_7_0: {
+     If_7_1: {
+      if (var0 == null) {
+       break If_7_1;
+      } else {
+       If_10_0: {
+        if ((var0.Z$isEmpty$$()) != 0) {
+         break If_10_0;
+        } else {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var0,bytecoder.stringconstants[64])) == 0) {
+          break If_7_1;
+         } else {
+          break If_10_0;
+         }
+        }
+       }
+       jdk$internal$misc$InternalLock.$i;
+       jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK = 0;
+       break If_7_0;
+      }
+     }
+     jdk$internal$misc$InternalLock.$i;
+     jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK = 1;
+     break If_7_0;
+    }
+    return;
+  }
+
+  static Ljava$lang$Object$$newLockOr$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var phi1 = null;
+    jdk$internal$misc$InternalLock.$i;
+    If_5_0: {
+     if ((jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK) == 0) {
+      phi1 = arg0;
+      break If_5_0;
+     } else {
+      var0 = new jdk$internal$misc$InternalLock();
+      jdk$internal$misc$InternalLock.prototype.V$$init$$$.call(var0);
+      phi1 = var0;
+      break If_5_0;
+     }
+    }
+    return phi1;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var1 = new java$util$concurrent$locks$ReentrantLock();
+    java$util$concurrent$locks$ReentrantLock.prototype.V$$init$$$.call(var1);
+    var0.lock = var1;
+    return;
+  }
+
+  static Ljdk$internal$misc$InternalLock$$newLockOrNull$$() {
+    var var0 = null;
+    var phi1 = null;
+    jdk$internal$misc$InternalLock.$i;
+    If_4_0: {
+     if ((jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK) == 0) {
+      phi1 = null;
+      break If_4_0;
+     } else {
+      var0 = new jdk$internal$misc$InternalLock();
+      jdk$internal$misc$InternalLock.prototype.V$$init$$$.call(var0);
+      phi1 = var0;
+      break If_4_0;
+     }
+    }
+    return phi1;
+  }
+}
+
+
+class java$nio$ByteOrder extends java$lang$Object {
+  nativeObject = null;
+
+  name = null;
+  static BIG_ENDIAN = null;
+  static LITTLE_ENDIAN = null;
+  static NATIVE_ORDER = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$ByteOrder,
+        'java.nio.ByteOrder',
+         [java$nio$ByteOrder,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var phi3 = null;
+    java$nio$ByteOrder.$i;
+    var0 = new java$nio$ByteOrder();
+    java$nio$ByteOrder.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[31]);
+    java$nio$ByteOrder.BIG_ENDIAN = var0;
+    var1 = new java$nio$ByteOrder();
+    java$nio$ByteOrder.prototype.V$$init$$Ljava$lang$String$.call(var1,bytecoder.stringconstants[32]);
+    java$nio$ByteOrder.LITTLE_ENDIAN = var1;
+    jdk$internal$misc$Unsafe.$i;
+    var2 = (jdk$internal$misc$Unsafe.Ljdk$internal$misc$Unsafe$$getUnsafe$$());
+    If_21_0: {
+     if ((jdk$internal$misc$Unsafe.prototype.Z$isBigEndian$$.call(var2)) == 0) {
+      phi3 = (java$nio$ByteOrder.LITTLE_ENDIAN);
+      break If_21_0;
+     } else {
+      phi3 = (java$nio$ByteOrder.BIG_ENDIAN);
+      break If_21_0;
+     }
+    }
+    java$nio$ByteOrder.NATIVE_ORDER = phi3;
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.name = arg0;
+    return;
+  }
+
+  static Ljava$nio$ByteOrder$$nativeOrder$$() {
+    java$nio$ByteOrder.$i;
+    return (java$nio$ByteOrder.NATIVE_ORDER);
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    return (th.name);
+  }
+}
+
+
+class jdk$internal$util$ArraysSupport extends java$lang$Object {
+  nativeObject = null;
+
+  static U = null;
+  static BIG_ENDIAN = 0;
+  static LOG2_ARRAY_BOOLEAN_INDEX_SCALE = 0;
+  static LOG2_ARRAY_BYTE_INDEX_SCALE = 0;
+  static LOG2_ARRAY_CHAR_INDEX_SCALE = 0;
+  static LOG2_ARRAY_SHORT_INDEX_SCALE = 0;
+  static LOG2_ARRAY_INT_INDEX_SCALE = 0;
+  static LOG2_ARRAY_LONG_INDEX_SCALE = 0;
+  static LOG2_ARRAY_FLOAT_INDEX_SCALE = 0;
+  static LOG2_ARRAY_DOUBLE_INDEX_SCALE = 0;
+  static LOG2_BYTE_BIT_SIZE = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$util$ArraysSupport,
+        'jdk.internal.util.ArraysSupport',
+         [jdk$internal$util$ArraysSupport,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = 0;
+    var var5 = 0;
+    var var6 = 0;
+    var var7 = 0;
+    var var8 = 0;
+    var var9 = 0;
+    jdk$internal$misc$Unsafe.$i;
+    var0 = (jdk$internal$misc$Unsafe.Ljdk$internal$misc$Unsafe$$getUnsafe$$());
+    jdk$internal$util$ArraysSupport.$i;
+    jdk$internal$util$ArraysSupport.U = var0;
+    var1 = (jdk$internal$util$ArraysSupport.U);
+    jdk$internal$util$ArraysSupport.BIG_ENDIAN = (jdk$internal$misc$Unsafe.prototype.Z$isBigEndian$$.call(var1));
+    var2 = ((jdk$internal$misc$Unsafe.ARRAY_BOOLEAN_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_BOOLEAN_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var2));
+    var3 = ((jdk$internal$misc$Unsafe.ARRAY_BYTE_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_BYTE_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var3));
+    var4 = ((jdk$internal$misc$Unsafe.ARRAY_CHAR_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var4));
+    var5 = ((jdk$internal$misc$Unsafe.ARRAY_SHORT_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_SHORT_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var5));
+    var6 = ((jdk$internal$misc$Unsafe.ARRAY_INT_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_INT_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var6));
+    var7 = ((jdk$internal$misc$Unsafe.ARRAY_LONG_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var7));
+    var8 = ((jdk$internal$misc$Unsafe.ARRAY_FLOAT_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_FLOAT_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var8));
+    var9 = ((jdk$internal$misc$Unsafe.ARRAY_DOUBLE_INDEX_SCALE)) | 0;
+    jdk$internal$util$ArraysSupport.LOG2_ARRAY_DOUBLE_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var9));
+    jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(8));
+    return;
+  }
+
+  static I$exactLog2$I(arg0) {
+    var var0 = null;
+    if ((arg0 & (arg0 - 1)) == 0) {
+     java$lang$Integer.$i;
+     return (java$lang$Integer.I$numberOfTrailingZeros$I(arg0));
+    } else {
+     var0 = new java$lang$Error();
+     java$lang$Error.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[90]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  static I$newLength$I$I$I(arg0,arg1,arg2) {
+    var var0 = 0;
+    java$lang$Math.$i;
+    var0 = ((arg0 + (java$lang$Math.I$max$I$I(arg1,arg2)))) | 0;
+    If_11_0: {
+     if (0 >= var0) {
+      break If_11_0;
+     } else {
+      if (var0 > 2147483639) {
+       break If_11_0;
+      } else {
+       return var0;
+      }
+     }
+    }
+    jdk$internal$util$ArraysSupport.$i;
+    return (jdk$internal$util$ArraysSupport.I$hugeLength$I$I(arg0,arg1));
+  }
+
+  static I$hugeLength$I$I(arg0,arg1) {
+    var var0 = 0;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var0 = ((arg0 + arg1)) | 0;
+    if (var0 >= 0) {
+     if (var0 > 2147483639) {
+      return var0;
+     } else {
+      return 2147483639;
+     }
+    } else {
+     var1 = new java$lang$OutOfMemoryError();
+     var2 = new java$lang$StringBuilder();
+     java$lang$StringBuilder.prototype.V$$init$$$.call(var2);
+     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[91]));
+     var4 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var3,arg0));
+     var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var4,bytecoder.stringconstants[92]));
+     var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var5,arg1));
+     var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[93]));
+     java$lang$OutOfMemoryError.prototype.V$$init$$Ljava$lang$String$.call(var1,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var7)));
+     throw bytecoder.registerStack(var1, new Error().stack);
+    }
+  }
+
+  static I$vectorizedMismatch$Ljava$lang$Object$$J$Ljava$lang$Object$$J$I$I(arg0,arg1,arg2,arg3,arg4,arg5) {
+    var var0 = 0;
+    var phi1 = 0;
+    var var2 = 0;
+    var var3 = null;
+    var var4 = 0;
+    var var5 = 0;
+    var var6 = null;
+    var var7 = 0;
+    var var8 = 0;
+    var var9 = 0;
+    var phi10 = 0;
+    var var11 = 0;
+    var var12 = 0;
+    var var13 = 0;
+    var var14 = 0;
+    var var15 = 0;
+    var var16 = null;
+    var var17 = 0;
+    var var18 = 0;
+    var var19 = null;
+    var var20 = 0;
+    var var21 = 0;
+    var var22 = 0;
+    var phi23 = 0;
+    var var24 = 0;
+    var var25 = 0;
+    var phi26 = 0;
+    jdk$internal$util$ArraysSupport.$i;
+    var0 = (((jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE) - arg5)) | 0;
+    phi1 = (0) | 0;
+    L467580168: while(true) {
+     if (phi1 >= (arg4 >> var0)) {
+      var13 = ((arg4 - (phi1 << var0))) | 0;
+      if (arg5 >= (jdk$internal$util$ArraysSupport.LOG2_ARRAY_INT_INDEX_SCALE)) {
+       return (var13 ^ -1);
+      } else {
+       var14 = ((1 << ((jdk$internal$util$ArraysSupport.LOG2_ARRAY_INT_INDEX_SCALE) - arg5))) | 0;
+       If_90_0: {
+        if (var13 < var14) {
+         phi26 = (var13) | 0;
+         break If_90_0;
+        } else {
+         var15 = ((phi1 | 0) << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE));
+         var16 = (jdk$internal$util$ArraysSupport.U);
+         var17 = (arg1 + var15);
+         var18 = ((jdk$internal$misc$Unsafe.prototype.I$getIntUnaligned$Ljava$lang$Object$$J.call(var16,arg0,var17))) | 0;
+         var19 = (jdk$internal$util$ArraysSupport.U);
+         var20 = (arg3 + var15);
+         var21 = ((jdk$internal$misc$Unsafe.prototype.I$getIntUnaligned$Ljava$lang$Object$$J.call(var19,arg2,var20))) | 0;
+         if (var18 == var21) {
+          phi26 = ((var13 - var14)) | 0;
+          break If_90_0;
+         } else {
+          var22 = ((var18 ^ var21)) | 0;
+          If_121_0: {
+           if ((jdk$internal$util$ArraysSupport.BIG_ENDIAN) == 0) {
+            java$lang$Integer.$i;
+            phi23 = (((java$lang$Integer.I$numberOfTrailingZeros$I(var22)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
+            break If_121_0;
+           } else {
+            java$lang$Integer.$i;
+            phi23 = (((java$lang$Integer.I$numberOfLeadingZeros$I(var22)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
+            break If_121_0;
+           }
+          }
+          var24 = (phi23) | 0;
+          var25 = ((phi1 << var0)) | 0;
+          return (var25 + var24);
+         }
+        }
+       }
+       return (phi26 ^ -1);
+      }
+     } else {
+      var2 = ((phi1 | 0) << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE));
+      var3 = (jdk$internal$util$ArraysSupport.U);
+      var4 = (arg1 + var2);
+      var5 = (jdk$internal$misc$Unsafe.prototype.J$getLongUnaligned$Ljava$lang$Object$$J.call(var3,arg0,var4));
+      var6 = (jdk$internal$util$ArraysSupport.U);
+      var7 = (arg3 + var2);
+      var8 = (jdk$internal$misc$Unsafe.prototype.J$getLongUnaligned$Ljava$lang$Object$$J.call(var6,arg2,var7));
+      if (bytecoder.cmp(var5,var8) == 0) {
+       phi1 = ((phi1 + 1)) | 0;
+       // Here was a goto statement
+       continue L467580168;
+      } else {
+       var9 = (var5 ^ var8);
+       If_50_0: {
+        if ((jdk$internal$util$ArraysSupport.BIG_ENDIAN) == 0) {
+         java$lang$Long.$i;
+         phi10 = (((java$lang$Long.I$numberOfTrailingZeros$J(var9)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
+         break If_50_0;
+        } else {
+         java$lang$Long.$i;
+         phi10 = (((java$lang$Long.I$numberOfLeadingZeros$J(var9)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
+         break If_50_0;
+        }
+       }
+       var11 = (phi10) | 0;
+       var12 = ((phi1 << var0)) | 0;
+       return (var12 + var11);
+      }
+     }
+    }
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$util$concurrent$locks$Lock extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$concurrent$locks$Lock,
+        'java.util.concurrent.locks.Lock',
+         [java$util$concurrent$locks$Lock,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$lang$Class extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Class,
+        'java.lang.Class',
+         [java$lang$Class,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static Ljava$lang$Class$$getPrimitiveClass$Ljava$lang$String$(arg0) {
+    var var0 = null;
+    if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[49],arg0)) == 0) {
+     if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[50],arg0)) == 0) {
+      if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[51],arg0)) == 0) {
+       if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[52],arg0)) == 0) {
+        if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[53],arg0)) == 0) {
+         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[54],arg0)) == 0) {
+          if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[55],arg0)) == 0) {
+           if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[56],arg0)) == 0) {
+            var0 = new java$lang$RuntimeException();
+            java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
+            throw bytecoder.registerStack(var0, new Error().stack);
+           } else {
+            return bytecoder.primitives.boolean;
+           }
+          } else {
+           return bytecoder.primitives.long;
+          }
+         } else {
+          return bytecoder.primitives.double;
+         }
+        } else {
+         return bytecoder.primitives.float;
+        }
+       } else {
+        return bytecoder.primitives.int;
+       }
+      } else {
+       return bytecoder.primitives.short;
+      }
+     } else {
+      return bytecoder.primitives.char;
+     }
+    } else {
+     return bytecoder.primitives.byte;
+    }
+  }
+
+  $Ljava$lang$reflect$Type$$getGenericInterfaces$$() {
+    return bytecoder.newarray((0),null);
+  }
+
+  Ljava$lang$String$$getName$$() {
+    return bytecoder.imports['java.lang.Class'].Ljava$lang$String$$getName$$(this);
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  I$hashCode$$() {
+    return 42;
+  }
+}
+
+
+class java$lang$Throwable extends java$lang$Object {
+  nativeObject = null;
+
+  message = null;
+  cause = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Throwable,
+        'java.lang.Throwable',
+         [java$lang$Throwable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  Ljava$lang$String$$getMessage$$() {
+    var th = this;
+    return (th.message);
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.message = arg0;
+    var1 = th;
+    var1.cause = null;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.message = null;
+    var1 = th;
+    var1.cause = null;
+    return;
+  }
+
+  Ljava$lang$Throwable$$initCause$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = th;
+    var0.cause = arg0;
+    return th;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.message = null;
+    var1 = th;
+    var1.cause = arg0;
+    return;
+  }
+}
+
+
+class java$lang$Character extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Character,
+        'java.lang.Character',
+         [java$lang$Character,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static I$compare$C$C(arg0,arg1) {
+    return (arg0 - arg1);
+  }
+
+  static Ljava$lang$String$$toString$C(arg0) {
+    return bytecoder.imports['java.lang.Character'].Ljava$lang$String$$toString$C(arg0);
+  }
+}
+
+
+class java$util$ImmutableCollections extends java$lang$Object {
+  nativeObject = null;
+
+  static SALT32L = 0;
+  static REVERSE = 0;
+  static archivedObjects = null;
+  static EMPTY = null;
+  static EMPTY_LIST = null;
+  static EMPTY_LIST_NULLS = null;
+  static EMPTY_SET = null;
+  static EMPTY_MAP = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ImmutableCollections,
+        'java.util.ImmutableCollections',
+         [java$util$ImmutableCollections,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = 0;
+    var phi1 = 0;
+    var phi2 = 0;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    java$util$ImmutableCollections.$i;
+    jdk$internal$misc$CDS.$i;
+    var0 = (jdk$internal$misc$CDS.J$getRandomSeedForDumping$$());
+    If_12_0: {
+     if (bytecoder.cmp(var0,0) != 0) {
+      phi1 = var0;
+      break If_12_0;
+     } else {
+      java$lang$System.$i;
+      phi1 = (java$lang$System.J$nanoTime$$());
+      break If_12_0;
+     }
+    }
+    java$util$ImmutableCollections.SALT32L = (((((2611923443488327891 * phi1) >> 16) | 0) | 0) & 4294967295);
+    If_33_0: {
+     if (bytecoder.cmp(((java$util$ImmutableCollections.SALT32L) & 1),0) != 0) {
+      phi2 = (0) | 0;
+      break If_33_0;
+     } else {
+      phi2 = (1) | 0;
+      break If_33_0;
+     }
+    }
+    java$util$ImmutableCollections.REVERSE = phi2;
+    jdk$internal$misc$CDS.V$initializeFromArchive$Ljava$lang$Class$(java$util$ImmutableCollections.$rt);
+    If_43_0: {
+     if ((java$util$ImmutableCollections.archivedObjects) != null) {
+      java$util$ImmutableCollections.EMPTY = ((java$util$ImmutableCollections.archivedObjects).data[0]);
+      java$util$ImmutableCollections.EMPTY_LIST = ((java$util$ImmutableCollections.archivedObjects).data[1]);
+      java$util$ImmutableCollections.EMPTY_LIST_NULLS = ((java$util$ImmutableCollections.archivedObjects).data[2]);
+      java$util$ImmutableCollections.EMPTY_SET = ((java$util$ImmutableCollections.archivedObjects).data[3]);
+      java$util$ImmutableCollections.EMPTY_MAP = ((java$util$ImmutableCollections.archivedObjects).data[4]);
+      break If_43_0;
+     } else {
+      var3 = new java$lang$Object();
+      java$lang$Object.prototype.V$$init$$$.call(var3);
+      java$util$ImmutableCollections.EMPTY = var3;
+      var4 = new java$util$ImmutableCollections$ListN();
+      java$util$ImmutableCollections$ListN.prototype.V$$init$$$Ljava$lang$Object$$Z.call(var4,bytecoder.newarray((0),null),0);
+      java$util$ImmutableCollections.EMPTY_LIST = var4;
+      var5 = new java$util$ImmutableCollections$ListN();
+      java$util$ImmutableCollections$ListN.prototype.V$$init$$$Ljava$lang$Object$$Z.call(var5,bytecoder.newarray((0),null),1);
+      java$util$ImmutableCollections.EMPTY_LIST_NULLS = var5;
+      var6 = new java$util$ImmutableCollections$SetN();
+      java$util$ImmutableCollections$SetN.prototype.V$$init$$$Ljava$lang$Object$.call(var6,bytecoder.newarray((0),null));
+      java$util$ImmutableCollections.EMPTY_SET = var6;
+      var7 = new java$util$ImmutableCollections$MapN();
+      java$util$ImmutableCollections$MapN.prototype.V$$init$$$Ljava$lang$Object$.call(var7,bytecoder.newarray((0),null));
+      java$util$ImmutableCollections.EMPTY_MAP = var7;
+      var8 = bytecoder.newarray((5),null);
+      var8.data[0] = (java$util$ImmutableCollections.EMPTY);
+      var8.data[1] = (java$util$ImmutableCollections.EMPTY_LIST);
+      var8.data[2] = (java$util$ImmutableCollections.EMPTY_LIST_NULLS);
+      var8.data[3] = (java$util$ImmutableCollections.EMPTY_SET);
+      var8.data[4] = (java$util$ImmutableCollections.EMPTY_MAP);
+      java$util$ImmutableCollections.archivedObjects = var8;
+      break If_43_0;
+     }
+    }
+    return;
+  }
+
+  static Ljava$util$List$$listFromArray$$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var phi1 = 0;
+    var var2 = 0;
+    var var3 = null;
+    var var4 = null;
+    var0 = bytecoder.newarray((arg0.data.length),null);
+    phi1 = (0) | 0;
+    L996885059: while(true) {
+     if (phi1 >= arg0.data.length) {
+      var4 = new java$util$ImmutableCollections$ListN();
+      java$util$ImmutableCollections$ListN.prototype.V$$init$$$Ljava$lang$Object$$Z.call(var4,var0,0);
+      return var4;
+     } else {
+      var2 = (phi1) | 0;
+      var3 = (arg0.data[phi1]);
+      var0.data[var2] = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(var3));
+      phi1 = ((phi1 + 1)) | 0;
+      // Here was a goto statement
+      continue L996885059;
+     }
+    }
+  }
+
+  static Ljava$lang$UnsupportedOperationException$$uoe$$() {
+    var var0 = null;
+    var0 = new java$lang$UnsupportedOperationException();
+    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+    return var0;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$lang$ThreadGroup extends java$lang$Object {
+  nativeObject = null;
+
+  name = null;
+  parent = null;
+  static SYSTEM = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$ThreadGroup,
+        'java.lang.ThreadGroup',
+         [java$lang$ThreadGroup,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    java$lang$ThreadGroup.$i;
+    var0 = new java$lang$ThreadGroup();
+    java$lang$ThreadGroup.prototype.V$$init$$$.call(var0);
+    java$lang$ThreadGroup.SYSTEM = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.name = bytecoder.stringconstants[66];
+    var1 = th;
+    var1.parent = null;
+    return;
+  }
+
+  V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.name = arg1;
+    var1 = th;
+    var1.parent = arg0;
+    return;
+  }
+}
+
+
+class java$lang$AbstractStringBuilder extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$AbstractStringBuilder,
+        'java.lang.AbstractStringBuilder',
+         [java$lang$AbstractStringBuilder,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$lang$Iterable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Iterable,
+        'java.lang.Iterable',
+         [java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class jdk$internal$access$JavaIOPrintStreamAccess extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$access$JavaIOPrintStreamAccess,
+        'jdk.internal.access.JavaIOPrintStreamAccess',
+         [jdk$internal$access$JavaIOPrintStreamAccess,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
 class java$nio$charset$CharsetDecoder extends java$lang$Object {
   nativeObject = null;
 
@@ -2520,7 +5947,7 @@ class java$nio$charset$CharsetDecoder extends java$lang$Object {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$nio$charset$CharsetDecoder,
         'java.nio.charset.CharsetDecoder',
-         [java$lang$Object,java$nio$charset$CharsetDecoder]);
+         [java$nio$charset$CharsetDecoder,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -2890,7 +6317,7 @@ class java$nio$charset$CharsetDecoder extends java$lang$Object {
 }
 
 
-class java$lang$Character extends java$lang$Object {
+class java$util$Arrays extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -2900,273 +6327,9 @@ class java$lang$Character extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Character,
-        'java.lang.Character',
-         [java$lang$Character,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static I$compare$C$C(arg0,arg1) {
-    return (arg0 - arg1);
-  }
-
-  static Ljava$lang$String$$toString$C(arg0) {
-    return bytecoder.imports['java.lang.Character'].Ljava$lang$String$$toString$C(arg0);
-  }
-}
-
-
-class java$lang$AbstractStringBuilder extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$AbstractStringBuilder,
-        'java.lang.AbstractStringBuilder',
-         [java$lang$AbstractStringBuilder,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$lang$CharSequence extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$CharSequence,
-        'java.lang.CharSequence',
-         [java$lang$CharSequence,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.I$length$$ = impl;
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var phi0 = 0;
-    If_3_0: {
-     if ((th.I$length$$()) != 0) {
-      phi0 = (0) | 0;
-      break If_3_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-}
-
-
-class java$util$Map extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Map,
-        'java.util.Map',
-         [java$util$Map,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg1));
-    var1 = (th.Ljava$lang$Object$$get$Ljava$lang$Object$(arg0));
-    If_11_0: {
-     if (var1 != null) {
-      break If_11_0;
-     } else {
-      var2 = (arg1.Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0));
-      if (var2 == null) {
-       break If_11_0;
-      } else {
-       var3 = (th.Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,var2));
-       return var2;
-      }
-     }
-    }
-    return var1;
-  }
-}
-
-
-class java$lang$Cloneable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Cloneable,
-        'java.lang.Cloneable',
-         [java$lang$Cloneable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference extends java$lang$Object {
-  nativeObject = null;
-
-  referent = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference,
-        'de.mirkosertic.bytecoder.classlib.java.lang.ref.TReference',
-         [de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.referent = arg0;
-    return;
-  }
-}
-
-
-class java$lang$AutoCloseable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$AutoCloseable,
-        'java.lang.AutoCloseable',
-         [java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class jdk$internal$access$JavaNioAccess extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$access$JavaNioAccess,
-        'jdk.internal.access.JavaNioAccess',
-         [jdk$internal$access$JavaNioAccess,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$util$Dictionary extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Dictionary,
-        'java.util.Dictionary',
-         [java$util$Dictionary,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$lang$Math extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Math,
-        'java.lang.Math',
-         [java$lang$Object,java$lang$Math]);
+        java$util$Arrays,
+        'java.util.Arrays',
+         [java$util$Arrays,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -3184,4595 +6347,63 @@ class java$lang$Math extends java$lang$Object {
   }
 
   static V$$clinit$$$() {
-    java$lang$Math.$i;
+    java$util$Arrays.$i;
     return;
   }
 
-  static D$random$$() {
-    return bytecoder.imports['java.lang.Math'].D$random$$();
-  }
-
-  static I$floorMod$I$I(arg0,arg1) {
-    java$lang$Math.$i;
-    return (arg0 - ((java$lang$Math.I$floorDiv$I$I(arg0,arg1)) * arg1));
-  }
-
-  static I$floorDiv$I$I(arg0,arg1) {
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var0 = (Math.floor(arg0 / arg1)) | 0;
-    java$lang$Integer.$i;
-    var1 = ((java$lang$Integer.I$signum$I(arg0))) | 0;
-    If_12_0: {
-     if (var1 == (java$lang$Integer.I$signum$I(arg1))) {
-      phi2 = (var0) | 0;
-      break If_12_0;
-     } else {
-      if ((var0 * arg1) == arg0) {
-       phi2 = (var0) | 0;
-       break If_12_0;
-      } else {
-       phi2 = ((var0 + -1)) | 0;
-       break If_12_0;
-      }
-     }
-    }
-    return phi2;
-  }
-
-  static I$min$I$I(arg0,arg1) {
-    return bytecoder.imports['java.lang.Math'].I$min$I$I(arg0, arg1);
-  }
-
-  static I$max$I$I(arg0,arg1) {
-    return bytecoder.imports['java.lang.Math'].I$max$I$I(arg0, arg1);
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$io$FileDescriptor extends java$lang$Object {
-  nativeObject = null;
-
-  fd = 0;
-  static in = null;
-  static out = null;
-  static err = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$FileDescriptor,
-        'java.io.FileDescriptor',
-         [java$io$FileDescriptor,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  I$getFileDescriptorHandle$$() {
-    var th = this;
-    return (th.fd);
-  }
-
-  V$setFileDescriptorHandle$I(arg0) {
-    var th = this;
+  static $B$copyOf$$B$I(arg0,arg1) {
     var var0 = null;
-    var0 = th;
-    var0.fd = arg0;
-    return;
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$io$FileDescriptor.$i;
-    var0 = new java$io$FileDescriptor();
-    java$io$FileDescriptor.prototype.V$$init$$I.call(var0,0);
-    java$io$FileDescriptor.in = var0;
-    var1 = new java$io$FileDescriptor();
-    java$io$FileDescriptor.prototype.V$$init$$I.call(var1,1);
-    java$io$FileDescriptor.out = var1;
-    var2 = new java$io$FileDescriptor();
-    java$io$FileDescriptor.prototype.V$$init$$I.call(var2,2);
-    java$io$FileDescriptor.err = var2;
-    return;
-  }
-
-  V$$init$$I(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.fd = arg0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.fd = -1;
-    return;
-  }
-}
-
-
-class java$nio$ByteOrder extends java$lang$Object {
-  nativeObject = null;
-
-  name = null;
-  static BIG_ENDIAN = null;
-  static LITTLE_ENDIAN = null;
-  static NATIVE_ORDER = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$ByteOrder,
-        'java.nio.ByteOrder',
-         [java$nio$ByteOrder,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var phi3 = null;
-    java$nio$ByteOrder.$i;
-    var0 = new java$nio$ByteOrder();
-    java$nio$ByteOrder.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[31]);
-    java$nio$ByteOrder.BIG_ENDIAN = var0;
-    var1 = new java$nio$ByteOrder();
-    java$nio$ByteOrder.prototype.V$$init$$Ljava$lang$String$.call(var1,bytecoder.stringconstants[32]);
-    java$nio$ByteOrder.LITTLE_ENDIAN = var1;
-    jdk$internal$misc$Unsafe.$i;
-    var2 = (jdk$internal$misc$Unsafe.Ljdk$internal$misc$Unsafe$$getUnsafe$$());
-    If_21_0: {
-     if ((jdk$internal$misc$Unsafe.prototype.Z$isBigEndian$$.call(var2)) == 0) {
-      phi3 = (java$nio$ByteOrder.LITTLE_ENDIAN);
-      break If_21_0;
-     } else {
-      phi3 = (java$nio$ByteOrder.BIG_ENDIAN);
-      break If_21_0;
-     }
-    }
-    java$nio$ByteOrder.NATIVE_ORDER = phi3;
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.name = arg0;
-    return;
-  }
-
-  static Ljava$nio$ByteOrder$$nativeOrder$$() {
-    java$nio$ByteOrder.$i;
-    return (java$nio$ByteOrder.NATIVE_ORDER);
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    return (th.name);
-  }
-}
-
-
-class java$io$Serializable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$Serializable,
-        'java.io.Serializable',
-         [java$io$Serializable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$util$RandomAccess extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$RandomAccess,
-        'java.util.RandomAccess',
-         [java$util$RandomAccess,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$nio$BufferMismatch extends java$lang$Object {
-  nativeObject = null;
-
-  static SCOPED_MEMORY_ACCESS = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$BufferMismatch,
-        'java.nio.BufferMismatch',
-         [java$nio$BufferMismatch,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    jdk$internal$misc$ScopedMemoryAccess.$i;
-    var0 = (jdk$internal$misc$ScopedMemoryAccess.Ljdk$internal$misc$ScopedMemoryAccess$$getScopedMemoryAccess$$());
-    java$nio$BufferMismatch.$i;
-    java$nio$BufferMismatch.SCOPED_MEMORY_ACCESS = var0;
-    return;
-  }
-
-  static I$mismatch$Ljava$nio$CharBuffer$$I$Ljava$nio$CharBuffer$$I$I(arg0,arg1,arg2,arg3,arg4) {
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = 0;
-    var var7 = 0;
-    var var8 = null;
-    var var9 = 0;
-    var var10 = 0;
-    var var11 = 0;
-    var phi12 = 0;
-    var var13 = 0;
-    var var14 = 0;
-    var var15 = 0;
-    If_8_0: {
-     if (arg4 <= 3) {
-      phi12 = (0) | 0;
-      break If_8_0;
-     } else {
-      var0 = (arg0.Ljava$nio$ByteOrder$$charRegionOrder$$());
-      if (var0 != (arg2.Ljava$nio$ByteOrder$$charRegionOrder$$())) {
-       phi12 = (0) | 0;
-       break If_8_0;
-      } else {
-       if ((arg0.Ljava$nio$ByteOrder$$charRegionOrder$$()) == null) {
-        phi12 = (0) | 0;
-        break If_8_0;
-       } else {
-        if ((arg2.Ljava$nio$ByteOrder$$charRegionOrder$$()) == null) {
-         phi12 = (0) | 0;
-         break If_8_0;
-        } else {
-         var1 = (arg0.C$get$I(arg1));
-         if (var1 == (arg2.C$get$I(arg3))) {
-          java$nio$BufferMismatch.$i;
-          var2 = (java$nio$BufferMismatch.SCOPED_MEMORY_ACCESS);
-          var3 = (arg0.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
-          var4 = (arg2.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
-          var5 = (java$nio$CharBuffer.prototype.Ljava$lang$Object$$base$$.call(arg0));
-          var6 = (arg0.address);
-          jdk$internal$util$ArraysSupport.$i;
-          var7 = (var6 + ((arg1 << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE)) | 0));
-          var8 = (java$nio$CharBuffer.prototype.Ljava$lang$Object$$base$$.call(arg2));
-          var9 = ((arg2.address) + ((arg3 << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE)) | 0));
-          var10 = ((jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE)) | 0;
-          var11 = ((jdk$internal$misc$ScopedMemoryAccess.prototype.I$vectorizedMismatch$Ljdk$internal$foreign$MemorySessionImpl$$Ljdk$internal$foreign$MemorySessionImpl$$Ljava$lang$Object$$J$Ljava$lang$Object$$J$I$I.call(var2,var3,var4,var5,var7,var8,var9,arg4,var10))) | 0;
-          if (var11 < 0) {
-           phi12 = ((arg4 - (var11 ^ -1))) | 0;
-           break If_8_0;
-          } else {
-           return var11;
-          }
-         } else {
-          return 0;
-         }
-        }
-       }
-      }
-     }
-    }
-    L1021468575: while(true) {
-     if (phi12 >= arg4) {
-      return -1;
-     } else {
-      var13 = ((arg1 + phi12)) | 0;
-      var14 = (arg0.C$get$I(var13));
-      var15 = ((arg3 + phi12)) | 0;
-      if (var14 == (arg2.C$get$I(var15))) {
-       phi12 = ((phi12 + 1)) | 0;
-       // Here was a goto statement
-       continue L1021468575;
-      } else {
-       return phi12;
-      }
-     }
-    }
-  }
-
-  static I$mismatch$Ljava$nio$ByteBuffer$$I$Ljava$nio$ByteBuffer$$I$I(arg0,arg1,arg2,arg3,arg4) {
-    var var0 = 0;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = 0;
-    var var6 = null;
-    var var7 = 0;
-    var var8 = 0;
-    var var9 = 0;
-    var phi10 = 0;
-    var var11 = 0;
-    var var12 = 0;
-    var var13 = 0;
-    If_8_0: {
-     if (arg4 <= 7) {
-      phi10 = (0) | 0;
-      break If_8_0;
-     } else {
-      var0 = (arg0.B$get$I(arg1));
-      if (var0 == (arg2.B$get$I(arg3))) {
-       java$nio$BufferMismatch.$i;
-       var1 = (java$nio$BufferMismatch.SCOPED_MEMORY_ACCESS);
-       var2 = (arg0.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
-       var3 = (arg2.Ljdk$internal$foreign$MemorySessionImpl$$session$$());
-       var4 = (java$nio$ByteBuffer.prototype.Ljava$lang$Object$$base$$.call(arg0));
-       var5 = ((arg0.address) + (arg1 | 0));
-       var6 = (java$nio$ByteBuffer.prototype.Ljava$lang$Object$$base$$.call(arg2));
-       var7 = ((arg2.address) + (arg3 | 0));
-       jdk$internal$util$ArraysSupport.$i;
-       var8 = ((jdk$internal$util$ArraysSupport.LOG2_ARRAY_BYTE_INDEX_SCALE)) | 0;
-       var9 = ((jdk$internal$misc$ScopedMemoryAccess.prototype.I$vectorizedMismatch$Ljdk$internal$foreign$MemorySessionImpl$$Ljdk$internal$foreign$MemorySessionImpl$$Ljava$lang$Object$$J$Ljava$lang$Object$$J$I$I.call(var1,var2,var3,var4,var5,var6,var7,arg4,var8))) | 0;
-       if (var9 < 0) {
-        phi10 = ((arg4 - (var9 ^ -1))) | 0;
-        break If_8_0;
-       } else {
-        return var9;
-       }
-      } else {
-       return 0;
-      }
-     }
-    }
-    L1976280472: while(true) {
-     if (phi10 >= arg4) {
-      return -1;
-     } else {
-      var11 = ((arg1 + phi10)) | 0;
-      var12 = (arg0.B$get$I(var11));
-      var13 = ((arg3 + phi10)) | 0;
-      if (var12 == (arg2.B$get$I(var13))) {
-       phi10 = ((phi10 + 1)) | 0;
-       // Here was a goto statement
-       continue L1976280472;
-      } else {
-       return phi10;
-      }
-     }
-    }
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$function$BiFunction extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$function$BiFunction,
-        'java.util.function.BiFunction',
-         [java$util$function$BiFunction,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$ = impl;
-  }
-}
-
-
-class jdk$internal$foreign$MemorySessionImpl extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$foreign$MemorySessionImpl,
-        'jdk.internal.foreign.MemorySessionImpl',
-         [jdk$internal$foreign$MemorySessionImpl,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$checkValidStateRaw$$() {
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$lang$ref$Reference extends java$lang$Object {
-  nativeObject = null;
-
-  referent = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$ref$Reference,
-        'java.lang.ref.Reference',
-         [java$lang$ref$Reference,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  Ljava$lang$Object$$get$$() {
-    var th = this;
-    return (th.referent);
-  }
-
-  static V$reachabilityFence$Ljava$lang$Object$(arg0) {
-    return;
-  }
-}
-
-
-class com$example$wasm$GameEngine$ModelCard extends java$lang$Object {
-  nativeObject = null;
-
-  name = null;
-  matched = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        com$example$wasm$GameEngine$ModelCard,
-        'com.example.wasm.GameEngine$ModelCard',
-         [com$example$wasm$GameEngine$ModelCard,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.name = arg0;
-    var1 = th;
-    var1.matched = 0;
-    return;
-  }
-}
-
-
-class java$nio$charset$CharsetEncoder extends java$lang$Object {
-  nativeObject = null;
-
-  static stateNames = null;
-  malformedInputAction = null;
-  unmappableCharacterAction = null;
-  state = 0;
-  cachedDecoder = null;
-  charset = null;
-  replacement = null;
-  averageBytesPerChar = 0.0;
-  maxBytesPerChar = 0.0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$charset$CharsetEncoder,
-        'java.nio.charset.CharsetEncoder',
-         [java$nio$charset$CharsetEncoder,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    java$nio$charset$CharsetEncoder.$i;
-    var0 = bytecoder.newarray((4),null);
-    var0.data[0] = bytecoder.stringconstants[5];
-    var0.data[1] = bytecoder.stringconstants[6];
-    var0.data[2] = bytecoder.stringconstants[7];
-    var0.data[3] = bytecoder.stringconstants[8];
-    java$nio$charset$CharsetEncoder.stateNames = var0;
-    return;
-  }
-
-  V$$init$$Ljava$nio$charset$Charset$$F$F(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = null;
-    var0 = bytecoder.newarray((1),0);
-    var0.data[0] = 63;
-    java$nio$charset$CharsetEncoder.prototype.V$$init$$Ljava$nio$charset$Charset$$F$F$$B.call(th,arg0,arg1,arg2,var0);
-    return;
-  }
-
-  V$$init$$Ljava$nio$charset$Charset$$F$F$$B(arg0,arg1,arg2,arg3) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var var11 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    java$nio$charset$CodingErrorAction.$i;
-    var0.malformedInputAction = (java$nio$charset$CodingErrorAction.REPORT);
-    var1 = th;
-    var1.unmappableCharacterAction = (java$nio$charset$CodingErrorAction.REPORT);
-    var2 = th;
-    var2.state = 0;
-    var3 = th;
-    var3.cachedDecoder = null;
-    var4 = th;
-    var4.charset = arg0;
-    if (arg1 > 0.0) {
-     if (arg2 > 0.0) {
-      if (arg1 <= arg2) {
-       var8 = th;
-       var8.replacement = arg3;
-       var9 = th;
-       var9.averageBytesPerChar = arg1;
-       var10 = th;
-       var10.maxBytesPerChar = arg2;
-       var11 = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$CharsetEncoder$$replaceWith$$B.call(th,arg3));
-       return;
-      } else {
-       var7 = new java$lang$IllegalArgumentException();
-       java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var7,bytecoder.stringconstants[14]);
-       throw bytecoder.registerStack(var7, new Error().stack);
-      }
-     } else {
-      var6 = new java$lang$IllegalArgumentException();
-      java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var6,bytecoder.stringconstants[13]);
-      throw bytecoder.registerStack(var6, new Error().stack);
-     }
-    } else {
-     var5 = new java$lang$IllegalArgumentException();
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var5,bytecoder.stringconstants[12]);
-     throw bytecoder.registerStack(var5, new Error().stack);
-    }
-  }
-
-  Ljava$nio$charset$CharsetEncoder$$replaceWith$$B(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = 0;
-    if (arg0 != null) {
-     var1 = (arg0.data.length) | 0;
-     if (var1 != 0) {
-      if (var1 <= (th.maxBytesPerChar)) {
-       if ((java$nio$charset$CharsetEncoder.prototype.Z$isLegalReplacement$$B.call(th,arg0)) != 0) {
-        var5 = th;
-        var6 = (arg0.data.length) | 0;
-        java$util$Arrays.$i;
-        var5.replacement = (java$util$Arrays.$B$copyOf$$B$I(arg0,var6));
-        java$nio$charset$CharsetEncoder.prototype.V$implReplaceWith$$B.call(th,(th.replacement));
-        return th;
-       } else {
-        var4 = new java$lang$IllegalArgumentException();
-        java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var4,bytecoder.stringconstants[83]);
-        throw bytecoder.registerStack(var4, new Error().stack);
-       }
-      } else {
-       var3 = new java$lang$IllegalArgumentException();
-       java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var3,bytecoder.stringconstants[17]);
-       throw bytecoder.registerStack(var3, new Error().stack);
-      }
-     } else {
-      var2 = new java$lang$IllegalArgumentException();
-      java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var2,bytecoder.stringconstants[16]);
-      throw bytecoder.registerStack(var2, new Error().stack);
-     }
-    } else {
-     var0 = new java$lang$IllegalArgumentException();
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[15]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  Z$isLegalReplacement$$B(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var phi2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var phi11 = null;
-    var var12 = null;
-    var var13 = .0;
-    var var14 = null;
-    var var15 = 0;
-    var var16 = null;
-    var var17 = null;
-    var var18 = null;
-    var phi19 = 0;
-    var var20 = null;
-    var0 = (th.cachedDecoder);
-    If_7_0: {
-     If_7_1: {
-      if (var0 == null) {
-       phi2 = null;
-       break If_7_1;
-      } else {
-       var1 = (var0.Ljava$lang$Object$$get$$());
-       if (var1 != null) {
-        var20 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CharsetDecoder$$reset$$.call(var1));
-        phi11 = var1;
-        break If_7_0;
-       } else {
-        phi2 = var1;
-        break If_7_1;
-       }
-      }
-     }
-     var3 = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$Charset$$charset$$.call(th));
-     var4 = (var3.Ljava$nio$charset$CharsetDecoder$$newDecoder$$());
-     java$nio$charset$CodingErrorAction.$i;
-     var5 = (java$nio$charset$CodingErrorAction.REPORT);
-     var6 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CharsetDecoder$$onMalformedInput$Ljava$nio$charset$CodingErrorAction$.call(var4,var5));
-     var7 = (java$nio$charset$CodingErrorAction.REPORT);
-     var8 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CharsetDecoder$$onUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$.call(var4,var7));
-     var9 = th;
-     var10 = new java$lang$ref$WeakReference();
-     java$lang$ref$WeakReference.prototype.V$$init$$Ljava$lang$Object$.call(var10,var4);
-     var9.cachedDecoder = var10;
-     phi11 = var4;
-     break If_7_0;
-    }
-    java$nio$ByteBuffer.$i;
-    var12 = (java$nio$ByteBuffer.Ljava$nio$ByteBuffer$$wrap$$B(arg0));
-    var13 = (var12.I$remaining$$());
-    var14 = phi11;
-    var15 = (((var13 * (java$nio$charset$CharsetDecoder.prototype.F$maxCharsPerByte$$.call(var14))) | 0)) | 0;
-    java$nio$CharBuffer.$i;
-    var16 = (java$nio$CharBuffer.Ljava$nio$CharBuffer$$allocate$I(var15));
-    var17 = phi11;
-    var18 = (java$nio$charset$CharsetDecoder.prototype.Ljava$nio$charset$CoderResult$$decode$Ljava$nio$ByteBuffer$$Ljava$nio$CharBuffer$$Z.call(var17,var12,var16,1));
-    If_75_0: {
-     if ((java$nio$charset$CoderResult.prototype.Z$isError$$.call(var18)) != 0) {
-      phi19 = (0) | 0;
-      break If_75_0;
-     } else {
-      phi19 = (1) | 0;
-      break If_75_0;
-     }
-    }
-    return phi19;
-  }
-
-  Ljava$nio$charset$Charset$$charset$$() {
-    var th = this;
-    return (th.charset);
-  }
-
-  Ljava$nio$charset$CharsetEncoder$$onMalformedInput$Ljava$nio$charset$CodingErrorAction$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    if (arg0 != null) {
-     var1 = th;
-     var1.malformedInputAction = arg0;
-     java$nio$charset$CharsetEncoder.prototype.V$implOnMalformedInput$Ljava$nio$charset$CodingErrorAction$.call(th,arg0);
-     return th;
-    } else {
-     var0 = new java$lang$IllegalArgumentException();
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[18]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  V$implOnMalformedInput$Ljava$nio$charset$CodingErrorAction$(arg0) {
-    return;
-  }
-
-  Ljava$nio$charset$CharsetEncoder$$onUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    if (arg0 != null) {
-     var1 = th;
-     var1.unmappableCharacterAction = arg0;
-     java$nio$charset$CharsetEncoder.prototype.V$implOnUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$.call(th,arg0);
-     return th;
-    } else {
-     var0 = new java$lang$IllegalArgumentException();
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[18]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  V$implOnUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$(arg0) {
-    return;
-  }
-
-  V$implReplaceWith$$B(arg0) {
-    return;
-  }
-}
-
-
-class java$lang$Throwable extends java$lang$Object {
-  nativeObject = null;
-
-  message = null;
-  cause = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Throwable,
-        'java.lang.Throwable',
-         [java$lang$Throwable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  Ljava$lang$String$$getMessage$$() {
-    var th = this;
-    return (th.message);
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.message = arg0;
-    var1 = th;
-    var1.cause = null;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.message = null;
-    var1 = th;
-    var1.cause = null;
-    return;
-  }
-
-  Ljava$lang$Throwable$$initCause$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = th;
-    var0.cause = arg0;
-    return th;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.message = null;
-    var1 = th;
-    var1.cause = arg0;
-    return;
-  }
-}
-
-
-class java$nio$charset$CodingErrorAction extends java$lang$Object {
-  nativeObject = null;
-
-  name = null;
-  static IGNORE = null;
-  static REPLACE = null;
-  static REPORT = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$charset$CodingErrorAction,
-        'java.nio.charset.CodingErrorAction',
-         [java$nio$charset$CodingErrorAction,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$nio$charset$CodingErrorAction.$i;
-    var0 = new java$nio$charset$CodingErrorAction();
-    java$nio$charset$CodingErrorAction.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[9]);
-    java$nio$charset$CodingErrorAction.IGNORE = var0;
-    var1 = new java$nio$charset$CodingErrorAction();
-    java$nio$charset$CodingErrorAction.prototype.V$$init$$Ljava$lang$String$.call(var1,bytecoder.stringconstants[10]);
-    java$nio$charset$CodingErrorAction.REPLACE = var1;
-    var2 = new java$nio$charset$CodingErrorAction();
-    java$nio$charset$CodingErrorAction.prototype.V$$init$$Ljava$lang$String$.call(var2,bytecoder.stringconstants[11]);
-    java$nio$charset$CodingErrorAction.REPORT = var2;
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.name = arg0;
-    return;
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    return (th.name);
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$Array extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$Array,
-        'de.mirkosertic.bytecoder.classlib.Array',
-         [de$mirkosertic$bytecoder$classlib$Array,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static $Ljava$lang$Object$$newObjectArray$I(arg0) {
-    return bytecoder.newarray((arg0),null);
-  }
-
-  static $C$newCharArray$I(arg0) {
-    return bytecoder.newarray((arg0),0);
-  }
-
-  static I$charArrayLength$$C(arg0) {
-    return arg0.data.length;
-  }
-
-  static C$getCharArrayEntry$$C$I(arg0,arg1) {
-    return (arg0.data[arg1]);
-  }
-
-  static V$setCharArrayEntry$$C$I$C(arg0,arg1,arg2) {
-    arg0.data[arg1] = arg2;
-    return;
-  }
-
-  static $B$newByteArray$I(arg0) {
-    return bytecoder.newarray((arg0),0);
-  }
-
-  static I$byteArrayLength$$B(arg0) {
-    return arg0.data.length;
-  }
-
-  static B$getByteArrayEntry$$B$I(arg0,arg1) {
-    return (arg0.data[arg1]);
-  }
-
-  static V$setByteArrayEntry$$B$I$B(arg0,arg1,arg2) {
-    arg0.data[arg1] = arg2;
-    return;
-  }
-
-  static I$getIntArrayEntry$$I$I(arg0,arg1) {
-    return (arg0.data[arg1]);
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$lang$Class extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Class,
-        'java.lang.Class',
-         [java$lang$Class,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static Ljava$lang$Class$$getPrimitiveClass$Ljava$lang$String$(arg0) {
-    var var0 = null;
-    if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[49],arg0)) == 0) {
-     if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[50],arg0)) == 0) {
-      if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[51],arg0)) == 0) {
-       if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[52],arg0)) == 0) {
-        if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[53],arg0)) == 0) {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[54],arg0)) == 0) {
-          if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[55],arg0)) == 0) {
-           if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(bytecoder.stringconstants[56],arg0)) == 0) {
-            var0 = new java$lang$RuntimeException();
-            java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
-            throw bytecoder.registerStack(var0, new Error().stack);
-           } else {
-            return bytecoder.primitives.boolean;
-           }
-          } else {
-           return bytecoder.primitives.long;
-          }
-         } else {
-          return bytecoder.primitives.double;
-         }
-        } else {
-         return bytecoder.primitives.float;
-        }
-       } else {
-        return bytecoder.primitives.int;
-       }
-      } else {
-       return bytecoder.primitives.short;
-      }
-     } else {
-      return bytecoder.primitives.char;
-     }
-    } else {
-     return bytecoder.primitives.byte;
-    }
-  }
-
-  $Ljava$lang$reflect$Type$$getGenericInterfaces$$() {
-    return bytecoder.newarray((0),null);
-  }
-
-  Ljava$lang$String$$getName$$() {
-    return bytecoder.imports['java.lang.Class'].Ljava$lang$String$$getName$$(this);
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  I$hashCode$$() {
-    return 42;
-  }
-}
-
-
-class java$util$function$Supplier extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$function$Supplier,
-        'java.util.function.Supplier',
-         [java$util$function$Supplier,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$get$$ = impl;
-  }
-}
-
-
-class jdk$internal$util$ArraysSupport extends java$lang$Object {
-  nativeObject = null;
-
-  static U = null;
-  static BIG_ENDIAN = 0;
-  static LOG2_ARRAY_BOOLEAN_INDEX_SCALE = 0;
-  static LOG2_ARRAY_BYTE_INDEX_SCALE = 0;
-  static LOG2_ARRAY_CHAR_INDEX_SCALE = 0;
-  static LOG2_ARRAY_SHORT_INDEX_SCALE = 0;
-  static LOG2_ARRAY_INT_INDEX_SCALE = 0;
-  static LOG2_ARRAY_LONG_INDEX_SCALE = 0;
-  static LOG2_ARRAY_FLOAT_INDEX_SCALE = 0;
-  static LOG2_ARRAY_DOUBLE_INDEX_SCALE = 0;
-  static LOG2_BYTE_BIT_SIZE = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$util$ArraysSupport,
-        'jdk.internal.util.ArraysSupport',
-         [jdk$internal$util$ArraysSupport,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = 0;
-    var var3 = 0;
-    var var4 = 0;
-    var var5 = 0;
-    var var6 = 0;
-    var var7 = 0;
-    var var8 = 0;
-    var var9 = 0;
-    jdk$internal$misc$Unsafe.$i;
-    var0 = (jdk$internal$misc$Unsafe.Ljdk$internal$misc$Unsafe$$getUnsafe$$());
-    jdk$internal$util$ArraysSupport.$i;
-    jdk$internal$util$ArraysSupport.U = var0;
-    var1 = (jdk$internal$util$ArraysSupport.U);
-    jdk$internal$util$ArraysSupport.BIG_ENDIAN = (jdk$internal$misc$Unsafe.prototype.Z$isBigEndian$$.call(var1));
-    var2 = ((jdk$internal$misc$Unsafe.ARRAY_BOOLEAN_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_BOOLEAN_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var2));
-    var3 = ((jdk$internal$misc$Unsafe.ARRAY_BYTE_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_BYTE_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var3));
-    var4 = ((jdk$internal$misc$Unsafe.ARRAY_CHAR_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_CHAR_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var4));
-    var5 = ((jdk$internal$misc$Unsafe.ARRAY_SHORT_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_SHORT_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var5));
-    var6 = ((jdk$internal$misc$Unsafe.ARRAY_INT_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_INT_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var6));
-    var7 = ((jdk$internal$misc$Unsafe.ARRAY_LONG_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var7));
-    var8 = ((jdk$internal$misc$Unsafe.ARRAY_FLOAT_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_FLOAT_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var8));
-    var9 = ((jdk$internal$misc$Unsafe.ARRAY_DOUBLE_INDEX_SCALE)) | 0;
-    jdk$internal$util$ArraysSupport.LOG2_ARRAY_DOUBLE_INDEX_SCALE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(var9));
-    jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE = (jdk$internal$util$ArraysSupport.I$exactLog2$I(8));
-    return;
-  }
-
-  static I$exactLog2$I(arg0) {
-    var var0 = null;
-    if ((arg0 & (arg0 - 1)) == 0) {
-     java$lang$Integer.$i;
-     return (java$lang$Integer.I$numberOfTrailingZeros$I(arg0));
-    } else {
-     var0 = new java$lang$Error();
-     java$lang$Error.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[90]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  static I$newLength$I$I$I(arg0,arg1,arg2) {
-    var var0 = 0;
-    java$lang$Math.$i;
-    var0 = ((arg0 + (java$lang$Math.I$max$I$I(arg1,arg2)))) | 0;
-    If_11_0: {
-     if (0 >= var0) {
-      break If_11_0;
-     } else {
-      if (var0 > 2147483639) {
-       break If_11_0;
-      } else {
-       return var0;
-      }
-     }
-    }
-    jdk$internal$util$ArraysSupport.$i;
-    return (jdk$internal$util$ArraysSupport.I$hugeLength$I$I(arg0,arg1));
-  }
-
-  static I$hugeLength$I$I(arg0,arg1) {
-    var var0 = 0;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var0 = ((arg0 + arg1)) | 0;
-    if (var0 >= 0) {
-     if (var0 > 2147483639) {
-      return var0;
-     } else {
-      return 2147483639;
-     }
-    } else {
-     var1 = new java$lang$OutOfMemoryError();
-     var2 = new java$lang$StringBuilder();
-     java$lang$StringBuilder.prototype.V$$init$$$.call(var2);
-     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[91]));
-     var4 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var3,arg0));
-     var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var4,bytecoder.stringconstants[92]));
-     var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var5,arg1));
-     var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[93]));
-     java$lang$OutOfMemoryError.prototype.V$$init$$Ljava$lang$String$.call(var1,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var7)));
-     throw bytecoder.registerStack(var1, new Error().stack);
-    }
-  }
-
-  static I$vectorizedMismatch$Ljava$lang$Object$$J$Ljava$lang$Object$$J$I$I(arg0,arg1,arg2,arg3,arg4,arg5) {
-    var var0 = 0;
     var phi1 = 0;
     var var2 = 0;
-    var var3 = null;
-    var var4 = 0;
-    var var5 = 0;
-    var var6 = null;
-    var var7 = 0;
-    var var8 = 0;
-    var var9 = 0;
-    var phi10 = 0;
-    var var11 = 0;
-    var var12 = 0;
-    var var13 = 0;
-    var var14 = 0;
-    var var15 = 0;
-    var var16 = null;
-    var var17 = 0;
-    var var18 = 0;
-    var var19 = null;
-    var var20 = 0;
-    var var21 = 0;
-    var var22 = 0;
-    var phi23 = 0;
-    var var24 = 0;
-    var var25 = 0;
-    var phi26 = 0;
-    jdk$internal$util$ArraysSupport.$i;
-    var0 = (((jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE) - arg5)) | 0;
+    var var3 = 0;
+    var0 = bytecoder.newarray((arg1),0);
     phi1 = (0) | 0;
-    L197993875: while(true) {
-     if (phi1 >= (arg4 >> var0)) {
-      var13 = ((arg4 - (phi1 << var0))) | 0;
-      if (arg5 >= (jdk$internal$util$ArraysSupport.LOG2_ARRAY_INT_INDEX_SCALE)) {
-       return (var13 ^ -1);
-      } else {
-       var14 = ((1 << ((jdk$internal$util$ArraysSupport.LOG2_ARRAY_INT_INDEX_SCALE) - arg5))) | 0;
-       If_90_0: {
-        if (var13 < var14) {
-         phi26 = (var13) | 0;
-         break If_90_0;
-        } else {
-         var15 = ((phi1 | 0) << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE));
-         var16 = (jdk$internal$util$ArraysSupport.U);
-         var17 = (arg1 + var15);
-         var18 = ((jdk$internal$misc$Unsafe.prototype.I$getIntUnaligned$Ljava$lang$Object$$J.call(var16,arg0,var17))) | 0;
-         var19 = (jdk$internal$util$ArraysSupport.U);
-         var20 = (arg3 + var15);
-         var21 = ((jdk$internal$misc$Unsafe.prototype.I$getIntUnaligned$Ljava$lang$Object$$J.call(var19,arg2,var20))) | 0;
-         if (var18 == var21) {
-          phi26 = ((var13 - var14)) | 0;
-          break If_90_0;
-         } else {
-          var22 = ((var18 ^ var21)) | 0;
-          If_121_0: {
-           if ((jdk$internal$util$ArraysSupport.BIG_ENDIAN) == 0) {
-            java$lang$Integer.$i;
-            phi23 = (((java$lang$Integer.I$numberOfTrailingZeros$I(var22)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
-            break If_121_0;
-           } else {
-            java$lang$Integer.$i;
-            phi23 = (((java$lang$Integer.I$numberOfLeadingZeros$I(var22)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
-            break If_121_0;
-           }
-          }
-          var24 = (phi23) | 0;
-          var25 = ((phi1 << var0)) | 0;
-          return (var25 + var24);
-         }
-        }
-       }
-       return (phi26 ^ -1);
-      }
-     } else {
-      var2 = ((phi1 | 0) << (jdk$internal$util$ArraysSupport.LOG2_ARRAY_LONG_INDEX_SCALE));
-      var3 = (jdk$internal$util$ArraysSupport.U);
-      var4 = (arg1 + var2);
-      var5 = (jdk$internal$misc$Unsafe.prototype.J$getLongUnaligned$Ljava$lang$Object$$J.call(var3,arg0,var4));
-      var6 = (jdk$internal$util$ArraysSupport.U);
-      var7 = (arg3 + var2);
-      var8 = (jdk$internal$misc$Unsafe.prototype.J$getLongUnaligned$Ljava$lang$Object$$J.call(var6,arg2,var7));
-      if (bytecoder.cmp(var5,var8) == 0) {
-       phi1 = ((phi1 + 1)) | 0;
-       // Here was a goto statement
-       continue L197993875;
-      } else {
-       var9 = (var5 ^ var8);
-       If_50_0: {
-        if ((jdk$internal$util$ArraysSupport.BIG_ENDIAN) == 0) {
-         java$lang$Long.$i;
-         phi10 = (((java$lang$Long.I$numberOfTrailingZeros$J(var9)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
-         break If_50_0;
-        } else {
-         java$lang$Long.$i;
-         phi10 = (((java$lang$Long.I$numberOfLeadingZeros$J(var9)) >> ((jdk$internal$util$ArraysSupport.LOG2_BYTE_BIT_SIZE) + arg5))) | 0;
-         break If_50_0;
-        }
-       }
-       var11 = (phi10) | 0;
-       var12 = ((phi1 << var0)) | 0;
-       return (var12 + var11);
-      }
-     }
-    }
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$HashMap$HashIterator extends java$lang$Object {
-  nativeObject = null;
-
-  this$0 = null;
-  expectedModCount = 0;
-  next = null;
-  current = null;
-  index = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$HashMap$HashIterator,
-        'java.util.HashMap$HashIterator',
-         [java$util$HashMap$HashIterator,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$HashMap$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = 0;
-    var var9 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var1 = th;
-    var1.expectedModCount = (arg0.modCount);
-    var2 = (arg0.table);
-    var3 = th;
-    var4 = th;
-    var4.next = null;
-    var3.current = null;
-    var5 = th;
-    var5.index = 0;
-    If_25_0: {
-     if (var2 == null) {
-      break If_25_0;
-     } else {
-      If_28_0: {
-       if ((arg0.size) <= 0) {
-        break If_25_0;
-       } else {
-        break If_28_0;
-       }
-      }
-      L1069981170: while(true) {
-       if ((th.index) >= var2.data.length) {
-        break If_25_0;
-       } else {
-        var6 = th;
-        var7 = th;
-        var8 = ((var7.index)) | 0;
-        var7.index = (var8 + 1);
-        var9 = (var2.data[var8]);
-        var6.next = var9;
-        if (var9 == null) {
-         continue L1069981170;
-        } else {
-         break If_25_0;
-        }
-       }
-      }
-     }
-    }
-    return;
-  }
-
-  Z$hasNext$$() {
-    var th = this;
-    var phi0 = 0;
-    If_3_0: {
-     if ((th.next) == null) {
-      phi0 = (0) | 0;
-      break If_3_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  Ljava$util$HashMap$Node$$nextNode$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = 0;
-    var var10 = null;
-    var0 = (th.next);
-    if (((th.this$0).modCount) == (th.expectedModCount)) {
-     if (var0 != null) {
-      var3 = th;
-      var4 = th;
-      var4.current = var0;
-      var5 = (var0.next);
-      var3.next = var5;
-      If_33_0: {
-       if (var5 != null) {
-        break If_33_0;
-       } else {
-        var6 = ((th.this$0).table);
-        If_39_0: {
-         if (var6 == null) {
-          break If_33_0;
-         } else {
-          break If_39_0;
-         }
-        }
-        L330289181: while(true) {
-         if ((th.index) >= var6.data.length) {
-          break If_33_0;
-         } else {
-          var7 = th;
-          var8 = th;
-          var9 = ((var8.index)) | 0;
-          var8.index = (var9 + 1);
-          var10 = (var6.data[var9]);
-          var7.next = var10;
-          if (var10 == null) {
-           continue L330289181;
-          } else {
-           break If_33_0;
-          }
-         }
-        }
-       }
-      }
+    L720262900: while(true) {
+     var2 = (phi1) | 0;
+     var3 = (arg0.data.length) | 0;
+     java$lang$Math.$i;
+     if (var2 >= (java$lang$Math.I$min$I$I(arg1,var3))) {
       return var0;
      } else {
-      var2 = new java$util$NoSuchElementException();
-      java$util$NoSuchElementException.prototype.V$$init$$$.call(var2);
-      throw bytecoder.registerStack(var2, new Error().stack);
-     }
-    } else {
-     var1 = new java$util$ConcurrentModificationException();
-     java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var1);
-     throw bytecoder.registerStack(var1, new Error().stack);
-    }
-  }
-}
-
-
-class java$util$concurrent$locks$Lock extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$concurrent$locks$Lock,
-        'java.util.concurrent.locks.Lock',
-         [java$util$concurrent$locks$Lock,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class jdk$internal$misc$InternalLock extends java$lang$Object {
-  nativeObject = null;
-
-  static CAN_USE_INTERNAL_LOCK = 0;
-  lock = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$misc$InternalLock,
-        'jdk.internal.misc.InternalLock',
-         [jdk$internal$misc$InternalLock,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    java$lang$System.$i;
-    var0 = (java$lang$System.Ljava$lang$String$$getProperty$Ljava$lang$String$(bytecoder.stringconstants[63]));
-    If_7_0: {
-     If_7_1: {
-      if (var0 == null) {
-       break If_7_1;
-      } else {
-       If_10_0: {
-        if ((var0.Z$isEmpty$$()) != 0) {
-         break If_10_0;
-        } else {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var0,bytecoder.stringconstants[64])) == 0) {
-          break If_7_1;
-         } else {
-          break If_10_0;
-         }
-        }
-       }
-       jdk$internal$misc$InternalLock.$i;
-       jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK = 0;
-       break If_7_0;
-      }
-     }
-     jdk$internal$misc$InternalLock.$i;
-     jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK = 1;
-     break If_7_0;
-    }
-    return;
-  }
-
-  static Ljava$lang$Object$$newLockOr$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    var phi1 = null;
-    jdk$internal$misc$InternalLock.$i;
-    If_5_0: {
-     if ((jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK) == 0) {
-      phi1 = arg0;
-      break If_5_0;
-     } else {
-      var0 = new jdk$internal$misc$InternalLock();
-      jdk$internal$misc$InternalLock.prototype.V$$init$$$.call(var0);
-      phi1 = var0;
-      break If_5_0;
-     }
-    }
-    return phi1;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var1 = new java$util$concurrent$locks$ReentrantLock();
-    java$util$concurrent$locks$ReentrantLock.prototype.V$$init$$$.call(var1);
-    var0.lock = var1;
-    return;
-  }
-
-  static Ljdk$internal$misc$InternalLock$$newLockOrNull$$() {
-    var var0 = null;
-    var phi1 = null;
-    jdk$internal$misc$InternalLock.$i;
-    If_4_0: {
-     if ((jdk$internal$misc$InternalLock.CAN_USE_INTERNAL_LOCK) == 0) {
-      phi1 = null;
-      break If_4_0;
-     } else {
-      var0 = new jdk$internal$misc$InternalLock();
-      jdk$internal$misc$InternalLock.prototype.V$$init$$$.call(var0);
-      phi1 = var0;
-      break If_4_0;
-     }
-    }
-    return phi1;
-  }
-}
-
-
-class jdk$internal$misc$CDS extends java$lang$Object {
-  nativeObject = null;
-
-  static isDumpingClassList = 0;
-  static isDumpingArchive = 0;
-  static isSharingEnabled = 0;
-  static excludeFlags = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$misc$CDS,
-        'jdk.internal.misc.CDS',
-         [jdk$internal$misc$CDS,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    jdk$internal$misc$CDS.$i;
-    jdk$internal$misc$CDS.isDumpingClassList = (jdk$internal$misc$CDS.Z$isDumpingClassList0$$());
-    jdk$internal$misc$CDS.isDumpingArchive = (jdk$internal$misc$CDS.Z$isDumpingArchive0$$());
-    jdk$internal$misc$CDS.isSharingEnabled = (jdk$internal$misc$CDS.Z$isSharingEnabled0$$());
-    var0 = bytecoder.newarray((6),null);
-    var0.data[0] = bytecoder.stringconstants[42];
-    var0.data[1] = bytecoder.stringconstants[43];
-    var0.data[2] = bytecoder.stringconstants[44];
-    var0.data[3] = bytecoder.stringconstants[45];
-    var0.data[4] = bytecoder.stringconstants[46];
-    var0.data[5] = bytecoder.stringconstants[47];
-    jdk$internal$misc$CDS.excludeFlags = var0;
-    return;
-  }
-
-  static Z$isDumpingClassList0$$() {
-    return bytecoder.imports['jdk.internal.misc.CDS'].Z$isDumpingClassList0$$();
-  }
-
-  static Z$isDumpingArchive0$$() {
-    return bytecoder.imports['jdk.internal.misc.CDS'].Z$isDumpingArchive0$$();
-  }
-
-  static Z$isSharingEnabled0$$() {
-    return bytecoder.imports['jdk.internal.misc.CDS'].Z$isSharingEnabled0$$();
-  }
-
-  static J$getRandomSeedForDumping$$() {
-    return bytecoder.imports['jdk.internal.misc.CDS'].J$getRandomSeedForDumping$$();
-  }
-
-  static V$initializeFromArchive$Ljava$lang$Class$(arg0) {
-    bytecoder.imports['jdk.internal.misc.CDS'].V$initializeFromArchive$Ljava$lang$Class$(arg0);
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$nio$charset$CoderResult extends java$lang$Object {
-  nativeObject = null;
-
-  static names = null;
-  type = 0;
-  length = 0;
-  static UNDERFLOW = null;
-  static OVERFLOW = null;
-  static malformed4 = null;
-  static unmappable4 = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$charset$CoderResult,
-        'java.nio.charset.CoderResult',
-         [java$nio$charset$CoderResult,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var var11 = null;
-    var var12 = null;
-    java$nio$charset$CoderResult.$i;
-    var0 = bytecoder.newarray((4),null);
-    var0.data[0] = bytecoder.stringconstants[33];
-    var0.data[1] = bytecoder.stringconstants[34];
-    var0.data[2] = bytecoder.stringconstants[35];
-    var0.data[3] = bytecoder.stringconstants[36];
-    java$nio$charset$CoderResult.names = var0;
-    var1 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var1,0,0);
-    java$nio$charset$CoderResult.UNDERFLOW = var1;
-    var2 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var2,1,0);
-    java$nio$charset$CoderResult.OVERFLOW = var2;
-    var3 = bytecoder.newarray((4),null);
-    var4 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var4,2,1);
-    var3.data[0] = var4;
-    var5 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var5,2,2);
-    var3.data[1] = var5;
-    var6 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var6,2,3);
-    var3.data[2] = var6;
-    var7 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var7,2,4);
-    var3.data[3] = var7;
-    java$nio$charset$CoderResult.malformed4 = var3;
-    var8 = bytecoder.newarray((4),null);
-    var9 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var9,3,1);
-    var8.data[0] = var9;
-    var10 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var10,3,2);
-    var8.data[1] = var10;
-    var11 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var11,3,3);
-    var8.data[2] = var11;
-    var12 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var12,3,4);
-    var8.data[3] = var12;
-    java$nio$charset$CoderResult.unmappable4 = var8;
-    return;
-  }
-
-  V$$init$$I$I(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.type = arg0;
-    var1 = th;
-    var1.length = arg1;
-    return;
-  }
-
-  Z$isOverflow$$() {
-    var th = this;
-    var phi0 = 0;
-    If_4_0: {
-     if ((th.type) != 1) {
-      phi0 = (0) | 0;
-      break If_4_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_4_0;
-     }
-    }
-    return phi0;
-  }
-
-  Z$isUnderflow$$() {
-    var th = this;
-    var phi0 = 0;
-    If_3_0: {
-     if ((th.type) != 0) {
-      phi0 = (0) | 0;
-      break If_3_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  static Ljava$nio$charset$CoderResult$$malformedForLength$I(arg0) {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    if (arg0 > 0) {
-     if (arg0 > 4) {
-      java$nio$charset$CoderResult$Cache.$i;
-      var1 = ((java$nio$charset$CoderResult$Cache.INSTANCE).malformed);
-      java$lang$Integer.$i;
-      var2 = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg0));
-      var3 = bytecoder.instanceWithLambdaImpl(java$util$function$Function, function(linkarg0) { return java$nio$charset$CoderResult.Ljava$nio$charset$CoderResult$$lambda$malformedForLength$0$Ljava$lang$Integer$.call(this, linkarg0);});
-      return (var1.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(var2,var3));
-     } else {
-      java$nio$charset$CoderResult.$i;
-      return ((java$nio$charset$CoderResult.malformed4).data[(arg0 - 1)]);
-     }
-    } else {
-     var0 = new java$lang$IllegalArgumentException();
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[39]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  static Ljava$nio$charset$CoderResult$$lambda$malformedForLength$0$Ljava$lang$Integer$(arg0) {
-    var var0 = null;
-    java$nio$charset$CoderResult.$i;
-    var0 = new java$nio$charset$CoderResult();
-    java$nio$charset$CoderResult.prototype.V$$init$$I$I.call(var0,2,(java$lang$Integer.prototype.I$intValue$$.call(arg0)));
-    return var0;
-  }
-
-  Z$isMalformed$$() {
-    var th = this;
-    var phi0 = 0;
-    If_4_0: {
-     if ((th.type) != 2) {
-      phi0 = (0) | 0;
-      break If_4_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_4_0;
-     }
-    }
-    return phi0;
-  }
-
-  I$length$$() {
-    var th = this;
-    var var0 = null;
-    if ((java$nio$charset$CoderResult.prototype.Z$isError$$.call(th)) != 0) {
-     return (th.length);
-    } else {
-     var0 = new java$lang$UnsupportedOperationException();
-     java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  Z$isError$$() {
-    var th = this;
-    var phi0 = 0;
-    If_4_0: {
-     if ((th.type) < 2) {
-      phi0 = (0) | 0;
-      break If_4_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_4_0;
-     }
-    }
-    return phi0;
-  }
-
-  Z$isUnmappable$$() {
-    var th = this;
-    var phi0 = 0;
-    If_4_0: {
-     if ((th.type) != 3) {
-      phi0 = (0) | 0;
-      break If_4_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_4_0;
-     }
-    }
-    return phi0;
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = 0;
-    var var5 = null;
-    var var6 = null;
-    var phi7 = null;
-    java$nio$charset$CoderResult.$i;
-    var0 = ((java$nio$charset$CoderResult.names).data[(th.type)]);
-    If_10_0: {
-     if ((java$nio$charset$CoderResult.prototype.Z$isError$$.call(th)) == 0) {
-      phi7 = var0;
-      break If_10_0;
-     } else {
-      var1 = new java$lang$StringBuilder();
-      java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
-      var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,var0));
-      var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[81]));
-      var4 = ((th.length)) | 0;
-      var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var3,var4));
-      var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var5,bytecoder.stringconstants[82]));
-      phi7 = (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var6));
-      break If_10_0;
-     }
-    }
-    return phi7;
-  }
-}
-
-
-class jdk$internal$misc$VM extends java$lang$Object {
-  nativeObject = null;
-
-  static lock = null;
-  static directMemory = 0;
-  static initLevel = 0;
-  static savedProps = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$misc$VM,
-        'jdk.internal.misc.VM',
-         [jdk$internal$misc$VM,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var0 = new java$lang$Object();
-    java$lang$Object.prototype.V$$init$$$.call(var0);
-    jdk$internal$misc$VM.$i;
-    jdk$internal$misc$VM.lock = var0;
-    jdk$internal$misc$VM.directMemory = 67108864;
-    var1 = new java$util$HashMap();
-    java$util$HashMap.prototype.V$$init$$$.call(var1);
-    jdk$internal$misc$VM.V$saveProperties$Ljava$util$Map$(var1);
-    return;
-  }
-
-  static V$saveProperties$Ljava$util$Map$(arg0) {
-    var var0 = null;
-    jdk$internal$misc$VM.$i;
-    if ((jdk$internal$misc$VM.I$initLevel$$()) == 0) {
-     If_16_0: {
-      if ((jdk$internal$misc$VM.savedProps) != null) {
-       break If_16_0;
-      } else {
-       jdk$internal$misc$VM.savedProps = arg0;
-       break If_16_0;
-      }
-     }
-     return;
-    } else {
-     var0 = new java$lang$IllegalStateException();
-     java$lang$IllegalStateException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[65]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  static I$initLevel$$() {
-    jdk$internal$misc$VM.$i;
-    return (jdk$internal$misc$VM.initLevel);
-  }
-
-  static Z$isBooted$$() {
-    var phi0 = 0;
-    jdk$internal$misc$VM.$i;
-    If_5_0: {
-     if ((jdk$internal$misc$VM.initLevel) < 4) {
-      phi0 = (0) | 0;
-      break If_5_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_5_0;
-     }
-    }
-    return phi0;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$lang$Void extends java$lang$Object {
-  nativeObject = null;
-
-  static TYPE = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Void,
-        'java.lang.Void',
-         [java$lang$Void,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var0 = (java$lang$Class.Ljava$lang$Class$$getPrimitiveClass$Ljava$lang$String$(bytecoder.stringconstants[48]));
-    java$lang$Void.$i;
-    java$lang$Void.TYPE = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class jdk$internal$misc$Unsafe extends java$lang$Object {
-  nativeObject = null;
-
-  static INSTANCE = null;
-  static ARRAY_BOOLEAN_INDEX_SCALE = 0;
-  static ARRAY_BYTE_INDEX_SCALE = 0;
-  static ARRAY_CHAR_INDEX_SCALE = 0;
-  static ARRAY_SHORT_INDEX_SCALE = 0;
-  static ARRAY_INT_INDEX_SCALE = 0;
-  static ARRAY_LONG_INDEX_SCALE = 0;
-  static ARRAY_FLOAT_INDEX_SCALE = 0;
-  static ARRAY_DOUBLE_INDEX_SCALE = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$misc$Unsafe,
-        'jdk.internal.misc.Unsafe',
-         [jdk$internal$misc$Unsafe,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    jdk$internal$misc$Unsafe.$i;
-    var0 = new jdk$internal$misc$Unsafe();
-    jdk$internal$misc$Unsafe.prototype.V$$init$$$.call(var0);
-    jdk$internal$misc$Unsafe.INSTANCE = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  static Ljdk$internal$misc$Unsafe$$getUnsafe$$() {
-    jdk$internal$misc$Unsafe.$i;
-    return (jdk$internal$misc$Unsafe.INSTANCE);
-  }
-
-  I$arrayBaseOffset$Ljava$lang$Class$(arg0) {
-    return 0;
-  }
-
-  I$arrayIndexScale$Ljava$lang$Class$(arg0) {
-    return 0;
-  }
-
-  Z$isBigEndian$$() {
-    return 0;
-  }
-
-  V$storeFence$$() {
-    return;
-  }
-
-  J$getLongUnaligned$Ljava$lang$Object$$J(arg0,arg1) {
-    return arg1;
-  }
-
-  I$getIntUnaligned$Ljava$lang$Object$$J(arg0,arg1) {
-    return (arg1 | 0);
-  }
-
-  V$copyMemory$Ljava$lang$Object$$J$Ljava$lang$Object$$J$J(arg0,arg1,arg2,arg3,arg4) {
-    return;
-  }
-
-  V$copySwapMemory$Ljava$lang$Object$$J$Ljava$lang$Object$$J$J$J(arg0,arg1,arg2,arg3,arg4,arg5) {
-    return;
-  }
-}
-
-
-class jdk$internal$util$Preconditions extends java$lang$Object {
-  nativeObject = null;
-
-  static SIOOBE_FORMATTER = null;
-  static AIOOBE_FORMATTER = null;
-  static IOOBE_FORMATTER = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$util$Preconditions,
-        'jdk.internal.util.Preconditions',
-         [jdk$internal$util$Preconditions,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var0 = new jdk$internal$util$Preconditions$1();
-    jdk$internal$util$Preconditions$1.prototype.V$$init$$$.call(var0);
-    jdk$internal$util$Preconditions.$i;
-    jdk$internal$util$Preconditions.SIOOBE_FORMATTER = (jdk$internal$util$Preconditions.Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(var0));
-    var1 = new jdk$internal$util$Preconditions$2();
-    jdk$internal$util$Preconditions$2.prototype.V$$init$$$.call(var1);
-    jdk$internal$util$Preconditions.AIOOBE_FORMATTER = (jdk$internal$util$Preconditions.Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(var1));
-    var2 = new jdk$internal$util$Preconditions$3();
-    jdk$internal$util$Preconditions$3.prototype.V$$init$$$.call(var2);
-    jdk$internal$util$Preconditions.IOOBE_FORMATTER = (jdk$internal$util$Preconditions.Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(var2));
-    return;
-  }
-
-  static Ljava$util$function$BiFunction$$outOfBoundsExceptionFormatter$Ljava$util$function$Function$(arg0) {
-    var var0 = null;
-    var0 = new jdk$internal$util$Preconditions$4();
-    jdk$internal$util$Preconditions$4.prototype.V$$init$$Ljava$util$function$Function$.call(var0,arg0);
-    return var0;
-  }
-
-  static I$checkFromIndexSize$I$I$I$Ljava$util$function$BiFunction$(arg0,arg1,arg2,arg3) {
-    If_7_0: {
-     if (((arg2 | arg0) | arg1) < 0) {
-      break If_7_0;
-     } else {
-      if (arg1 <= (arg2 - arg0)) {
-       return arg0;
-      } else {
-       break If_7_0;
-      }
-     }
-    }
-    jdk$internal$util$Preconditions.$i;
-    throw bytecoder.registerStack((jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBoundsCheckFromIndexSize$Ljava$util$function$BiFunction$$I$I$I(arg3,arg0,arg1,arg2)), new Error().stack);
-  }
-
-  static Ljava$lang$RuntimeException$$outOfBoundsCheckFromIndexSize$Ljava$util$function$BiFunction$$I$I$I(arg0,arg1,arg2,arg3) {
-    var var0 = null;
-    var0 = bytecoder.newarray((3),null);
-    java$lang$Integer.$i;
-    var0.data[0] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg1));
-    var0.data[1] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg2));
-    var0.data[2] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg3));
-    jdk$internal$util$Preconditions.$i;
-    return (jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBounds$Ljava$util$function$BiFunction$$Ljava$lang$String$$$Ljava$lang$Number$(arg0,bytecoder.stringconstants[41],var0));
-  }
-
-  static Ljava$lang$RuntimeException$$outOfBounds$Ljava$util$function$BiFunction$$Ljava$lang$String$$$Ljava$lang$Number$(arg0,arg1,arg2) {
-    var var0 = null;
-    var phi1 = null;
-    var var2 = null;
-    var var3 = null;
-    var phi4 = null;
-    var0 = (java$util$List.Ljava$util$List$$of$$Ljava$lang$Object$(arg2));
-    If_8_0: {
-     if (arg0 != null) {
-      phi1 = (arg0.Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$(arg1,var0));
-      break If_8_0;
-     } else {
-      phi1 = null;
-      break If_8_0;
-     }
-    }
-    var2 = phi1;
-    If_15_0: {
-     if (var2 != null) {
-      phi4 = var2;
-      break If_15_0;
-     } else {
-      var3 = new java$lang$IndexOutOfBoundsException();
-      jdk$internal$util$Preconditions.$i;
-      java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var3,(jdk$internal$util$Preconditions.Ljava$lang$String$$outOfBoundsMessage$Ljava$lang$String$$Ljava$util$List$(arg1,var0)));
-      phi4 = var3;
-      break If_15_0;
-     }
-    }
-    return phi4;
-  }
-
-  static Ljava$lang$String$$outOfBoundsMessage$Ljava$lang$String$$Ljava$util$List$(arg0,arg1) {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var phi3 = 0;
-    var phi4 = 0;
-    var phi5 = null;
-    var var6 = null;
-    var phi7 = 0;
-    var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var var11 = null;
-    If_3_0: {
-     if (arg0 != null) {
-      break If_3_0;
-     } else {
-      if (arg1 != null) {
-       break If_3_0;
-      } else {
-       var0 = bytecoder.newarray((0),null);
-       return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[73],var0));
-      }
-     }
-    }
-    if (arg0 != null) {
-     if (arg1 != null) {
-      LookupSwitch_41_0: {
-       switch ((java$lang$String.prototype.I$hashCode$$.call(arg0))) {
-        case -538822486: {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(arg0,bytecoder.stringconstants[80])) == 0) {
-          phi3 = (-1) | 0;
-          break LookupSwitch_41_0;
-         } else {
-          phi3 = (0) | 0;
-          break LookupSwitch_41_0;
-         }
-        }
-        case 1848935233: {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(arg0,bytecoder.stringconstants[41])) == 0) {
-          phi3 = (-1) | 0;
-          break LookupSwitch_41_0;
-         } else {
-          phi3 = (2) | 0;
-          break LookupSwitch_41_0;
-         }
-        }
-        case 1844394469: {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(arg0,bytecoder.stringconstants[79])) == 0) {
-          phi3 = (-1) | 0;
-          break LookupSwitch_41_0;
-         } else {
-          phi3 = (1) | 0;
-          break LookupSwitch_41_0;
-         }
-        }
-        default: {
-         phi3 = (-1) | 0;
-         break LookupSwitch_41_0;
-        }
-       }
-      }
-      TableSwitch_44_0: {
-       if ((phi3) >= 0 && (phi3) <= 2) switch ((phi3) - 0) {
-        case 0: {
-         phi4 = (2) | 0;
-         break TableSwitch_44_0;
-        }
-        case 1: {
-         phi4 = (3) | 0;
-         break TableSwitch_44_0;
-        }
-        case 2: {
-         phi4 = (3) | 0;
-         break TableSwitch_44_0;
-        }
-       } else {
-        phi4 = (0) | 0;
-        break TableSwitch_44_0;
-       }
-      }
-      If_49_0: {
-       if ((arg1.I$size$$()) == phi4) {
-        phi5 = arg0;
-        break If_49_0;
-       } else {
-        phi5 = bytecoder.stringconstants[1];
-        break If_49_0;
-       }
-      }
-      var6 = phi5;
-      LookupSwitch_58_0: {
-       switch ((java$lang$String.prototype.I$hashCode$$.call(var6))) {
-        case 1844394469: {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var6,bytecoder.stringconstants[79])) == 0) {
-          phi7 = (-1) | 0;
-          break LookupSwitch_58_0;
-         } else {
-          phi7 = (1) | 0;
-          break LookupSwitch_58_0;
-         }
-        }
-        case 1848935233: {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var6,bytecoder.stringconstants[41])) == 0) {
-          phi7 = (-1) | 0;
-          break LookupSwitch_58_0;
-         } else {
-          phi7 = (2) | 0;
-          break LookupSwitch_58_0;
-         }
-        }
-        case -538822486: {
-         if ((java$lang$String.prototype.Z$equals$Ljava$lang$Object$.call(var6,bytecoder.stringconstants[80])) == 0) {
-          phi7 = (-1) | 0;
-          break LookupSwitch_58_0;
-         } else {
-          phi7 = (0) | 0;
-          break LookupSwitch_58_0;
-         }
-        }
-        default: {
-         phi7 = (-1) | 0;
-         break LookupSwitch_58_0;
-        }
-       }
-      }
-      if ((phi7) >= 0 && (phi7) <= 2) switch ((phi7) - 0) {
-       case 0: {
-        var10 = bytecoder.newarray((2),null);
-        var10.data[0] = (arg1.Ljava$lang$Object$$get$I(0));
-        var10.data[1] = (arg1.Ljava$lang$Object$$get$I(1));
-        return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[77],var10));
-       }
-       case 1: {
-        var9 = bytecoder.newarray((3),null);
-        var9.data[0] = (arg1.Ljava$lang$Object$$get$I(0));
-        var9.data[1] = (arg1.Ljava$lang$Object$$get$I(1));
-        var9.data[2] = (arg1.Ljava$lang$Object$$get$I(2));
-        return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[76],var9));
-       }
-       case 2: {
-        var8 = bytecoder.newarray((3),null);
-        var8.data[0] = (arg1.Ljava$lang$Object$$get$I(0));
-        var8.data[1] = (arg1.Ljava$lang$Object$$get$I(1));
-        var8.data[2] = (arg1.Ljava$lang$Object$$get$I(2));
-        return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[75],var8));
-       }
-      } else {
-       var11 = bytecoder.newarray((2),null);
-       var11.data[0] = arg0;
-       var11.data[1] = arg1;
-       return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[78],var11));
-      }
-     } else {
-      var2 = bytecoder.newarray((1),null);
-      var2.data[0] = arg0;
-      return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[74],var2));
-     }
-    } else {
-     var1 = bytecoder.newarray((1),null);
-     var1.data[0] = arg1;
-     return (java$lang$String.Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(bytecoder.stringconstants[74],var1));
-    }
-  }
-
-  static I$checkIndex$I$I$Ljava$util$function$BiFunction$(arg0,arg1,arg2) {
-    If_4_0: {
-     if (arg0 < 0) {
-      break If_4_0;
-     } else {
-      if (arg0 < arg1) {
-       return arg0;
-      } else {
-       break If_4_0;
-      }
-     }
-    }
-    jdk$internal$util$Preconditions.$i;
-    throw bytecoder.registerStack((jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBoundsCheckIndex$Ljava$util$function$BiFunction$$I$I(arg2,arg0,arg1)), new Error().stack);
-  }
-
-  static Ljava$lang$RuntimeException$$outOfBoundsCheckIndex$Ljava$util$function$BiFunction$$I$I(arg0,arg1,arg2) {
-    var var0 = null;
-    var0 = bytecoder.newarray((2),null);
-    java$lang$Integer.$i;
-    var0.data[0] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg1));
-    var0.data[1] = (java$lang$Integer.Ljava$lang$Integer$$valueOf$I(arg2));
-    jdk$internal$util$Preconditions.$i;
-    return (jdk$internal$util$Preconditions.Ljava$lang$RuntimeException$$outOfBounds$Ljava$util$function$BiFunction$$Ljava$lang$String$$$Ljava$lang$Number$(arg0,bytecoder.stringconstants[80],var0));
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$Random extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Random,
-        'java.util.Random',
-         [java$util$Random,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  I$nextInt$I(arg0) {
-    java$lang$Math.$i;
-    return ((java$lang$Math.D$random$$()) | 0);
-  }
-}
-
-
-class java$lang$Iterable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Iterable,
-        'java.lang.Iterable',
-         [java$lang$Iterable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$util$Collections extends java$lang$Object {
-  nativeObject = null;
-
-  static EMPTY_SET = null;
-  static EMPTY_LIST = null;
-  static EMPTY_MAP = null;
-  static r = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collections,
-        'java.util.Collections',
-         [java$util$Collections,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var0 = new java$util$Collections$EmptySet();
-    java$util$Collections$EmptySet.prototype.V$$init$$$.call(var0);
-    java$util$Collections.$i;
-    java$util$Collections.EMPTY_SET = var0;
-    var1 = new java$util$Collections$EmptyList();
-    java$util$Collections$EmptyList.prototype.V$$init$$$.call(var1);
-    java$util$Collections.EMPTY_LIST = var1;
-    var2 = new java$util$Collections$EmptyMap();
-    java$util$Collections$EmptyMap.prototype.V$$init$$$.call(var2);
-    java$util$Collections.EMPTY_MAP = var2;
-    return;
-  }
-
-  static V$shuffle$Ljava$util$List$(arg0) {
-    var var0 = null;
-    var var1 = null;
-    var phi2 = null;
-    java$util$Collections.$i;
-    var0 = (java$util$Collections.r);
-    If_7_0: {
-     if (var0 != null) {
-      phi2 = var0;
-      break If_7_0;
-     } else {
-      var1 = new java$util$Random();
-      java$util$Random.prototype.V$$init$$$.call(var1);
-      java$util$Collections.r = var1;
-      phi2 = var1;
-      break If_7_0;
-     }
-    }
-    java$util$Collections.V$shuffle$Ljava$util$List$$Ljava$util$Random$(arg0,phi2);
-    return;
-  }
-
-  static V$shuffle$Ljava$util$List$$Ljava$util$Random$(arg0,arg1) {
-    var var0 = 0;
-    var phi1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var var4 = 0;
-    var var5 = null;
-    var phi6 = 0;
-    var var7 = 0;
-    var var8 = 0;
-    var var9 = 0;
-    var var10 = null;
-    var var11 = 0;
-    var phi12 = 0;
-    var var13 = null;
-    var var14 = null;
-    var0 = ((arg0.I$size$$())) | 0;
-    If_7_0: {
-     If_7_1: {
-      if (var0 < 5) {
-       break If_7_1;
-      } else {
-       if (bytecoder.instanceOf(arg0,java$util$RandomAccess) == 0) {
-        var5 = (arg0.$Ljava$lang$Object$$toArray$$());
-        phi6 = (var0) | 0;
-        L2144181359: while(true) {
-         if (phi6 <= 1) {
-          var10 = (arg0.Ljava$util$ListIterator$$listIterator$$());
-          var11 = (var5.data.length) | 0;
-          phi12 = (0) | 0;
-          L835831018: while(true) {
-           if (phi12 >= var11) {
-            break If_7_0;
-           } else {
-            var13 = (var5.data[phi12]);
-            var14 = (var10.Ljava$lang$Object$$next$$());
-            var10.V$set$Ljava$lang$Object$(var13);
-            phi12 = ((phi12 + 1)) | 0;
-            // Here was a goto statement
-            continue L835831018;
-           }
-          }
-         } else {
-          var7 = ((phi6 - 1)) | 0;
-          var8 = (phi6) | 0;
-          var9 = ((java$util$Random.prototype.I$nextInt$I.call(arg1,var8))) | 0;
-          java$util$Collections.$i;
-          java$util$Collections.V$swap$$Ljava$lang$Object$$I$I(var5,var7,var9);
-          phi6 = ((phi6 + -1)) | 0;
-          // Here was a goto statement
-          continue L2144181359;
-         }
-        }
-       } else {
-        break If_7_1;
-       }
-      }
-     }
-     phi1 = (var0) | 0;
-     L299680460: while(true) {
-      if (phi1 <= 1) {
-       break If_7_0;
-      } else {
-       var2 = ((phi1 - 1)) | 0;
-       var3 = (phi1) | 0;
-       var4 = ((java$util$Random.prototype.I$nextInt$I.call(arg1,var3))) | 0;
-       java$util$Collections.$i;
-       java$util$Collections.V$swap$Ljava$util$List$$I$I(arg0,var2,var4);
-       phi1 = ((phi1 + -1)) | 0;
-       // Here was a goto statement
-       continue L299680460;
-      }
-     }
-    }
-    return;
-  }
-
-  static V$swap$Ljava$util$List$$I$I(arg0,arg1,arg2) {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var0 = (arg0.Ljava$lang$Object$$get$I(arg1));
-    var1 = (arg0.Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg2,var0));
-    var2 = (arg0.Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg1,var1));
-    return;
-  }
-
-  static V$swap$$Ljava$lang$Object$$I$I(arg0,arg1,arg2) {
-    var var0 = null;
-    var0 = (arg0.data[arg1]);
-    arg0.data[arg1] = (arg0.data[arg2]);
-    arg0.data[arg2] = var0;
-    return;
-  }
-
-  static Ljava$util$ListIterator$$emptyListIterator$$() {
-    java$util$Collections$EmptyListIterator.$i;
-    return (java$util$Collections$EmptyListIterator.EMPTY_ITERATOR);
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  static Ljava$util$Iterator$$emptyIterator$$() {
-    java$util$Collections$EmptyIterator.$i;
-    return (java$util$Collections$EmptyIterator.EMPTY_ITERATOR);
-  }
-
-  static Ljava$util$Set$$emptySet$$() {
-    java$util$Collections.$i;
-    return (java$util$Collections.EMPTY_SET);
-  }
-
-  static Ljava$util$Set$$synchronizedSet$Ljava$util$Set$$Ljava$lang$Object$(arg0,arg1) {
-    var var0 = null;
-    var0 = new java$util$Collections$SynchronizedSet();
-    java$util$Collections$SynchronizedSet.prototype.V$$init$$Ljava$util$Set$$Ljava$lang$Object$.call(var0,arg0,arg1);
-    return var0;
-  }
-}
-
-
-class java$lang$ThreadGroup extends java$lang$Object {
-  nativeObject = null;
-
-  name = null;
-  parent = null;
-  static SYSTEM = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$ThreadGroup,
-        'java.lang.ThreadGroup',
-         [java$lang$ThreadGroup,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    java$lang$ThreadGroup.$i;
-    var0 = new java$lang$ThreadGroup();
-    java$lang$ThreadGroup.prototype.V$$init$$$.call(var0);
-    java$lang$ThreadGroup.SYSTEM = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.name = bytecoder.stringconstants[66];
-    var1 = th;
-    var1.parent = null;
-    return;
-  }
-
-  V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.name = arg1;
-    var1 = th;
-    var1.parent = arg0;
-    return;
-  }
-}
-
-
-class java$io$Flushable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$Flushable,
-        'java.io.Flushable',
-         [java$io$Flushable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup extends java$lang$Object {
-  nativeObject = null;
-
-  name = null;
-  parent = null;
-  static SYSTEM = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup,
-        'de.mirkosertic.bytecoder.classlib.java.lang.TThreadGroup',
-         [de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.$i;
-    var0 = new de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup();
-    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.prototype.V$$init$$$.call(var0);
-    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.SYSTEM = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.name = bytecoder.stringconstants[66];
-    var1 = th;
-    var1.parent = null;
-    return;
-  }
-}
-
-
-class java$util$Map$Entry extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Map$Entry,
-        'java.util.Map$Entry',
-         [java$util$Map$Entry,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class com$example$wasm$GameEngine extends java$lang$Object {
-  nativeObject = null;
-
-  board = null;
-  firstIndex = 0;
-  secondIndex = 0;
-  errorCount = 0;
-  remainingTime = 0;
-  rows = 0;
-  columns = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        com$example$wasm$GameEngine,
-        'com.example.wasm.GameEngine',
-         [com$example$wasm$GameEngine,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    com$example$wasm$GameEngine.prototype.V$$init$$I$I.call(th,4,5);
-    return;
-  }
-
-  V$$init$$I$I(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    java$util$ArrayList.$i;
-    var1 = new java$util$ArrayList();
-    java$util$ArrayList.prototype.V$$init$$$.call(var1);
-    var0.board = var1;
-    var2 = th;
-    var2.firstIndex = -1;
-    var3 = th;
-    var3.secondIndex = -1;
-    var4 = th;
-    var4.errorCount = 0;
-    var5 = th;
-    var5.remainingTime = 60;
-    var6 = th;
-    var6.rows = arg0;
-    var7 = th;
-    var7.columns = arg1;
-    com$example$wasm$GameEngine.prototype.V$initBoard$$.call(th);
-    return;
-  }
-
-  V$initBoard$$() {
-    var th = this;
-    var var0 = 0;
-    var phi1 = 0;
-    var var2 = null;
-    var var3 = null;
-    var var4 = 0;
-    var var5 = null;
-    var var6 = null;
-    var var7 = 0;
-    var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var var11 = null;
-    (th.board).V$clear$$();
-    var0 = (Math.floor(((th.rows) * (th.columns)) / 2)) | 0;
-    phi1 = (1) | 0;
-    L693347388: while(true) {
-     if (phi1 > var0) {
-      var8 = th;
-      var8.errorCount = 0;
-      var9 = th;
-      var9.remainingTime = 60;
-      var10 = th;
-      var10.firstIndex = -1;
-      var11 = th;
-      var11.secondIndex = -1;
-      return;
-     } else {
-      var2 = (th.board);
-      var3 = new com$example$wasm$GameEngine$ModelCard();
-      com$example$wasm$GameEngine$ModelCard.prototype.V$$init$$Ljava$lang$String$.call(var3,bytecoder.generated[0](null,phi1));
-      var4 = (var2.Z$add$Ljava$lang$Object$(var3));
-      var5 = (th.board);
-      var6 = new com$example$wasm$GameEngine$ModelCard();
-      com$example$wasm$GameEngine$ModelCard.prototype.V$$init$$Ljava$lang$String$.call(var6,bytecoder.generated[1](null,phi1));
-      var7 = (var5.Z$add$Ljava$lang$Object$(var6));
+      var0.data[phi1] = (arg0.data[phi1]);
       phi1 = ((phi1 + 1)) | 0;
       // Here was a goto statement
-      continue L693347388;
+      continue L720262900;
      }
     }
   }
 
-  V$shuffle$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.board);
-    java$util$Collections.$i;
-    java$util$Collections.V$shuffle$Ljava$util$List$(var0);
-    return;
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$java$lang$TMath extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
+  static $Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I(arg0,arg1) {
+    java$util$Arrays.$i;
+    return (java$util$Arrays.$Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I$Ljava$lang$Class$(arg0,arg1,null));
   }
 
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$java$lang$TMath,
-        'de.mirkosertic.bytecoder.classlib.java.lang.TMath',
-         [java$lang$Object,de$mirkosertic$bytecoder$classlib$java$lang$TMath]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    de$mirkosertic$bytecoder$classlib$java$lang$TMath.$i;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class jdk$internal$util$Preconditions$2 extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$util$Preconditions$2,
-        'jdk.internal.util.Preconditions$2',
-         [jdk$internal$util$Preconditions$2,java$util$function$Function,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (jdk$internal$util$Preconditions$2.prototype.Ljava$lang$ArrayIndexOutOfBoundsException$$apply$Ljava$lang$String$.call(th,var0));
-  }
-
-  Ljava$lang$ArrayIndexOutOfBoundsException$$apply$Ljava$lang$String$(arg0) {
-    var var0 = null;
-    var0 = new java$lang$ArrayIndexOutOfBoundsException();
-    java$lang$ArrayIndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
-    return var0;
-  }
-}
-
-
-class java$util$Hashtable extends java$util$Dictionary {
-  nativeObject = null;
-
-  modCount = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Hashtable,
-        'java.util.Hashtable',
-         [java$util$Map,java$io$Serializable,java$lang$Cloneable,java$util$Hashtable,java$lang$Object,java$util$Dictionary]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$Void$(arg0) {
-    var th = this;
-    var var0 = null;
-    java$util$Dictionary.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.modCount = 0;
-    return;
-  }
-}
-
-java$util$Hashtable.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$ = java$util$Map.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$;
-
-class java$util$Collections$EmptyIterator extends java$lang$Object {
-  nativeObject = null;
-
-  static EMPTY_ITERATOR = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collections$EmptyIterator,
-        'java.util.Collections$EmptyIterator',
-         [java$util$Iterator,java$lang$Object,java$util$Collections$EmptyIterator]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    java$util$Collections$EmptyIterator.$i;
-    var0 = new java$util$Collections$EmptyIterator();
-    java$util$Collections$EmptyIterator.prototype.V$$init$$$.call(var0);
-    java$util$Collections$EmptyIterator.EMPTY_ITERATOR = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  Ljava$lang$Object$$next$$() {
-    var var0 = null;
-    var0 = new java$util$NoSuchElementException();
-    java$util$NoSuchElementException.prototype.V$$init$$$.call(var0);
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-
-  Z$hasNext$$() {
-    return 0;
-  }
-}
-
-
-class java$lang$ref$WeakReference extends java$lang$ref$Reference {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$ref$WeakReference,
-        'java.lang.ref.WeakReference',
-         [java$lang$ref$Reference,java$lang$Object,java$lang$ref$WeakReference]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$Object$(arg0) {
-    var th = this;
-    de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference.prototype.V$$init$$Ljava$lang$Object$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$util$ImmutableCollections$SetN$SetNIterator extends java$lang$Object {
-  nativeObject = null;
-
-  this$0 = null;
-  remaining = 0;
-  idx = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$SetN$SetNIterator,
-        'java.util.ImmutableCollections$SetN$SetNIterator',
-         [java$util$ImmutableCollections$SetN$SetNIterator,java$util$Iterator,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$ImmutableCollections$SetN$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var1 = th;
-    var1.remaining = (arg0.size);
-    var2 = th;
-    java$util$ImmutableCollections.$i;
-    var2.idx = ((((java$util$ImmutableCollections.SALT32L) * ((arg0.elements).data.length | 0)) >>> 32) | 0);
-    return;
-  }
-
-  Z$hasNext$$() {
-    var th = this;
-    var phi0 = 0;
-    If_3_0: {
-     if ((th.remaining) <= 0) {
-      phi0 = (0) | 0;
-      break If_3_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  Ljava$lang$Object$$next$$() {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var phi3 = 0;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    if ((th.remaining) <= 0) {
-     var7 = new java$util$NoSuchElementException();
-     java$util$NoSuchElementException.prototype.V$$init$$$.call(var7);
-     throw bytecoder.registerStack(var7, new Error().stack);
-    } else {
-     var0 = ((th.idx)) | 0;
-     var1 = (((th.this$0).elements).data.length) | 0;
-     phi2 = (var0) | 0;
-     L1661390010: while(true) {
-      java$util$ImmutableCollections.$i;
-      If_19_0: {
-       if ((java$util$ImmutableCollections.REVERSE) == 0) {
-        phi2 = ((phi2 + -1)) | 0;
-        if (phi2 >= 0) {
-         phi3 = (phi2) | 0;
-         break If_19_0;
-        } else {
-         phi3 = ((var1 - 1)) | 0;
-         break If_19_0;
-        }
-       } else {
-        phi2 = ((phi2 + 1)) | 0;
-        if (phi2 < var1) {
-         phi3 = (phi2) | 0;
-         break If_19_0;
-        } else {
-         phi3 = (0) | 0;
-         break If_19_0;
-        }
-       }
-      }
-      var4 = (((th.this$0).elements).data[phi3]);
-      if (var4 == null) {
-       phi2 = (phi3) | 0;
-       continue L1661390010;
-      } else {
-       var5 = th;
-       var5.idx = phi3;
-       var6 = th;
-       var6.remaining = ((var6.remaining) - 1);
-       return var4;
-      }
-     }
-    }
-  }
-}
-
-
-class jdk$internal$util$Preconditions$4 extends java$lang$Object {
-  nativeObject = null;
-
-  val$f = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$util$Preconditions$4,
-        'jdk.internal.util.Preconditions$4',
-         [jdk$internal$util$Preconditions$4,java$util$function$BiFunction,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$ = impl;
-  }
-
-  V$$init$$Ljava$util$function$Function$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = th;
-    var0.val$f = arg0;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var0 = arg0;
-    var1 = arg1;
-    return (jdk$internal$util$Preconditions$4.prototype.Ljava$lang$RuntimeException$$apply$Ljava$lang$String$$Ljava$util$List$.call(th,var0,var1));
-  }
-
-  Ljava$lang$RuntimeException$$apply$Ljava$lang$String$$Ljava$util$List$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var0 = (th.val$f);
-    jdk$internal$util$Preconditions.$i;
-    var1 = (jdk$internal$util$Preconditions.Ljava$lang$String$$outOfBoundsMessage$Ljava$lang$String$$Ljava$util$List$(arg0,arg1));
-    return (var0.Ljava$lang$Object$$apply$Ljava$lang$Object$(var1));
-  }
-}
-
-
-class java$util$AbstractList$Itr extends java$lang$Object {
-  nativeObject = null;
-
-  this$0 = null;
-  cursor = 0;
-  lastRet = 0;
-  expectedModCount = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$AbstractList$Itr,
-        'java.util.AbstractList$Itr',
-         [java$util$AbstractList$Itr,java$util$Iterator,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$AbstractList$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var1 = th;
-    var1.cursor = 0;
-    var2 = th;
-    var2.lastRet = -1;
-    var3 = th;
-    var3.expectedModCount = ((th.this$0).modCount);
-    return;
-  }
-
-  Ljava$lang$Object$$next$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = 0;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    java$util$AbstractList$Itr.prototype.V$checkForComodification$$.call(th);
-    TryCatch_3_0: {
-     try {
-      var2 = ((th.cursor)) | 0;
-      var3 = (th.this$0);
-      var4 = (var3.Ljava$lang$Object$$get$I(var2));
-      var5 = th;
-      var5.lastRet = var2;
-      var6 = th;
-      var6.cursor = (var2 + 1);
-      break TryCatch_3_0;
-     } catch (__ex) {
-      if (__ex instanceof java$lang$IndexOutOfBoundsException) {
-       var0 = __ex;
-       java$util$AbstractList$Itr.prototype.V$checkForComodification$$.call(th);
-       var1 = new java$util$NoSuchElementException();
-       java$util$NoSuchElementException.prototype.V$$init$$Ljava$lang$Throwable$.call(var1,var0);
-       throw bytecoder.registerStack(var1, new Error().stack);
-      }
-      throw __ex;
-     }
-    }
-    return var4;
-  }
-
-  V$checkForComodification$$() {
-    var th = this;
-    var var0 = null;
-    if (((th.this$0).modCount) == (th.expectedModCount)) {
-     return;
-    } else {
-     var0 = new java$util$ConcurrentModificationException();
-     java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  Z$hasNext$$() {
-    var th = this;
-    var var0 = 0;
-    var var1 = null;
-    var phi2 = 0;
-    var0 = ((th.cursor)) | 0;
-    var1 = (th.this$0);
-    If_9_0: {
-     if (var0 == (var1.I$size$$())) {
-      phi2 = (0) | 0;
-      break If_9_0;
-     } else {
-      phi2 = (1) | 0;
-      break If_9_0;
-     }
-    }
-    return phi2;
-  }
-}
-
-
-class java$lang$String extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$String,
-        'java.lang.String',
-         [java$lang$Comparable,java$lang$CharSequence,java$lang$Object,java$lang$String]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  static Ljava$lang$String$$valueOf$Ljava$lang$Object$(arg0) {
-    if (arg0 != null) {
-     return (arg0.Ljava$lang$String$$toString$$());
-    } else {
-     return bytecoder.stringconstants[0];
-    }
-  }
-
-  I$length$$() {
-    return bytecoder.imports['java.lang.String'].I$length$$(this);
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    if (arg0 != null) {
-     if (arg0 != th) {
-      var0 = (arg0.Ljava$lang$String$$toString$$());
-      return (java$lang$String.prototype.Z$equals0$Ljava$lang$String$.call(th,var0));
-     } else {
-      return 1;
-     }
-    } else {
-     return 0;
-    }
-  }
-
-  Z$equals0$Ljava$lang$String$(arg0) {
-    return bytecoder.imports['java.lang.String'].Z$equals0$Ljava$lang$String$(this, arg0);
-  }
-
-  static Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(arg0,arg1) {
-    return bytecoder.imports['java.lang.String'].Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(arg0, arg1);
-  }
-
-  I$hashCode$$() {
-    var th = this;
+  static $Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I$Ljava$lang$Class$(arg0,arg1,arg2) {
     var var0 = null;
     var phi1 = 0;
-    var phi2 = 0;
-    var var3 = 0;
-    var0 = (java$lang$String.prototype.$B$getBytes$$.call(th));
-    phi1 = (0) | 0;
-    phi2 = (0) | 0;
-    L1536644775: while(true) {
-     if (phi2 >= var0.data.length) {
-      return phi1;
-     } else {
-      var3 = (((31 * phi1) + (var0.data[phi2]))) | 0;
-      phi2 = ((phi2 + 1)) | 0;
-      phi1 = (var3) | 0;
-      continue L1536644775;
-     }
-    }
-  }
-
-  $B$getBytes$$() {
-    return bytecoder.imports['java.lang.String'].$B$getBytes$$(this);
-  }
-
-  C$charAt$I(arg0) {
-    return bytecoder.imports['java.lang.String'].C$charAt$I(this, arg0);
-  }
-
-  I$compareTo$Ljava$lang$String$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
     var var2 = 0;
     var var3 = 0;
-    var var4 = 0;
-    var phi5 = 0;
-    var var6 = 0;
-    var var7 = 0;
-    var0 = (java$lang$String.prototype.$C$toCharArray$$.call(th));
-    var1 = (java$lang$String.prototype.$C$toCharArray$$.call(arg0));
-    var2 = (var0.data.length) | 0;
-    var3 = (var1.data.length) | 0;
-    java$lang$Math.$i;
-    var4 = ((java$lang$Math.I$min$I$I(var2,var3))) | 0;
-    phi5 = (0) | 0;
-    L857470216: while(true) {
-     if (phi5 >= var4) {
-      return (var2 - var3);
+    var0 = bytecoder.newarray((arg1),null);
+    phi1 = (0) | 0;
+    L1754288803: while(true) {
+     var2 = (phi1) | 0;
+     var3 = (arg0.data.length) | 0;
+     java$lang$Math.$i;
+     if (var2 >= (java$lang$Math.I$min$I$I(arg1,var3))) {
+      return var0;
      } else {
-      var6 = (var0.data[phi5]);
-      var7 = (var1.data[phi5]);
-      if (var6 == var7) {
-       phi5 = ((phi5 + 1)) | 0;
-       // Here was a goto statement
-       continue L857470216;
-      } else {
-       return (var6 - var7);
-      }
+      var0.data[phi1] = (arg0.data[phi1]);
+      phi1 = ((phi1 + 1)) | 0;
+      // Here was a goto statement
+      continue L1754288803;
      }
     }
   }
 
-  $C$toCharArray$$() {
-    return bytecoder.imports['java.lang.String'].$C$toCharArray$$(this);
-  }
-
-  V$getChars$I$I$$C$I(arg0,arg1,arg2,arg3) {
-    bytecoder.imports['java.lang.String'].V$getChars$I$I$$C$I(this, arg0, arg1, arg2, arg3);
-  }
-
-  I$compareTo$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (java$lang$String.prototype.I$compareTo$Ljava$lang$String$.call(th,var0));
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    return th;
-  }
-
-  V$$init$$$C$I$I(arg0,arg1,arg2) {
-    var th = this;
-    java$lang$String.prototype.V$$init$$$.call(th);
-    java$lang$String.prototype.V$initializeWith$$C$I$I.call(th,arg0,arg1,arg2);
-    return;
-  }
-
-  V$initializeWith$$C$I$I(arg0,arg1,arg2) {
-    bytecoder.imports['java.lang.String'].V$initializeWith$$C$I$I(this, arg0, arg1, arg2);
-  }
-}
-
-java$lang$String.prototype.Z$isEmpty$$ = java$lang$CharSequence.prototype.Z$isEmpty$$;
-
-class java$nio$charset$Charset extends java$lang$Object {
-  nativeObject = null;
-
-  static defaultCharset = null;
-  canonicalName = null;
-  aliases = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$charset$Charset,
-        'java.nio.charset.Charset',
-         [java$nio$charset$Charset,java$lang$Comparable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static Ljava$nio$charset$Charset$$defaultCharset$$() {
-    var var0 = null;
-    If_3_0: {
-     if ((java$nio$charset$Charset.defaultCharset) != null) {
-      break If_3_0;
-     } else {
-      var0 = new de$mirkosertic$bytecoder$classlib$BytecoderCharset();
-      de$mirkosertic$bytecoder$classlib$BytecoderCharset.prototype.V$$init$$Ljava$lang$String$$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[69],bytecoder.newarray((0),null));
-      java$nio$charset$Charset.defaultCharset = var0;
-      break If_3_0;
-     }
-    }
-    return (java$nio$charset$Charset.defaultCharset);
-  }
-
-  V$$init$$Ljava$lang$String$$$Ljava$lang$String$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.canonicalName = arg0;
-    var1 = th;
-    var1.aliases = arg1;
-    return;
-  }
-
-  Ljava$lang$String$$name$$() {
-    var th = this;
-    return (th.canonicalName);
-  }
-}
-
-
-class java$lang$Error extends java$lang$Throwable {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Error,
-        'java.lang.Error',
-         [java$lang$Throwable,java$lang$Error,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$Throwable.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$Throwable.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Throwable.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$concurrent$locks$ReentrantLock extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$concurrent$locks$ReentrantLock,
-        'java.util.concurrent.locks.ReentrantLock',
-         [java$util$concurrent$locks$Lock,java$util$concurrent$locks$ReentrantLock,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
   V$$init$$$() {
     var th = this;
     java$lang$Object.prototype.V$$init$$$.call(th);
     return;
-  }
-}
-
-
-class jdk$internal$util$Preconditions$1 extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$util$Preconditions$1,
-        'jdk.internal.util.Preconditions$1',
-         [java$util$function$Function,jdk$internal$util$Preconditions$1,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (jdk$internal$util$Preconditions$1.prototype.Ljava$lang$StringIndexOutOfBoundsException$$apply$Ljava$lang$String$.call(th,var0));
-  }
-
-  Ljava$lang$StringIndexOutOfBoundsException$$apply$Ljava$lang$String$(arg0) {
-    var var0 = null;
-    var0 = new java$lang$StringIndexOutOfBoundsException();
-    java$lang$StringIndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
-    return var0;
-  }
-}
-
-
-class java$lang$Exception extends java$lang$Throwable {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Exception,
-        'java.lang.Exception',
-         [java$lang$Throwable,java$lang$Exception,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$Throwable.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Throwable.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$Throwable.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$util$Collection extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collection,
-        'java.util.Collection',
-         [java$lang$Iterable,java$util$Collection,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$io$PrintStream$1 extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$PrintStream$1,
-        'java.io.PrintStream$1',
-         [java$io$PrintStream$1,jdk$internal$access$JavaIOPrintStreamAccess,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$nio$Buffer$1 extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$Buffer$1,
-        'java.nio.Buffer$1',
-         [jdk$internal$access$JavaNioAccess,java$nio$Buffer$1,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$HashMap$Node extends java$lang$Object {
-  nativeObject = null;
-
-  next = null;
-  hash = 0;
-  key = null;
-  value = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$HashMap$Node,
-        'java.util.HashMap$Node',
-         [java$util$HashMap$Node,java$util$Map$Entry,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.hash = arg0;
-    var1 = th;
-    var1.key = arg1;
-    var2 = th;
-    var2.value = arg2;
-    var3 = th;
-    var3.next = arg3;
-    return;
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var0 = new java$lang$StringBuilder();
-    java$lang$StringBuilder.prototype.V$$init$$$.call(var0);
-    var1 = (th.key);
-    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var0,var1));
-    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[102]));
-    var4 = (th.value);
-    var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var3,var4));
-    return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var5));
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var phi5 = 0;
-    if (arg0 != th) {
-     If_9_0: {
-      If_9_1: {
-       if (bytecoder.instanceOf(arg0,java$util$Map$Entry) == 0) {
-        break If_9_1;
-       } else {
-        var0 = arg0;
-        var1 = (th.key);
-        var2 = (var0.Ljava$lang$Object$$getKey$$());
-        if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var1,var2)) == 0) {
-         break If_9_1;
-        } else {
-         var3 = (th.value);
-         var4 = (var0.Ljava$lang$Object$$getValue$$());
-         if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var3,var4)) == 0) {
-          break If_9_1;
-         } else {
-          phi5 = (1) | 0;
-          break If_9_0;
-         }
-        }
-       }
-      }
-      phi5 = (0) | 0;
-      break If_9_0;
-     }
-     return phi5;
-    } else {
-     return 1;
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var0 = (th.key);
-    var1 = ((java$util$Objects.I$hashCode$Ljava$lang$Object$(var0))) | 0;
-    var2 = (th.value);
-    return (var1 ^ (java$util$Objects.I$hashCode$Ljava$lang$Object$(var2)));
-  }
-
-  Ljava$lang$Object$$getKey$$() {
-    var th = this;
-    return (th.key);
-  }
-
-  Ljava$lang$Object$$getValue$$() {
-    var th = this;
-    return (th.value);
-  }
-}
-
-
-class java$util$KeyValueHolder extends java$lang$Object {
-  nativeObject = null;
-
-  key = null;
-  value = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$KeyValueHolder,
-        'java.util.KeyValueHolder',
-         [java$util$KeyValueHolder,java$util$Map$Entry,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.key = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
-    var1 = th;
-    var1.value = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg1));
-    return;
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var0 = new java$lang$StringBuilder();
-    java$lang$StringBuilder.prototype.V$$init$$$.call(var0);
-    var1 = (th.key);
-    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var0,var1));
-    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[102]));
-    var4 = (th.value);
-    var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var3,var4));
-    return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var5));
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var phi5 = 0;
-    If_5_0: {
-     If_5_1: {
-      if (bytecoder.instanceOf(arg0,java$util$Map$Entry) == 0) {
-       break If_5_1;
-      } else {
-       var0 = arg0;
-       var1 = (th.key);
-       var2 = (var0.Ljava$lang$Object$$getKey$$());
-       if ((var1.Z$equals$Ljava$lang$Object$(var2)) == 0) {
-        break If_5_1;
-       } else {
-        var3 = (th.value);
-        var4 = (var0.Ljava$lang$Object$$getValue$$());
-        if ((var3.Z$equals$Ljava$lang$Object$(var4)) == 0) {
-         break If_5_1;
-        } else {
-         phi5 = (1) | 0;
-         break If_5_0;
-        }
-       }
-      }
-     }
-     phi5 = (0) | 0;
-     break If_5_0;
-    }
-    return phi5;
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var0 = (th.key);
-    var1 = ((var0.I$hashCode$$())) | 0;
-    var2 = (th.value);
-    return (var1 ^ (var2.I$hashCode$$()));
-  }
-
-  Ljava$lang$Object$$getKey$$() {
-    var th = this;
-    return (th.key);
-  }
-
-  Ljava$lang$Object$$getValue$$() {
-    var th = this;
-    return (th.value);
-  }
-}
-
-
-class java$lang$Thread extends java$lang$Object {
-  nativeObject = null;
-
-  static MAIN_THREAD = null;
-  threadGroup = null;
-  runnable = null;
-  name = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Thread,
-        'java.lang.Thread',
-         [java$lang$Runnable,java$lang$Thread,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static Ljava$lang$Thread$$currentThread$$() {
-    var var0 = null;
-    var var1 = null;
-    If_3_0: {
-     if ((java$lang$Thread.MAIN_THREAD) != null) {
-      break If_3_0;
-     } else {
-      java$lang$ThreadGroup.$i;
-      var0 = new java$lang$ThreadGroup();
-      de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.$i;
-      java$lang$ThreadGroup.prototype.V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$.call(var0,(de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.SYSTEM),bytecoder.stringconstants[67]);
-      var1 = new java$lang$Thread();
-      java$lang$Thread.prototype.V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$.call(var1,var0,bytecoder.stringconstants[67]);
-      java$lang$Thread.MAIN_THREAD = var1;
-      break If_3_0;
-     }
-    }
-    return (java$lang$Thread.MAIN_THREAD);
-  }
-
-  V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.threadGroup = arg0;
-    var1 = th;
-    var1.runnable = null;
-    var2 = th;
-    var2.name = arg1;
-    return;
-  }
-
-  Z$isVirtual$$() {
-    return 0;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.runnable = null;
-    var1 = th;
-    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.$i;
-    var1.threadGroup = (de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.SYSTEM);
-    var2 = th;
-    var2.name = bytecoder.stringconstants[104];
-    return;
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder extends java$nio$charset$CharsetEncoder {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder,
-        'de.mirkosertic.bytecoder.classlib.BytecoderCharsetEncoder',
-         [de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder,java$nio$charset$CharsetEncoder,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      java$nio$charset$CharsetEncoder.$i;
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$nio$charset$Charset$(arg0) {
-    var th = this;
-    java$nio$charset$CharsetEncoder.prototype.V$$init$$Ljava$nio$charset$Charset$$F$F.call(th,arg0,1.1,3.0);
-    return;
-  }
-}
-
-
-class java$util$HashMap$EntryIterator extends java$util$HashMap$HashIterator {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$HashMap$EntryIterator,
-        'java.util.HashMap$EntryIterator',
-         [java$util$Iterator,java$util$HashMap$EntryIterator,java$lang$Object,java$util$HashMap$HashIterator]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$HashMap$(arg0) {
-    var th = this;
-    java$util$HashMap$HashIterator.prototype.V$$init$$Ljava$util$HashMap$.call(th,arg0);
-    return;
-  }
-
-  Ljava$lang$Object$$next$$() {
-    var th = this;
-    return (java$util$HashMap$EntryIterator.prototype.Ljava$util$Map$Entry$$next$$.call(th));
-  }
-
-  Ljava$util$Map$Entry$$next$$() {
-    var th = this;
-    return (th.Ljava$util$HashMap$Node$$nextNode$$());
-  }
-}
-
-
-class jdk$internal$util$Preconditions$3 extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$util$Preconditions$3,
-        'jdk.internal.util.Preconditions$3',
-         [jdk$internal$util$Preconditions$3,java$util$function$Function,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (jdk$internal$util$Preconditions$3.prototype.Ljava$lang$IndexOutOfBoundsException$$apply$Ljava$lang$String$.call(th,var0));
-  }
-
-  Ljava$lang$IndexOutOfBoundsException$$apply$Ljava$lang$String$(arg0) {
-    var var0 = null;
-    var0 = new java$lang$IndexOutOfBoundsException();
-    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
-    return var0;
-  }
-}
-
-
-class java$lang$Number extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Number,
-        'java.lang.Number',
-         [java$io$Serializable,java$lang$Number,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-    this.I$intValue$$ = impl;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  B$byteValue$$() {
-    var th = this;
-    return (th.I$intValue$$());
-  }
-
-  S$shortValue$$() {
-    var th = this;
-    return (th.I$intValue$$());
   }
 }
 
@@ -7794,7 +6425,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$nio$CharBuffer,
         'java.nio.CharBuffer',
-         [java$lang$Comparable,java$lang$Appendable,java$lang$Readable,java$nio$CharBuffer,java$lang$CharSequence,java$lang$Object,java$nio$Buffer]);
+         [java$lang$Readable,java$lang$Appendable,java$nio$CharBuffer,java$lang$CharSequence,java$lang$Comparable,java$nio$Buffer,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -7871,7 +6502,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
      var4 = ((arg2 - arg1)) | 0;
      if (var4 <= (th.I$remaining$$())) {
       phi6 = (arg1) | 0;
-      L494023117: while(true) {
+      L95981347: while(true) {
        if (phi6 >= arg2) {
         return th;
        } else {
@@ -7880,7 +6511,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
         var9 = (th.Ljava$nio$CharBuffer$$put$C(var8));
         phi6 = ((phi6 + 1)) | 0;
         // Here was a goto statement
-        continue L494023117;
+        continue L95981347;
        }
       }
      } else {
@@ -8072,7 +6703,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
     var1 = (((th.I$limit$$()) - 1)) | 0;
     phi2 = (1) | 0;
     phi3 = (var1) | 0;
-    L1404338966: while(true) {
+    L1649563548: while(true) {
      if (phi3 < var0) {
       return phi2;
      } else {
@@ -8081,7 +6712,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
       var6 = ((var4 + (th.C$get$I(var5)))) | 0;
       phi3 = ((phi3 + -1)) | 0;
       phi2 = (var6) | 0;
-      continue L1404338966;
+      continue L1649563548;
      }
     }
   }
@@ -8198,7 +6829,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
      var13 = ((arg2 + arg3)) | 0;
      phi14 = (arg2) | 0;
      phi15 = (arg0) | 0;
-     L1922522067: while(true) {
+     L358693944: while(true) {
       if (phi14 >= var13) {
        phi3 = var13;
        phi4 = phi15;
@@ -8210,7 +6841,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
        phi14 = ((phi14 + 1)) | 0;
        phi15 = ((phi15 + 1)) | 0;
        // Here was a goto statement
-       continue L1922522067;
+       continue L358693944;
       }
      }
     }
@@ -8223,145 +6854,7 @@ class java$nio$CharBuffer extends java$nio$Buffer {
 }
 
 
-class java$util$ImmutableCollections$MapN$MapNIterator extends java$lang$Object {
-  nativeObject = null;
-
-  this$0 = null;
-  remaining = 0;
-  idx = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$MapN$MapNIterator,
-        'java.util.ImmutableCollections$MapN$MapNIterator',
-         [java$util$Iterator,java$util$ImmutableCollections$MapN$MapNIterator,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$ImmutableCollections$MapN$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var1 = th;
-    var1.remaining = (arg0.size);
-    var2 = th;
-    java$util$ImmutableCollections.$i;
-    var2.idx = (((((java$util$ImmutableCollections.SALT32L) * (((arg0.table).data.length >> 1) | 0)) >>> 32) | 0) << 1);
-    return;
-  }
-
-  Z$hasNext$$() {
-    var th = this;
-    var phi0 = 0;
-    If_3_0: {
-     if ((th.remaining) <= 0) {
-      phi0 = (0) | 0;
-      break If_3_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  Ljava$lang$Object$$next$$() {
-    var th = this;
-    return (java$util$ImmutableCollections$MapN$MapNIterator.prototype.Ljava$util$Map$Entry$$next$$.call(th));
-  }
-
-  Ljava$util$Map$Entry$$next$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    If_3_0: {
-     if ((th.remaining) <= 0) {
-      var7 = new java$util$NoSuchElementException();
-      java$util$NoSuchElementException.prototype.V$$init$$$.call(var7);
-      throw bytecoder.registerStack(var7, new Error().stack);
-     } else {
-      break If_3_0;
-     }
-    }
-    L894086555: while(true) {
-     var0 = ((th.this$0).table);
-     var1 = ((java$util$ImmutableCollections$MapN$MapNIterator.prototype.I$nextIndex$$.call(th))) | 0;
-     if ((var0.data[var1]) != null) {
-      var2 = new java$util$KeyValueHolder();
-      var3 = ((th.this$0).table);
-      var4 = (var3.data[var1]);
-      var5 = ((th.this$0).table);
-      java$util$KeyValueHolder.prototype.V$$init$$Ljava$lang$Object$$Ljava$lang$Object$.call(var2,var4,(var5.data[(var1 + 1)]));
-      var6 = th;
-      var6.remaining = ((var6.remaining) - 1);
-      return var2;
-     } else {
-      // Here was a goto statement
-      continue L894086555;
-     }
-    }
-  }
-
-  I$nextIndex$$() {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var var3 = null;
-    var var4 = 0;
-    var var5 = 0;
-    var0 = ((th.idx)) | 0;
-    java$util$ImmutableCollections.$i;
-    If_8_0: {
-     if ((java$util$ImmutableCollections.REVERSE) == 0) {
-      var5 = ((var0 + -2)) | 0;
-      if (var5 >= 0) {
-       phi2 = (var5) | 0;
-       break If_8_0;
-      } else {
-       phi2 = ((((th.this$0).table).data.length - 2)) | 0;
-       break If_8_0;
-      }
-     } else {
-      var1 = ((var0 + 2)) | 0;
-      if (var1 < ((th.this$0).table).data.length) {
-       phi2 = (var1) | 0;
-       break If_8_0;
-      } else {
-       phi2 = (0) | 0;
-       break If_8_0;
-      }
-     }
-    }
-    var3 = th;
-    var4 = (phi2) | 0;
-    var3.idx = var4;
-    return var4;
-  }
-}
-
-
-class java$lang$reflect$ParameterizedType extends java$lang$Object {
+class jdk$internal$util$Preconditions$1 extends java$lang$Object {
   nativeObject = null;
   constructor() {
     super();
@@ -8371,36 +6864,15 @@ class java$lang$reflect$ParameterizedType extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$reflect$ParameterizedType,
-        'java.lang.reflect.ParameterizedType',
-         [java$lang$reflect$Type,java$lang$reflect$ParameterizedType,java$lang$Object]);
+        jdk$internal$util$Preconditions$1,
+        'jdk.internal.util.Preconditions$1',
+         [java$util$function$Function,jdk$internal$util$Preconditions$1,java$lang$Object]);
     }
     return this.#rt;
   }
 
   set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$util$AbstractMap extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$AbstractMap,
-        'java.util.AbstractMap',
-         [java$util$Map,java$util$AbstractMap,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
+    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
   }
 
   V$$init$$$() {
@@ -8409,212 +6881,80 @@ class java$util$AbstractMap extends java$lang$Object {
     return;
   }
 
-  Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    var var0 = null;
-    var0 = new java$lang$UnsupportedOperationException();
-    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-
-  Ljava$lang$String$$toString$$() {
+  Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var phi7 = null;
-    var var8 = null;
-    var var9 = null;
-    var phi10 = null;
-    var var11 = null;
-    var var12 = null;
-    var var13 = null;
-    var var14 = null;
-    var0 = (th.Ljava$util$Set$$entrySet$$());
-    var1 = (var0.Ljava$util$Iterator$$iterator$$());
-    if ((var1.Z$hasNext$$()) != 0) {
-     var2 = new java$lang$StringBuilder();
-     java$lang$StringBuilder.prototype.V$$init$$$.call(var2);
-     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,123));
-     L1018100712: while(true) {
-      var4 = (var1.Ljava$lang$Object$$next$$());
-      var5 = (var4.Ljava$lang$Object$$getKey$$());
-      var6 = (var4.Ljava$lang$Object$$getValue$$());
-      If_34_0: {
-       if (var5 != th) {
-        phi7 = var5;
-        break If_34_0;
-       } else {
-        phi7 = bytecoder.stringconstants[101];
-        break If_34_0;
-       }
-      }
-      var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var2,phi7));
-      var9 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,61));
-      If_46_0: {
-       if (var6 != th) {
-        phi10 = var6;
-        break If_46_0;
-       } else {
-        phi10 = bytecoder.stringconstants[101];
-        break If_46_0;
-       }
-      }
-      var11 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var2,phi10));
-      if ((var1.Z$hasNext$$()) != 0) {
-       var13 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,44));
-       var14 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var13,32));
-       // Here was a goto statement
-       continue L1018100712;
-      } else {
-       var12 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,125));
-       return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var12));
-      }
-     }
-    } else {
-     return bytecoder.stringconstants[100];
-    }
+    var0 = arg0;
+    return (jdk$internal$util$Preconditions$1.prototype.Ljava$lang$StringIndexOutOfBoundsException$$apply$Ljava$lang$String$.call(th,var0));
   }
 
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
+  Ljava$lang$StringIndexOutOfBoundsException$$apply$Ljava$lang$String$(arg0) {
     var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var phi3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = null;
-    if (arg0 != th) {
-     if (bytecoder.instanceOf(arg0,java$util$Map) == 0) {
-      return 0;
-     } else {
-      var0 = arg0;
-      var1 = ((var0.I$size$$())) | 0;
-      if (var1 == (th.I$size$$())) {
-       TryCatch_23_0: {
-        TryCatch_23_1: {
-         try {
-          var2 = (th.Ljava$util$Set$$entrySet$$());
-          phi3 = (var2.Ljava$util$Iterator$$iterator$$());
-          L476124146: while(true) {
-           var4 = phi3;
-           if ((var4.Z$hasNext$$()) == 0) {
-            return 1;
-           } else {
-            var5 = phi3;
-            var6 = (var5.Ljava$lang$Object$$next$$());
-            var7 = (var6.Ljava$lang$Object$$getKey$$());
-            var8 = (var6.Ljava$lang$Object$$getValue$$());
-            If_51_0: {
-             if (var8 != null) {
-              TryCatch_66_0: {
-               try {
-                var9 = (var0.Ljava$lang$Object$$get$Ljava$lang$Object$(var7));
-                if ((var8.Z$equals$Ljava$lang$Object$(var9)) != 0) {
-                 break If_51_0;
-                } else {
-                 break TryCatch_66_0;
-                }
-               } catch (__ex) {
-                if (__ex instanceof java$lang$ClassCastException) {
-                 return 0;
-                }
-                if (__ex instanceof java$lang$NullPointerException) {
-                 return 0;
-                }
-                throw __ex;
-               }
-              }
-              return 0;
-             } else {
-              If_54_0: {
-               if ((var0.Ljava$lang$Object$$get$Ljava$lang$Object$(var7)) != null) {
-                break If_54_0;
-               } else {
-                if ((var0.Z$containsKey$Ljava$lang$Object$(var7)) != 0) {
-                 break If_51_0;
-                } else {
-                 break If_54_0;
-                }
-               }
-              }
-              break TryCatch_23_0;
-             }
-            }
-            try {
-             // Here was a goto statement
-             continue L476124146;
-            } catch (__ex) {
-             if (__ex instanceof java$lang$ClassCastException) {
-              return 0;
-             }
-             if (__ex instanceof java$lang$NullPointerException) {
-              return 0;
-             }
-             throw __ex;
-            }
-           }
-          }
-         } catch (__ex) {
-          if (__ex instanceof java$lang$ClassCastException) {
-           return 0;
-          }
-          if (__ex instanceof java$lang$NullPointerException) {
-           return 0;
-          }
-          throw __ex;
-         }
-        }
-        return 0;
-       }
-       return 0;
-      } else {
-       return 0;
-      }
-     }
-    } else {
-     return 1;
-    }
-  }
-
-  I$size$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.Ljava$util$Set$$entrySet$$());
-    return (var0.I$size$$());
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var phi2 = 0;
-    var var3 = null;
-    var var4 = 0;
-    var0 = (th.Ljava$util$Set$$entrySet$$());
-    var1 = (var0.Ljava$util$Iterator$$iterator$$());
-    phi2 = (0) | 0;
-    L1195520711: while(true) {
-     if ((var1.Z$hasNext$$()) == 0) {
-      return phi2;
-     } else {
-      var3 = (var1.Ljava$lang$Object$$next$$());
-      var4 = (phi2) | 0;
-      phi2 = ((var4 + (var3.I$hashCode$$()))) | 0;
-      continue L1195520711;
-     }
-    }
+    var0 = new java$lang$StringIndexOutOfBoundsException();
+    java$lang$StringIndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
+    return var0;
   }
 }
 
-java$util$AbstractMap.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$ = java$util$Map.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$;
+
+class java$nio$charset$Charset extends java$lang$Object {
+  nativeObject = null;
+
+  static defaultCharset = null;
+  canonicalName = null;
+  aliases = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$charset$Charset,
+        'java.nio.charset.Charset',
+         [java$nio$charset$Charset,java$lang$Comparable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static Ljava$nio$charset$Charset$$defaultCharset$$() {
+    var var0 = null;
+    If_3_0: {
+     if ((java$nio$charset$Charset.defaultCharset) != null) {
+      break If_3_0;
+     } else {
+      var0 = new de$mirkosertic$bytecoder$classlib$BytecoderCharset();
+      de$mirkosertic$bytecoder$classlib$BytecoderCharset.prototype.V$$init$$Ljava$lang$String$$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[69],bytecoder.newarray((0),null));
+      java$nio$charset$Charset.defaultCharset = var0;
+      break If_3_0;
+     }
+    }
+    return (java$nio$charset$Charset.defaultCharset);
+  }
+
+  V$$init$$Ljava$lang$String$$$Ljava$lang$String$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.canonicalName = arg0;
+    var1 = th;
+    var1.aliases = arg1;
+    return;
+  }
+
+  Ljava$lang$String$$name$$() {
+    var th = this;
+    return (th.canonicalName);
+  }
+}
+
 
 class java$lang$StringBuilder extends java$lang$AbstractStringBuilder {
   nativeObject = null;
@@ -8628,7 +6968,7 @@ class java$lang$StringBuilder extends java$lang$AbstractStringBuilder {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$lang$StringBuilder,
         'java.lang.StringBuilder',
-         [java$lang$AbstractStringBuilder,java$lang$StringBuilder,java$lang$CharSequence,java$lang$Object]);
+         [java$lang$AbstractStringBuilder,java$lang$CharSequence,java$lang$StringBuilder,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -8699,108 +7039,13 @@ class java$lang$StringBuilder extends java$lang$AbstractStringBuilder {
 
 java$lang$StringBuilder.prototype.Z$isEmpty$$ = java$lang$CharSequence.prototype.Z$isEmpty$$;
 
-class java$util$ListIterator extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ListIterator,
-        'java.util.ListIterator',
-         [java$util$ListIterator,java$util$Iterator,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$util$concurrent$ConcurrentMap extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$concurrent$ConcurrentMap,
-        'java.util.concurrent.ConcurrentMap',
-         [java$util$Map,java$util$concurrent$ConcurrentMap,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-java$util$concurrent$ConcurrentMap.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$ = java$util$Map.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$;
-
-class de$mirkosertic$bytecoder$classlib$VM$1 extends java$lang$ClassLoader {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$VM$1,
-        'de.mirkosertic.bytecoder.classlib.VM$1',
-         [de$mirkosertic$bytecoder$classlib$VM$1,java$lang$ClassLoader,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$ClassLoader.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$io$Closeable extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$Closeable,
-        'java.io.Closeable',
-         [java$io$Closeable,java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$util$ArrayList$Itr extends java$lang$Object {
+class java$util$HashMap$Node extends java$lang$Object {
   nativeObject = null;
 
-  this$0 = null;
-  lastRet = 0;
-  expectedModCount = 0;
-  cursor = 0;
+  next = null;
+  hash = 0;
+  key = null;
+  value = null;
 
   constructor() {
     super();
@@ -8810,9 +7055,9 @@ class java$util$ArrayList$Itr extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ArrayList$Itr,
-        'java.util.ArrayList$Itr',
-         [java$util$Iterator,java$lang$Object,java$util$ArrayList$Itr]);
+        java$util$HashMap$Node,
+        'java.util.HashMap$Node',
+         [java$util$Map$Entry,java$util$HashMap$Node,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -8820,76 +7065,332 @@ class java$util$ArrayList$Itr extends java$lang$Object {
   set $lambdaimpl(impl) {
   }
 
-  V$$init$$Ljava$util$ArrayList$(arg0) {
+  V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
     var th = this;
     var var0 = null;
     var var1 = null;
     var var2 = null;
-    var0 = th;
-    var0.this$0 = arg0;
+    var var3 = null;
     java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.hash = arg0;
     var1 = th;
-    var1.lastRet = -1;
+    var1.key = arg1;
     var2 = th;
-    var2.expectedModCount = ((th.this$0).modCount);
+    var2.value = arg2;
+    var3 = th;
+    var3.next = arg3;
     return;
   }
 
-  Ljava$lang$Object$$next$$() {
+  Ljava$lang$String$$toString$$() {
     var th = this;
-    var var0 = 0;
+    var var0 = null;
     var var1 = null;
     var var2 = null;
     var var3 = null;
     var var4 = null;
     var var5 = null;
-    java$util$ArrayList$Itr.prototype.V$checkForComodification$$.call(th);
-    var0 = ((th.cursor)) | 0;
-    if (var0 < ((th.this$0).size)) {
-     var2 = ((th.this$0).elementData);
-     if (var0 < var2.data.length) {
-      var4 = th;
-      var4.cursor = (var0 + 1);
-      var5 = th;
-      var5.lastRet = var0;
-      return (var2.data[var0]);
-     } else {
-      var3 = new java$util$ConcurrentModificationException();
-      java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var3);
-      throw bytecoder.registerStack(var3, new Error().stack);
-     }
-    } else {
-     var1 = new java$util$NoSuchElementException();
-     java$util$NoSuchElementException.prototype.V$$init$$$.call(var1);
-     throw bytecoder.registerStack(var1, new Error().stack);
-    }
+    var0 = new java$lang$StringBuilder();
+    java$lang$StringBuilder.prototype.V$$init$$$.call(var0);
+    var1 = (th.key);
+    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var0,var1));
+    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[104]));
+    var4 = (th.value);
+    var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var3,var4));
+    return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var5));
   }
 
-  V$checkForComodification$$() {
+  Z$equals$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    if (((th.this$0).modCount) == (th.expectedModCount)) {
-     return;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var phi5 = 0;
+    if (arg0 != th) {
+     If_9_0: {
+      If_9_1: {
+       if (bytecoder.instanceOf(arg0,java$util$Map$Entry) == 0) {
+        break If_9_1;
+       } else {
+        var0 = arg0;
+        var1 = (th.key);
+        var2 = (var0.Ljava$lang$Object$$getKey$$());
+        if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var1,var2)) == 0) {
+         break If_9_1;
+        } else {
+         var3 = (th.value);
+         var4 = (var0.Ljava$lang$Object$$getValue$$());
+         if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var3,var4)) == 0) {
+          break If_9_1;
+         } else {
+          phi5 = (1) | 0;
+          break If_9_0;
+         }
+        }
+       }
+      }
+      phi5 = (0) | 0;
+      break If_9_0;
+     }
+     return phi5;
     } else {
-     var0 = new java$util$ConcurrentModificationException();
-     java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
+     return 1;
     }
   }
 
-  Z$hasNext$$() {
+  I$hashCode$$() {
     var th = this;
-    var phi0 = 0;
-    If_5_0: {
-     if ((th.cursor) == ((th.this$0).size)) {
-      phi0 = (0) | 0;
-      break If_5_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_5_0;
-     }
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    var0 = (th.key);
+    var1 = ((java$util$Objects.I$hashCode$Ljava$lang$Object$(var0))) | 0;
+    var2 = (th.value);
+    return (var1 ^ (java$util$Objects.I$hashCode$Ljava$lang$Object$(var2)));
+  }
+
+  Ljava$lang$Object$$getKey$$() {
+    var th = this;
+    return (th.key);
+  }
+
+  Ljava$lang$Object$$getValue$$() {
+    var th = this;
+    return (th.value);
+  }
+}
+
+
+class java$util$Hashtable extends java$util$Dictionary {
+  nativeObject = null;
+
+  modCount = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Hashtable,
+        'java.util.Hashtable',
+         [java$util$Hashtable,java$io$Serializable,java$util$Map,java$util$Dictionary,java$lang$Cloneable,java$lang$Object]);
     }
-    return phi0;
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Void$(arg0) {
+    var th = this;
+    var var0 = null;
+    java$util$Dictionary.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.modCount = 0;
+    return;
+  }
+}
+
+java$util$Hashtable.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$ = java$util$Map.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$;
+
+class jdk$internal$util$Preconditions$2 extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$util$Preconditions$2,
+        'jdk.internal.util.Preconditions$2',
+         [jdk$internal$util$Preconditions$2,java$util$function$Function,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (jdk$internal$util$Preconditions$2.prototype.Ljava$lang$ArrayIndexOutOfBoundsException$$apply$Ljava$lang$String$.call(th,var0));
+  }
+
+  Ljava$lang$ArrayIndexOutOfBoundsException$$apply$Ljava$lang$String$(arg0) {
+    var var0 = null;
+    var0 = new java$lang$ArrayIndexOutOfBoundsException();
+    java$lang$ArrayIndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
+    return var0;
+  }
+}
+
+
+class java$lang$Exception extends java$lang$Throwable {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Exception,
+        'java.lang.Exception',
+         [java$lang$Exception,java$lang$Throwable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$Throwable.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Throwable.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$Throwable.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$util$KeyValueHolder extends java$lang$Object {
+  nativeObject = null;
+
+  key = null;
+  value = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$KeyValueHolder,
+        'java.util.KeyValueHolder',
+         [java$util$KeyValueHolder,java$util$Map$Entry,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.key = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
+    var1 = th;
+    var1.value = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg1));
+    return;
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var0 = new java$lang$StringBuilder();
+    java$lang$StringBuilder.prototype.V$$init$$$.call(var0);
+    var1 = (th.key);
+    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var0,var1));
+    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[104]));
+    var4 = (th.value);
+    var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var3,var4));
+    return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var5));
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var phi5 = 0;
+    If_5_0: {
+     If_5_1: {
+      if (bytecoder.instanceOf(arg0,java$util$Map$Entry) == 0) {
+       break If_5_1;
+      } else {
+       var0 = arg0;
+       var1 = (th.key);
+       var2 = (var0.Ljava$lang$Object$$getKey$$());
+       if ((var1.Z$equals$Ljava$lang$Object$(var2)) == 0) {
+        break If_5_1;
+       } else {
+        var3 = (th.value);
+        var4 = (var0.Ljava$lang$Object$$getValue$$());
+        if ((var3.Z$equals$Ljava$lang$Object$(var4)) == 0) {
+         break If_5_1;
+        } else {
+         phi5 = (1) | 0;
+         break If_5_0;
+        }
+       }
+      }
+     }
+     phi5 = (0) | 0;
+     break If_5_0;
+    }
+    return phi5;
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    var0 = (th.key);
+    var1 = ((var0.I$hashCode$$())) | 0;
+    var2 = (th.value);
+    return (var1 ^ (var2.I$hashCode$$()));
+  }
+
+  Ljava$lang$Object$$getKey$$() {
+    var th = this;
+    return (th.key);
+  }
+
+  Ljava$lang$Object$$getValue$$() {
+    var th = this;
+    return (th.value);
   }
 }
 
@@ -8906,7 +7407,7 @@ class de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder extends java$nio
       this.#rt = bytecoder.newRuntimeClassFor(
         de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder,
         'de.mirkosertic.bytecoder.classlib.BytecoderCharsetDecoder',
-         [de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder,java$lang$Object,java$nio$charset$CharsetDecoder]);
+         [de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder,java$nio$charset$CharsetDecoder,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -8982,7 +7483,7 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$nio$ByteBuffer,
         'java.nio.ByteBuffer',
-         [java$lang$Comparable,java$nio$ByteBuffer,java$lang$Object,java$nio$Buffer]);
+         [java$nio$ByteBuffer,java$lang$Comparable,java$nio$Buffer,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -9187,13 +7688,13 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
     var1 = ((th).constructor.$rt);
     var2 = (java$lang$Class.prototype.Ljava$lang$String$$getName$$.call(var1));
     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var0,var2));
-    var4 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var3,bytecoder.stringconstants[95]));
+    var4 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var3,bytecoder.stringconstants[101]));
     var5 = ((th.I$position$$())) | 0;
     var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var4,var5));
-    var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[96]));
+    var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[102]));
     var8 = ((th.I$limit$$())) | 0;
     var9 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var7,var8));
-    var10 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var9,bytecoder.stringconstants[97]));
+    var10 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var9,bytecoder.stringconstants[103]));
     var11 = ((th.I$capacity$$())) | 0;
     var12 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var10,var11));
     var13 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var12,bytecoder.stringconstants[82]));
@@ -9262,7 +7763,7 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
     var1 = (((th.I$limit$$()) - 1)) | 0;
     phi2 = (1) | 0;
     phi3 = (var1) | 0;
-    L1917096539: while(true) {
+    L1892842734: while(true) {
      if (phi3 < var0) {
       return phi2;
      } else {
@@ -9271,7 +7772,7 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
       var6 = ((var4 + (th.B$get$I(var5)))) | 0;
       phi3 = ((phi3 + -1)) | 0;
       phi2 = (var6) | 0;
-      continue L1917096539;
+      continue L1892842734;
      }
     }
   }
@@ -9322,7 +7823,7 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
       var8 = ((arg2 + arg3)) | 0;
       phi9 = (arg2) | 0;
       phi10 = (arg0) | 0;
-      L663889595: while(true) {
+      L1075669513: while(true) {
        if (phi9 >= var8) {
         phi3 = var8;
         phi4 = phi10;
@@ -9334,7 +7835,7 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
         phi9 = ((phi9 + 1)) | 0;
         phi10 = ((phi10 + 1)) | 0;
         // Here was a goto statement
-        continue L663889595;
+        continue L1075669513;
        }
       }
      } else {
@@ -9371,10 +7872,12 @@ class java$nio$ByteBuffer extends java$nio$Buffer {
 }
 
 
-class java$util$AbstractList$ListItr extends java$util$AbstractList$Itr {
+class java$util$ImmutableCollections$MapN$MapNIterator extends java$lang$Object {
   nativeObject = null;
 
   this$0 = null;
+  remaining = 0;
+  idx = 0;
 
   constructor() {
     super();
@@ -9384,9 +7887,9 @@ class java$util$AbstractList$ListItr extends java$util$AbstractList$Itr {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$AbstractList$ListItr,
-        'java.util.AbstractList$ListItr',
-         [java$util$AbstractList$ListItr,java$util$ListIterator,java$util$Iterator,java$util$AbstractList$Itr,java$lang$Object]);
+        java$util$ImmutableCollections$MapN$MapNIterator,
+        'java.util.ImmutableCollections$MapN$MapNIterator',
+         [java$util$Iterator,java$util$ImmutableCollections$MapN$MapNIterator,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -9394,368 +7897,120 @@ class java$util$AbstractList$ListItr extends java$util$AbstractList$Itr {
   set $lambdaimpl(impl) {
   }
 
-  V$$init$$Ljava$util$AbstractList$$I(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$util$AbstractList$Itr.prototype.V$$init$$Ljava$util$AbstractList$.call(th,arg0);
-    var1 = th;
-    var1.cursor = arg1;
-    return;
-  }
-
-  V$set$Ljava$lang$Object$(arg0) {
+  V$$init$$Ljava$util$ImmutableCollections$MapN$(arg0) {
     var th = this;
     var var0 = null;
     var var1 = null;
     var var2 = null;
-    var var3 = 0;
-    var var4 = null;
-    var var5 = null;
-    if ((th.lastRet) >= 0) {
-     th.V$checkForComodification$$();
-     TryCatch_14_0: {
-      try {
-       var2 = (th.this$0);
-       var3 = ((th.lastRet)) | 0;
-       var4 = (var2.Ljava$lang$Object$$set$I$Ljava$lang$Object$(var3,arg0));
-       var5 = th;
-       var5.expectedModCount = ((th.this$0).modCount);
-       break TryCatch_14_0;
-      } catch (__ex) {
-       if (__ex instanceof java$lang$IndexOutOfBoundsException) {
-        var1 = new java$util$ConcurrentModificationException();
-        java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var1);
-        throw bytecoder.registerStack(var1, new Error().stack);
-       }
-       throw __ex;
-      }
+    var0 = th;
+    var0.this$0 = arg0;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var1 = th;
+    var1.remaining = (arg0.size);
+    var2 = th;
+    java$util$ImmutableCollections.$i;
+    var2.idx = (((((java$util$ImmutableCollections.SALT32L) * (((arg0.table).data.length >> 1) | 0)) >>> 32) | 0) << 1);
+    return;
+  }
+
+  Z$hasNext$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.remaining) <= 0) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
      }
-     return;
-    } else {
-     var0 = new java$lang$IllegalStateException();
-     java$lang$IllegalStateException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
     }
+    return phi0;
   }
 
-  I$previousIndex$$() {
+  Ljava$lang$Object$$next$$() {
     var th = this;
-    return ((th.cursor) - 1);
-  }
-}
-
-
-class java$nio$HeapByteBuffer extends java$nio$ByteBuffer {
-  nativeObject = null;
-
-  static ARRAY_BASE_OFFSET = 0;
-  static ARRAY_INDEX_SCALE = 0;
-
-  constructor() {
-    super();
+    return (java$util$ImmutableCollections$MapN$MapNIterator.prototype.Ljava$util$Map$Entry$$next$$.call(th));
   }
 
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$HeapByteBuffer,
-        'java.nio.HeapByteBuffer',
-         [java$lang$Comparable,java$nio$HeapByteBuffer,java$nio$ByteBuffer,java$lang$Object,java$nio$Buffer]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      java$nio$ByteBuffer.$i;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    java$nio$HeapByteBuffer.$i;
-    var0 = (java$nio$HeapByteBuffer.UNSAFE);
-    java$nio$HeapByteBuffer.ARRAY_BASE_OFFSET = ((jdk$internal$misc$Unsafe.prototype.I$arrayBaseOffset$Ljava$lang$Class$.call(var0,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
-    var1 = (java$nio$HeapByteBuffer.UNSAFE);
-    java$nio$HeapByteBuffer.ARRAY_INDEX_SCALE = ((jdk$internal$misc$Unsafe.prototype.I$arrayIndexScale$Ljava$lang$Class$.call(var1,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
-    return;
-  }
-
-  V$$init$$$B$I$I$Ljava$lang$foreign$MemorySegment$(arg0,arg1,arg2,arg3) {
-    var th = this;
-    var var0 = null;
-    java$nio$ByteBuffer.prototype.V$$init$$I$I$I$I$$B$I$Ljava$lang$foreign$MemorySegment$.call(th,-1,arg1,(arg1 + arg2),arg0.data.length,arg0,0,arg3);
-    var0 = th;
-    java$nio$HeapByteBuffer.$i;
-    var0.address = (java$nio$HeapByteBuffer.ARRAY_BASE_OFFSET);
-    return;
-  }
-
-  V$$init$$I$I$Ljava$lang$foreign$MemorySegment$(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = null;
-    java$nio$ByteBuffer.prototype.V$$init$$I$I$I$I$$B$I$Ljava$lang$foreign$MemorySegment$.call(th,-1,0,arg1,arg0,bytecoder.newarray((arg0),0),0,arg2);
-    var0 = th;
-    java$nio$HeapByteBuffer.$i;
-    var0.address = (java$nio$HeapByteBuffer.ARRAY_BASE_OFFSET);
-    return;
-  }
-
-  Z$isReadOnly$$() {
-    return 0;
-  }
-
-  B$get$I(arg0) {
+  Ljava$util$Map$Entry$$next$$() {
     var th = this;
     var var0 = null;
     var var1 = 0;
-    var0 = (th.hb);
-    var1 = ((th.I$checkIndex$I(arg0))) | 0;
-    return (var0.data[(java$nio$HeapByteBuffer.prototype.I$ix$I.call(th,var1))]);
-  }
-
-  I$ix$I(arg0) {
-    var th = this;
-    return (arg0 + (th.offset));
-  }
-
-  Ljava$nio$ByteBuffer$$get$$B$I$I(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var var2 = 0;
-    var var3 = 0;
+    var var2 = null;
+    var var3 = null;
     var var4 = null;
     var var5 = null;
-    var var6 = 0;
-    var var7 = null;
-    th.V$checkSession$$();
-    var0 = (arg0.data.length) | 0;
-    var1 = ((java$util$Objects.I$checkFromIndexSize$I$I$I(arg1,arg2,var0))) | 0;
-    var2 = ((th.I$position$$())) | 0;
-    var3 = ((th.I$limit$$())) | 0;
-    if (arg2 <= (var3 - var2)) {
-     var5 = (th.hb);
-     java$lang$System.V$arraycopy$$B$I$$B$I$I(var5,(java$nio$HeapByteBuffer.prototype.I$ix$I.call(th,var2)),arg0,arg1,arg2);
-     var6 = ((var2 + arg2)) | 0;
-     var7 = (th.Ljava$nio$ByteBuffer$$position$I(var6));
-     return th;
-    } else {
-     var4 = new java$nio$BufferUnderflowException();
-     java$nio$BufferUnderflowException.prototype.V$$init$$$.call(var4);
-     throw bytecoder.registerStack(var4, new Error().stack);
-    }
-  }
-}
-
-
-class java$nio$HeapCharBuffer extends java$nio$CharBuffer {
-  nativeObject = null;
-
-  static ARRAY_BASE_OFFSET = 0;
-  static ARRAY_INDEX_SCALE = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$HeapCharBuffer,
-        'java.nio.HeapCharBuffer',
-         [java$lang$Comparable,java$lang$Appendable,java$nio$HeapCharBuffer,java$lang$Readable,java$nio$CharBuffer,java$lang$CharSequence,java$lang$Object,java$nio$Buffer]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      java$nio$CharBuffer.$i;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var var1 = null;
-    java$nio$HeapCharBuffer.$i;
-    var0 = (java$nio$HeapCharBuffer.UNSAFE);
-    java$nio$HeapCharBuffer.ARRAY_BASE_OFFSET = ((jdk$internal$misc$Unsafe.prototype.I$arrayBaseOffset$Ljava$lang$Class$.call(var0,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
-    var1 = (java$nio$HeapCharBuffer.UNSAFE);
-    java$nio$HeapCharBuffer.ARRAY_INDEX_SCALE = ((jdk$internal$misc$Unsafe.prototype.I$arrayIndexScale$Ljava$lang$Class$.call(var1,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
-    return;
-  }
-
-  V$$init$$I$I$Ljava$lang$foreign$MemorySegment$(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = null;
-    java$nio$CharBuffer.prototype.V$$init$$I$I$I$I$$C$I$Ljava$lang$foreign$MemorySegment$.call(th,-1,0,arg1,arg0,bytecoder.newarray((arg0),0),0,arg2);
-    var0 = th;
-    java$nio$HeapCharBuffer.$i;
-    var0.address = (java$nio$HeapCharBuffer.ARRAY_BASE_OFFSET);
-    return;
-  }
-
-  Z$isReadOnly$$() {
-    return 0;
-  }
-
-  Ljava$nio$CharBuffer$$put$Ljava$lang$String$$I$I(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var var4 = 0;
-    var phi5 = 0;
     var var6 = null;
     var var7 = null;
-    var var8 = 0;
-    var var9 = null;
-    th.V$checkSession$$();
-    var0 = ((arg2 - arg1)) | 0;
-    var1 = ((java$lang$String.prototype.I$length$$.call(arg0))) | 0;
-    var2 = ((java$util$Objects.I$checkFromIndexSize$I$I$I(arg1,var0,var1))) | 0;
-    var3 = ((th.I$position$$())) | 0;
-    var4 = ((th.I$limit$$())) | 0;
-    If_22_0: {
-     if (var3 > var4) {
-      phi5 = (0) | 0;
-      break If_22_0;
+    If_3_0: {
+     if ((th.remaining) <= 0) {
+      var7 = new java$util$NoSuchElementException();
+      java$util$NoSuchElementException.prototype.V$$init$$$.call(var7);
+      throw bytecoder.registerStack(var7, new Error().stack);
      } else {
-      phi5 = ((var4 - var3)) | 0;
-      break If_22_0;
+      break If_3_0;
      }
     }
-    if (var0 <= phi5) {
-     var7 = (th.hb);
-     java$lang$String.prototype.V$getChars$I$I$$C$I.call(arg0,arg1,arg2,var7,(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var3)));
-     var8 = ((var3 + var0)) | 0;
-     var9 = (th.Ljava$nio$CharBuffer$$position$I(var8));
-     return th;
-    } else {
-     var6 = new java$nio$BufferOverflowException();
-     java$nio$BufferOverflowException.prototype.V$$init$$$.call(var6);
-     throw bytecoder.registerStack(var6, new Error().stack);
-    }
-  }
-
-  I$ix$I(arg0) {
-    var th = this;
-    return (arg0 + (th.offset));
-  }
-
-  Ljava$nio$CharBuffer$$put$C(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var0 = (th.hb);
-    var1 = ((th.I$nextPutIndex$$())) | 0;
-    var0.data[(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var1))] = arg0;
-    return th;
-  }
-
-  Ljava$nio$ByteOrder$$charRegionOrder$$() {
-    var th = this;
-    return (java$nio$HeapCharBuffer.prototype.Ljava$nio$ByteOrder$$order$$.call(th));
-  }
-
-  Ljava$nio$ByteOrder$$order$$() {
-    java$nio$ByteOrder.$i;
-    return (java$nio$ByteOrder.Ljava$nio$ByteOrder$$nativeOrder$$());
-  }
-
-  C$get$I(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var0 = (th.hb);
-    var1 = ((th.I$checkIndex$I(arg0))) | 0;
-    return (var0.data[(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var1))]);
-  }
-
-  Ljava$lang$String$$toString$I$I(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    TryCatch_4_0: {
-     try {
-      var1 = new java$lang$String();
-      java$lang$String.prototype.V$$init$$$C$I$I.call(var1,(th.hb),(arg0 + (th.offset)),(arg1 - arg0));
-      break TryCatch_4_0;
-     } catch (__ex) {
-      if (__ex instanceof java$lang$StringIndexOutOfBoundsException) {
-       var0 = new java$lang$IndexOutOfBoundsException();
-       java$lang$IndexOutOfBoundsException.prototype.V$$init$$$.call(var0);
-       throw bytecoder.registerStack(var0, new Error().stack);
-      }
-      throw __ex;
+    L1595653907: while(true) {
+     var0 = ((th.this$0).table);
+     var1 = ((java$util$ImmutableCollections$MapN$MapNIterator.prototype.I$nextIndex$$.call(th))) | 0;
+     if ((var0.data[var1]) != null) {
+      var2 = new java$util$KeyValueHolder();
+      var3 = ((th.this$0).table);
+      var4 = (var3.data[var1]);
+      var5 = ((th.this$0).table);
+      java$util$KeyValueHolder.prototype.V$$init$$Ljava$lang$Object$$Ljava$lang$Object$.call(var2,var4,(var5.data[(var1 + 1)]));
+      var6 = th;
+      var6.remaining = ((var6.remaining) - 1);
+      return var2;
+     } else {
+      // Here was a goto statement
+      continue L1595653907;
      }
     }
-    return var1;
   }
 
-  Ljava$nio$CharBuffer$$put$$C$I$I(arg0,arg1,arg2) {
+  I$nextIndex$$() {
     var th = this;
     var var0 = 0;
     var var1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var var4 = null;
-    var var5 = null;
-    var var6 = 0;
-    var var7 = null;
-    th.V$checkSession$$();
-    var0 = (arg0.data.length) | 0;
-    var1 = ((java$util$Objects.I$checkFromIndexSize$I$I$I(arg1,arg2,var0))) | 0;
-    var2 = ((th.I$position$$())) | 0;
-    var3 = ((th.I$limit$$())) | 0;
-    if (arg2 <= (var3 - var2)) {
-     var5 = (th.hb);
-     java$lang$System.V$arraycopy$$C$I$$C$I$I(arg0,arg1,var5,(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var2)),arg2);
-     var6 = ((var2 + arg2)) | 0;
-     var7 = (th.Ljava$nio$CharBuffer$$position$I(var6));
-     return th;
-    } else {
-     var4 = new java$nio$BufferOverflowException();
-     java$nio$BufferOverflowException.prototype.V$$init$$$.call(var4);
-     throw bytecoder.registerStack(var4, new Error().stack);
+    var phi2 = 0;
+    var var3 = null;
+    var var4 = 0;
+    var var5 = 0;
+    var0 = ((th.idx)) | 0;
+    java$util$ImmutableCollections.$i;
+    If_8_0: {
+     if ((java$util$ImmutableCollections.REVERSE) == 0) {
+      var5 = ((var0 + -2)) | 0;
+      if (var5 >= 0) {
+       phi2 = (var5) | 0;
+       break If_8_0;
+      } else {
+       phi2 = ((((th.this$0).table).data.length - 2)) | 0;
+       break If_8_0;
+      }
+     } else {
+      var1 = ((var0 + 2)) | 0;
+      if (var1 < ((th.this$0).table).data.length) {
+       phi2 = (var1) | 0;
+       break If_8_0;
+      } else {
+       phi2 = (0) | 0;
+       break If_8_0;
+      }
+     }
     }
-  }
-
-  Ljava$nio$CharBuffer$$put$I$C(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var0 = (th.hb);
-    var1 = ((th.I$checkIndex$I(arg0))) | 0;
-    var0.data[(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var1))] = arg1;
-    return th;
+    var3 = th;
+    var4 = (phi2) | 0;
+    var3.idx = var4;
+    return var4;
   }
 }
 
 
-class java$util$ImmutableCollections$AbstractImmutableMap extends java$util$AbstractMap {
+class de$mirkosertic$bytecoder$classlib$VM$1 extends java$lang$ClassLoader {
   nativeObject = null;
   constructor() {
     super();
@@ -9765,9 +8020,9 @@ class java$util$ImmutableCollections$AbstractImmutableMap extends java$util$Abst
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$AbstractImmutableMap,
-        'java.util.ImmutableCollections$AbstractImmutableMap',
-         [java$util$Map,java$io$Serializable,java$util$ImmutableCollections$AbstractImmutableMap,java$util$AbstractMap,java$lang$Object]);
+        de$mirkosertic$bytecoder$classlib$VM$1,
+        'de.mirkosertic.bytecoder.classlib.VM$1',
+         [de$mirkosertic$bytecoder$classlib$VM$1,java$lang$ClassLoader,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -9777,23 +8032,13 @@ class java$util$ImmutableCollections$AbstractImmutableMap extends java$util$Abst
 
   V$$init$$$() {
     var th = this;
-    java$util$AbstractMap.prototype.V$$init$$$.call(th);
+    java$lang$ClassLoader.prototype.V$$init$$$.call(th);
     return;
-  }
-
-  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
-    java$util$ImmutableCollections.$i;
-    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
-  }
-
-  Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    java$util$ImmutableCollections.$i;
-    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
   }
 }
 
 
-class java$lang$RuntimeException extends java$lang$Exception {
+class java$lang$Error extends java$lang$Throwable {
   nativeObject = null;
   constructor() {
     super();
@@ -9803,9 +8048,9 @@ class java$lang$RuntimeException extends java$lang$Exception {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$RuntimeException,
-        'java.lang.RuntimeException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$RuntimeException,java$lang$Object]);
+        java$lang$Error,
+        'java.lang.Error',
+         [java$lang$Throwable,java$lang$Error,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -9815,29 +8060,218 @@ class java$lang$RuntimeException extends java$lang$Exception {
 
   V$$init$$Ljava$lang$String$(arg0) {
     var th = this;
-    java$lang$Exception.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Exception.prototype.V$$init$$$.call(th);
+    java$lang$Throwable.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
     return;
   }
 
   V$$init$$Ljava$lang$Throwable$(arg0) {
     var th = this;
-    java$lang$Exception.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    java$lang$Throwable.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Throwable.prototype.V$$init$$$.call(th);
     return;
   }
 }
 
 
-class java$lang$Long extends java$lang$Number {
+class java$lang$ref$WeakReference extends java$lang$ref$Reference {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$ref$WeakReference,
+        'java.lang.ref.WeakReference',
+         [java$lang$ref$WeakReference,java$lang$ref$Reference,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Object$(arg0) {
+    var th = this;
+    de$mirkosertic$bytecoder$classlib$java$lang$ref$TReference.prototype.V$$init$$Ljava$lang$Object$.call(th,arg0);
+    return;
+  }
+}
+
+
+class jdk$internal$util$Preconditions$3 extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$util$Preconditions$3,
+        'jdk.internal.util.Preconditions$3',
+         [java$util$function$Function,jdk$internal$util$Preconditions$3,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.Ljava$lang$Object$$apply$Ljava$lang$Object$ = impl;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (jdk$internal$util$Preconditions$3.prototype.Ljava$lang$IndexOutOfBoundsException$$apply$Ljava$lang$String$.call(th,var0));
+  }
+
+  Ljava$lang$IndexOutOfBoundsException$$apply$Ljava$lang$String$(arg0) {
+    var var0 = null;
+    var0 = new java$lang$IndexOutOfBoundsException();
+    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg0);
+    return var0;
+  }
+}
+
+
+class java$util$HashMap$EntryIterator extends java$util$HashMap$HashIterator {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$HashMap$EntryIterator,
+        'java.util.HashMap$EntryIterator',
+         [java$util$Iterator,java$util$HashMap$HashIterator,java$util$HashMap$EntryIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$HashMap$(arg0) {
+    var th = this;
+    java$util$HashMap$HashIterator.prototype.V$$init$$Ljava$util$HashMap$.call(th,arg0);
+    return;
+  }
+
+  Ljava$lang$Object$$next$$() {
+    var th = this;
+    return (java$util$HashMap$EntryIterator.prototype.Ljava$util$Map$Entry$$next$$.call(th));
+  }
+
+  Ljava$util$Map$Entry$$next$$() {
+    var th = this;
+    return (th.Ljava$util$HashMap$Node$$nextNode$$());
+  }
+}
+
+
+class java$util$ListIterator extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ListIterator,
+        'java.util.ListIterator',
+         [java$util$Iterator,java$util$ListIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$util$concurrent$locks$ReentrantLock extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$concurrent$locks$ReentrantLock,
+        'java.util.concurrent.locks.ReentrantLock',
+         [java$util$concurrent$locks$ReentrantLock,java$util$concurrent$locks$Lock,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$nio$Buffer$1 extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$Buffer$1,
+        'java.nio.Buffer$1',
+         [jdk$internal$access$JavaNioAccess,java$nio$Buffer$1,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$util$AbstractList$Itr extends java$lang$Object {
   nativeObject = null;
 
-  static TYPE = null;
-  value = 0;
+  this$0 = null;
+  cursor = 0;
+  lastRet = 0;
+  expectedModCount = 0;
 
   constructor() {
     super();
@@ -9847,9 +8281,957 @@ class java$lang$Long extends java$lang$Number {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Long,
-        'java.lang.Long',
-         [java$lang$Comparable,java$io$Serializable,java$lang$Long,java$lang$Number,java$lang$Object]);
+        java$util$AbstractList$Itr,
+        'java.util.AbstractList$Itr',
+         [java$util$AbstractList$Itr,java$util$Iterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$AbstractList$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var1 = th;
+    var1.cursor = 0;
+    var2 = th;
+    var2.lastRet = -1;
+    var3 = th;
+    var3.expectedModCount = ((th.this$0).modCount);
+    return;
+  }
+
+  Ljava$lang$Object$$next$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = 0;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    java$util$AbstractList$Itr.prototype.V$checkForComodification$$.call(th);
+    TryCatch_3_0: {
+     try {
+      var2 = ((th.cursor)) | 0;
+      var3 = (th.this$0);
+      var4 = (var3.Ljava$lang$Object$$get$I(var2));
+      var5 = th;
+      var5.lastRet = var2;
+      var6 = th;
+      var6.cursor = (var2 + 1);
+      break TryCatch_3_0;
+     } catch (__ex) {
+      if (__ex instanceof java$lang$IndexOutOfBoundsException) {
+       var0 = __ex;
+       java$util$AbstractList$Itr.prototype.V$checkForComodification$$.call(th);
+       var1 = new java$util$NoSuchElementException();
+       java$util$NoSuchElementException.prototype.V$$init$$Ljava$lang$Throwable$.call(var1,var0);
+       throw bytecoder.registerStack(var1, new Error().stack);
+      }
+      throw __ex;
+     }
+    }
+    return var4;
+  }
+
+  V$checkForComodification$$() {
+    var th = this;
+    var var0 = null;
+    if (((th.this$0).modCount) == (th.expectedModCount)) {
+     return;
+    } else {
+     var0 = new java$util$ConcurrentModificationException();
+     java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  Z$hasNext$$() {
+    var th = this;
+    var var0 = 0;
+    var var1 = null;
+    var phi2 = 0;
+    var0 = ((th.cursor)) | 0;
+    var1 = (th.this$0);
+    If_9_0: {
+     if (var0 == (var1.I$size$$())) {
+      phi2 = (0) | 0;
+      break If_9_0;
+     } else {
+      phi2 = (1) | 0;
+      break If_9_0;
+     }
+    }
+    return phi2;
+  }
+}
+
+
+class java$util$ImmutableCollections$SetN$SetNIterator extends java$lang$Object {
+  nativeObject = null;
+
+  this$0 = null;
+  remaining = 0;
+  idx = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ImmutableCollections$SetN$SetNIterator,
+        'java.util.ImmutableCollections$SetN$SetNIterator',
+         [java$util$Iterator,java$util$ImmutableCollections$SetN$SetNIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$ImmutableCollections$SetN$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var1 = th;
+    var1.remaining = (arg0.size);
+    var2 = th;
+    java$util$ImmutableCollections.$i;
+    var2.idx = ((((java$util$ImmutableCollections.SALT32L) * ((arg0.elements).data.length | 0)) >>> 32) | 0);
+    return;
+  }
+
+  Z$hasNext$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.remaining) <= 0) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+
+  Ljava$lang$Object$$next$$() {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var phi3 = 0;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    if ((th.remaining) <= 0) {
+     var7 = new java$util$NoSuchElementException();
+     java$util$NoSuchElementException.prototype.V$$init$$$.call(var7);
+     throw bytecoder.registerStack(var7, new Error().stack);
+    } else {
+     var0 = ((th.idx)) | 0;
+     var1 = (((th.this$0).elements).data.length) | 0;
+     phi2 = (var0) | 0;
+     L62313083: while(true) {
+      java$util$ImmutableCollections.$i;
+      If_19_0: {
+       if ((java$util$ImmutableCollections.REVERSE) == 0) {
+        phi2 = ((phi2 + -1)) | 0;
+        if (phi2 >= 0) {
+         phi3 = (phi2) | 0;
+         break If_19_0;
+        } else {
+         phi3 = ((var1 - 1)) | 0;
+         break If_19_0;
+        }
+       } else {
+        phi2 = ((phi2 + 1)) | 0;
+        if (phi2 < var1) {
+         phi3 = (phi2) | 0;
+         break If_19_0;
+        } else {
+         phi3 = (0) | 0;
+         break If_19_0;
+        }
+       }
+      }
+      var4 = (((th.this$0).elements).data[phi3]);
+      if (var4 == null) {
+       phi2 = (phi3) | 0;
+       continue L62313083;
+      } else {
+       var5 = th;
+       var5.idx = phi3;
+       var6 = th;
+       var6.remaining = ((var6.remaining) - 1);
+       return var4;
+      }
+     }
+    }
+  }
+}
+
+
+class java$lang$Number extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Number,
+        'java.lang.Number',
+         [java$lang$Number,java$io$Serializable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.I$intValue$$ = impl;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  B$byteValue$$() {
+    var th = this;
+    return (th.I$intValue$$());
+  }
+
+  S$shortValue$$() {
+    var th = this;
+    return (th.I$intValue$$());
+  }
+}
+
+
+class java$util$ArrayList$Itr extends java$lang$Object {
+  nativeObject = null;
+
+  this$0 = null;
+  lastRet = 0;
+  expectedModCount = 0;
+  cursor = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ArrayList$Itr,
+        'java.util.ArrayList$Itr',
+         [java$util$ArrayList$Itr,java$util$Iterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$ArrayList$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var1 = th;
+    var1.lastRet = -1;
+    var2 = th;
+    var2.expectedModCount = ((th.this$0).modCount);
+    return;
+  }
+
+  Ljava$lang$Object$$next$$() {
+    var th = this;
+    var var0 = 0;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    java$util$ArrayList$Itr.prototype.V$checkForComodification$$.call(th);
+    var0 = ((th.cursor)) | 0;
+    if (var0 < ((th.this$0).size)) {
+     var2 = ((th.this$0).elementData);
+     if (var0 < var2.data.length) {
+      var4 = th;
+      var4.cursor = (var0 + 1);
+      var5 = th;
+      var5.lastRet = var0;
+      return (var2.data[var0]);
+     } else {
+      var3 = new java$util$ConcurrentModificationException();
+      java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var3);
+      throw bytecoder.registerStack(var3, new Error().stack);
+     }
+    } else {
+     var1 = new java$util$NoSuchElementException();
+     java$util$NoSuchElementException.prototype.V$$init$$$.call(var1);
+     throw bytecoder.registerStack(var1, new Error().stack);
+    }
+  }
+
+  V$checkForComodification$$() {
+    var th = this;
+    var var0 = null;
+    if (((th.this$0).modCount) == (th.expectedModCount)) {
+     return;
+    } else {
+     var0 = new java$util$ConcurrentModificationException();
+     java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  Z$hasNext$$() {
+    var th = this;
+    var phi0 = 0;
+    If_5_0: {
+     if ((th.cursor) == ((th.this$0).size)) {
+      phi0 = (0) | 0;
+      break If_5_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_5_0;
+     }
+    }
+    return phi0;
+  }
+}
+
+
+class java$util$Collection extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Collection,
+        'java.util.Collection',
+         [java$util$Collection,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$lang$String extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$String,
+        'java.lang.String',
+         [java$lang$CharSequence,java$lang$Comparable,java$lang$String,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  static Ljava$lang$String$$valueOf$Ljava$lang$Object$(arg0) {
+    if (arg0 != null) {
+     return (arg0.Ljava$lang$String$$toString$$());
+    } else {
+     return bytecoder.stringconstants[0];
+    }
+  }
+
+  I$length$$() {
+    return bytecoder.imports['java.lang.String'].I$length$$(this);
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    if (arg0 != null) {
+     if (arg0 != th) {
+      var0 = (arg0.Ljava$lang$String$$toString$$());
+      return (java$lang$String.prototype.Z$equals0$Ljava$lang$String$.call(th,var0));
+     } else {
+      return 1;
+     }
+    } else {
+     return 0;
+    }
+  }
+
+  Z$equals0$Ljava$lang$String$(arg0) {
+    return bytecoder.imports['java.lang.String'].Z$equals0$Ljava$lang$String$(this, arg0);
+  }
+
+  static Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(arg0,arg1) {
+    return bytecoder.imports['java.lang.String'].Ljava$lang$String$$format$Ljava$lang$String$$$Ljava$lang$Object$(arg0, arg1);
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var var0 = null;
+    var phi1 = 0;
+    var phi2 = 0;
+    var var3 = 0;
+    var0 = (java$lang$String.prototype.$B$getBytes$$.call(th));
+    phi1 = (0) | 0;
+    phi2 = (0) | 0;
+    L762337113: while(true) {
+     if (phi2 >= var0.data.length) {
+      return phi1;
+     } else {
+      var3 = (((31 * phi1) + (var0.data[phi2]))) | 0;
+      phi2 = ((phi2 + 1)) | 0;
+      phi1 = (var3) | 0;
+      continue L762337113;
+     }
+    }
+  }
+
+  $B$getBytes$$() {
+    return bytecoder.imports['java.lang.String'].$B$getBytes$$(this);
+  }
+
+  C$charAt$I(arg0) {
+    return bytecoder.imports['java.lang.String'].C$charAt$I(this, arg0);
+  }
+
+  I$compareTo$Ljava$lang$String$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = 0;
+    var phi5 = 0;
+    var var6 = 0;
+    var var7 = 0;
+    var0 = (java$lang$String.prototype.$C$toCharArray$$.call(th));
+    var1 = (java$lang$String.prototype.$C$toCharArray$$.call(arg0));
+    var2 = (var0.data.length) | 0;
+    var3 = (var1.data.length) | 0;
+    java$lang$Math.$i;
+    var4 = ((java$lang$Math.I$min$I$I(var2,var3))) | 0;
+    phi5 = (0) | 0;
+    L680736246: while(true) {
+     if (phi5 >= var4) {
+      return (var2 - var3);
+     } else {
+      var6 = (var0.data[phi5]);
+      var7 = (var1.data[phi5]);
+      if (var6 == var7) {
+       phi5 = ((phi5 + 1)) | 0;
+       // Here was a goto statement
+       continue L680736246;
+      } else {
+       return (var6 - var7);
+      }
+     }
+    }
+  }
+
+  $C$toCharArray$$() {
+    return bytecoder.imports['java.lang.String'].$C$toCharArray$$(this);
+  }
+
+  V$getChars$I$I$$C$I(arg0,arg1,arg2,arg3) {
+    bytecoder.imports['java.lang.String'].V$getChars$I$I$$C$I(this, arg0, arg1, arg2, arg3);
+  }
+
+  I$compareTo$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (java$lang$String.prototype.I$compareTo$Ljava$lang$String$.call(th,var0));
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    return th;
+  }
+
+  V$$init$$$C$I$I(arg0,arg1,arg2) {
+    var th = this;
+    java$lang$String.prototype.V$$init$$$.call(th);
+    java$lang$String.prototype.V$initializeWith$$C$I$I.call(th,arg0,arg1,arg2);
+    return;
+  }
+
+  V$initializeWith$$C$I$I(arg0,arg1,arg2) {
+    bytecoder.imports['java.lang.String'].V$initializeWith$$C$I$I(this, arg0, arg1, arg2);
+  }
+}
+
+java$lang$String.prototype.Z$isEmpty$$ = java$lang$CharSequence.prototype.Z$isEmpty$$;
+
+class java$util$AbstractMap extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$AbstractMap,
+        'java.util.AbstractMap',
+         [java$util$AbstractMap,java$util$Map,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    var var0 = null;
+    var0 = new java$lang$UnsupportedOperationException();
+    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var phi7 = null;
+    var var8 = null;
+    var var9 = null;
+    var phi10 = null;
+    var var11 = null;
+    var var12 = null;
+    var var13 = null;
+    var var14 = null;
+    var0 = (th.Ljava$util$Set$$entrySet$$());
+    var1 = (var0.Ljava$util$Iterator$$iterator$$());
+    if ((var1.Z$hasNext$$()) != 0) {
+     var2 = new java$lang$StringBuilder();
+     java$lang$StringBuilder.prototype.V$$init$$$.call(var2);
+     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,123));
+     L1346796599: while(true) {
+      var4 = (var1.Ljava$lang$Object$$next$$());
+      var5 = (var4.Ljava$lang$Object$$getKey$$());
+      var6 = (var4.Ljava$lang$Object$$getValue$$());
+      If_34_0: {
+       if (var5 != th) {
+        phi7 = var5;
+        break If_34_0;
+       } else {
+        phi7 = bytecoder.stringconstants[98];
+        break If_34_0;
+       }
+      }
+      var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var2,phi7));
+      var9 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,61));
+      If_46_0: {
+       if (var6 != th) {
+        phi10 = var6;
+        break If_46_0;
+       } else {
+        phi10 = bytecoder.stringconstants[98];
+        break If_46_0;
+       }
+      }
+      var11 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var2,phi10));
+      if ((var1.Z$hasNext$$()) != 0) {
+       var13 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,44));
+       var14 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var13,32));
+       // Here was a goto statement
+       continue L1346796599;
+      } else {
+       var12 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var2,125));
+       return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var12));
+      }
+     }
+    } else {
+     return bytecoder.stringconstants[97];
+    }
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    var phi3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = null;
+    if (arg0 != th) {
+     if (bytecoder.instanceOf(arg0,java$util$Map) == 0) {
+      return 0;
+     } else {
+      var0 = arg0;
+      var1 = ((var0.I$size$$())) | 0;
+      if (var1 == (th.I$size$$())) {
+       TryCatch_23_0: {
+        TryCatch_23_1: {
+         try {
+          var2 = (th.Ljava$util$Set$$entrySet$$());
+          phi3 = (var2.Ljava$util$Iterator$$iterator$$());
+          L2062242911: while(true) {
+           var4 = phi3;
+           if ((var4.Z$hasNext$$()) == 0) {
+            return 1;
+           } else {
+            var5 = phi3;
+            var6 = (var5.Ljava$lang$Object$$next$$());
+            var7 = (var6.Ljava$lang$Object$$getKey$$());
+            var8 = (var6.Ljava$lang$Object$$getValue$$());
+            If_51_0: {
+             if (var8 != null) {
+              TryCatch_66_0: {
+               try {
+                var9 = (var0.Ljava$lang$Object$$get$Ljava$lang$Object$(var7));
+                if ((var8.Z$equals$Ljava$lang$Object$(var9)) != 0) {
+                 break If_51_0;
+                } else {
+                 break TryCatch_66_0;
+                }
+               } catch (__ex) {
+                if (__ex instanceof java$lang$ClassCastException) {
+                 return 0;
+                }
+                if (__ex instanceof java$lang$NullPointerException) {
+                 return 0;
+                }
+                throw __ex;
+               }
+              }
+              return 0;
+             } else {
+              If_54_0: {
+               if ((var0.Ljava$lang$Object$$get$Ljava$lang$Object$(var7)) != null) {
+                break If_54_0;
+               } else {
+                if ((var0.Z$containsKey$Ljava$lang$Object$(var7)) != 0) {
+                 break If_51_0;
+                } else {
+                 break If_54_0;
+                }
+               }
+              }
+              break TryCatch_23_0;
+             }
+            }
+            try {
+             // Here was a goto statement
+             continue L2062242911;
+            } catch (__ex) {
+             if (__ex instanceof java$lang$ClassCastException) {
+              return 0;
+             }
+             if (__ex instanceof java$lang$NullPointerException) {
+              return 0;
+             }
+             throw __ex;
+            }
+           }
+          }
+         } catch (__ex) {
+          if (__ex instanceof java$lang$ClassCastException) {
+           return 0;
+          }
+          if (__ex instanceof java$lang$NullPointerException) {
+           return 0;
+          }
+          throw __ex;
+         }
+        }
+        return 0;
+       }
+       return 0;
+      } else {
+       return 0;
+      }
+     }
+    } else {
+     return 1;
+    }
+  }
+
+  I$size$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.Ljava$util$Set$$entrySet$$());
+    return (var0.I$size$$());
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var phi2 = 0;
+    var var3 = null;
+    var var4 = 0;
+    var0 = (th.Ljava$util$Set$$entrySet$$());
+    var1 = (var0.Ljava$util$Iterator$$iterator$$());
+    phi2 = (0) | 0;
+    L1223729177: while(true) {
+     if ((var1.Z$hasNext$$()) == 0) {
+      return phi2;
+     } else {
+      var3 = (var1.Ljava$lang$Object$$next$$());
+      var4 = (phi2) | 0;
+      phi2 = ((var4 + (var3.I$hashCode$$()))) | 0;
+      continue L1223729177;
+     }
+    }
+  }
+}
+
+java$util$AbstractMap.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$ = java$util$Map.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$;
+
+class de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder extends java$nio$charset$CharsetEncoder {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder,
+        'de.mirkosertic.bytecoder.classlib.BytecoderCharsetEncoder',
+         [de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder,java$nio$charset$CharsetEncoder,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      java$nio$charset$CharsetEncoder.$i;
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$nio$charset$Charset$(arg0) {
+    var th = this;
+    java$nio$charset$CharsetEncoder.prototype.V$$init$$Ljava$nio$charset$Charset$$F$F.call(th,arg0,1.1,3.0);
+    return;
+  }
+}
+
+
+class jdk$internal$util$Preconditions$4 extends java$lang$Object {
+  nativeObject = null;
+
+  val$f = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$util$Preconditions$4,
+        'jdk.internal.util.Preconditions$4',
+         [jdk$internal$util$Preconditions$4,java$util$function$BiFunction,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+    this.Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$ = impl;
+  }
+
+  V$$init$$Ljava$util$function$Function$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = th;
+    var0.val$f = arg0;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Ljava$lang$Object$$apply$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var0 = arg0;
+    var1 = arg1;
+    return (jdk$internal$util$Preconditions$4.prototype.Ljava$lang$RuntimeException$$apply$Ljava$lang$String$$Ljava$util$List$.call(th,var0,var1));
+  }
+
+  Ljava$lang$RuntimeException$$apply$Ljava$lang$String$$Ljava$util$List$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var0 = (th.val$f);
+    jdk$internal$util$Preconditions.$i;
+    var1 = (jdk$internal$util$Preconditions.Ljava$lang$String$$outOfBoundsMessage$Ljava$lang$String$$Ljava$util$List$(arg0,arg1));
+    return (var0.Ljava$lang$Object$$apply$Ljava$lang$Object$(var1));
+  }
+}
+
+
+class java$lang$Thread extends java$lang$Object {
+  nativeObject = null;
+
+  static MAIN_THREAD = null;
+  threadGroup = null;
+  runnable = null;
+  name = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Thread,
+        'java.lang.Thread',
+         [java$lang$Runnable,java$lang$Thread,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static Ljava$lang$Thread$$currentThread$$() {
+    var var0 = null;
+    var var1 = null;
+    If_3_0: {
+     if ((java$lang$Thread.MAIN_THREAD) != null) {
+      break If_3_0;
+     } else {
+      java$lang$ThreadGroup.$i;
+      var0 = new java$lang$ThreadGroup();
+      de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.$i;
+      java$lang$ThreadGroup.prototype.V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$.call(var0,(de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.SYSTEM),bytecoder.stringconstants[67]);
+      var1 = new java$lang$Thread();
+      java$lang$Thread.prototype.V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$.call(var1,var0,bytecoder.stringconstants[67]);
+      java$lang$Thread.MAIN_THREAD = var1;
+      break If_3_0;
+     }
+    }
+    return (java$lang$Thread.MAIN_THREAD);
+  }
+
+  V$$init$$Ljava$lang$ThreadGroup$$Ljava$lang$String$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.threadGroup = arg0;
+    var1 = th;
+    var1.runnable = null;
+    var2 = th;
+    var2.name = arg1;
+    return;
+  }
+
+  Z$isVirtual$$() {
+    return 0;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.runnable = null;
+    var1 = th;
+    de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.$i;
+    var1.threadGroup = (de$mirkosertic$bytecoder$classlib$java$lang$TThreadGroup.SYSTEM);
+    var2 = th;
+    var2.name = bytecoder.stringconstants[99];
+    return;
+  }
+}
+
+
+class java$util$Collections$EmptyIterator extends java$lang$Object {
+  nativeObject = null;
+
+  static EMPTY_ITERATOR = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Collections$EmptyIterator,
+        'java.util.Collections$EmptyIterator',
+         [java$util$Collections$EmptyIterator,java$util$Iterator,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -9867,255 +9249,35 @@ class java$lang$Long extends java$lang$Number {
   }
 
   static V$$clinit$$$() {
-    java$lang$Long.$i;
-    java$lang$Long.TYPE = bytecoder.primitives.long;
+    var var0 = null;
+    java$util$Collections$EmptyIterator.$i;
+    var0 = new java$util$Collections$EmptyIterator();
+    java$util$Collections$EmptyIterator.prototype.V$$init$$$.call(var0);
+    java$util$Collections$EmptyIterator.EMPTY_ITERATOR = var0;
     return;
-  }
-
-  static Ljava$lang$Long$$valueOf$J(arg0) {
-    var var0 = null;
-    java$lang$Long.$i;
-    var0 = new java$lang$Long();
-    java$lang$Long.prototype.V$$init$$J.call(var0,arg0);
-    return var0;
-  }
-
-  V$$init$$J(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Number.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.value = arg0;
-    return;
-  }
-
-  static I$numberOfLeadingZeros$J(arg0) {
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var0 = (((arg0 >>> 32) | 0)) | 0;
-    If_7_0: {
-     if (var0 != 0) {
-      java$lang$Integer.$i;
-      phi2 = ((32 + (java$lang$Integer.I$numberOfLeadingZeros$I(var0)))) | 0;
-      break If_7_0;
-     } else {
-      var1 = ((arg0 | 0)) | 0;
-      java$lang$Integer.$i;
-      phi2 = ((32 + (java$lang$Integer.I$numberOfLeadingZeros$I(var1)))) | 0;
-      break If_7_0;
-     }
-    }
-    return phi2;
-  }
-
-  static I$numberOfTrailingZeros$J(arg0) {
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var0 = ((arg0 | 0)) | 0;
-    If_5_0: {
-     if (var0 != 0) {
-      java$lang$Integer.$i;
-      phi2 = ((32 + (java$lang$Integer.I$numberOfTrailingZeros$I(var0)))) | 0;
-      break If_5_0;
-     } else {
-      var1 = (((arg0 >>> 32) | 0)) | 0;
-      java$lang$Integer.$i;
-      phi2 = ((32 + (java$lang$Integer.I$numberOfTrailingZeros$I(var1)))) | 0;
-      break If_5_0;
-     }
-    }
-    return phi2;
-  }
-
-  I$compareTo$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (java$lang$Long.prototype.I$compareTo$Ljava$lang$Long$.call(th,var0));
-  }
-
-  I$compareTo$Ljava$lang$Long$(arg0) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var0 = (th.value);
-    var1 = (java$lang$Long.prototype.J$longValue$$.call(arg0));
-    java$lang$Long.$i;
-    return (java$lang$Long.I$compare$J$J(var0,var1));
-  }
-
-  J$longValue$$() {
-    var th = this;
-    return (th.value);
-  }
-
-  static I$compare$J$J(arg0,arg1) {
-    var phi0 = 0;
-    If_3_0: {
-     if (arg0 >= arg1) {
-      if (bytecoder.cmp(arg0,arg1) != 0) {
-       phi0 = (1) | 0;
-       break If_3_0;
-      } else {
-       phi0 = (0) | 0;
-       break If_3_0;
-      }
-     } else {
-      phi0 = (-1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  I$intValue$$() {
-    var th = this;
-    return ((th.value) | 0);
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = 0;
-    var0 = (th.value);
-    java$lang$Long.$i;
-    return (java$lang$Long.Ljava$lang$String$$toString$J$I(var0,10));
-  }
-
-  static Ljava$lang$String$$toString$J$I(arg0,arg1) {
-    return bytecoder.imports['java.lang.Long'].Ljava$lang$String$$toString$J$I(arg0, arg1);
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var phi2 = 0;
-    if (th != arg0) {
-     If_7_0: {
-      if (arg0 == null) {
-       break If_7_0;
-      } else {
-       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
-        var0 = arg0;
-        var1 = (th.value);
-        If_24_0: {
-         if (bytecoder.cmp(var1,(java$lang$Long.prototype.J$longValue$$.call(var0))) != 0) {
-          phi2 = (0) | 0;
-          break If_24_0;
-         } else {
-          phi2 = (1) | 0;
-          break If_24_0;
-         }
-        }
-        return phi2;
-       } else {
-        break If_7_0;
-       }
-      }
-     }
-     return 0;
-    } else {
-     return 1;
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    return ((th.value) | 0);
-  }
-}
-
-
-class java$util$Collections$EmptyMap extends java$util$AbstractMap {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collections$EmptyMap,
-        'java.util.Collections$EmptyMap',
-         [java$util$Collections$EmptyMap,java$util$Map,java$io$Serializable,java$util$AbstractMap,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
   }
 
   V$$init$$$() {
     var th = this;
-    java$util$AbstractMap.prototype.V$$init$$$.call(th);
+    java$lang$Object.prototype.V$$init$$$.call(th);
     return;
   }
 
-  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
+  Ljava$lang$Object$$next$$() {
     var var0 = null;
-    var0 = new java$lang$UnsupportedOperationException();
-    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+    var0 = new java$util$NoSuchElementException();
+    java$util$NoSuchElementException.prototype.V$$init$$$.call(var0);
     throw bytecoder.registerStack(var0, new Error().stack);
   }
 
-  Ljava$lang$Object$$get$Ljava$lang$Object$(arg0) {
-    return null;
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    var phi1 = 0;
-    If_4_0: {
-     If_4_1: {
-      if (bytecoder.instanceOf(arg0,java$util$Map) == 0) {
-       break If_4_1;
-      } else {
-       var0 = arg0;
-       if ((var0.Z$isEmpty$$()) == 0) {
-        break If_4_1;
-       } else {
-        phi1 = (1) | 0;
-        break If_4_0;
-       }
-      }
-     }
-     phi1 = (0) | 0;
-     break If_4_0;
-    }
-    return phi1;
-  }
-
-  I$hashCode$$() {
+  Z$hasNext$$() {
     return 0;
-  }
-
-  I$size$$() {
-    return 0;
-  }
-
-  Z$containsKey$Ljava$lang$Object$(arg0) {
-    return 0;
-  }
-
-  Z$isEmpty$$() {
-    return 1;
-  }
-
-  Ljava$util$Set$$entrySet$$() {
-    java$util$Collections.$i;
-    return (java$util$Collections.Ljava$util$Set$$emptySet$$());
   }
 }
 
 
-class java$io$Writer extends java$lang$Object {
+class java$util$concurrent$ConcurrentMap extends java$lang$Object {
   nativeObject = null;
-
-  lock = null;
-
   constructor() {
     super();
   }
@@ -10124,9 +9286,76 @@ class java$io$Writer extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$Writer,
-        'java.io.Writer',
-         [java$lang$Appendable,java$io$Closeable,java$io$Flushable,java$io$Writer,java$lang$AutoCloseable,java$lang$Object]);
+        java$util$concurrent$ConcurrentMap,
+        'java.util.concurrent.ConcurrentMap',
+         [java$util$concurrent$ConcurrentMap,java$util$Map,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+java$util$concurrent$ConcurrentMap.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$ = java$util$Map.prototype.Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$;
+
+class java$lang$reflect$ParameterizedType extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$reflect$ParameterizedType,
+        'java.lang.reflect.ParameterizedType',
+         [java$lang$reflect$ParameterizedType,java$lang$reflect$Type,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$io$Closeable extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$Closeable,
+        'java.io.Closeable',
+         [java$io$Closeable,java$lang$AutoCloseable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$io$PrintStream$1 extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$PrintStream$1,
+        'java.io.PrintStream$1',
+         [java$io$PrintStream$1,jdk$internal$access$JavaIOPrintStreamAccess,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -10134,64 +9363,9 @@ class java$io$Writer extends java$lang$Object {
   set $lambdaimpl(impl) {
   }
 
-  V$$init$$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    if (arg0 != null) {
-     var1 = th;
-     var1.lock = arg0;
-     return;
-    } else {
-     var0 = new java$lang$NullPointerException();
-     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  V$$init$$Ljava$io$Writer$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = ((arg0).constructor.$rt);
-    If_10_0: {
-     If_10_1: {
-      if (((th).constructor.$rt) != java$io$BufferedWriter.$rt) {
-       break If_10_1;
-      } else {
-       If_14_0: {
-        if (var0 == java$io$OutputStreamWriter.$rt) {
-         break If_14_0;
-        } else {
-         if (var0 != java$io$FileWriter.$rt) {
-          break If_10_1;
-         } else {
-          break If_14_0;
-         }
-        }
-       }
-       var1 = th;
-       jdk$internal$misc$InternalLock.$i;
-       var1.lock = (jdk$internal$misc$InternalLock.Ljava$lang$Object$$newLockOr$Ljava$lang$Object$(arg0));
-       break If_10_0;
-      }
-     }
-     var2 = th;
-     var2.lock = arg0;
-     break If_10_0;
-    }
-    return;
-  }
-
   V$$init$$$() {
     var th = this;
-    var var0 = null;
     java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.lock = th;
     return;
   }
 }
@@ -10212,7 +9386,7 @@ class java$util$concurrent$ConcurrentHashMap extends java$util$AbstractMap {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$concurrent$ConcurrentHashMap,
         'java.util.concurrent.ConcurrentHashMap',
-         [java$util$concurrent$ConcurrentHashMap,java$util$Map,java$io$Serializable,java$util$concurrent$ConcurrentMap,java$util$AbstractMap,java$lang$Object]);
+         [java$util$concurrent$ConcurrentHashMap,java$util$AbstractMap,java$util$concurrent$ConcurrentMap,java$io$Serializable,java$util$Map,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -10286,6 +9460,13 @@ class java$util$concurrent$ConcurrentHashMap extends java$util$AbstractMap {
     return (var0.I$hashCode$$());
   }
 
+  Z$isEmpty$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.delegate);
+    return (var0.Z$isEmpty$$());
+  }
+
   I$size$$() {
     var th = this;
     var var0 = null;
@@ -10298,13 +9479,6 @@ class java$util$concurrent$ConcurrentHashMap extends java$util$AbstractMap {
     var var0 = null;
     var0 = (th.delegate);
     return (var0.Z$containsKey$Ljava$lang$Object$(arg0));
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.delegate);
-    return (var0.Z$isEmpty$$());
   }
 
   Ljava$util$Set$$entrySet$$() {
@@ -10328,7 +9502,7 @@ class java$io$InputStream extends java$lang$Object {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$io$InputStream,
         'java.io.InputStream',
-         [java$io$Closeable,java$io$InputStream,java$lang$AutoCloseable,java$lang$Object]);
+         [java$io$Closeable,java$lang$AutoCloseable,java$io$InputStream,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -10344,16 +9518,8 @@ class java$io$InputStream extends java$lang$Object {
 }
 
 
-class java$util$HashMap extends java$util$AbstractMap {
+class java$util$AbstractCollection extends java$lang$Object {
   nativeObject = null;
-
-  loadFactor = 0.0;
-  threshold = 0;
-  size = 0;
-  table = null;
-  modCount = 0;
-  entrySet = null;
-
   constructor() {
     super();
   }
@@ -10362,9 +9528,9 @@ class java$util$HashMap extends java$util$AbstractMap {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$HashMap,
-        'java.util.HashMap',
-         [java$util$Map,java$io$Serializable,java$lang$Cloneable,java$util$HashMap,java$util$AbstractMap,java$lang$Object]);
+        java$util$AbstractCollection,
+        'java.util.AbstractCollection',
+         [java$util$AbstractCollection,java$util$Collection,java$lang$Iterable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -10374,1100 +9540,120 @@ class java$util$HashMap extends java$util$AbstractMap {
 
   V$$init$$$() {
     var th = this;
-    var var0 = null;
-    java$util$AbstractMap.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.loadFactor = 0.75;
+    java$lang$Object.prototype.V$$init$$$.call(th);
     return;
   }
 
-  V$$init$$I(arg0) {
-    var th = this;
-    java$util$HashMap.prototype.V$$init$$I$F.call(th,arg0,0.75);
-    return;
-  }
-
-  V$$init$$I$F(arg0,arg1) {
+  Ljava$lang$String$$toString$$() {
     var th = this;
     var var0 = null;
     var var1 = null;
     var var2 = null;
     var var3 = null;
-    var phi4 = 0;
+    var phi4 = null;
     var var5 = null;
     var var6 = null;
     var var7 = null;
     var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var var11 = 0;
-    java$util$AbstractMap.prototype.V$$init$$$.call(th);
-    if (arg0 >= 0) {
-     If_28_0: {
-      if (arg0 <= 1073741824) {
-       phi4 = (arg0) | 0;
-       break If_28_0;
-      } else {
-       phi4 = (1073741824) | 0;
-       break If_28_0;
-      }
-     }
-     If_34_0: {
-      if (arg1 <= 0.0) {
-       break If_34_0;
-      } else {
-       java$lang$Float.$i;
-       if ((java$lang$Float.Z$isNaN$F(arg1)) == 0) {
-        var9 = th;
-        var9.loadFactor = arg1;
-        var10 = th;
-        var11 = (phi4) | 0;
-        var10.threshold = (java$util$HashMap.I$tableSizeFor$I(var11));
-        return;
-       } else {
-        break If_34_0;
-       }
-      }
-     }
-     var5 = new java$lang$IllegalArgumentException();
-     var6 = new java$lang$StringBuilder();
-     java$lang$StringBuilder.prototype.V$$init$$$.call(var6);
-     var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[58]));
-     var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$F.call(var7,arg1));
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var5,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var8)));
-     throw bytecoder.registerStack(var5, new Error().stack);
-    } else {
-     var0 = new java$lang$IllegalArgumentException();
+    var0 = (th.Ljava$util$Iterator$$iterator$$());
+    if ((var0.Z$hasNext$$()) != 0) {
      var1 = new java$lang$StringBuilder();
      java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
-     var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,bytecoder.stringconstants[57]));
-     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var2,arg0));
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var3)));
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  static I$tableSizeFor$I(arg0) {
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var0 = ((arg0 - 1)) | 0;
-    java$lang$Integer.$i;
-    var1 = ((-1 >>> (java$lang$Integer.I$numberOfLeadingZeros$I(var0)))) | 0;
-    If_13_0: {
-     if (var1 >= 0) {
-      if (var1 < 1073741824) {
-       phi2 = ((var1 + 1)) | 0;
-       break If_13_0;
-      } else {
-       phi2 = (1073741824) | 0;
-       break If_13_0;
-      }
-     } else {
-      phi2 = (1) | 0;
-      break If_13_0;
-     }
-    }
-    return phi2;
-  }
-
-  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var var3 = 0;
-    var phi4 = 0;
-    var var5 = null;
-    var var6 = 0;
-    var phi7 = null;
-    var phi8 = 0;
-    var var9 = null;
-    var var10 = 0;
-    var var11 = null;
-    var var12 = null;
-    var var13 = null;
-    var phi14 = null;
-    var phi15 = null;
-    var var16 = null;
-    var var17 = 0;
-    var var18 = null;
-    var var19 = null;
-    var var20 = null;
-    var var21 = null;
-    var var22 = null;
-    var var23 = null;
-    var var24 = null;
-    var var25 = null;
-    var var26 = null;
-    var phi27 = null;
-    var var28 = null;
-    var var29 = null;
-    var var30 = null;
-    if (arg1 != null) {
-     var1 = ((java$util$HashMap.I$hash$Ljava$lang$Object$(arg0))) | 0;
-     If_21_0: {
-      If_21_1: {
-       if ((th.size) > (th.threshold)) {
-        phi4 = (0) | 0;
-        break If_21_1;
+     var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var1,91));
+     L1568791750: while(true) {
+      var3 = (var0.Ljava$lang$Object$$next$$());
+      If_24_0: {
+       if (var3 != th) {
+        phi4 = var3;
+        break If_24_0;
        } else {
-        var2 = (th.table);
-        if (var2 == null) {
-         phi4 = (0) | 0;
-         break If_21_1;
-        } else {
-         var3 = (var2.data.length) | 0;
-         if (var3 != 0) {
-          phi7 = var2;
-          phi8 = (var3) | 0;
-          phi4 = (0) | 0;
-          break If_21_0;
-         } else {
-          phi4 = (0) | 0;
-          break If_21_1;
-         }
-        }
+        phi4 = bytecoder.stringconstants[96];
+        break If_24_0;
        }
       }
-      var5 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
-      var6 = (var5.data.length) | 0;
-      phi7 = var5;
-      phi8 = (var6) | 0;
-      break If_21_0;
-     }
-     var9 = phi7;
-     var10 = (((phi8 - 1) & var1)) | 0;
-     var11 = (var9.data[var10]);
-     If_55_0: {
-      if (var11 == null) {
-       phi14 = null;
-       phi15 = null;
-       break If_55_0;
+      var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var1,phi4));
+      if ((var0.Z$hasNext$$()) != 0) {
+       var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var1,44));
+       var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var7,32));
+       // Here was a goto statement
+       continue L1568791750;
       } else {
-       If_59_0: {
-        if (bytecoder.instanceOf(var11,java$util$HashMap$TreeNode) == 0) {
-         phi27 = var11;
-         L817311089: while(true) {
-          If_142_0: {
-           if ((phi27.hash) != var1) {
-            break If_142_0;
-           } else {
-            var28 = (phi27.key);
-            If_147_0: {
-             if (var28 == arg0) {
-              break If_147_0;
-             } else {
-              if (arg0 == null) {
-               break If_142_0;
-              } else {
-               if ((arg0.Z$equals$Ljava$lang$Object$(var28)) == 0) {
-                break If_142_0;
-               } else {
-                break If_147_0;
-               }
-              }
-             }
-            }
-            var29 = phi27;
-            phi14 = null;
-            phi15 = var29;
-            break If_59_0;
-           }
-          }
-          phi4 = ((phi4 + 1)) | 0;
-          var30 = (phi27.next);
-          if (var30 != null) {
-           phi27 = var30;
-           continue L817311089;
-          } else {
-           phi14 = null;
-           phi15 = null;
-           break If_59_0;
-          }
-         }
-        } else {
-         var12 = var11;
-         var13 = (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$getTreeNode$I$Ljava$lang$Object$.call(var12,var1,arg0));
-         phi14 = var12;
-         phi15 = var13;
-         break If_59_0;
-        }
-       }
-       if (phi15 == null) {
-        break If_55_0;
-       } else {
-        var16 = (phi15.value);
-        if (var16 == null) {
-         break If_55_0;
-        } else {
-         java$util$HashMap.prototype.V$afterNodeAccess$Ljava$util$HashMap$Node$.call(th,phi15);
-         return var16;
-        }
-       }
+       var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var1,93));
+       return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var6));
       }
-     }
-     var17 = ((th.modCount)) | 0;
-     var18 = (arg1.Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0));
-     if (var17 == (th.modCount)) {
-      if (var18 != null) {
-       if (phi15 == null) {
-        If_107_0: {
-         if (phi14 == null) {
-          var26 = phi7;
-          var26.data[var10] = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,var1,arg0,var18,var11));
-          if (phi4 < 7) {
-           break If_107_0;
-          } else {
-           java$util$HashMap.prototype.V$treeifyBin$$Ljava$util$HashMap$Node$$I.call(th,phi7,var1);
-           break If_107_0;
-          }
-         } else {
-          var21 = phi14;
-          var22 = phi7;
-          var23 = (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$putTreeVal$Ljava$util$HashMap$$$Ljava$util$HashMap$Node$$I$Ljava$lang$Object$$Ljava$lang$Object$.call(var21,th,var22,var1,arg0,var18));
-          break If_107_0;
-         }
-        }
-        var24 = th;
-        var24.modCount = (var17 + 1);
-        var25 = th;
-        var25.size = ((var25.size) + 1);
-        java$util$HashMap.prototype.V$afterNodeInsertion$Z.call(th,1);
-        return var18;
-       } else {
-        var20 = phi15;
-        var20.value = var18;
-        java$util$HashMap.prototype.V$afterNodeAccess$Ljava$util$HashMap$Node$.call(th,phi15);
-        return var18;
-       }
-      } else {
-       return null;
-      }
-     } else {
-      var19 = new java$util$ConcurrentModificationException();
-      java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var19);
-      throw bytecoder.registerStack(var19, new Error().stack);
      }
     } else {
-     var0 = new java$lang$NullPointerException();
-     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
+     return bytecoder.stringconstants[95];
     }
   }
 
-  static I$hash$Ljava$lang$Object$(arg0) {
-    var phi0 = 0;
-    var var1 = 0;
-    If_2_0: {
-     if (arg0 != null) {
-      var1 = ((arg0.I$hashCode$$())) | 0;
-      phi0 = ((var1 ^ (var1 >>> 16))) | 0;
-      break If_2_0;
-     } else {
-      phi0 = (0) | 0;
-      break If_2_0;
-     }
-    }
-    return phi0;
-  }
-
-  $Ljava$util$HashMap$Node$$resize$$() {
+  Z$containsAll$Ljava$util$Collection$(arg0) {
     var th = this;
     var var0 = null;
-    var phi1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var var4 = null;
-    var var5 = 0;
-    var var6 = 0;
-    var phi7 = 0;
-    var phi8 = 0;
-    var var9 = .0;
-    var phi10 = 0;
-    var phi11 = 0;
-    var var12 = null;
-    var var13 = null;
-    var var14 = null;
-    var phi15 = 0;
-    var var16 = null;
-    var var17 = 0;
-    var phi18 = null;
-    var phi19 = null;
-    var phi20 = null;
-    var phi21 = null;
-    var phi22 = null;
-    var phi23 = null;
-    var var24 = null;
-    var phi25 = null;
-    var phi26 = null;
-    var var27 = null;
-    var var28 = null;
-    var var29 = null;
-    var phi30 = null;
-    var var31 = null;
-    var var32 = null;
-    var0 = (th.table);
-    If_5_0: {
-     if (var0 != null) {
-      phi1 = (var0.data.length) | 0;
-      break If_5_0;
-     } else {
-      phi1 = (0) | 0;
-      break If_5_0;
-     }
-    }
-    var2 = (phi1) | 0;
-    var3 = ((th.threshold)) | 0;
-    If_16_0: {
-     if (var2 <= 0) {
-      if (var3 <= 0) {
-       phi7 = (16) | 0;
-       phi8 = (12) | 0;
-       break If_16_0;
-      } else {
-       phi7 = (var3) | 0;
-       phi8 = (0) | 0;
-       break If_16_0;
-      }
-     } else {
-      if (var2 < 1073741824) {
-       var5 = ((var2 << 1)) | 0;
-       if (var5 >= 1073741824) {
-        phi7 = (var5) | 0;
-        phi8 = (0) | 0;
-        break If_16_0;
-       } else {
-        if (var2 < 16) {
-         phi7 = (var5) | 0;
-         phi8 = (0) | 0;
-         break If_16_0;
-        } else {
-         var6 = ((var3 << 1)) | 0;
-         phi7 = (var5) | 0;
-         phi8 = (var6) | 0;
-         break If_16_0;
-        }
-       }
-      } else {
-       var4 = th;
-       var4.threshold = 2147483647;
-       return var0;
-      }
-     }
-    }
-    If_44_0: {
-     if (phi8 != 0) {
-      phi11 = (phi8) | 0;
-      break If_44_0;
-     } else {
-      var9 = (phi7 * (th.loadFactor));
-      If_53_0: {
-       If_53_1: {
-        if (phi7 >= 1073741824) {
-         break If_53_1;
-        } else {
-         if (var9 >= 1.07374182E9) {
-          break If_53_1;
-         } else {
-          phi10 = ((var9 | 0)) | 0;
-          break If_53_0;
-         }
-        }
-       }
-       phi10 = (2147483647) | 0;
-       break If_53_0;
-      }
-      phi11 = (phi10) | 0;
-      break If_44_0;
-     }
-    }
-    var12 = th;
-    var12.threshold = phi11;
-    var13 = bytecoder.newarray((phi7),null);
-    var14 = th;
-    var14.table = var13;
-    If_71_0: {
-     if (var0 == null) {
-      break If_71_0;
-     } else {
-      phi15 = (0) | 0;
-      L1462455585: while(true) {
-       if (phi15 >= var2) {
-        break If_71_0;
-       } else {
-        var16 = (var0.data[phi15]);
-        If_81_0: {
-         if (var16 == null) {
-          phi18 = var16;
-          break If_81_0;
-         } else {
-          var0.data[phi15] = null;
-          if ((var16.next) != null) {
-           if (bytecoder.instanceOf(var16,java$util$HashMap$TreeNode) == 0) {
-            phi19 = var16;
-            phi20 = null;
-            phi21 = null;
-            phi22 = null;
-            phi23 = null;
-            L531924310: while(true) {
-             var24 = (phi19.next);
-             If_123_0: {
-              if (((phi19.hash) & var2) != 0) {
-               If_153_0: {
-                if (phi23 != null) {
-                 var32 = phi23;
-                 var32.next = phi19;
-                 phi30 = phi22;
-                 break If_153_0;
-                } else {
-                 phi30 = phi19;
-                 break If_153_0;
-                }
-               }
-               var31 = phi19;
-               phi25 = phi20;
-               phi26 = phi21;
-               phi22 = phi30;
-               phi23 = var31;
-               break If_123_0;
-              } else {
-               If_126_0: {
-                if (phi21 != null) {
-                 var29 = phi21;
-                 var29.next = phi19;
-                 phi25 = phi20;
-                 break If_126_0;
-                } else {
-                 phi25 = phi19;
-                 break If_126_0;
-                }
-               }
-               phi26 = phi19;
-               break If_123_0;
-              }
-             }
-             if (var24 != null) {
-              phi19 = var24;
-              phi20 = phi25;
-              phi21 = phi26;
-              continue L531924310;
-             } else {
-              If_134_0: {
-               if (phi26 == null) {
-                break If_134_0;
-               } else {
-                var27 = phi26;
-                var27.next = null;
-                var13.data[phi15] = phi25;
-                break If_134_0;
-               }
-              }
-              if (phi23 == null) {
-               phi18 = var24;
-               break If_81_0;
-              } else {
-               var28 = phi23;
-               var28.next = null;
-               var13.data[(phi15 + var2)] = phi22;
-               phi18 = var24;
-               break If_81_0;
-              }
-             }
-            }
-           } else {
-            java$util$HashMap$TreeNode.prototype.V$split$Ljava$util$HashMap$$$Ljava$util$HashMap$Node$$I$I.call(var16,th,var13,phi15,var2);
-            phi18 = var16;
-            break If_81_0;
-           }
-          } else {
-           var17 = (((var16.hash) & (phi7 - 1))) | 0;
-           var13.data[var17] = var16;
-           phi18 = var16;
-           break If_81_0;
-          }
-         }
-        }
-        phi15 = ((phi15 + 1)) | 0;
-        // Here was a goto statement
-        continue L1462455585;
-       }
-      }
-     }
-    }
-    return var13;
-  }
-
-  Ljava$util$HashMap$Node$$replacementNode$Ljava$util$HashMap$Node$$Ljava$util$HashMap$Node$(arg0,arg1) {
-    var var0 = null;
-    var0 = new java$util$HashMap$Node();
-    java$util$HashMap$Node.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,(arg0.hash),(arg0.key),(arg0.value),arg1);
-    return var0;
-  }
-
-  static Ljava$lang$Class$$comparableClassFor$Ljava$lang$Object$(arg0) {
-    var var0 = null;
     var var1 = null;
-    var var2 = 0;
-    var phi3 = 0;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    If_4_0: {
-     if (bytecoder.instanceOf(arg0,java$lang$Comparable) == 0) {
-      break If_4_0;
+    var0 = (arg0.Ljava$util$Iterator$$iterator$$());
+    L978203827: while(true) {
+     if ((var0.Z$hasNext$$()) == 0) {
+      return 1;
      } else {
-      var0 = ((arg0).constructor.$rt);
-      if (var0 != java$lang$String.$rt) {
-       var1 = (java$lang$Class.prototype.$Ljava$lang$reflect$Type$$getGenericInterfaces$$.call(var0));
-       if (var1 == null) {
-        break If_4_0;
-       } else {
-        var2 = (var1.data.length) | 0;
-        phi3 = (0) | 0;
-        L1317337508: while(true) {
-         if (phi3 >= var2) {
-          break If_4_0;
-         } else {
-          var4 = (var1.data[phi3]);
-          If_33_0: {
-           if (bytecoder.instanceOf(var4,java$lang$reflect$ParameterizedType) == 0) {
-            break If_33_0;
-           } else {
-            var5 = var4;
-            if ((var5.Ljava$lang$reflect$Type$$getRawType$$()) != java$lang$Comparable.$rt) {
-             break If_33_0;
-            } else {
-             var6 = (var5.$Ljava$lang$reflect$Type$$getActualTypeArguments$$());
-             if (var6 == null) {
-              break If_33_0;
-             } else {
-              if (var6.data.length != 1) {
-               break If_33_0;
-              } else {
-               if ((var6.data[0]) != var0) {
-                break If_33_0;
-               } else {
-                return var0;
-               }
-              }
-             }
-            }
-           }
-          }
-          phi3 = ((phi3 + 1)) | 0;
-          // Here was a goto statement
-          continue L1317337508;
-         }
-        }
-       }
+      var1 = (var0.Ljava$lang$Object$$next$$());
+      if ((th.Z$contains$Ljava$lang$Object$(var1)) != 0) {
+       // Here was a goto statement
+       continue L978203827;
       } else {
-       return var0;
+       return 0;
       }
      }
     }
-    return null;
   }
 
-  static I$compareComparables$Ljava$lang$Class$$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1,arg2) {
-    var phi0 = 0;
-    var var1 = null;
-    If_4_0: {
-     If_4_1: {
-      if (arg2 == null) {
-       break If_4_1;
-      } else {
-       if (((arg2).constructor.$rt) == arg0) {
-        var1 = arg1;
-        phi0 = ((var1.I$compareTo$Ljava$lang$Object$(arg2))) | 0;
-        break If_4_0;
-       } else {
-        break If_4_1;
-       }
-      }
-     }
-     phi0 = (0) | 0;
-     break If_4_0;
-    }
-    return phi0;
-  }
-
-  V$afterNodeAccess$Ljava$util$HashMap$Node$(arg0) {
-    return;
-  }
-
-  Ljava$util$HashMap$TreeNode$$newTreeNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
-    var var0 = null;
-    java$util$HashMap$TreeNode.$i;
-    var0 = new java$util$HashMap$TreeNode();
-    java$util$HashMap$TreeNode.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,arg0,arg1,arg2,arg3);
-    return var0;
-  }
-
-  V$afterNodeInsertion$Z(arg0) {
-    return;
-  }
-
-  Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
-    var var0 = null;
-    var0 = new java$util$HashMap$Node();
-    java$util$HashMap$Node.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,arg0,arg1,arg2,arg3);
-    return var0;
-  }
-
-  V$treeifyBin$$Ljava$util$HashMap$Node$$I(arg0,arg1) {
-    var th = this;
-    var var0 = 0;
-    var var1 = null;
-    var var2 = 0;
-    var var3 = null;
-    var phi4 = null;
-    var phi5 = null;
-    var phi6 = null;
-    var var7 = null;
-    var var8 = null;
-    var phi9 = null;
-    var var10 = null;
-    var var11 = null;
-    var var12 = null;
-    If_4_0: {
-     If_4_1: {
-      if (arg0 == null) {
-       break If_4_1;
-      } else {
-       var0 = (arg0.data.length) | 0;
-       if (var0 >= 64) {
-        var2 = (((var0 - 1) & arg1)) | 0;
-        var3 = (arg0.data[var2]);
-        if (var3 == null) {
-         break If_4_0;
-        } else {
-         phi4 = var3;
-         phi5 = null;
-         phi6 = null;
-         L983003496: while(true) {
-          var7 = phi4;
-          var8 = (java$util$HashMap.prototype.Ljava$util$HashMap$TreeNode$$replacementTreeNode$Ljava$util$HashMap$Node$$Ljava$util$HashMap$Node$.call(th,var7,null));
-          If_40_0: {
-           if (phi6 != null) {
-            var8.prev = phi6;
-            var12 = phi6;
-            var12.next = var8;
-            phi9 = phi5;
-            break If_40_0;
-           } else {
-            phi9 = var8;
-            break If_40_0;
-           }
-          }
-          var10 = (phi4.next);
-          if (var10 != null) {
-           phi4 = var10;
-           phi5 = phi9;
-           phi6 = var8;
-           continue L983003496;
-          } else {
-           var11 = phi9;
-           arg0.data[var2] = var11;
-           if (var11 == null) {
-            break If_4_0;
-           } else {
-            java$util$HashMap$TreeNode.prototype.V$treeify$$Ljava$util$HashMap$Node$.call(phi9,arg0);
-            break If_4_0;
-           }
-          }
-         }
-        }
-       } else {
-        break If_4_1;
-       }
-      }
-     }
-     var1 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
-     break If_4_0;
-    }
-    return;
-  }
-
-  Ljava$util$HashMap$TreeNode$$replacementTreeNode$Ljava$util$HashMap$Node$$Ljava$util$HashMap$Node$(arg0,arg1) {
-    var var0 = null;
-    java$util$HashMap$TreeNode.$i;
-    var0 = new java$util$HashMap$TreeNode();
-    java$util$HashMap$TreeNode.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,(arg0.hash),(arg0.key),(arg0.value),arg1);
-    return var0;
-  }
-
-  Ljava$lang$Object$$get$Ljava$lang$Object$(arg0) {
+  Z$contains$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    var phi1 = null;
-    var0 = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$.call(th,arg0));
+    var var1 = null;
+    var0 = (th.Ljava$util$Iterator$$iterator$$());
     If_6_0: {
-     if (var0 != null) {
-      phi1 = (var0.value);
-      break If_6_0;
-     } else {
-      phi1 = null;
-      break If_6_0;
-     }
-    }
-    return phi1;
-  }
-
-  Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = 0;
-    var var3 = 0;
-    var var4 = null;
-    var var5 = 0;
-    var var6 = null;
-    var phi7 = null;
-    var var8 = null;
-    var var9 = null;
-    var phi10 = null;
-    var var11 = null;
-    var phi12 = null;
-    var var13 = null;
-    var phi14 = null;
-    var0 = (th.table);
-    If_6_0: {
-     if (var0 == null) {
-      break If_6_0;
-     } else {
-      var1 = (var0.data.length) | 0;
-      if (var1 <= 0) {
-       break If_6_0;
-      } else {
-       var2 = ((var1 - 1)) | 0;
-       var3 = ((java$util$HashMap.I$hash$Ljava$lang$Object$(arg0))) | 0;
-       var4 = (var0.data[(var2 & var3)]);
-       if (var4 == null) {
+     If_6_1: {
+      If_6_2: {
+       if (arg0 != null) {
+        break If_6_2;
+       } else {
+        break If_6_1;
+       }
+      }
+      L1034620538: while(true) {
+       if ((var0.Z$hasNext$$()) == 0) {
         break If_6_0;
        } else {
-        var5 = ((var4.hash)) | 0;
-        If_31_0: {
-         if (var5 != var3) {
-          break If_31_0;
-         } else {
-          var6 = (var4.key);
-          If_36_0: {
-           if (var6 == arg0) {
-            break If_36_0;
-           } else {
-            if (arg0 == null) {
-             phi7 = var6;
-             break If_31_0;
-            } else {
-             if ((arg0.Z$equals$Ljava$lang$Object$(var6)) == 0) {
-              phi7 = var6;
-              break If_31_0;
-             } else {
-              break If_36_0;
-             }
-            }
-           }
-          }
-          return var4;
-         }
-        }
-        var8 = (var4.next);
-        if (var8 == null) {
-         phi14 = var8;
-         phi12 = phi7;
-         break If_6_0;
+        var1 = (var0.Ljava$lang$Object$$next$$());
+        if ((arg0.Z$equals$Ljava$lang$Object$(var1)) == 0) {
+         continue L1034620538;
         } else {
-         if (bytecoder.instanceOf(var4,java$util$HashMap$TreeNode) == 0) {
-          phi10 = var8;
-          L2094619413: while(true) {
-           If_66_0: {
-            if ((phi10.hash) != var3) {
-             phi12 = phi7;
-             break If_66_0;
-            } else {
-             var11 = (phi10.key);
-             If_71_0: {
-              if (var11 == arg0) {
-               break If_71_0;
-              } else {
-               if (arg0 == null) {
-                phi12 = var11;
-                break If_66_0;
-               } else {
-                if ((arg0.Z$equals$Ljava$lang$Object$(var11)) == 0) {
-                 phi12 = var11;
-                 break If_66_0;
-                } else {
-                 break If_71_0;
-                }
-               }
-              }
-             }
-             return phi10;
-            }
-           }
-           var13 = (phi10.next);
-           if (var13 != null) {
-            phi10 = var13;
-            phi7 = phi12;
-            continue L2094619413;
-           } else {
-            phi14 = var13;
-            break If_6_0;
-           }
-          }
-         } else {
-          var9 = var4;
-          return (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$getTreeNode$I$Ljava$lang$Object$.call(var9,var3,arg0));
-         }
+         return 1;
         }
        }
       }
      }
-    }
-    return null;
-  }
-
-  Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
-    var th = this;
-    var var0 = 0;
-    var0 = ((java$util$HashMap.I$hash$Ljava$lang$Object$(arg0))) | 0;
-    return (java$util$HashMap.prototype.Ljava$lang$Object$$putVal$I$Ljava$lang$Object$$Ljava$lang$Object$$Z$Z.call(th,var0,arg0,arg1,0,1));
-  }
-
-  Ljava$lang$Object$$putVal$I$Ljava$lang$Object$$Ljava$lang$Object$$Z$Z(arg0,arg1,arg2,arg3,arg4) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    var var3 = 0;
-    var phi4 = null;
-    var phi5 = 0;
-    var var6 = null;
-    var var7 = 0;
-    var var8 = null;
-    var var9 = null;
-    var phi10 = null;
-    var var11 = null;
-    var var12 = null;
-    var var13 = 0;
-    var var14 = null;
-    var var15 = null;
-    var phi16 = null;
-    var phi17 = null;
-    var phi18 = null;
-    var var19 = null;
-    var var20 = null;
-    var phi21 = null;
-    var phi22 = null;
-    var var23 = null;
-    var var24 = null;
-    var var25 = null;
-    var phi26 = 0;
-    var var27 = null;
-    var var28 = null;
-    var var29 = null;
-    var phi30 = null;
-    var0 = (th.table);
-    If_10_0: {
-     If_10_1: {
-      if (var0 == null) {
-       break If_10_1;
+     L904013466: while(true) {
+      if ((var0.Z$hasNext$$()) == 0) {
+       break If_6_0;
       } else {
-       var1 = (var0.data.length) | 0;
-       if (var1 != 0) {
-        phi4 = var0;
-        phi5 = (var1) | 0;
-        break If_10_0;
+       if ((var0.Ljava$lang$Object$$next$$()) != null) {
+        continue L904013466;
        } else {
-        break If_10_1;
+        return 1;
        }
       }
      }
-     var2 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
-     var3 = (var2.data.length) | 0;
-     phi4 = var2;
-     phi5 = (var3) | 0;
-     break If_10_0;
     }
-    var6 = phi4;
-    var7 = (((phi5 - 1) & arg0)) | 0;
-    var8 = (var6.data[var7]);
-    If_38_0: {
-     if (var8 != null) {
-      If_72_0: {
-       If_72_1: {
-        if ((var8.hash) != arg0) {
-         phi21 = var8;
-         break If_72_1;
-        } else {
-         var15 = (var8.key);
-         If_77_0: {
-          if (var15 == arg1) {
-           phi16 = var8;
-           phi17 = var15;
-           break If_77_0;
-          } else {
-           if (arg1 == null) {
-            phi21 = var8;
-            phi22 = var15;
-            break If_72_1;
-           } else {
-            if ((arg1.Z$equals$Ljava$lang$Object$(var15)) == 0) {
-             phi21 = var8;
-             phi22 = var15;
-             break If_72_1;
-            } else {
-             phi16 = var8;
-             phi17 = var15;
-             break If_77_0;
-            }
-           }
-          }
-         }
-         phi18 = phi16;
-         break If_72_0;
-        }
-       }
-       if (bytecoder.instanceOf(phi21,java$util$HashMap$TreeNode) == 0) {
-        phi26 = (0) | 0;
-        L1058305831: while(true) {
-         var27 = (phi21.next);
-         if (var27 != null) {
-          If_141_0: {
-           if ((var27.hash) != arg0) {
-            phi30 = phi22;
-            break If_141_0;
-           } else {
-            var29 = (var27.key);
-            if (var29 == arg1) {
-             phi16 = phi21;
-             phi18 = var27;
-             phi17 = var29;
-             break If_72_0;
-            } else {
-             if (arg1 == null) {
-              phi30 = var29;
-              break If_141_0;
-             } else {
-              if ((arg1.Z$equals$Ljava$lang$Object$(var29)) == 0) {
-               phi30 = var29;
-               break If_141_0;
-              } else {
-               phi16 = phi21;
-               phi18 = var27;
-               phi17 = var29;
-               break If_72_0;
-              }
-             }
-            }
-           }
-          }
-          phi26 = ((phi26 + 1)) | 0;
-          phi21 = var27;
-          phi22 = phi30;
-          continue L1058305831;
-         } else {
-          var28 = phi21;
-          var28.next = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,arg0,arg1,arg2,null));
-          if (phi26 < 7) {
-           phi16 = phi21;
-           phi18 = var27;
-           phi17 = phi22;
-           break If_72_0;
-          } else {
-           java$util$HashMap.prototype.V$treeifyBin$$Ljava$util$HashMap$Node$$I.call(th,phi4,arg0);
-           phi16 = phi21;
-           phi18 = var27;
-           phi17 = phi22;
-           break If_72_0;
-          }
-         }
-        }
-       } else {
-        var23 = phi21;
-        var24 = phi4;
-        var25 = (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$putTreeVal$Ljava$util$HashMap$$$Ljava$util$HashMap$Node$$I$Ljava$lang$Object$$Ljava$lang$Object$.call(var23,th,var24,arg0,arg1,arg2));
-        phi16 = phi21;
-        phi18 = var25;
-        phi17 = phi22;
-        break If_72_0;
-       }
-      }
-      if (phi18 == null) {
-       phi10 = phi16;
-       break If_38_0;
-      } else {
-       var19 = (phi18.value);
-       If_95_0: {
-        If_95_1: {
-         if (arg3 == 0) {
-          break If_95_1;
-         } else {
-          if (var19 != null) {
-           break If_95_0;
-          } else {
-           break If_95_1;
-          }
-         }
-        }
-        var20 = phi18;
-        var20.value = arg2;
-        break If_95_0;
-       }
-       java$util$HashMap.prototype.V$afterNodeAccess$Ljava$util$HashMap$Node$.call(th,phi18);
-       return var19;
-      }
-     } else {
-      var9 = phi4;
-      var9.data[var7] = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,arg0,arg1,arg2,null));
-      phi10 = var8;
-      break If_38_0;
-     }
-    }
-    var11 = th;
-    var11.modCount = ((var11.modCount) + 1);
-    var12 = th;
-    var13 = (((var12.size) + 1)) | 0;
-    var12.size = var13;
-    If_62_0: {
-     if (var13 <= (th.threshold)) {
-      break If_62_0;
-     } else {
-      var14 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
-      break If_62_0;
-     }
-    }
-    java$util$HashMap.prototype.V$afterNodeInsertion$Z.call(th,arg4);
-    return null;
-  }
-
-  I$size$$() {
-    var th = this;
-    return (th.size);
-  }
-
-  Z$containsKey$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var phi0 = 0;
-    If_4_0: {
-     if ((java$util$HashMap.prototype.Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$.call(th,arg0)) == null) {
-      phi0 = (0) | 0;
-      break If_4_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_4_0;
-     }
-    }
-    return phi0;
+    return 0;
   }
 
   Z$isEmpty$$() {
     var th = this;
     var phi0 = 0;
     If_3_0: {
-     if ((th.size) != 0) {
+     if ((th.I$size$$()) != 0) {
       phi0 = (0) | 0;
       break If_3_0;
      } else {
@@ -11476,1031 +9662,6 @@ class java$util$HashMap extends java$util$AbstractMap {
      }
     }
     return phi0;
-  }
-
-  Ljava$util$Set$$entrySet$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var phi3 = null;
-    var0 = (th.entrySet);
-    If_5_0: {
-     if (var0 != null) {
-      phi3 = var0;
-      break If_5_0;
-     } else {
-      var1 = th;
-      var2 = new java$util$HashMap$EntrySet();
-      java$util$HashMap$EntrySet.prototype.V$$init$$Ljava$util$HashMap$.call(var2,th);
-      var1.entrySet = var2;
-      phi3 = var2;
-      break If_5_0;
-     }
-    }
-    return phi3;
-  }
-}
-
-
-class java$lang$Short extends java$lang$Number {
-  nativeObject = null;
-
-  static TYPE = null;
-  value = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Short,
-        'java.lang.Short',
-         [java$lang$Comparable,java$io$Serializable,java$lang$Number,java$lang$Short,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    java$lang$Short.$i;
-    java$lang$Short.TYPE = bytecoder.primitives.short;
-    return;
-  }
-
-  static Ljava$lang$Short$$valueOf$S(arg0) {
-    var var0 = null;
-    java$lang$Short.$i;
-    var0 = new java$lang$Short();
-    java$lang$Short.prototype.V$$init$$S.call(var0,arg0);
-    return var0;
-  }
-
-  V$$init$$S(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Number.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.value = arg0;
-    return;
-  }
-
-  I$compareTo$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (java$lang$Short.prototype.I$compareTo$Ljava$lang$Short$.call(th,var0));
-  }
-
-  I$compareTo$Ljava$lang$Short$(arg0) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var0 = (th.value);
-    var1 = (arg0.S$shortValue$$());
-    java$lang$Short.$i;
-    return (java$lang$Short.I$compare$S$S(var0,var1));
-  }
-
-  static I$compare$S$S(arg0,arg1) {
-    var phi0 = 0;
-    If_3_0: {
-     if (arg0 >= arg1) {
-      if (arg0 != arg1) {
-       phi0 = (1) | 0;
-       break If_3_0;
-      } else {
-       phi0 = (0) | 0;
-       break If_3_0;
-      }
-     } else {
-      phi0 = (-1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  I$intValue$$() {
-    var th = this;
-    return (th.value);
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = 0;
-    var0 = (th.value);
-    java$lang$Short.$i;
-    return (java$lang$Short.Ljava$lang$String$$toString$S$I(var0,10));
-  }
-
-  static Ljava$lang$String$$toString$S$I(arg0,arg1) {
-    return bytecoder.imports['java.lang.Short'].Ljava$lang$String$$toString$S$I(arg0, arg1);
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var phi2 = 0;
-    if (th != arg0) {
-     If_7_0: {
-      if (arg0 == null) {
-       break If_7_0;
-      } else {
-       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
-        var0 = arg0;
-        var1 = (th.value);
-        If_23_0: {
-         if (var1 != (var0.S$shortValue$$())) {
-          phi2 = (0) | 0;
-          break If_23_0;
-         } else {
-          phi2 = (1) | 0;
-          break If_23_0;
-         }
-        }
-        return phi2;
-       } else {
-        break If_7_0;
-       }
-      }
-     }
-     return 0;
-    } else {
-     return 1;
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    return (th.value);
-  }
-}
-
-
-class java$util$Collections$SynchronizedCollection extends java$lang$Object {
-  nativeObject = null;
-
-  c = null;
-  mutex = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collections$SynchronizedCollection,
-        'java.util.Collections$SynchronizedCollection',
-         [java$lang$Iterable,java$util$Collections$SynchronizedCollection,java$io$Serializable,java$util$Collection,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$Collection$$Ljava$lang$Object$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.c = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
-    var1 = th;
-    var1.mutex = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg1));
-    return;
-  }
-
-  Ljava$util$Iterator$$iterator$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.c);
-    return (var0.Ljava$util$Iterator$$iterator$$());
-  }
-
-  I$size$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = 0;
-    var0 = (th.mutex);
-    // Monitor enter on var0
-    TryCatch_6_0: {
-     try {
-      var2 = (th.c);
-      var3 = ((var2.I$size$$())) | 0;
-      // Monitor exit on var0
-      break TryCatch_6_0;
-     } catch (__ex) {
-      if (__ex instanceof java$lang$Throwable) {
-       TryCatch_7_0: {
-        var1 = __ex;
-        // Monitor exit on var0
-        break TryCatch_7_0;
-       }
-       throw bytecoder.registerStack(var1, new Error().stack);
-      }
-      throw __ex;
-     }
-    }
-    return var3;
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = 0;
-    var0 = (th.mutex);
-    // Monitor enter on var0
-    TryCatch_6_0: {
-     try {
-      var2 = (th.c);
-      var3 = (var2.Z$isEmpty$$());
-      // Monitor exit on var0
-      break TryCatch_6_0;
-     } catch (__ex) {
-      if (__ex instanceof java$lang$Throwable) {
-       TryCatch_7_0: {
-        var1 = __ex;
-        // Monitor exit on var0
-        break TryCatch_7_0;
-       }
-       throw bytecoder.registerStack(var1, new Error().stack);
-      }
-      throw __ex;
-     }
-    }
-    return var3;
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var0 = (th.mutex);
-    // Monitor enter on var0
-    TryCatch_6_0: {
-     try {
-      var2 = (th.c);
-      var3 = (var2.Ljava$lang$String$$toString$$());
-      // Monitor exit on var0
-      break TryCatch_6_0;
-     } catch (__ex) {
-      if (__ex instanceof java$lang$Throwable) {
-       TryCatch_7_0: {
-        var1 = __ex;
-        // Monitor exit on var0
-        break TryCatch_7_0;
-       }
-       throw bytecoder.registerStack(var1, new Error().stack);
-      }
-      throw __ex;
-     }
-    }
-    return var3;
-  }
-}
-
-
-class java$util$Collections$EmptyListIterator extends java$util$Collections$EmptyIterator {
-  nativeObject = null;
-
-  static EMPTY_ITERATOR = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collections$EmptyListIterator,
-        'java.util.Collections$EmptyListIterator',
-         [java$util$ListIterator,java$util$Iterator,java$util$Collections$EmptyListIterator,java$lang$Object,java$util$Collections$EmptyIterator]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      java$util$Collections$EmptyIterator.$i;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    java$util$Collections$EmptyListIterator.$i;
-    var0 = new java$util$Collections$EmptyListIterator();
-    java$util$Collections$EmptyListIterator.prototype.V$$init$$$.call(var0);
-    java$util$Collections$EmptyListIterator.EMPTY_ITERATOR = var0;
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$util$Collections$EmptyIterator.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$set$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    var0 = new java$lang$IllegalStateException();
-    java$lang$IllegalStateException.prototype.V$$init$$$.call(var0);
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-
-  I$previousIndex$$() {
-    return -1;
-  }
-}
-
-
-class java$lang$Float extends java$lang$Number {
-  nativeObject = null;
-
-  static TYPE = null;
-  value = 0.0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Float,
-        'java.lang.Float',
-         [java$lang$Comparable,java$io$Serializable,java$lang$Number,java$lang$Float,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    java$lang$Float.$i;
-    java$lang$Float.TYPE = bytecoder.primitives.float;
-    return;
-  }
-
-  static Ljava$lang$Float$$valueOf$F(arg0) {
-    var var0 = null;
-    java$lang$Float.$i;
-    var0 = new java$lang$Float();
-    java$lang$Float.prototype.V$$init$$F.call(var0,arg0);
-    return var0;
-  }
-
-  V$$init$$F(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Number.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.value = arg0;
-    return;
-  }
-
-  static Z$isNaN$F(arg0) {
-    return bytecoder.imports['java.lang.Float'].Z$isNaN$F(arg0);
-  }
-
-  static Ljava$lang$String$$toString$F(arg0) {
-    return bytecoder.imports['java.lang.Float'].Ljava$lang$String$$toString$F(arg0);
-  }
-
-  I$compareTo$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (java$lang$Float.prototype.I$compareTo$Ljava$lang$Float$.call(th,var0));
-  }
-
-  I$compareTo$Ljava$lang$Float$(arg0) {
-    var th = this;
-    var var0 = .0;
-    var var1 = .0;
-    var0 = (th.value);
-    var1 = (java$lang$Float.prototype.F$floatValue$$.call(arg0));
-    java$lang$Float.$i;
-    return (java$lang$Float.I$compare$F$F(var0,var1));
-  }
-
-  F$floatValue$$() {
-    var th = this;
-    return (th.value);
-  }
-
-  static I$compare$F$F(arg0,arg1) {
-    var phi0 = 0;
-    If_3_0: {
-     if (arg0 >= arg1) {
-      if (bytecoder.cmp(arg0,arg1) != 0) {
-       phi0 = (1) | 0;
-       break If_3_0;
-      } else {
-       phi0 = (0) | 0;
-       break If_3_0;
-      }
-     } else {
-      phi0 = (-1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  I$intValue$$() {
-    var th = this;
-    return ((th.value) | 0);
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = .0;
-    var0 = (th.value);
-    java$lang$Float.$i;
-    return (java$lang$Float.Ljava$lang$String$$toString$F(var0));
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = .0;
-    var phi2 = 0;
-    if (th != arg0) {
-     If_7_0: {
-      if (arg0 == null) {
-       break If_7_0;
-      } else {
-       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
-        var0 = arg0;
-        var1 = (th.value);
-        If_24_0: {
-         if (bytecoder.cmp(var1,(java$lang$Float.prototype.F$floatValue$$.call(var0))) != 0) {
-          phi2 = (0) | 0;
-          break If_24_0;
-         } else {
-          phi2 = (1) | 0;
-          break If_24_0;
-         }
-        }
-        return phi2;
-       } else {
-        break If_7_0;
-       }
-      }
-     }
-     return 0;
-    } else {
-     return 1;
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    return ((th.value) | 0);
-  }
-}
-
-
-class java$util$List extends java$lang$Object {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$List,
-        'java.util.List',
-         [java$lang$Iterable,java$util$List,java$util$Collection,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static Ljava$util$List$$of$$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    var var1 = null;
-    if ((arg0.data.length) >= 0 && (arg0.data.length) <= 2) switch ((arg0.data.length) - 0) {
-     case 0: {
-      java$util$ImmutableCollections.$i;
-      return (java$util$ImmutableCollections.EMPTY_LIST);
-     }
-     case 1: {
-      var1 = new java$util$ImmutableCollections$List12();
-      java$util$ImmutableCollections$List12.prototype.V$$init$$Ljava$lang$Object$.call(var1,(arg0.data[0]));
-      return var1;
-     }
-     case 2: {
-      var0 = new java$util$ImmutableCollections$List12();
-      java$util$ImmutableCollections$List12.prototype.V$$init$$Ljava$lang$Object$$Ljava$lang$Object$.call(var0,(arg0.data[0]),(arg0.data[1]));
-      return var0;
-     }
-    } else {
-     java$util$ImmutableCollections.$i;
-     return (java$util$ImmutableCollections.Ljava$util$List$$listFromArray$$Ljava$lang$Object$(arg0));
-    }
-  }
-}
-
-
-class jdk$internal$misc$ScopedMemoryAccess$ScopedAccessError extends java$lang$Error {
-  nativeObject = null;
-
-  runtimeExceptionSupplier = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        jdk$internal$misc$ScopedMemoryAccess$ScopedAccessError,
-        'jdk.internal.misc.ScopedMemoryAccess$ScopedAccessError',
-         [java$lang$Throwable,java$lang$Error,jdk$internal$misc$ScopedMemoryAccess$ScopedAccessError,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  Ljava$lang$RuntimeException$$newRuntimeException$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.runtimeExceptionSupplier);
-    return (var0.Ljava$lang$Object$$get$$());
-  }
-}
-
-
-class java$lang$Double extends java$lang$Number {
-  nativeObject = null;
-
-  static TYPE = null;
-  value = 0.0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Double,
-        'java.lang.Double',
-         [java$lang$Comparable,java$lang$Double,java$io$Serializable,java$lang$Number,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    java$lang$Double.$i;
-    java$lang$Double.TYPE = bytecoder.primitives.double;
-    return;
-  }
-
-  static Ljava$lang$Double$$valueOf$D(arg0) {
-    var var0 = null;
-    java$lang$Double.$i;
-    var0 = new java$lang$Double();
-    java$lang$Double.prototype.V$$init$$D.call(var0,arg0);
-    return var0;
-  }
-
-  V$$init$$D(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Number.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.value = arg0;
-    return;
-  }
-
-  I$compareTo$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (java$lang$Double.prototype.I$compareTo$Ljava$lang$Double$.call(th,var0));
-  }
-
-  I$compareTo$Ljava$lang$Double$(arg0) {
-    var th = this;
-    var var0 = .0;
-    var var1 = .0;
-    var0 = (th.value);
-    var1 = (java$lang$Double.prototype.D$doubleValue$$.call(arg0));
-    java$lang$Double.$i;
-    return (java$lang$Double.I$compare$D$D(var0,var1));
-  }
-
-  D$doubleValue$$() {
-    var th = this;
-    return (th.value);
-  }
-
-  static I$compare$D$D(arg0,arg1) {
-    var phi0 = 0;
-    If_3_0: {
-     if (arg0 >= arg1) {
-      if (bytecoder.cmp(arg0,arg1) != 0) {
-       phi0 = (1) | 0;
-       break If_3_0;
-      } else {
-       phi0 = (0) | 0;
-       break If_3_0;
-      }
-     } else {
-      phi0 = (-1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  I$intValue$$() {
-    var th = this;
-    return ((th.value) | 0);
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = .0;
-    var0 = (th.value);
-    java$lang$Double.$i;
-    return (java$lang$Double.Ljava$lang$String$$toString$D(var0));
-  }
-
-  static Ljava$lang$String$$toString$D(arg0) {
-    return bytecoder.imports['java.lang.Double'].Ljava$lang$String$$toString$D(arg0);
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = .0;
-    var phi2 = 0;
-    if (th != arg0) {
-     If_7_0: {
-      if (arg0 == null) {
-       break If_7_0;
-      } else {
-       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
-        var0 = arg0;
-        var1 = (th.value);
-        If_24_0: {
-         if (bytecoder.cmp(var1,(java$lang$Double.prototype.D$doubleValue$$.call(var0))) != 0) {
-          phi2 = (0) | 0;
-          break If_24_0;
-         } else {
-          phi2 = (1) | 0;
-          break If_24_0;
-         }
-        }
-        return phi2;
-       } else {
-        break If_7_0;
-       }
-      }
-     }
-     return 0;
-    } else {
-     return 1;
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    return ((th.value) | 0);
-  }
-}
-
-
-class java$lang$VirtualMachineError extends java$lang$Error {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$VirtualMachineError,
-        'java.lang.VirtualMachineError',
-         [java$lang$Throwable,java$lang$Error,java$lang$VirtualMachineError,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$Error.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Error.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$Error.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$lang$AssertionError extends java$lang$Error {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$AssertionError,
-        'java.lang.AssertionError',
-         [java$lang$Throwable,java$lang$Error,java$lang$AssertionError,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$lang$AssertionError.prototype.V$$init$$Ljava$lang$String$.call(th,(java$lang$String.Ljava$lang$String$$valueOf$Ljava$lang$Object$(arg0)));
-    If_8_0: {
-     if (bytecoder.instanceOf(arg0,java$lang$Throwable) == 0) {
-      break If_8_0;
-     } else {
-      var0 = arg0;
-      var1 = (th.Ljava$lang$Throwable$$initCause$Ljava$lang$Throwable$(var0));
-      break If_8_0;
-     }
-    }
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$Error.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$Error.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$LinkedHashMap$Entry extends java$util$HashMap$Node {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$LinkedHashMap$Entry,
-        'java.util.LinkedHashMap$Entry',
-         [java$util$HashMap$Node,java$util$Map$Entry,java$util$LinkedHashMap$Entry,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
-    var th = this;
-    java$util$HashMap$Node.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,arg0,arg1,arg2,arg3);
-    return;
-  }
-}
-
-
-class de$mirkosertic$bytecoder$classlib$BytecoderCharset extends java$nio$charset$Charset {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        de$mirkosertic$bytecoder$classlib$BytecoderCharset,
-        'de.mirkosertic.bytecoder.classlib.BytecoderCharset',
-         [java$nio$charset$Charset,java$lang$Comparable,de$mirkosertic$bytecoder$classlib$BytecoderCharset,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$$$Ljava$lang$String$(arg0,arg1) {
-    var th = this;
-    java$nio$charset$Charset.prototype.V$$init$$Ljava$lang$String$$$Ljava$lang$String$.call(th,arg0,arg1);
-    return;
-  }
-
-  Ljava$nio$charset$CharsetDecoder$$newDecoder$$() {
-    var th = this;
-    var var0 = null;
-    de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder.$i;
-    var0 = new de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder();
-    de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder.prototype.V$$init$$Ljava$nio$charset$Charset$.call(var0,th);
-    return var0;
-  }
-
-  Ljava$nio$charset$CharsetEncoder$$newEncoder$$() {
-    var th = this;
-    var var0 = null;
-    de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder.$i;
-    var0 = new de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder();
-    de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder.prototype.V$$init$$Ljava$nio$charset$Charset$.call(var0,th);
-    return var0;
-  }
-}
-
-
-class java$nio$charset$CoderMalfunctionError extends java$lang$Error {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$charset$CoderMalfunctionError,
-        'java.nio.charset.CoderMalfunctionError',
-         [java$lang$Throwable,java$lang$Error,java$nio$charset$CoderMalfunctionError,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$Exception$(arg0) {
-    var th = this;
-    java$lang$Error.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$util$ArrayList$ListItr extends java$util$ArrayList$Itr {
-  nativeObject = null;
-
-  this$0 = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ArrayList$ListItr,
-        'java.util.ArrayList$ListItr',
-         [java$util$ListIterator,java$util$Iterator,java$util$ArrayList$ListItr,java$lang$Object,java$util$ArrayList$Itr]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$ArrayList$$I(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$util$ArrayList$Itr.prototype.V$$init$$Ljava$util$ArrayList$.call(th,arg0);
-    var1 = th;
-    var1.cursor = arg1;
-    return;
-  }
-
-  V$set$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = 0;
-    var var4 = null;
-    if ((th.lastRet) >= 0) {
-     th.V$checkForComodification$$();
-     TryCatch_14_0: {
-      try {
-       var2 = (th.this$0);
-       var3 = ((th.lastRet)) | 0;
-       var4 = (java$util$ArrayList.prototype.Ljava$lang$Object$$set$I$Ljava$lang$Object$.call(var2,var3,arg0));
-       break TryCatch_14_0;
-      } catch (__ex) {
-       if (__ex instanceof java$lang$IndexOutOfBoundsException) {
-        var1 = new java$util$ConcurrentModificationException();
-        java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var1);
-        throw bytecoder.registerStack(var1, new Error().stack);
-       }
-       throw __ex;
-      }
-     }
-     return;
-    } else {
-     var0 = new java$lang$IllegalStateException();
-     java$lang$IllegalStateException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  I$previousIndex$$() {
-    var th = this;
-    return ((th.cursor) - 1);
   }
 }
 
@@ -12521,7 +9682,7 @@ class java$lang$Integer extends java$lang$Number {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$lang$Integer,
         'java.lang.Integer',
-         [java$lang$Comparable,java$io$Serializable,java$lang$Integer,java$lang$Number,java$lang$Object]);
+         [java$lang$Integer,java$lang$Number,java$lang$Comparable,java$io$Serializable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -12800,7 +9961,7 @@ class java$lang$Integer extends java$lang$Number {
 }
 
 
-class java$util$AbstractCollection extends java$lang$Object {
+class java$nio$charset$CoderMalfunctionError extends java$lang$Error {
   nativeObject = null;
   constructor() {
     super();
@@ -12810,9 +9971,224 @@ class java$util$AbstractCollection extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$AbstractCollection,
-        'java.util.AbstractCollection',
-         [java$util$AbstractCollection,java$lang$Iterable,java$util$Collection,java$lang$Object]);
+        java$nio$charset$CoderMalfunctionError,
+        'java.nio.charset.CoderMalfunctionError',
+         [java$nio$charset$CoderMalfunctionError,java$lang$Throwable,java$lang$Error,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Exception$(arg0) {
+    var th = this;
+    java$lang$Error.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$util$ArrayList$ListItr extends java$util$ArrayList$Itr {
+  nativeObject = null;
+
+  this$0 = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ArrayList$ListItr,
+        'java.util.ArrayList$ListItr',
+         [java$util$ArrayList$Itr,java$util$ArrayList$ListItr,java$util$Iterator,java$util$ListIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$ArrayList$$I(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$util$ArrayList$Itr.prototype.V$$init$$Ljava$util$ArrayList$.call(th,arg0);
+    var1 = th;
+    var1.cursor = arg1;
+    return;
+  }
+
+  V$set$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = 0;
+    var var4 = null;
+    if ((th.lastRet) >= 0) {
+     th.V$checkForComodification$$();
+     TryCatch_14_0: {
+      try {
+       var2 = (th.this$0);
+       var3 = ((th.lastRet)) | 0;
+       var4 = (java$util$ArrayList.prototype.Ljava$lang$Object$$set$I$Ljava$lang$Object$.call(var2,var3,arg0));
+       break TryCatch_14_0;
+      } catch (__ex) {
+       if (__ex instanceof java$lang$IndexOutOfBoundsException) {
+        var1 = new java$util$ConcurrentModificationException();
+        java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var1);
+        throw bytecoder.registerStack(var1, new Error().stack);
+       }
+       throw __ex;
+      }
+     }
+     return;
+    } else {
+     var0 = new java$lang$IllegalStateException();
+     java$lang$IllegalStateException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  I$previousIndex$$() {
+    var th = this;
+    return ((th.cursor) - 1);
+  }
+}
+
+
+class java$nio$HeapByteBuffer extends java$nio$ByteBuffer {
+  nativeObject = null;
+
+  static ARRAY_BASE_OFFSET = 0;
+  static ARRAY_INDEX_SCALE = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$HeapByteBuffer,
+        'java.nio.HeapByteBuffer',
+         [java$nio$ByteBuffer,java$nio$HeapByteBuffer,java$lang$Comparable,java$nio$Buffer,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      java$nio$ByteBuffer.$i;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    java$nio$HeapByteBuffer.$i;
+    var0 = (java$nio$HeapByteBuffer.UNSAFE);
+    java$nio$HeapByteBuffer.ARRAY_BASE_OFFSET = ((jdk$internal$misc$Unsafe.prototype.I$arrayBaseOffset$Ljava$lang$Class$.call(var0,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
+    var1 = (java$nio$HeapByteBuffer.UNSAFE);
+    java$nio$HeapByteBuffer.ARRAY_INDEX_SCALE = ((jdk$internal$misc$Unsafe.prototype.I$arrayIndexScale$Ljava$lang$Class$.call(var1,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
+    return;
+  }
+
+  V$$init$$$B$I$I$Ljava$lang$foreign$MemorySegment$(arg0,arg1,arg2,arg3) {
+    var th = this;
+    var var0 = null;
+    java$nio$ByteBuffer.prototype.V$$init$$I$I$I$I$$B$I$Ljava$lang$foreign$MemorySegment$.call(th,-1,arg1,(arg1 + arg2),arg0.data.length,arg0,0,arg3);
+    var0 = th;
+    java$nio$HeapByteBuffer.$i;
+    var0.address = (java$nio$HeapByteBuffer.ARRAY_BASE_OFFSET);
+    return;
+  }
+
+  V$$init$$I$I$Ljava$lang$foreign$MemorySegment$(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = null;
+    java$nio$ByteBuffer.prototype.V$$init$$I$I$I$I$$B$I$Ljava$lang$foreign$MemorySegment$.call(th,-1,0,arg1,arg0,bytecoder.newarray((arg0),0),0,arg2);
+    var0 = th;
+    java$nio$HeapByteBuffer.$i;
+    var0.address = (java$nio$HeapByteBuffer.ARRAY_BASE_OFFSET);
+    return;
+  }
+
+  Z$isReadOnly$$() {
+    return 0;
+  }
+
+  B$get$I(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var0 = (th.hb);
+    var1 = ((th.I$checkIndex$I(arg0))) | 0;
+    return (var0.data[(java$nio$HeapByteBuffer.prototype.I$ix$I.call(th,var1))]);
+  }
+
+  I$ix$I(arg0) {
+    var th = this;
+    return (arg0 + (th.offset));
+  }
+
+  Ljava$nio$ByteBuffer$$get$$B$I$I(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = null;
+    var var5 = null;
+    var var6 = 0;
+    var var7 = null;
+    th.V$checkSession$$();
+    var0 = (arg0.data.length) | 0;
+    var1 = ((java$util$Objects.I$checkFromIndexSize$I$I$I(arg1,arg2,var0))) | 0;
+    var2 = ((th.I$position$$())) | 0;
+    var3 = ((th.I$limit$$())) | 0;
+    if (arg2 <= (var3 - var2)) {
+     var5 = (th.hb);
+     java$lang$System.V$arraycopy$$B$I$$B$I$I(var5,(java$nio$HeapByteBuffer.prototype.I$ix$I.call(th,var2)),arg0,arg1,arg2);
+     var6 = ((var2 + arg2)) | 0;
+     var7 = (th.Ljava$nio$ByteBuffer$$position$I(var6));
+     return th;
+    } else {
+     var4 = new java$nio$BufferUnderflowException();
+     java$nio$BufferUnderflowException.prototype.V$$init$$$.call(var4);
+     throw bytecoder.registerStack(var4, new Error().stack);
+    }
+  }
+}
+
+
+class java$util$ImmutableCollections$AbstractImmutableMap extends java$util$AbstractMap {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ImmutableCollections$AbstractImmutableMap,
+        'java.util.ImmutableCollections$AbstractImmutableMap',
+         [java$util$AbstractMap,java$io$Serializable,java$util$Map,java$util$ImmutableCollections$AbstractImmutableMap,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -12822,120 +10198,1276 @@ class java$util$AbstractCollection extends java$lang$Object {
 
   V$$init$$$() {
     var th = this;
-    java$lang$Object.prototype.V$$init$$$.call(th);
+    java$util$AbstractMap.prototype.V$$init$$$.call(th);
     return;
   }
 
+  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
+    java$util$ImmutableCollections.$i;
+    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
+  }
+
+  Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    java$util$ImmutableCollections.$i;
+    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
+  }
+}
+
+
+class java$lang$Byte extends java$lang$Number {
+  nativeObject = null;
+
+  static TYPE = null;
+  value = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Byte,
+        'java.lang.Byte',
+         [java$lang$Byte,java$lang$Number,java$lang$Comparable,java$io$Serializable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    java$lang$Byte.$i;
+    java$lang$Byte.TYPE = bytecoder.primitives.byte;
+    return;
+  }
+
+  static Ljava$lang$Byte$$valueOf$B(arg0) {
+    var var0 = null;
+    java$lang$Byte.$i;
+    var0 = new java$lang$Byte();
+    java$lang$Byte.prototype.V$$init$$B.call(var0,arg0);
+    return var0;
+  }
+
+  V$$init$$B(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Number.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.value = arg0;
+    return;
+  }
+
+  I$compareTo$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (java$lang$Byte.prototype.I$compareTo$Ljava$lang$Byte$.call(th,var0));
+  }
+
+  I$compareTo$Ljava$lang$Byte$(arg0) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var0 = (th.value);
+    var1 = (arg0.B$byteValue$$());
+    java$lang$Byte.$i;
+    return (java$lang$Byte.I$compare$B$B(var0,var1));
+  }
+
+  static I$compare$B$B(arg0,arg1) {
+    var phi0 = 0;
+    If_3_0: {
+     if (arg0 >= arg1) {
+      if (arg0 != arg1) {
+       phi0 = (1) | 0;
+       break If_3_0;
+      } else {
+       phi0 = (0) | 0;
+       break If_3_0;
+      }
+     } else {
+      phi0 = (-1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+
+  I$intValue$$() {
+    var th = this;
+    return (th.value);
+  }
+
   Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = 0;
+    var0 = (th.value);
+    java$lang$Byte.$i;
+    return (java$lang$Byte.Ljava$lang$String$$toString$B$I(var0,10));
+  }
+
+  static Ljava$lang$String$$toString$B$I(arg0,arg1) {
+    return bytecoder.imports['java.lang.Byte'].Ljava$lang$String$$toString$B$I(arg0, arg1);
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var phi2 = 0;
+    if (th != arg0) {
+     If_7_0: {
+      if (arg0 == null) {
+       break If_7_0;
+      } else {
+       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
+        var0 = arg0;
+        var1 = (th.value);
+        If_23_0: {
+         if (var1 != (var0.B$byteValue$$())) {
+          phi2 = (0) | 0;
+          break If_23_0;
+         } else {
+          phi2 = (1) | 0;
+          break If_23_0;
+         }
+        }
+        return phi2;
+       } else {
+        break If_7_0;
+       }
+      }
+     }
+     return 0;
+    } else {
+     return 1;
+    }
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    return (th.value);
+  }
+}
+
+
+class java$util$HashMap extends java$util$AbstractMap {
+  nativeObject = null;
+
+  loadFactor = 0.0;
+  threshold = 0;
+  size = 0;
+  table = null;
+  modCount = 0;
+  entrySet = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$HashMap,
+        'java.util.HashMap',
+         [java$util$AbstractMap,java$util$HashMap,java$io$Serializable,java$util$Map,java$lang$Cloneable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    java$util$AbstractMap.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.loadFactor = 0.75;
+    return;
+  }
+
+  V$$init$$I(arg0) {
+    var th = this;
+    java$util$HashMap.prototype.V$$init$$I$F.call(th,arg0,0.75);
+    return;
+  }
+
+  V$$init$$I$F(arg0,arg1) {
     var th = this;
     var var0 = null;
     var var1 = null;
     var var2 = null;
     var var3 = null;
-    var phi4 = null;
+    var phi4 = 0;
     var var5 = null;
     var var6 = null;
     var var7 = null;
     var var8 = null;
-    var0 = (th.Ljava$util$Iterator$$iterator$$());
-    if ((var0.Z$hasNext$$()) != 0) {
+    var var9 = null;
+    var var10 = null;
+    var var11 = 0;
+    java$util$AbstractMap.prototype.V$$init$$$.call(th);
+    if (arg0 >= 0) {
+     If_28_0: {
+      if (arg0 <= 1073741824) {
+       phi4 = (arg0) | 0;
+       break If_28_0;
+      } else {
+       phi4 = (1073741824) | 0;
+       break If_28_0;
+      }
+     }
+     If_34_0: {
+      if (arg1 <= 0.0) {
+       break If_34_0;
+      } else {
+       java$lang$Float.$i;
+       if ((java$lang$Float.Z$isNaN$F(arg1)) == 0) {
+        var9 = th;
+        var9.loadFactor = arg1;
+        var10 = th;
+        var11 = (phi4) | 0;
+        var10.threshold = (java$util$HashMap.I$tableSizeFor$I(var11));
+        return;
+       } else {
+        break If_34_0;
+       }
+      }
+     }
+     var5 = new java$lang$IllegalArgumentException();
+     var6 = new java$lang$StringBuilder();
+     java$lang$StringBuilder.prototype.V$$init$$$.call(var6);
+     var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[58]));
+     var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$F.call(var7,arg1));
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var5,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var8)));
+     throw bytecoder.registerStack(var5, new Error().stack);
+    } else {
+     var0 = new java$lang$IllegalArgumentException();
      var1 = new java$lang$StringBuilder();
      java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
-     var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var1,91));
-     L1379031208: while(true) {
-      var3 = (var0.Ljava$lang$Object$$next$$());
-      If_24_0: {
-       if (var3 != th) {
-        phi4 = var3;
-        break If_24_0;
-       } else {
-        phi4 = bytecoder.stringconstants[99];
-        break If_24_0;
-       }
-      }
-      var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var1,phi4));
-      if ((var0.Z$hasNext$$()) != 0) {
-       var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var1,44));
-       var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var7,32));
-       // Here was a goto statement
-       continue L1379031208;
-      } else {
-       var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$C.call(var1,93));
-       return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var6));
-      }
-     }
-    } else {
-     return bytecoder.stringconstants[98];
+     var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,bytecoder.stringconstants[57]));
+     var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var2,arg0));
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var3)));
+     throw bytecoder.registerStack(var0, new Error().stack);
     }
   }
 
-  Z$containsAll$Ljava$util$Collection$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var0 = (arg0.Ljava$util$Iterator$$iterator$$());
-    L519926612: while(true) {
-     if ((var0.Z$hasNext$$()) == 0) {
-      return 1;
+  static I$tableSizeFor$I(arg0) {
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var0 = ((arg0 - 1)) | 0;
+    java$lang$Integer.$i;
+    var1 = ((-1 >>> (java$lang$Integer.I$numberOfLeadingZeros$I(var0)))) | 0;
+    If_13_0: {
+     if (var1 >= 0) {
+      if (var1 < 1073741824) {
+       phi2 = ((var1 + 1)) | 0;
+       break If_13_0;
+      } else {
+       phi2 = (1073741824) | 0;
+       break If_13_0;
+      }
      } else {
-      var1 = (var0.Ljava$lang$Object$$next$$());
-      if ((th.Z$contains$Ljava$lang$Object$(var1)) != 0) {
-       // Here was a goto statement
-       continue L519926612;
-      } else {
-       return 0;
-      }
+      phi2 = (1) | 0;
+      break If_13_0;
      }
     }
+    return phi2;
   }
 
-  Z$contains$Ljava$lang$Object$(arg0) {
+  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
     var th = this;
     var var0 = null;
-    var var1 = null;
-    var0 = (th.Ljava$util$Iterator$$iterator$$());
-    If_6_0: {
-     If_6_1: {
-      If_6_2: {
-       if (arg0 != null) {
-        break If_6_2;
+    var var1 = 0;
+    var var2 = null;
+    var var3 = 0;
+    var phi4 = 0;
+    var var5 = null;
+    var var6 = 0;
+    var phi7 = null;
+    var phi8 = 0;
+    var var9 = null;
+    var var10 = 0;
+    var var11 = null;
+    var var12 = null;
+    var var13 = null;
+    var phi14 = null;
+    var phi15 = null;
+    var var16 = null;
+    var var17 = 0;
+    var var18 = null;
+    var var19 = null;
+    var var20 = null;
+    var var21 = null;
+    var var22 = null;
+    var var23 = null;
+    var var24 = null;
+    var var25 = null;
+    var var26 = null;
+    var phi27 = null;
+    var var28 = null;
+    var var29 = null;
+    var var30 = null;
+    if (arg1 != null) {
+     var1 = ((java$util$HashMap.I$hash$Ljava$lang$Object$(arg0))) | 0;
+     If_21_0: {
+      If_21_1: {
+       if ((th.size) > (th.threshold)) {
+        phi4 = (0) | 0;
+        break If_21_1;
        } else {
-        break If_6_1;
+        var2 = (th.table);
+        if (var2 == null) {
+         phi4 = (0) | 0;
+         break If_21_1;
+        } else {
+         var3 = (var2.data.length) | 0;
+         if (var3 != 0) {
+          phi7 = var2;
+          phi8 = (var3) | 0;
+          phi4 = (0) | 0;
+          break If_21_0;
+         } else {
+          phi4 = (0) | 0;
+          break If_21_1;
+         }
+        }
        }
       }
-      L1854056294: while(true) {
-       if ((var0.Z$hasNext$$()) == 0) {
-        break If_6_0;
-       } else {
-        var1 = (var0.Ljava$lang$Object$$next$$());
-        if ((arg0.Z$equals$Ljava$lang$Object$(var1)) == 0) {
-         continue L1854056294;
+      var5 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
+      var6 = (var5.data.length) | 0;
+      phi7 = var5;
+      phi8 = (var6) | 0;
+      break If_21_0;
+     }
+     var9 = phi7;
+     var10 = (((phi8 - 1) & var1)) | 0;
+     var11 = (var9.data[var10]);
+     If_55_0: {
+      if (var11 == null) {
+       phi14 = null;
+       phi15 = null;
+       break If_55_0;
+      } else {
+       If_59_0: {
+        if (bytecoder.instanceOf(var11,java$util$HashMap$TreeNode) == 0) {
+         phi27 = var11;
+         L1515297216: while(true) {
+          If_142_0: {
+           if ((phi27.hash) != var1) {
+            break If_142_0;
+           } else {
+            var28 = (phi27.key);
+            If_147_0: {
+             if (var28 == arg0) {
+              break If_147_0;
+             } else {
+              if (arg0 == null) {
+               break If_142_0;
+              } else {
+               if ((arg0.Z$equals$Ljava$lang$Object$(var28)) == 0) {
+                break If_142_0;
+               } else {
+                break If_147_0;
+               }
+              }
+             }
+            }
+            var29 = phi27;
+            phi14 = null;
+            phi15 = var29;
+            break If_59_0;
+           }
+          }
+          phi4 = ((phi4 + 1)) | 0;
+          var30 = (phi27.next);
+          if (var30 != null) {
+           phi27 = var30;
+           continue L1515297216;
+          } else {
+           phi14 = null;
+           phi15 = null;
+           break If_59_0;
+          }
+         }
         } else {
-         return 1;
+         var12 = var11;
+         var13 = (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$getTreeNode$I$Ljava$lang$Object$.call(var12,var1,arg0));
+         phi14 = var12;
+         phi15 = var13;
+         break If_59_0;
+        }
+       }
+       if (phi15 == null) {
+        break If_55_0;
+       } else {
+        var16 = (phi15.value);
+        if (var16 == null) {
+         break If_55_0;
+        } else {
+         java$util$HashMap.prototype.V$afterNodeAccess$Ljava$util$HashMap$Node$.call(th,phi15);
+         return var16;
         }
        }
       }
      }
-     L518051619: while(true) {
-      if ((var0.Z$hasNext$$()) == 0) {
-       break If_6_0;
-      } else {
-       if ((var0.Ljava$lang$Object$$next$$()) != null) {
-        continue L518051619;
+     var17 = ((th.modCount)) | 0;
+     var18 = (arg1.Ljava$lang$Object$$apply$Ljava$lang$Object$(arg0));
+     if (var17 == (th.modCount)) {
+      if (var18 != null) {
+       if (phi15 == null) {
+        If_107_0: {
+         if (phi14 == null) {
+          var26 = phi7;
+          var26.data[var10] = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,var1,arg0,var18,var11));
+          if (phi4 < 7) {
+           break If_107_0;
+          } else {
+           java$util$HashMap.prototype.V$treeifyBin$$Ljava$util$HashMap$Node$$I.call(th,phi7,var1);
+           break If_107_0;
+          }
+         } else {
+          var21 = phi14;
+          var22 = phi7;
+          var23 = (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$putTreeVal$Ljava$util$HashMap$$$Ljava$util$HashMap$Node$$I$Ljava$lang$Object$$Ljava$lang$Object$.call(var21,th,var22,var1,arg0,var18));
+          break If_107_0;
+         }
+        }
+        var24 = th;
+        var24.modCount = (var17 + 1);
+        var25 = th;
+        var25.size = ((var25.size) + 1);
+        java$util$HashMap.prototype.V$afterNodeInsertion$Z.call(th,1);
+        return var18;
        } else {
-        return 1;
+        var20 = phi15;
+        var20.value = var18;
+        java$util$HashMap.prototype.V$afterNodeAccess$Ljava$util$HashMap$Node$.call(th,phi15);
+        return var18;
+       }
+      } else {
+       return null;
+      }
+     } else {
+      var19 = new java$util$ConcurrentModificationException();
+      java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var19);
+      throw bytecoder.registerStack(var19, new Error().stack);
+     }
+    } else {
+     var0 = new java$lang$NullPointerException();
+     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  static I$hash$Ljava$lang$Object$(arg0) {
+    var phi0 = 0;
+    var var1 = 0;
+    If_2_0: {
+     if (arg0 != null) {
+      var1 = ((arg0.I$hashCode$$())) | 0;
+      phi0 = ((var1 ^ (var1 >>> 16))) | 0;
+      break If_2_0;
+     } else {
+      phi0 = (0) | 0;
+      break If_2_0;
+     }
+    }
+    return phi0;
+  }
+
+  $Ljava$util$HashMap$Node$$resize$$() {
+    var th = this;
+    var var0 = null;
+    var phi1 = 0;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = null;
+    var var5 = 0;
+    var var6 = 0;
+    var phi7 = 0;
+    var phi8 = 0;
+    var var9 = .0;
+    var phi10 = 0;
+    var phi11 = 0;
+    var var12 = null;
+    var var13 = null;
+    var var14 = null;
+    var phi15 = 0;
+    var var16 = null;
+    var var17 = 0;
+    var phi18 = null;
+    var phi19 = null;
+    var phi20 = null;
+    var phi21 = null;
+    var phi22 = null;
+    var phi23 = null;
+    var var24 = null;
+    var phi25 = null;
+    var phi26 = null;
+    var var27 = null;
+    var var28 = null;
+    var var29 = null;
+    var phi30 = null;
+    var var31 = null;
+    var var32 = null;
+    var0 = (th.table);
+    If_5_0: {
+     if (var0 != null) {
+      phi1 = (var0.data.length) | 0;
+      break If_5_0;
+     } else {
+      phi1 = (0) | 0;
+      break If_5_0;
+     }
+    }
+    var2 = (phi1) | 0;
+    var3 = ((th.threshold)) | 0;
+    If_16_0: {
+     if (var2 <= 0) {
+      if (var3 <= 0) {
+       phi7 = (16) | 0;
+       phi8 = (12) | 0;
+       break If_16_0;
+      } else {
+       phi7 = (var3) | 0;
+       phi8 = (0) | 0;
+       break If_16_0;
+      }
+     } else {
+      if (var2 < 1073741824) {
+       var5 = ((var2 << 1)) | 0;
+       if (var5 >= 1073741824) {
+        phi7 = (var5) | 0;
+        phi8 = (0) | 0;
+        break If_16_0;
+       } else {
+        if (var2 < 16) {
+         phi7 = (var5) | 0;
+         phi8 = (0) | 0;
+         break If_16_0;
+        } else {
+         var6 = ((var3 << 1)) | 0;
+         phi7 = (var5) | 0;
+         phi8 = (var6) | 0;
+         break If_16_0;
+        }
+       }
+      } else {
+       var4 = th;
+       var4.threshold = 2147483647;
+       return var0;
+      }
+     }
+    }
+    If_44_0: {
+     if (phi8 != 0) {
+      phi11 = (phi8) | 0;
+      break If_44_0;
+     } else {
+      var9 = (phi7 * (th.loadFactor));
+      If_53_0: {
+       If_53_1: {
+        if (phi7 >= 1073741824) {
+         break If_53_1;
+        } else {
+         if (var9 >= 1.07374182E9) {
+          break If_53_1;
+         } else {
+          phi10 = ((var9 | 0)) | 0;
+          break If_53_0;
+         }
+        }
+       }
+       phi10 = (2147483647) | 0;
+       break If_53_0;
+      }
+      phi11 = (phi10) | 0;
+      break If_44_0;
+     }
+    }
+    var12 = th;
+    var12.threshold = phi11;
+    var13 = bytecoder.newarray((phi7),null);
+    var14 = th;
+    var14.table = var13;
+    If_71_0: {
+     if (var0 == null) {
+      break If_71_0;
+     } else {
+      phi15 = (0) | 0;
+      L13954618: while(true) {
+       if (phi15 >= var2) {
+        break If_71_0;
+       } else {
+        var16 = (var0.data[phi15]);
+        If_81_0: {
+         if (var16 == null) {
+          phi18 = var16;
+          break If_81_0;
+         } else {
+          var0.data[phi15] = null;
+          if ((var16.next) != null) {
+           if (bytecoder.instanceOf(var16,java$util$HashMap$TreeNode) == 0) {
+            phi19 = var16;
+            phi20 = null;
+            phi21 = null;
+            phi22 = null;
+            phi23 = null;
+            L426449440: while(true) {
+             var24 = (phi19.next);
+             If_123_0: {
+              if (((phi19.hash) & var2) != 0) {
+               If_153_0: {
+                if (phi23 != null) {
+                 var32 = phi23;
+                 var32.next = phi19;
+                 phi30 = phi22;
+                 break If_153_0;
+                } else {
+                 phi30 = phi19;
+                 break If_153_0;
+                }
+               }
+               var31 = phi19;
+               phi25 = phi20;
+               phi26 = phi21;
+               phi22 = phi30;
+               phi23 = var31;
+               break If_123_0;
+              } else {
+               If_126_0: {
+                if (phi21 != null) {
+                 var29 = phi21;
+                 var29.next = phi19;
+                 phi25 = phi20;
+                 break If_126_0;
+                } else {
+                 phi25 = phi19;
+                 break If_126_0;
+                }
+               }
+               phi26 = phi19;
+               break If_123_0;
+              }
+             }
+             if (var24 != null) {
+              phi19 = var24;
+              phi20 = phi25;
+              phi21 = phi26;
+              continue L426449440;
+             } else {
+              If_134_0: {
+               if (phi26 == null) {
+                break If_134_0;
+               } else {
+                var27 = phi26;
+                var27.next = null;
+                var13.data[phi15] = phi25;
+                break If_134_0;
+               }
+              }
+              if (phi23 == null) {
+               phi18 = var24;
+               break If_81_0;
+              } else {
+               var28 = phi23;
+               var28.next = null;
+               var13.data[(phi15 + var2)] = phi22;
+               phi18 = var24;
+               break If_81_0;
+              }
+             }
+            }
+           } else {
+            java$util$HashMap$TreeNode.prototype.V$split$Ljava$util$HashMap$$$Ljava$util$HashMap$Node$$I$I.call(var16,th,var13,phi15,var2);
+            phi18 = var16;
+            break If_81_0;
+           }
+          } else {
+           var17 = (((var16.hash) & (phi7 - 1))) | 0;
+           var13.data[var17] = var16;
+           phi18 = var16;
+           break If_81_0;
+          }
+         }
+        }
+        phi15 = ((phi15 + 1)) | 0;
+        // Here was a goto statement
+        continue L13954618;
        }
       }
      }
     }
-    return 0;
+    return var13;
+  }
+
+  Ljava$util$HashMap$Node$$replacementNode$Ljava$util$HashMap$Node$$Ljava$util$HashMap$Node$(arg0,arg1) {
+    var var0 = null;
+    var0 = new java$util$HashMap$Node();
+    java$util$HashMap$Node.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,(arg0.hash),(arg0.key),(arg0.value),arg1);
+    return var0;
+  }
+
+  static Ljava$lang$Class$$comparableClassFor$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var var1 = null;
+    var var2 = 0;
+    var phi3 = 0;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    If_4_0: {
+     if (bytecoder.instanceOf(arg0,java$lang$Comparable) == 0) {
+      break If_4_0;
+     } else {
+      var0 = ((arg0).constructor.$rt);
+      if (var0 != java$lang$String.$rt) {
+       var1 = (java$lang$Class.prototype.$Ljava$lang$reflect$Type$$getGenericInterfaces$$.call(var0));
+       if (var1 == null) {
+        break If_4_0;
+       } else {
+        var2 = (var1.data.length) | 0;
+        phi3 = (0) | 0;
+        L709630685: while(true) {
+         if (phi3 >= var2) {
+          break If_4_0;
+         } else {
+          var4 = (var1.data[phi3]);
+          If_33_0: {
+           if (bytecoder.instanceOf(var4,java$lang$reflect$ParameterizedType) == 0) {
+            break If_33_0;
+           } else {
+            var5 = var4;
+            if ((var5.Ljava$lang$reflect$Type$$getRawType$$()) != java$lang$Comparable.$rt) {
+             break If_33_0;
+            } else {
+             var6 = (var5.$Ljava$lang$reflect$Type$$getActualTypeArguments$$());
+             if (var6 == null) {
+              break If_33_0;
+             } else {
+              if (var6.data.length != 1) {
+               break If_33_0;
+              } else {
+               if ((var6.data[0]) != var0) {
+                break If_33_0;
+               } else {
+                return var0;
+               }
+              }
+             }
+            }
+           }
+          }
+          phi3 = ((phi3 + 1)) | 0;
+          // Here was a goto statement
+          continue L709630685;
+         }
+        }
+       }
+      } else {
+       return var0;
+      }
+     }
+    }
+    return null;
+  }
+
+  static I$compareComparables$Ljava$lang$Class$$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1,arg2) {
+    var phi0 = 0;
+    var var1 = null;
+    If_4_0: {
+     If_4_1: {
+      if (arg2 == null) {
+       break If_4_1;
+      } else {
+       if (((arg2).constructor.$rt) == arg0) {
+        var1 = arg1;
+        phi0 = ((var1.I$compareTo$Ljava$lang$Object$(arg2))) | 0;
+        break If_4_0;
+       } else {
+        break If_4_1;
+       }
+      }
+     }
+     phi0 = (0) | 0;
+     break If_4_0;
+    }
+    return phi0;
+  }
+
+  V$afterNodeAccess$Ljava$util$HashMap$Node$(arg0) {
+    return;
+  }
+
+  Ljava$util$HashMap$TreeNode$$newTreeNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
+    var var0 = null;
+    java$util$HashMap$TreeNode.$i;
+    var0 = new java$util$HashMap$TreeNode();
+    java$util$HashMap$TreeNode.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,arg0,arg1,arg2,arg3);
+    return var0;
+  }
+
+  V$afterNodeInsertion$Z(arg0) {
+    return;
+  }
+
+  Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
+    var var0 = null;
+    var0 = new java$util$HashMap$Node();
+    java$util$HashMap$Node.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,arg0,arg1,arg2,arg3);
+    return var0;
+  }
+
+  V$treeifyBin$$Ljava$util$HashMap$Node$$I(arg0,arg1) {
+    var th = this;
+    var var0 = 0;
+    var var1 = null;
+    var var2 = 0;
+    var var3 = null;
+    var phi4 = null;
+    var phi5 = null;
+    var phi6 = null;
+    var var7 = null;
+    var var8 = null;
+    var phi9 = null;
+    var var10 = null;
+    var var11 = null;
+    var var12 = null;
+    If_4_0: {
+     If_4_1: {
+      if (arg0 == null) {
+       break If_4_1;
+      } else {
+       var0 = (arg0.data.length) | 0;
+       if (var0 >= 64) {
+        var2 = (((var0 - 1) & arg1)) | 0;
+        var3 = (arg0.data[var2]);
+        if (var3 == null) {
+         break If_4_0;
+        } else {
+         phi4 = var3;
+         phi5 = null;
+         phi6 = null;
+         L1485518446: while(true) {
+          var7 = phi4;
+          var8 = (java$util$HashMap.prototype.Ljava$util$HashMap$TreeNode$$replacementTreeNode$Ljava$util$HashMap$Node$$Ljava$util$HashMap$Node$.call(th,var7,null));
+          If_40_0: {
+           if (phi6 != null) {
+            var8.prev = phi6;
+            var12 = phi6;
+            var12.next = var8;
+            phi9 = phi5;
+            break If_40_0;
+           } else {
+            phi9 = var8;
+            break If_40_0;
+           }
+          }
+          var10 = (phi4.next);
+          if (var10 != null) {
+           phi4 = var10;
+           phi5 = phi9;
+           phi6 = var8;
+           continue L1485518446;
+          } else {
+           var11 = phi9;
+           arg0.data[var2] = var11;
+           if (var11 == null) {
+            break If_4_0;
+           } else {
+            java$util$HashMap$TreeNode.prototype.V$treeify$$Ljava$util$HashMap$Node$.call(phi9,arg0);
+            break If_4_0;
+           }
+          }
+         }
+        }
+       } else {
+        break If_4_1;
+       }
+      }
+     }
+     var1 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
+     break If_4_0;
+    }
+    return;
+  }
+
+  Ljava$util$HashMap$TreeNode$$replacementTreeNode$Ljava$util$HashMap$Node$$Ljava$util$HashMap$Node$(arg0,arg1) {
+    var var0 = null;
+    java$util$HashMap$TreeNode.$i;
+    var0 = new java$util$HashMap$TreeNode();
+    java$util$HashMap$TreeNode.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(var0,(arg0.hash),(arg0.key),(arg0.value),arg1);
+    return var0;
+  }
+
+  Ljava$lang$Object$$get$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var phi1 = null;
+    var0 = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$.call(th,arg0));
+    If_6_0: {
+     if (var0 != null) {
+      phi1 = (var0.value);
+      break If_6_0;
+     } else {
+      phi1 = null;
+      break If_6_0;
+     }
+    }
+    return phi1;
+  }
+
+  Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = null;
+    var var5 = 0;
+    var var6 = null;
+    var phi7 = null;
+    var var8 = null;
+    var var9 = null;
+    var phi10 = null;
+    var var11 = null;
+    var phi12 = null;
+    var var13 = null;
+    var phi14 = null;
+    var0 = (th.table);
+    If_6_0: {
+     if (var0 == null) {
+      break If_6_0;
+     } else {
+      var1 = (var0.data.length) | 0;
+      if (var1 <= 0) {
+       break If_6_0;
+      } else {
+       var2 = ((var1 - 1)) | 0;
+       var3 = ((java$util$HashMap.I$hash$Ljava$lang$Object$(arg0))) | 0;
+       var4 = (var0.data[(var2 & var3)]);
+       if (var4 == null) {
+        break If_6_0;
+       } else {
+        var5 = ((var4.hash)) | 0;
+        If_31_0: {
+         if (var5 != var3) {
+          break If_31_0;
+         } else {
+          var6 = (var4.key);
+          If_36_0: {
+           if (var6 == arg0) {
+            break If_36_0;
+           } else {
+            if (arg0 == null) {
+             phi7 = var6;
+             break If_31_0;
+            } else {
+             if ((arg0.Z$equals$Ljava$lang$Object$(var6)) == 0) {
+              phi7 = var6;
+              break If_31_0;
+             } else {
+              break If_36_0;
+             }
+            }
+           }
+          }
+          return var4;
+         }
+        }
+        var8 = (var4.next);
+        if (var8 == null) {
+         phi14 = var8;
+         phi12 = phi7;
+         break If_6_0;
+        } else {
+         if (bytecoder.instanceOf(var4,java$util$HashMap$TreeNode) == 0) {
+          phi10 = var8;
+          L392682917: while(true) {
+           If_66_0: {
+            if ((phi10.hash) != var3) {
+             phi12 = phi7;
+             break If_66_0;
+            } else {
+             var11 = (phi10.key);
+             If_71_0: {
+              if (var11 == arg0) {
+               break If_71_0;
+              } else {
+               if (arg0 == null) {
+                phi12 = var11;
+                break If_66_0;
+               } else {
+                if ((arg0.Z$equals$Ljava$lang$Object$(var11)) == 0) {
+                 phi12 = var11;
+                 break If_66_0;
+                } else {
+                 break If_71_0;
+                }
+               }
+              }
+             }
+             return phi10;
+            }
+           }
+           var13 = (phi10.next);
+           if (var13 != null) {
+            phi10 = var13;
+            phi7 = phi12;
+            continue L392682917;
+           } else {
+            phi14 = var13;
+            break If_6_0;
+           }
+          }
+         } else {
+          var9 = var4;
+          return (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$getTreeNode$I$Ljava$lang$Object$.call(var9,var3,arg0));
+         }
+        }
+       }
+      }
+     }
+    }
+    return null;
+  }
+
+  Ljava$lang$Object$$put$Ljava$lang$Object$$Ljava$lang$Object$(arg0,arg1) {
+    var th = this;
+    var var0 = 0;
+    var0 = ((java$util$HashMap.I$hash$Ljava$lang$Object$(arg0))) | 0;
+    return (java$util$HashMap.prototype.Ljava$lang$Object$$putVal$I$Ljava$lang$Object$$Ljava$lang$Object$$Z$Z.call(th,var0,arg0,arg1,0,1));
+  }
+
+  Ljava$lang$Object$$putVal$I$Ljava$lang$Object$$Ljava$lang$Object$$Z$Z(arg0,arg1,arg2,arg3,arg4) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    var var3 = 0;
+    var phi4 = null;
+    var phi5 = 0;
+    var var6 = null;
+    var var7 = 0;
+    var var8 = null;
+    var var9 = null;
+    var phi10 = null;
+    var var11 = null;
+    var var12 = null;
+    var var13 = 0;
+    var var14 = null;
+    var var15 = null;
+    var phi16 = null;
+    var phi17 = null;
+    var phi18 = null;
+    var var19 = null;
+    var var20 = null;
+    var phi21 = null;
+    var phi22 = null;
+    var var23 = null;
+    var var24 = null;
+    var var25 = null;
+    var phi26 = 0;
+    var var27 = null;
+    var var28 = null;
+    var var29 = null;
+    var phi30 = null;
+    var0 = (th.table);
+    If_10_0: {
+     If_10_1: {
+      if (var0 == null) {
+       break If_10_1;
+      } else {
+       var1 = (var0.data.length) | 0;
+       if (var1 != 0) {
+        phi4 = var0;
+        phi5 = (var1) | 0;
+        break If_10_0;
+       } else {
+        break If_10_1;
+       }
+      }
+     }
+     var2 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
+     var3 = (var2.data.length) | 0;
+     phi4 = var2;
+     phi5 = (var3) | 0;
+     break If_10_0;
+    }
+    var6 = phi4;
+    var7 = (((phi5 - 1) & arg0)) | 0;
+    var8 = (var6.data[var7]);
+    If_38_0: {
+     if (var8 != null) {
+      If_72_0: {
+       If_72_1: {
+        if ((var8.hash) != arg0) {
+         phi21 = var8;
+         break If_72_1;
+        } else {
+         var15 = (var8.key);
+         If_77_0: {
+          if (var15 == arg1) {
+           phi16 = var8;
+           phi17 = var15;
+           break If_77_0;
+          } else {
+           if (arg1 == null) {
+            phi21 = var8;
+            phi22 = var15;
+            break If_72_1;
+           } else {
+            if ((arg1.Z$equals$Ljava$lang$Object$(var15)) == 0) {
+             phi21 = var8;
+             phi22 = var15;
+             break If_72_1;
+            } else {
+             phi16 = var8;
+             phi17 = var15;
+             break If_77_0;
+            }
+           }
+          }
+         }
+         phi18 = phi16;
+         break If_72_0;
+        }
+       }
+       if (bytecoder.instanceOf(phi21,java$util$HashMap$TreeNode) == 0) {
+        phi26 = (0) | 0;
+        L1674031291: while(true) {
+         var27 = (phi21.next);
+         if (var27 != null) {
+          If_141_0: {
+           if ((var27.hash) != arg0) {
+            phi30 = phi22;
+            break If_141_0;
+           } else {
+            var29 = (var27.key);
+            if (var29 == arg1) {
+             phi16 = phi21;
+             phi18 = var27;
+             phi17 = var29;
+             break If_72_0;
+            } else {
+             if (arg1 == null) {
+              phi30 = var29;
+              break If_141_0;
+             } else {
+              if ((arg1.Z$equals$Ljava$lang$Object$(var29)) == 0) {
+               phi30 = var29;
+               break If_141_0;
+              } else {
+               phi16 = phi21;
+               phi18 = var27;
+               phi17 = var29;
+               break If_72_0;
+              }
+             }
+            }
+           }
+          }
+          phi26 = ((phi26 + 1)) | 0;
+          phi21 = var27;
+          phi22 = phi30;
+          continue L1674031291;
+         } else {
+          var28 = phi21;
+          var28.next = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,arg0,arg1,arg2,null));
+          if (phi26 < 7) {
+           phi16 = phi21;
+           phi18 = var27;
+           phi17 = phi22;
+           break If_72_0;
+          } else {
+           java$util$HashMap.prototype.V$treeifyBin$$Ljava$util$HashMap$Node$$I.call(th,phi4,arg0);
+           phi16 = phi21;
+           phi18 = var27;
+           phi17 = phi22;
+           break If_72_0;
+          }
+         }
+        }
+       } else {
+        var23 = phi21;
+        var24 = phi4;
+        var25 = (java$util$HashMap$TreeNode.prototype.Ljava$util$HashMap$TreeNode$$putTreeVal$Ljava$util$HashMap$$$Ljava$util$HashMap$Node$$I$Ljava$lang$Object$$Ljava$lang$Object$.call(var23,th,var24,arg0,arg1,arg2));
+        phi16 = phi21;
+        phi18 = var25;
+        phi17 = phi22;
+        break If_72_0;
+       }
+      }
+      if (phi18 == null) {
+       phi10 = phi16;
+       break If_38_0;
+      } else {
+       var19 = (phi18.value);
+       If_95_0: {
+        If_95_1: {
+         if (arg3 == 0) {
+          break If_95_1;
+         } else {
+          if (var19 != null) {
+           break If_95_0;
+          } else {
+           break If_95_1;
+          }
+         }
+        }
+        var20 = phi18;
+        var20.value = arg2;
+        break If_95_0;
+       }
+       java$util$HashMap.prototype.V$afterNodeAccess$Ljava$util$HashMap$Node$.call(th,phi18);
+       return var19;
+      }
+     } else {
+      var9 = phi4;
+      var9.data[var7] = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$newNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,arg0,arg1,arg2,null));
+      phi10 = var8;
+      break If_38_0;
+     }
+    }
+    var11 = th;
+    var11.modCount = ((var11.modCount) + 1);
+    var12 = th;
+    var13 = (((var12.size) + 1)) | 0;
+    var12.size = var13;
+    If_62_0: {
+     if (var13 <= (th.threshold)) {
+      break If_62_0;
+     } else {
+      var14 = (java$util$HashMap.prototype.$Ljava$util$HashMap$Node$$resize$$.call(th));
+      break If_62_0;
+     }
+    }
+    java$util$HashMap.prototype.V$afterNodeInsertion$Z.call(th,arg4);
+    return null;
   }
 
   Z$isEmpty$$() {
     var th = this;
     var phi0 = 0;
     If_3_0: {
-     if ((th.I$size$$()) != 0) {
+     if ((th.size) != 0) {
       phi0 = (0) | 0;
       break If_3_0;
      } else {
@@ -12944,6 +11476,856 @@ class java$util$AbstractCollection extends java$lang$Object {
      }
     }
     return phi0;
+  }
+
+  I$size$$() {
+    var th = this;
+    return (th.size);
+  }
+
+  Z$containsKey$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var phi0 = 0;
+    If_4_0: {
+     if ((java$util$HashMap.prototype.Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$.call(th,arg0)) == null) {
+      phi0 = (0) | 0;
+      break If_4_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_4_0;
+     }
+    }
+    return phi0;
+  }
+
+  Ljava$util$Set$$entrySet$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var phi3 = null;
+    var0 = (th.entrySet);
+    If_5_0: {
+     if (var0 != null) {
+      phi3 = var0;
+      break If_5_0;
+     } else {
+      var1 = th;
+      var2 = new java$util$HashMap$EntrySet();
+      java$util$HashMap$EntrySet.prototype.V$$init$$Ljava$util$HashMap$.call(var2,th);
+      var1.entrySet = var2;
+      phi3 = var2;
+      break If_5_0;
+     }
+    }
+    return phi3;
+  }
+}
+
+
+class java$util$AbstractList$ListItr extends java$util$AbstractList$Itr {
+  nativeObject = null;
+
+  this$0 = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$AbstractList$ListItr,
+        'java.util.AbstractList$ListItr',
+         [java$util$AbstractList$Itr,java$util$Iterator,java$util$AbstractList$ListItr,java$util$ListIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$AbstractList$$I(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$util$AbstractList$Itr.prototype.V$$init$$Ljava$util$AbstractList$.call(th,arg0);
+    var1 = th;
+    var1.cursor = arg1;
+    return;
+  }
+
+  V$set$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = 0;
+    var var4 = null;
+    var var5 = null;
+    if ((th.lastRet) >= 0) {
+     th.V$checkForComodification$$();
+     TryCatch_14_0: {
+      try {
+       var2 = (th.this$0);
+       var3 = ((th.lastRet)) | 0;
+       var4 = (var2.Ljava$lang$Object$$set$I$Ljava$lang$Object$(var3,arg0));
+       var5 = th;
+       var5.expectedModCount = ((th.this$0).modCount);
+       break TryCatch_14_0;
+      } catch (__ex) {
+       if (__ex instanceof java$lang$IndexOutOfBoundsException) {
+        var1 = new java$util$ConcurrentModificationException();
+        java$util$ConcurrentModificationException.prototype.V$$init$$$.call(var1);
+        throw bytecoder.registerStack(var1, new Error().stack);
+       }
+       throw __ex;
+      }
+     }
+     return;
+    } else {
+     var0 = new java$lang$IllegalStateException();
+     java$lang$IllegalStateException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  I$previousIndex$$() {
+    var th = this;
+    return ((th.cursor) - 1);
+  }
+}
+
+
+class de$mirkosertic$bytecoder$classlib$BytecoderCharset extends java$nio$charset$Charset {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        de$mirkosertic$bytecoder$classlib$BytecoderCharset,
+        'de.mirkosertic.bytecoder.classlib.BytecoderCharset',
+         [de$mirkosertic$bytecoder$classlib$BytecoderCharset,java$nio$charset$Charset,java$lang$Comparable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$$$Ljava$lang$String$(arg0,arg1) {
+    var th = this;
+    java$nio$charset$Charset.prototype.V$$init$$Ljava$lang$String$$$Ljava$lang$String$.call(th,arg0,arg1);
+    return;
+  }
+
+  Ljava$nio$charset$CharsetDecoder$$newDecoder$$() {
+    var th = this;
+    var var0 = null;
+    de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder.$i;
+    var0 = new de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder();
+    de$mirkosertic$bytecoder$classlib$BytecoderCharsetDecoder.prototype.V$$init$$Ljava$nio$charset$Charset$.call(var0,th);
+    return var0;
+  }
+
+  Ljava$nio$charset$CharsetEncoder$$newEncoder$$() {
+    var th = this;
+    var var0 = null;
+    de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder.$i;
+    var0 = new de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder();
+    de$mirkosertic$bytecoder$classlib$BytecoderCharsetEncoder.prototype.V$$init$$Ljava$nio$charset$Charset$.call(var0,th);
+    return var0;
+  }
+}
+
+
+class java$util$LinkedHashMap$Entry extends java$util$HashMap$Node {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$LinkedHashMap$Entry,
+        'java.util.LinkedHashMap$Entry',
+         [java$util$LinkedHashMap$Entry,java$util$Map$Entry,java$util$HashMap$Node,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$(arg0,arg1,arg2,arg3) {
+    var th = this;
+    java$util$HashMap$Node.prototype.V$$init$$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(th,arg0,arg1,arg2,arg3);
+    return;
+  }
+}
+
+
+class java$util$Collections$EmptyListIterator extends java$util$Collections$EmptyIterator {
+  nativeObject = null;
+
+  static EMPTY_ITERATOR = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Collections$EmptyListIterator,
+        'java.util.Collections$EmptyListIterator',
+         [java$util$Collections$EmptyIterator,java$util$Iterator,java$util$Collections$EmptyListIterator,java$util$ListIterator,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      java$util$Collections$EmptyIterator.$i;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    java$util$Collections$EmptyListIterator.$i;
+    var0 = new java$util$Collections$EmptyListIterator();
+    java$util$Collections$EmptyListIterator.prototype.V$$init$$$.call(var0);
+    java$util$Collections$EmptyListIterator.EMPTY_ITERATOR = var0;
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$util$Collections$EmptyIterator.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$set$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var0 = new java$lang$IllegalStateException();
+    java$lang$IllegalStateException.prototype.V$$init$$$.call(var0);
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  I$previousIndex$$() {
+    return -1;
+  }
+}
+
+
+class java$util$Collections$EmptyMap extends java$util$AbstractMap {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Collections$EmptyMap,
+        'java.util.Collections$EmptyMap',
+         [java$util$AbstractMap,java$util$Collections$EmptyMap,java$io$Serializable,java$util$Map,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$util$AbstractMap.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Ljava$lang$Object$$computeIfAbsent$Ljava$lang$Object$$Ljava$util$function$Function$(arg0,arg1) {
+    var var0 = null;
+    var0 = new java$lang$UnsupportedOperationException();
+    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  Ljava$lang$Object$$get$Ljava$lang$Object$(arg0) {
+    return null;
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var phi1 = 0;
+    If_4_0: {
+     If_4_1: {
+      if (bytecoder.instanceOf(arg0,java$util$Map) == 0) {
+       break If_4_1;
+      } else {
+       var0 = arg0;
+       if ((var0.Z$isEmpty$$()) == 0) {
+        break If_4_1;
+       } else {
+        phi1 = (1) | 0;
+        break If_4_0;
+       }
+      }
+     }
+     phi1 = (0) | 0;
+     break If_4_0;
+    }
+    return phi1;
+  }
+
+  I$hashCode$$() {
+    return 0;
+  }
+
+  Z$isEmpty$$() {
+    return 1;
+  }
+
+  I$size$$() {
+    return 0;
+  }
+
+  Z$containsKey$Ljava$lang$Object$(arg0) {
+    return 0;
+  }
+
+  Ljava$util$Set$$entrySet$$() {
+    java$util$Collections.$i;
+    return (java$util$Collections.Ljava$util$Set$$emptySet$$());
+  }
+}
+
+
+class java$nio$HeapCharBuffer extends java$nio$CharBuffer {
+  nativeObject = null;
+
+  static ARRAY_BASE_OFFSET = 0;
+  static ARRAY_INDEX_SCALE = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$HeapCharBuffer,
+        'java.nio.HeapCharBuffer',
+         [java$lang$Readable,java$lang$Appendable,java$nio$CharBuffer,java$lang$CharSequence,java$nio$HeapCharBuffer,java$lang$Comparable,java$nio$Buffer,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      java$nio$CharBuffer.$i;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var var1 = null;
+    java$nio$HeapCharBuffer.$i;
+    var0 = (java$nio$HeapCharBuffer.UNSAFE);
+    java$nio$HeapCharBuffer.ARRAY_BASE_OFFSET = ((jdk$internal$misc$Unsafe.prototype.I$arrayBaseOffset$Ljava$lang$Class$.call(var0,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
+    var1 = (java$nio$HeapCharBuffer.UNSAFE);
+    java$nio$HeapCharBuffer.ARRAY_INDEX_SCALE = ((jdk$internal$misc$Unsafe.prototype.I$arrayIndexScale$Ljava$lang$Class$.call(var1,de$mirkosertic$bytecoder$classlib$Array.$rt)) | 0);
+    return;
+  }
+
+  V$$init$$I$I$Ljava$lang$foreign$MemorySegment$(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = null;
+    java$nio$CharBuffer.prototype.V$$init$$I$I$I$I$$C$I$Ljava$lang$foreign$MemorySegment$.call(th,-1,0,arg1,arg0,bytecoder.newarray((arg0),0),0,arg2);
+    var0 = th;
+    java$nio$HeapCharBuffer.$i;
+    var0.address = (java$nio$HeapCharBuffer.ARRAY_BASE_OFFSET);
+    return;
+  }
+
+  Z$isReadOnly$$() {
+    return 0;
+  }
+
+  Ljava$nio$CharBuffer$$put$Ljava$lang$String$$I$I(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = 0;
+    var phi5 = 0;
+    var var6 = null;
+    var var7 = null;
+    var var8 = 0;
+    var var9 = null;
+    th.V$checkSession$$();
+    var0 = ((arg2 - arg1)) | 0;
+    var1 = ((java$lang$String.prototype.I$length$$.call(arg0))) | 0;
+    var2 = ((java$util$Objects.I$checkFromIndexSize$I$I$I(arg1,var0,var1))) | 0;
+    var3 = ((th.I$position$$())) | 0;
+    var4 = ((th.I$limit$$())) | 0;
+    If_22_0: {
+     if (var3 > var4) {
+      phi5 = (0) | 0;
+      break If_22_0;
+     } else {
+      phi5 = ((var4 - var3)) | 0;
+      break If_22_0;
+     }
+    }
+    if (var0 <= phi5) {
+     var7 = (th.hb);
+     java$lang$String.prototype.V$getChars$I$I$$C$I.call(arg0,arg1,arg2,var7,(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var3)));
+     var8 = ((var3 + var0)) | 0;
+     var9 = (th.Ljava$nio$CharBuffer$$position$I(var8));
+     return th;
+    } else {
+     var6 = new java$nio$BufferOverflowException();
+     java$nio$BufferOverflowException.prototype.V$$init$$$.call(var6);
+     throw bytecoder.registerStack(var6, new Error().stack);
+    }
+  }
+
+  I$ix$I(arg0) {
+    var th = this;
+    return (arg0 + (th.offset));
+  }
+
+  Ljava$nio$CharBuffer$$put$C(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var0 = (th.hb);
+    var1 = ((th.I$nextPutIndex$$())) | 0;
+    var0.data[(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var1))] = arg0;
+    return th;
+  }
+
+  Ljava$nio$ByteOrder$$charRegionOrder$$() {
+    var th = this;
+    return (java$nio$HeapCharBuffer.prototype.Ljava$nio$ByteOrder$$order$$.call(th));
+  }
+
+  Ljava$nio$ByteOrder$$order$$() {
+    java$nio$ByteOrder.$i;
+    return (java$nio$ByteOrder.Ljava$nio$ByteOrder$$nativeOrder$$());
+  }
+
+  C$get$I(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var0 = (th.hb);
+    var1 = ((th.I$checkIndex$I(arg0))) | 0;
+    return (var0.data[(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var1))]);
+  }
+
+  Ljava$lang$String$$toString$I$I(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    TryCatch_4_0: {
+     try {
+      var1 = new java$lang$String();
+      java$lang$String.prototype.V$$init$$$C$I$I.call(var1,(th.hb),(arg0 + (th.offset)),(arg1 - arg0));
+      break TryCatch_4_0;
+     } catch (__ex) {
+      if (__ex instanceof java$lang$StringIndexOutOfBoundsException) {
+       var0 = new java$lang$IndexOutOfBoundsException();
+       java$lang$IndexOutOfBoundsException.prototype.V$$init$$$.call(var0);
+       throw bytecoder.registerStack(var0, new Error().stack);
+      }
+      throw __ex;
+     }
+    }
+    return var1;
+  }
+
+  Ljava$nio$CharBuffer$$put$$C$I$I(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var var2 = 0;
+    var var3 = 0;
+    var var4 = null;
+    var var5 = null;
+    var var6 = 0;
+    var var7 = null;
+    th.V$checkSession$$();
+    var0 = (arg0.data.length) | 0;
+    var1 = ((java$util$Objects.I$checkFromIndexSize$I$I$I(arg1,arg2,var0))) | 0;
+    var2 = ((th.I$position$$())) | 0;
+    var3 = ((th.I$limit$$())) | 0;
+    if (arg2 <= (var3 - var2)) {
+     var5 = (th.hb);
+     java$lang$System.V$arraycopy$$C$I$$C$I$I(arg0,arg1,var5,(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var2)),arg2);
+     var6 = ((var2 + arg2)) | 0;
+     var7 = (th.Ljava$nio$CharBuffer$$position$I(var6));
+     return th;
+    } else {
+     var4 = new java$nio$BufferOverflowException();
+     java$nio$BufferOverflowException.prototype.V$$init$$$.call(var4);
+     throw bytecoder.registerStack(var4, new Error().stack);
+    }
+  }
+
+  Ljava$nio$CharBuffer$$put$I$C(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var0 = (th.hb);
+    var1 = ((th.I$checkIndex$I(arg0))) | 0;
+    var0.data[(java$nio$HeapCharBuffer.prototype.I$ix$I.call(th,var1))] = arg1;
+    return th;
+  }
+}
+
+
+class java$lang$RuntimeException extends java$lang$Exception {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$RuntimeException,
+        'java.lang.RuntimeException',
+         [java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$Exception.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Exception.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$Exception.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$lang$Long extends java$lang$Number {
+  nativeObject = null;
+
+  static TYPE = null;
+  value = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Long,
+        'java.lang.Long',
+         [java$lang$Long,java$lang$Number,java$lang$Comparable,java$io$Serializable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    java$lang$Long.$i;
+    java$lang$Long.TYPE = bytecoder.primitives.long;
+    return;
+  }
+
+  static Ljava$lang$Long$$valueOf$J(arg0) {
+    var var0 = null;
+    java$lang$Long.$i;
+    var0 = new java$lang$Long();
+    java$lang$Long.prototype.V$$init$$J.call(var0,arg0);
+    return var0;
+  }
+
+  V$$init$$J(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Number.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.value = arg0;
+    return;
+  }
+
+  I$compareTo$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (java$lang$Long.prototype.I$compareTo$Ljava$lang$Long$.call(th,var0));
+  }
+
+  I$compareTo$Ljava$lang$Long$(arg0) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var0 = (th.value);
+    var1 = (java$lang$Long.prototype.J$longValue$$.call(arg0));
+    java$lang$Long.$i;
+    return (java$lang$Long.I$compare$J$J(var0,var1));
+  }
+
+  J$longValue$$() {
+    var th = this;
+    return (th.value);
+  }
+
+  static I$compare$J$J(arg0,arg1) {
+    var phi0 = 0;
+    If_3_0: {
+     if (arg0 >= arg1) {
+      if (bytecoder.cmp(arg0,arg1) != 0) {
+       phi0 = (1) | 0;
+       break If_3_0;
+      } else {
+       phi0 = (0) | 0;
+       break If_3_0;
+      }
+     } else {
+      phi0 = (-1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+
+  static I$numberOfLeadingZeros$J(arg0) {
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var0 = (((arg0 >>> 32) | 0)) | 0;
+    If_7_0: {
+     if (var0 != 0) {
+      java$lang$Integer.$i;
+      phi2 = ((32 + (java$lang$Integer.I$numberOfLeadingZeros$I(var0)))) | 0;
+      break If_7_0;
+     } else {
+      var1 = ((arg0 | 0)) | 0;
+      java$lang$Integer.$i;
+      phi2 = ((32 + (java$lang$Integer.I$numberOfLeadingZeros$I(var1)))) | 0;
+      break If_7_0;
+     }
+    }
+    return phi2;
+  }
+
+  static I$numberOfTrailingZeros$J(arg0) {
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var0 = ((arg0 | 0)) | 0;
+    If_5_0: {
+     if (var0 != 0) {
+      java$lang$Integer.$i;
+      phi2 = ((32 + (java$lang$Integer.I$numberOfTrailingZeros$I(var0)))) | 0;
+      break If_5_0;
+     } else {
+      var1 = (((arg0 >>> 32) | 0)) | 0;
+      java$lang$Integer.$i;
+      phi2 = ((32 + (java$lang$Integer.I$numberOfTrailingZeros$I(var1)))) | 0;
+      break If_5_0;
+     }
+    }
+    return phi2;
+  }
+
+  I$intValue$$() {
+    var th = this;
+    return ((th.value) | 0);
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = 0;
+    var0 = (th.value);
+    java$lang$Long.$i;
+    return (java$lang$Long.Ljava$lang$String$$toString$J$I(var0,10));
+  }
+
+  static Ljava$lang$String$$toString$J$I(arg0,arg1) {
+    return bytecoder.imports['java.lang.Long'].Ljava$lang$String$$toString$J$I(arg0, arg1);
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var phi2 = 0;
+    if (th != arg0) {
+     If_7_0: {
+      if (arg0 == null) {
+       break If_7_0;
+      } else {
+       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
+        var0 = arg0;
+        var1 = (th.value);
+        If_24_0: {
+         if (bytecoder.cmp(var1,(java$lang$Long.prototype.J$longValue$$.call(var0))) != 0) {
+          phi2 = (0) | 0;
+          break If_24_0;
+         } else {
+          phi2 = (1) | 0;
+          break If_24_0;
+         }
+        }
+        return phi2;
+       } else {
+        break If_7_0;
+       }
+      }
+     }
+     return 0;
+    } else {
+     return 1;
+    }
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    return ((th.value) | 0);
+  }
+}
+
+
+class java$lang$AssertionError extends java$lang$Error {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$AssertionError,
+        'java.lang.AssertionError',
+         [java$lang$AssertionError,java$lang$Throwable,java$lang$Error,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$AssertionError.prototype.V$$init$$Ljava$lang$String$.call(th,(java$lang$String.Ljava$lang$String$$valueOf$Ljava$lang$Object$(arg0)));
+    If_8_0: {
+     if (bytecoder.instanceOf(arg0,java$lang$Throwable) == 0) {
+      break If_8_0;
+     } else {
+      var0 = arg0;
+      var1 = (th.Ljava$lang$Throwable$$initCause$Ljava$lang$Throwable$(var0));
+      break If_8_0;
+     }
+    }
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$Error.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Error.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class jdk$internal$misc$ScopedMemoryAccess$ScopedAccessError extends java$lang$Error {
+  nativeObject = null;
+
+  runtimeExceptionSupplier = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        jdk$internal$misc$ScopedMemoryAccess$ScopedAccessError,
+        'jdk.internal.misc.ScopedMemoryAccess$ScopedAccessError',
+         [jdk$internal$misc$ScopedMemoryAccess$ScopedAccessError,java$lang$Throwable,java$lang$Error,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  Ljava$lang$RuntimeException$$newRuntimeException$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.runtimeExceptionSupplier);
+    return (var0.Ljava$lang$Object$$get$$());
   }
 }
 
@@ -12960,7 +12342,7 @@ class java$io$OutputStream extends java$lang$Object {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$io$OutputStream,
         'java.io.OutputStream',
-         [java$io$Closeable,java$io$OutputStream,java$io$Flushable,java$lang$AutoCloseable,java$lang$Object]);
+         [java$io$Flushable,java$io$Closeable,java$lang$AutoCloseable,java$io$OutputStream,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -12971,6 +12353,264 @@ class java$io$OutputStream extends java$lang$Object {
   V$$init$$$() {
     var th = this;
     java$lang$Object.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$util$Set extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Set,
+        'java.util.Set',
+         [java$util$Set,java$util$Collection,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+}
+
+
+class java$lang$Short extends java$lang$Number {
+  nativeObject = null;
+
+  static TYPE = null;
+  value = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$Short,
+        'java.lang.Short',
+         [java$lang$Number,java$lang$Short,java$lang$Comparable,java$io$Serializable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    java$lang$Short.$i;
+    java$lang$Short.TYPE = bytecoder.primitives.short;
+    return;
+  }
+
+  static Ljava$lang$Short$$valueOf$S(arg0) {
+    var var0 = null;
+    java$lang$Short.$i;
+    var0 = new java$lang$Short();
+    java$lang$Short.prototype.V$$init$$S.call(var0,arg0);
+    return var0;
+  }
+
+  V$$init$$S(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Number.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.value = arg0;
+    return;
+  }
+
+  I$compareTo$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (java$lang$Short.prototype.I$compareTo$Ljava$lang$Short$.call(th,var0));
+  }
+
+  I$compareTo$Ljava$lang$Short$(arg0) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var0 = (th.value);
+    var1 = (arg0.S$shortValue$$());
+    java$lang$Short.$i;
+    return (java$lang$Short.I$compare$S$S(var0,var1));
+  }
+
+  static I$compare$S$S(arg0,arg1) {
+    var phi0 = 0;
+    If_3_0: {
+     if (arg0 >= arg1) {
+      if (arg0 != arg1) {
+       phi0 = (1) | 0;
+       break If_3_0;
+      } else {
+       phi0 = (0) | 0;
+       break If_3_0;
+      }
+     } else {
+      phi0 = (-1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+
+  I$intValue$$() {
+    var th = this;
+    return (th.value);
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = 0;
+    var0 = (th.value);
+    java$lang$Short.$i;
+    return (java$lang$Short.Ljava$lang$String$$toString$S$I(var0,10));
+  }
+
+  static Ljava$lang$String$$toString$S$I(arg0,arg1) {
+    return bytecoder.imports['java.lang.Short'].Ljava$lang$String$$toString$S$I(arg0, arg1);
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var phi2 = 0;
+    if (th != arg0) {
+     If_7_0: {
+      if (arg0 == null) {
+       break If_7_0;
+      } else {
+       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
+        var0 = arg0;
+        var1 = (th.value);
+        If_23_0: {
+         if (var1 != (var0.S$shortValue$$())) {
+          phi2 = (0) | 0;
+          break If_23_0;
+         } else {
+          phi2 = (1) | 0;
+          break If_23_0;
+         }
+        }
+        return phi2;
+       } else {
+        break If_7_0;
+       }
+      }
+     }
+     return 0;
+    } else {
+     return 1;
+    }
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    return (th.value);
+  }
+}
+
+
+class java$io$Writer extends java$lang$Object {
+  nativeObject = null;
+
+  lock = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$Writer,
+        'java.io.Writer',
+         [java$io$Flushable,java$io$Writer,java$lang$Appendable,java$io$Closeable,java$lang$AutoCloseable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    if (arg0 != null) {
+     var1 = th;
+     var1.lock = arg0;
+     return;
+    } else {
+     var0 = new java$lang$NullPointerException();
+     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  V$$init$$Ljava$io$Writer$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = ((arg0).constructor.$rt);
+    If_10_0: {
+     If_10_1: {
+      if (((th).constructor.$rt) != java$io$BufferedWriter.$rt) {
+       break If_10_1;
+      } else {
+       If_14_0: {
+        if (var0 == java$io$OutputStreamWriter.$rt) {
+         break If_14_0;
+        } else {
+         if (var0 != java$io$FileWriter.$rt) {
+          break If_10_1;
+         } else {
+          break If_14_0;
+         }
+        }
+       }
+       var1 = th;
+       jdk$internal$misc$InternalLock.$i;
+       var1.lock = (jdk$internal$misc$InternalLock.Ljava$lang$Object$$newLockOr$Ljava$lang$Object$(arg0));
+       break If_10_0;
+      }
+     }
+     var2 = th;
+     var2.lock = arg0;
+     break If_10_0;
+    }
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.lock = th;
     return;
   }
 }
@@ -12994,7 +12634,7 @@ class java$util$ImmutableCollections$ListItr extends java$lang$Object {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$ImmutableCollections$ListItr,
         'java.util.ImmutableCollections$ListItr',
-         [java$util$ListIterator,java$util$ImmutableCollections$ListItr,java$util$Iterator,java$lang$Object]);
+         [java$util$Iterator,java$util$ImmutableCollections$ListItr,java$util$ListIterator,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -13097,11 +12737,57 @@ class java$util$ImmutableCollections$ListItr extends java$lang$Object {
 }
 
 
-class java$lang$Byte extends java$lang$Number {
+class java$util$List extends java$lang$Object {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$List,
+        'java.util.List',
+         [java$util$List,java$util$Collection,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static Ljava$util$List$$of$$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var var1 = null;
+    if ((arg0.data.length) >= 0 && (arg0.data.length) <= 2) switch ((arg0.data.length) - 0) {
+     case 0: {
+      java$util$ImmutableCollections.$i;
+      return (java$util$ImmutableCollections.EMPTY_LIST);
+     }
+     case 1: {
+      var1 = new java$util$ImmutableCollections$List12();
+      java$util$ImmutableCollections$List12.prototype.V$$init$$Ljava$lang$Object$.call(var1,(arg0.data[0]));
+      return var1;
+     }
+     case 2: {
+      var0 = new java$util$ImmutableCollections$List12();
+      java$util$ImmutableCollections$List12.prototype.V$$init$$Ljava$lang$Object$$Ljava$lang$Object$.call(var0,(arg0.data[0]),(arg0.data[1]));
+      return var0;
+     }
+    } else {
+     java$util$ImmutableCollections.$i;
+     return (java$util$ImmutableCollections.Ljava$util$List$$listFromArray$$Ljava$lang$Object$(arg0));
+    }
+  }
+}
+
+
+class java$lang$Double extends java$lang$Number {
   nativeObject = null;
 
   static TYPE = null;
-  value = 0;
+  value = 0.0;
 
   constructor() {
     super();
@@ -13111,9 +12797,9 @@ class java$lang$Byte extends java$lang$Number {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$Byte,
-        'java.lang.Byte',
-         [java$lang$Comparable,java$lang$Byte,java$io$Serializable,java$lang$Number,java$lang$Object]);
+        java$lang$Double,
+        'java.lang.Double',
+         [java$lang$Double,java$lang$Number,java$lang$Comparable,java$io$Serializable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -13131,20 +12817,20 @@ class java$lang$Byte extends java$lang$Number {
   }
 
   static V$$clinit$$$() {
-    java$lang$Byte.$i;
-    java$lang$Byte.TYPE = bytecoder.primitives.byte;
+    java$lang$Double.$i;
+    java$lang$Double.TYPE = bytecoder.primitives.double;
     return;
   }
 
-  static Ljava$lang$Byte$$valueOf$B(arg0) {
+  static Ljava$lang$Double$$valueOf$D(arg0) {
     var var0 = null;
-    java$lang$Byte.$i;
-    var0 = new java$lang$Byte();
-    java$lang$Byte.prototype.V$$init$$B.call(var0,arg0);
+    java$lang$Double.$i;
+    var0 = new java$lang$Double();
+    java$lang$Double.prototype.V$$init$$D.call(var0,arg0);
     return var0;
   }
 
-  V$$init$$B(arg0) {
+  V$$init$$D(arg0) {
     var th = this;
     var var0 = null;
     java$lang$Number.prototype.V$$init$$$.call(th);
@@ -13153,11 +12839,33 @@ class java$lang$Byte extends java$lang$Number {
     return;
   }
 
-  static I$compare$B$B(arg0,arg1) {
+  I$compareTo$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = arg0;
+    return (java$lang$Double.prototype.I$compareTo$Ljava$lang$Double$.call(th,var0));
+  }
+
+  I$compareTo$Ljava$lang$Double$(arg0) {
+    var th = this;
+    var var0 = .0;
+    var var1 = .0;
+    var0 = (th.value);
+    var1 = (java$lang$Double.prototype.D$doubleValue$$.call(arg0));
+    java$lang$Double.$i;
+    return (java$lang$Double.I$compare$D$D(var0,var1));
+  }
+
+  D$doubleValue$$() {
+    var th = this;
+    return (th.value);
+  }
+
+  static I$compare$D$D(arg0,arg1) {
     var phi0 = 0;
     If_3_0: {
      if (arg0 >= arg1) {
-      if (arg0 != arg1) {
+      if (bytecoder.cmp(arg0,arg1) != 0) {
        phi0 = (1) | 0;
        break If_3_0;
       } else {
@@ -13172,44 +12880,27 @@ class java$lang$Byte extends java$lang$Number {
     return phi0;
   }
 
-  I$compareTo$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var0 = arg0;
-    return (java$lang$Byte.prototype.I$compareTo$Ljava$lang$Byte$.call(th,var0));
-  }
-
-  I$compareTo$Ljava$lang$Byte$(arg0) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var0 = (th.value);
-    var1 = (arg0.B$byteValue$$());
-    java$lang$Byte.$i;
-    return (java$lang$Byte.I$compare$B$B(var0,var1));
-  }
-
   I$intValue$$() {
     var th = this;
-    return (th.value);
+    return ((th.value) | 0);
   }
 
   Ljava$lang$String$$toString$$() {
     var th = this;
-    var var0 = 0;
+    var var0 = .0;
     var0 = (th.value);
-    java$lang$Byte.$i;
-    return (java$lang$Byte.Ljava$lang$String$$toString$B$I(var0,10));
+    java$lang$Double.$i;
+    return (java$lang$Double.Ljava$lang$String$$toString$D(var0));
   }
 
-  static Ljava$lang$String$$toString$B$I(arg0,arg1) {
-    return bytecoder.imports['java.lang.Byte'].Ljava$lang$String$$toString$B$I(arg0, arg1);
+  static Ljava$lang$String$$toString$D(arg0) {
+    return bytecoder.imports['java.lang.Double'].Ljava$lang$String$$toString$D(arg0);
   }
 
   Z$equals$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    var var1 = 0;
+    var var1 = .0;
     var phi2 = 0;
     if (th != arg0) {
      If_7_0: {
@@ -13219,13 +12910,13 @@ class java$lang$Byte extends java$lang$Number {
        if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
         var0 = arg0;
         var1 = (th.value);
-        If_23_0: {
-         if (var1 != (var0.B$byteValue$$())) {
+        If_24_0: {
+         if (bytecoder.cmp(var1,(java$lang$Double.prototype.D$doubleValue$$.call(var0))) != 0) {
           phi2 = (0) | 0;
-          break If_23_0;
+          break If_24_0;
          } else {
           phi2 = (1) | 0;
-          break If_23_0;
+          break If_24_0;
          }
         }
         return phi2;
@@ -13242,12 +12933,12 @@ class java$lang$Byte extends java$lang$Number {
 
   I$hashCode$$() {
     var th = this;
-    return (th.value);
+    return ((th.value) | 0);
   }
 }
 
 
-class java$util$Set extends java$lang$Object {
+class java$lang$VirtualMachineError extends java$lang$Error {
   nativeObject = null;
   constructor() {
     super();
@@ -13257,14 +12948,32 @@ class java$util$Set extends java$lang$Object {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Set,
-        'java.util.Set',
-         [java$lang$Iterable,java$util$Collection,java$util$Set,java$lang$Object]);
+        java$lang$VirtualMachineError,
+        'java.lang.VirtualMachineError',
+         [java$lang$VirtualMachineError,java$lang$Throwable,java$lang$Error,java$lang$Object]);
     }
     return this.#rt;
   }
 
   set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$Error.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$Error.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$Error.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
   }
 }
 
@@ -13286,7 +12995,7 @@ class java$util$Properties extends java$util$Hashtable {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$Properties,
         'java.util.Properties',
-         [java$util$Map,java$io$Serializable,java$lang$Cloneable,java$util$Properties,java$util$Hashtable,java$lang$Object,java$util$Dictionary]);
+         [java$util$Hashtable,java$util$Properties,java$io$Serializable,java$util$Map,java$util$Dictionary,java$lang$Cloneable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -13422,6 +13131,13 @@ class java$util$Properties extends java$util$Hashtable {
     return (java$util$concurrent$ConcurrentHashMap.prototype.I$hashCode$$.call(var0));
   }
 
+  Z$isEmpty$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.map);
+    return (java$util$concurrent$ConcurrentHashMap.prototype.Z$isEmpty$$.call(var0));
+  }
+
   I$size$$() {
     var th = this;
     var var0 = null;
@@ -13434,13 +13150,6 @@ class java$util$Properties extends java$util$Hashtable {
     var var0 = null;
     var0 = (th.map);
     return (java$util$concurrent$ConcurrentHashMap.prototype.Z$containsKey$Ljava$lang$Object$.call(var0,arg0));
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.map);
-    return (java$util$concurrent$ConcurrentHashMap.prototype.Z$isEmpty$$.call(var0));
   }
 
   Ljava$util$Set$$entrySet$$() {
@@ -13456,51 +13165,11 @@ class java$util$Properties extends java$util$Hashtable {
 }
 
 
-class java$lang$InternalError extends java$lang$VirtualMachineError {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$InternalError,
-        'java.lang.InternalError',
-         [java$lang$Throwable,java$lang$InternalError,java$lang$Error,java$lang$VirtualMachineError,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$VirtualMachineError.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$VirtualMachineError.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$VirtualMachineError.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$io$FileInputStream extends java$io$InputStream {
+class java$lang$Float extends java$lang$Number {
   nativeObject = null;
 
-  fd = null;
-  path = null;
+  static TYPE = null;
+  value = 0.0;
 
   constructor() {
     super();
@@ -13510,327 +13179,9 @@ class java$io$FileInputStream extends java$io$InputStream {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$FileInputStream,
-        'java.io.FileInputStream',
-         [java$io$Closeable,java$io$FileInputStream,java$io$InputStream,java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$io$FileDescriptor$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$io$InputStream.prototype.V$$init$$$.call(th);
-    if (arg0 != null) {
-     var1 = th;
-     var1.fd = arg0;
-     var2 = th;
-     var2.path = null;
-     return;
-    } else {
-     var0 = new java$lang$NullPointerException();
-     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-}
-
-
-class java$util$ImmutableCollections$MapN extends java$util$ImmutableCollections$AbstractImmutableMap {
-  nativeObject = null;
-
-  size = 0;
-  table = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$MapN,
-        'java.util.ImmutableCollections$MapN',
-         [java$util$Map,java$util$ImmutableCollections$MapN,java$io$Serializable,java$util$ImmutableCollections$AbstractImmutableMap,java$util$AbstractMap,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = 0;
-    var var3 = null;
-    var phi4 = 0;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = 0;
-    var var10 = null;
-    var var11 = null;
-    var var12 = null;
-    var var13 = null;
-    var var14 = 0;
-    var var15 = null;
-    var var16 = null;
-    var var17 = 0;
-    java$util$ImmutableCollections$AbstractImmutableMap.prototype.V$$init$$$.call(th);
-    if ((arg0.data.length & 1) == 0) {
-     var1 = th;
-     var1.size = (arg0.data.length >> 1);
-     var2 = ((((2 * arg0.data.length) + 1) & -2)) | 0;
-     var3 = th;
-     var3.table = bytecoder.newarray((var2),null);
-     phi4 = (0) | 0;
-     L423623473: while(true) {
-      if (phi4 >= arg0.data.length) {
-       return;
-      } else {
-       var5 = (arg0.data[phi4]);
-       var6 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(var5));
-       var7 = (arg0.data[(phi4 + 1)]);
-       var8 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(var7));
-       var9 = ((java$util$ImmutableCollections$MapN.prototype.I$probe$Ljava$lang$Object$.call(th,var6))) | 0;
-       if (var9 < 0) {
-        var14 = ((0 - (var9 + 1))) | 0;
-        var15 = (th.table);
-        var15.data[var14] = var6;
-        var16 = (th.table);
-        var17 = ((var14 + 1)) | 0;
-        var16.data[var17] = var8;
-        phi4 = ((phi4 + 2)) | 0;
-        // Here was a goto statement
-        continue L423623473;
-       } else {
-        var10 = new java$lang$IllegalArgumentException();
-        var11 = new java$lang$StringBuilder();
-        java$lang$StringBuilder.prototype.V$$init$$$.call(var11);
-        var12 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var11,bytecoder.stringconstants[72]));
-        var13 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var12,var6));
-        java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var10,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var13)));
-        throw bytecoder.registerStack(var10, new Error().stack);
-       }
-      }
-     }
-    } else {
-     var0 = new java$lang$InternalError();
-     java$lang$InternalError.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[71]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  I$probe$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var var3 = null;
-    var phi4 = 0;
-    var0 = ((arg0.I$hashCode$$())) | 0;
-    var1 = (((th.table).data.length >> 1)) | 0;
-    java$lang$Math.$i;
-    phi2 = (((java$lang$Math.I$floorMod$I$I(var0,var1)) << 1)) | 0;
-    L711968812: while(true) {
-     var3 = ((th.table).data[phi2]);
-     if (var3 != null) {
-      if ((arg0.Z$equals$Ljava$lang$Object$(var3)) == 0) {
-       phi2 = ((phi2 + 2)) | 0;
-       If_39_0: {
-        if (phi2 != (th.table).data.length) {
-         phi4 = (phi2) | 0;
-         break If_39_0;
-        } else {
-         phi4 = (0) | 0;
-         break If_39_0;
-        }
-       }
-       phi2 = (phi4) | 0;
-       continue L711968812;
-      } else {
-       return phi2;
-      }
-     } else {
-      return ((0 - phi2) - 1);
-     }
-    }
-  }
-
-  Ljava$lang$Object$$get$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var var2 = null;
-    if ((th.size) != 0) {
-     var1 = ((java$util$ImmutableCollections$MapN.prototype.I$probe$Ljava$lang$Object$.call(th,arg0))) | 0;
-     if (var1 < 0) {
-      return null;
-     } else {
-      var2 = (th.table);
-      return (var2.data[(var1 + 1)]);
-     }
-    } else {
-     var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
-     return null;
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    var phi0 = 0;
-    var phi1 = 0;
-    var var2 = null;
-    var var3 = 0;
-    var var4 = 0;
-    var var5 = null;
-    var phi6 = 0;
-    phi0 = (0) | 0;
-    phi1 = (0) | 0;
-    L165709581: while(true) {
-     if (phi1 >= (th.table).data.length) {
-      return phi0;
-     } else {
-      var2 = ((th.table).data[phi1]);
-      If_15_0: {
-       if (var2 == null) {
-        phi6 = (phi0) | 0;
-        break If_15_0;
-       } else {
-        var3 = (phi0) | 0;
-        var4 = ((var2.I$hashCode$$())) | 0;
-        var5 = ((th.table).data[(phi1 + 1)]);
-        phi6 = ((var3 + (var4 ^ (var5.I$hashCode$$())))) | 0;
-        break If_15_0;
-       }
-      }
-      phi1 = ((phi1 + 2)) | 0;
-      phi0 = (phi6) | 0;
-      continue L165709581;
-     }
-    }
-  }
-
-  I$size$$() {
-    var th = this;
-    return (th.size);
-  }
-
-  Z$containsKey$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var phi1 = 0;
-    var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
-    If_8_0: {
-     If_8_1: {
-      if ((th.size) <= 0) {
-       break If_8_1;
-      } else {
-       if ((java$util$ImmutableCollections$MapN.prototype.I$probe$Ljava$lang$Object$.call(th,arg0)) < 0) {
-        break If_8_1;
-       } else {
-        phi1 = (1) | 0;
-        break If_8_0;
-       }
-      }
-     }
-     phi1 = (0) | 0;
-     break If_8_0;
-    }
-    return phi1;
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var phi0 = 0;
-    If_3_0: {
-     if ((th.size) != 0) {
-      phi0 = (0) | 0;
-      break If_3_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_3_0;
-     }
-    }
-    return phi0;
-  }
-
-  Ljava$util$Set$$entrySet$$() {
-    var th = this;
-    var var0 = null;
-    var0 = new java$util$ImmutableCollections$MapN$1();
-    java$util$ImmutableCollections$MapN$1.prototype.V$$init$$Ljava$util$ImmutableCollections$MapN$.call(var0,th);
-    return var0;
-  }
-}
-
-
-class java$lang$ClassCastException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$ClassCastException,
-        'java.lang.ClassCastException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$ClassCastException,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class sun$nio$cs$StreamEncoder extends java$io$Writer {
-  nativeObject = null;
-
-  haveLeftoverChar = 0;
-  lcb = null;
-  out = null;
-  ch = null;
-  cs = null;
-  encoder = null;
-  bb = null;
-  maxBufferCapacity = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        sun$nio$cs$StreamEncoder,
-        'sun.nio.cs.StreamEncoder',
-         [java$lang$Appendable,java$io$Closeable,java$io$Flushable,java$io$Writer,java$lang$AutoCloseable,sun$nio$cs$StreamEncoder,java$lang$Object]);
+        java$lang$Float,
+        'java.lang.Float',
+         [java$lang$Number,java$lang$Float,java$lang$Comparable,java$io$Serializable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -13848,348 +13199,119 @@ class sun$nio$cs$StreamEncoder extends java$io$Writer {
   }
 
   static V$$clinit$$$() {
-    sun$nio$cs$StreamEncoder.$i;
+    java$lang$Float.$i;
+    java$lang$Float.TYPE = bytecoder.primitives.float;
     return;
   }
 
-  static Lsun$nio$cs$StreamEncoder$$forOutputStreamWriter$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$(arg0,arg1,arg2) {
+  static Ljava$lang$Float$$valueOf$F(arg0) {
     var var0 = null;
-    sun$nio$cs$StreamEncoder.$i;
-    var0 = new sun$nio$cs$StreamEncoder();
-    sun$nio$cs$StreamEncoder.prototype.V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$.call(var0,arg0,arg1,arg2);
+    java$lang$Float.$i;
+    var0 = new java$lang$Float();
+    java$lang$Float.prototype.V$$init$$F.call(var0,arg0);
     return var0;
   }
 
-  V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$(arg0,arg1,arg2) {
+  V$$init$$F(arg0) {
     var th = this;
     var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var0 = (arg2.Ljava$nio$charset$CharsetEncoder$$newEncoder$$());
-    java$nio$charset$CodingErrorAction.$i;
-    var1 = (java$nio$charset$CodingErrorAction.REPLACE);
-    var2 = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$CharsetEncoder$$onMalformedInput$Ljava$nio$charset$CodingErrorAction$.call(var0,var1));
-    var3 = (java$nio$charset$CodingErrorAction.REPLACE);
-    sun$nio$cs$StreamEncoder.prototype.V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$CharsetEncoder$.call(th,arg0,arg1,(java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$CharsetEncoder$$onUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$.call(var2,var3)));
-    return;
-  }
-
-  V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$CharsetEncoder$(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    java$io$Writer.prototype.V$$init$$Ljava$lang$Object$.call(th,arg1);
+    java$lang$Number.prototype.V$$init$$$.call(th);
     var0 = th;
-    var0.haveLeftoverChar = 0;
-    var1 = th;
-    var1.lcb = null;
-    var2 = th;
-    var2.out = arg0;
-    var3 = th;
-    var3.ch = null;
-    var4 = th;
-    var4.cs = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$Charset$$charset$$.call(arg2));
-    var5 = th;
-    var5.encoder = arg2;
-    var6 = th;
-    java$nio$ByteBuffer.$i;
-    var6.bb = (java$nio$ByteBuffer.Ljava$nio$ByteBuffer$$allocate$I(512));
-    var7 = th;
-    var7.maxBufferCapacity = 8192;
-    return;
-  }
-}
-
-
-class java$io$FileOutputStream extends java$io$OutputStream {
-  nativeObject = null;
-
-  fd = null;
-  path = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$FileOutputStream,
-        'java.io.FileOutputStream',
-         [java$io$Closeable,java$io$OutputStream,java$io$Flushable,java$io$FileOutputStream,java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$io$FileDescriptor$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$io$OutputStream.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.fd = arg0;
-    var1 = th;
-    var1.path = null;
-    return;
-  }
-}
-
-
-class java$lang$IllegalArgumentException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$IllegalArgumentException,
-        'java.lang.IllegalArgumentException',
-         [java$lang$IllegalArgumentException,java$lang$Throwable,java$lang$Exception,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    var0.value = arg0;
     return;
   }
 
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
+  static Z$isNaN$F(arg0) {
+    return bytecoder.imports['java.lang.Float'].Z$isNaN$F(arg0);
   }
 
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$util$AbstractList extends java$util$AbstractCollection {
-  nativeObject = null;
-
-  modCount = 0;
-
-  constructor() {
-    super();
+  static Ljava$lang$String$$toString$F(arg0) {
+    return bytecoder.imports['java.lang.Float'].Ljava$lang$String$$toString$F(arg0);
   }
 
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$AbstractList,
-        'java.util.AbstractList',
-         [java$util$AbstractCollection,java$lang$Iterable,java$util$List,java$util$Collection,java$util$AbstractList,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
+  I$compareTo$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    java$util$AbstractCollection.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.modCount = 0;
-    return;
+    var0 = arg0;
+    return (java$lang$Float.prototype.I$compareTo$Ljava$lang$Float$.call(th,var0));
   }
 
-  Z$add$Ljava$lang$Object$(arg0) {
+  I$compareTo$Ljava$lang$Float$(arg0) {
     var th = this;
-    th.V$add$I$Ljava$lang$Object$((th.I$size$$()),arg0);
-    return 1;
+    var var0 = .0;
+    var var1 = .0;
+    var0 = (th.value);
+    var1 = (java$lang$Float.prototype.F$floatValue$$.call(arg0));
+    java$lang$Float.$i;
+    return (java$lang$Float.I$compare$F$F(var0,var1));
   }
 
-  V$add$I$Ljava$lang$Object$(arg0,arg1) {
-    var var0 = null;
-    var0 = new java$lang$UnsupportedOperationException();
-    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-
-  Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg0,arg1) {
-    var var0 = null;
-    var0 = new java$lang$UnsupportedOperationException();
-    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-
-  I$indexOf$Ljava$lang$Object$(arg0) {
+  F$floatValue$$() {
     var th = this;
-    var var0 = null;
-    var var1 = null;
-    var0 = (th.Ljava$util$ListIterator$$listIterator$$());
-    If_6_0: {
-     If_6_1: {
-      If_6_2: {
-       if (arg0 != null) {
-        break If_6_2;
-       } else {
-        break If_6_1;
-       }
-      }
-      L1647154691: while(true) {
-       if ((var0.Z$hasNext$$()) == 0) {
-        break If_6_0;
-       } else {
-        var1 = (var0.Ljava$lang$Object$$next$$());
-        if ((arg0.Z$equals$Ljava$lang$Object$(var1)) == 0) {
-         continue L1647154691;
-        } else {
-         return (var0.I$previousIndex$$());
-        }
-       }
-      }
-     }
-     L32276967: while(true) {
-      if ((var0.Z$hasNext$$()) == 0) {
-       break If_6_0;
-      } else {
-       if ((var0.Ljava$lang$Object$$next$$()) != null) {
-        continue L32276967;
-       } else {
-        return (var0.I$previousIndex$$());
-       }
-      }
-     }
-    }
-    return -1;
+    return (th.value);
   }
 
-  Ljava$util$ListIterator$$listIterator$$() {
-    var th = this;
-    return (th.Ljava$util$ListIterator$$listIterator$I(0));
-  }
-
-  Ljava$util$ListIterator$$listIterator$I(arg0) {
-    var th = this;
-    var var0 = null;
-    th.V$rangeCheckForAdd$I(arg0);
-    var0 = new java$util$AbstractList$ListItr();
-    java$util$AbstractList$ListItr.prototype.V$$init$$Ljava$util$AbstractList$$I.call(var0,th,arg0);
-    return var0;
-  }
-
-  V$rangeCheckForAdd$I(arg0) {
-    var th = this;
-    var var0 = null;
+  static I$compare$F$F(arg0,arg1) {
+    var phi0 = 0;
     If_3_0: {
-     if (arg0 < 0) {
-      break If_3_0;
-     } else {
-      if (arg0 <= (th.I$size$$())) {
-       return;
+     if (arg0 >= arg1) {
+      if (bytecoder.cmp(arg0,arg1) != 0) {
+       phi0 = (1) | 0;
+       break If_3_0;
       } else {
+       phi0 = (0) | 0;
        break If_3_0;
       }
+     } else {
+      phi0 = (-1) | 0;
+      break If_3_0;
      }
     }
-    var0 = new java$lang$IndexOutOfBoundsException();
-    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,(th.Ljava$lang$String$$outOfBoundsMsg$I(arg0)));
-    throw bytecoder.registerStack(var0, new Error().stack);
+    return phi0;
   }
 
-  Ljava$lang$String$$outOfBoundsMsg$I(arg0) {
+  I$intValue$$() {
     var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = 0;
-    var var5 = null;
-    var0 = new java$lang$StringBuilder();
-    java$lang$StringBuilder.prototype.V$$init$$$.call(var0);
-    var1 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var0,bytecoder.stringconstants[88]));
-    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var1,arg0));
-    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[94]));
-    var4 = ((th.I$size$$())) | 0;
-    var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var3,var4));
-    return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var5));
-  }
-}
-
-
-class java$util$AbstractSet extends java$util$AbstractCollection {
-  nativeObject = null;
-  constructor() {
-    super();
+    return ((th.value) | 0);
   }
 
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$AbstractSet,
-        'java.util.AbstractSet',
-         [java$util$AbstractCollection,java$lang$Iterable,java$util$Collection,java$util$AbstractSet,java$util$Set,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
+  Ljava$lang$String$$toString$$() {
     var th = this;
-    java$util$AbstractCollection.prototype.V$$init$$$.call(th);
-    return;
+    var var0 = .0;
+    var0 = (th.value);
+    java$lang$Float.$i;
+    return (java$lang$Float.Ljava$lang$String$$toString$F(var0));
   }
 
   Z$equals$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    var var1 = 0;
-    var var2 = 0;
-    if (arg0 != th) {
-     if (bytecoder.instanceOf(arg0,java$util$Set) != 0) {
-      var0 = arg0;
-      var1 = ((var0.I$size$$())) | 0;
-      if (var1 == (th.I$size$$())) {
-       TryCatch_25_0: {
-        try {
-         var2 = (th.Z$containsAll$Ljava$util$Collection$(var0));
-         break TryCatch_25_0;
-        } catch (__ex) {
-         if (__ex instanceof java$lang$ClassCastException) {
-          return 0;
-         }
-         if (__ex instanceof java$lang$NullPointerException) {
-          return 0;
-         }
-         throw __ex;
-        }
-       }
-       return var2;
+    var var1 = .0;
+    var phi2 = 0;
+    if (th != arg0) {
+     If_7_0: {
+      if (arg0 == null) {
+       break If_7_0;
       } else {
-       return 0;
+       if (((th).constructor.$rt) == ((arg0).constructor.$rt)) {
+        var0 = arg0;
+        var1 = (th.value);
+        If_24_0: {
+         if (bytecoder.cmp(var1,(java$lang$Float.prototype.F$floatValue$$.call(var0))) != 0) {
+          phi2 = (0) | 0;
+          break If_24_0;
+         } else {
+          phi2 = (1) | 0;
+          break If_24_0;
+         }
+        }
+        return phi2;
+       } else {
+        break If_7_0;
+       }
       }
-     } else {
-      return 0;
      }
+     return 0;
     } else {
      return 1;
     }
@@ -14197,41 +13319,16 @@ class java$util$AbstractSet extends java$util$AbstractCollection {
 
   I$hashCode$$() {
     var th = this;
-    var var0 = null;
-    var phi1 = 0;
-    var var2 = null;
-    var var3 = 0;
-    var phi4 = 0;
-    var0 = (th.Ljava$util$Iterator$$iterator$$());
-    phi1 = (0) | 0;
-    L126484059: while(true) {
-     if ((var0.Z$hasNext$$()) == 0) {
-      return phi1;
-     } else {
-      var2 = (var0.Ljava$lang$Object$$next$$());
-      If_15_0: {
-       if (var2 == null) {
-        phi4 = (phi1) | 0;
-        break If_15_0;
-       } else {
-        var3 = (phi1) | 0;
-        phi4 = ((var3 + (var2.I$hashCode$$()))) | 0;
-        break If_15_0;
-       }
-      }
-      phi1 = (phi4) | 0;
-      continue L126484059;
-     }
-    }
+    return ((th.value) | 0);
   }
 }
 
 
-class java$lang$NullPointerException extends java$lang$RuntimeException {
+class java$util$Collections$SynchronizedCollection extends java$lang$Object {
   nativeObject = null;
 
-  extendedMessageState = 0;
-  extendedMessage = null;
+  c = null;
+  mutex = null;
 
   constructor() {
     super();
@@ -14241,9 +13338,137 @@ class java$lang$NullPointerException extends java$lang$RuntimeException {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$NullPointerException,
-        'java.lang.NullPointerException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$NullPointerException,java$lang$RuntimeException,java$lang$Object]);
+        java$util$Collections$SynchronizedCollection,
+        'java.util.Collections$SynchronizedCollection',
+         [java$util$Collections$SynchronizedCollection,java$util$Collection,java$lang$Iterable,java$io$Serializable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$Collection$$Ljava$lang$Object$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.c = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
+    var1 = th;
+    var1.mutex = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg1));
+    return;
+  }
+
+  Ljava$util$Iterator$$iterator$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.c);
+    return (var0.Ljava$util$Iterator$$iterator$$());
+  }
+
+  I$size$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = 0;
+    var0 = (th.mutex);
+    // Monitor enter on var0
+    TryCatch_6_0: {
+     try {
+      var2 = (th.c);
+      var3 = ((var2.I$size$$())) | 0;
+      // Monitor exit on var0
+      break TryCatch_6_0;
+     } catch (__ex) {
+      if (__ex instanceof java$lang$Throwable) {
+       TryCatch_7_0: {
+        var1 = __ex;
+        // Monitor exit on var0
+        break TryCatch_7_0;
+       }
+       throw bytecoder.registerStack(var1, new Error().stack);
+      }
+      throw __ex;
+     }
+    }
+    return var3;
+  }
+
+  Z$isEmpty$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = 0;
+    var0 = (th.mutex);
+    // Monitor enter on var0
+    TryCatch_6_0: {
+     try {
+      var2 = (th.c);
+      var3 = (var2.Z$isEmpty$$());
+      // Monitor exit on var0
+      break TryCatch_6_0;
+     } catch (__ex) {
+      if (__ex instanceof java$lang$Throwable) {
+       TryCatch_7_0: {
+        var1 = __ex;
+        // Monitor exit on var0
+        break TryCatch_7_0;
+       }
+       throw bytecoder.registerStack(var1, new Error().stack);
+      }
+      throw __ex;
+     }
+    }
+    return var3;
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var0 = (th.mutex);
+    // Monitor enter on var0
+    TryCatch_6_0: {
+     try {
+      var2 = (th.c);
+      var3 = (var2.Ljava$lang$String$$toString$$());
+      // Monitor exit on var0
+      break TryCatch_6_0;
+     } catch (__ex) {
+      if (__ex instanceof java$lang$Throwable) {
+       TryCatch_7_0: {
+        var1 = __ex;
+        // Monitor exit on var0
+        break TryCatch_7_0;
+       }
+       throw bytecoder.registerStack(var1, new Error().stack);
+      }
+      throw __ex;
+     }
+    }
+    return var3;
+  }
+}
+
+
+class java$util$ConcurrentModificationException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ConcurrentModificationException,
+        'java.util.ConcurrentModificationException',
+         [java$lang$Exception,java$util$ConcurrentModificationException,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -14263,304 +13488,10 @@ class java$lang$NullPointerException extends java$lang$RuntimeException {
     return;
   }
 
-  Ljava$lang$String$$getMessage$$() {
+  V$$init$$Ljava$lang$Throwable$(arg0) {
     var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var0 = (java$lang$RuntimeException.prototype.Ljava$lang$String$$getMessage$$.call(th));
-    if (var0 != null) {
-     return var0;
-    } else {
-     // Monitor enter on th
-     TryCatch_8_0: {
-      try {
-       If_18_0: {
-        if ((th.extendedMessageState) != 1) {
-         break If_18_0;
-        } else {
-         var2 = th;
-         var2.extendedMessage = (java$lang$NullPointerException.prototype.Ljava$lang$String$$getExtendedNPEMessage$$.call(th));
-         var3 = th;
-         var3.extendedMessageState = 2;
-         break If_18_0;
-        }
-       }
-       var4 = (th.extendedMessage);
-       // Monitor exit on th
-       break TryCatch_8_0;
-      } catch (__ex) {
-       if (__ex instanceof java$lang$Throwable) {
-        TryCatch_9_0: {
-         var1 = __ex;
-         // Monitor exit on th
-         break TryCatch_9_0;
-        }
-        throw bytecoder.registerStack(var1, new Error().stack);
-       }
-       throw __ex;
-      }
-     }
-     return var4;
-    }
-  }
-
-  Ljava$lang$String$$getExtendedNPEMessage$$() {
-    return bytecoder.imports['java.lang.NullPointerException'].Ljava$lang$String$$getExtendedNPEMessage$$(this);
-  }
-}
-
-
-class java$nio$BufferUnderflowException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$BufferUnderflowException,
-        'java.nio.BufferUnderflowException',
-         [java$lang$Throwable,java$nio$BufferUnderflowException,java$lang$Exception,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
     return;
-  }
-}
-
-
-class java$io$FilterOutputStream extends java$io$OutputStream {
-  nativeObject = null;
-
-  closeLock = null;
-  out = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$FilterOutputStream,
-        'java.io.FilterOutputStream',
-         [java$io$Closeable,java$io$OutputStream,java$io$Flushable,java$io$FilterOutputStream,java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$io$OutputStream$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$io$OutputStream.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var1 = new java$lang$Object();
-    java$lang$Object.prototype.V$$init$$$.call(var1);
-    var0.closeLock = var1;
-    var2 = th;
-    var2.out = arg0;
-    return;
-  }
-}
-
-
-class java$util$Properties$EntrySet extends java$lang$Object {
-  nativeObject = null;
-
-  entrySet = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Properties$EntrySet,
-        'java.util.Properties$EntrySet',
-         [java$lang$Iterable,java$util$Collection,java$util$Set,java$util$Properties$EntrySet,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$util$Set$(arg0) {
-    var th = this;
-    var var0 = null;
-    java$lang$Object.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.entrySet = arg0;
-    return;
-  }
-
-  Ljava$util$Iterator$$iterator$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.entrySet);
-    return (var0.Ljava$util$Iterator$$iterator$$());
-  }
-
-  I$size$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.entrySet);
-    return (var0.I$size$$());
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.entrySet);
-    return (var0.Z$isEmpty$$());
-  }
-
-  Ljava$lang$String$$toString$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.entrySet);
-    return (var0.Ljava$lang$String$$toString$$());
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var phi1 = 0;
-    If_3_0: {
-     If_3_1: {
-      if (arg0 == th) {
-       break If_3_1;
-      } else {
-       var0 = (th.entrySet);
-       if ((var0.Z$equals$Ljava$lang$Object$(arg0)) == 0) {
-        phi1 = (0) | 0;
-        break If_3_0;
-       } else {
-        break If_3_1;
-       }
-      }
-     }
-     phi1 = (1) | 0;
-     break If_3_0;
-    }
-    return phi1;
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    var var0 = null;
-    var0 = (th.entrySet);
-    return (var0.I$hashCode$$());
-  }
-}
-
-
-class java$nio$BufferOverflowException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$BufferOverflowException,
-        'java.nio.BufferOverflowException',
-         [java$lang$Throwable,java$lang$Exception,java$nio$BufferOverflowException,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$io$OutputStreamWriter extends java$io$Writer {
-  nativeObject = null;
-
-  se = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$OutputStreamWriter,
-        'java.io.OutputStreamWriter',
-         [java$lang$Appendable,java$io$OutputStreamWriter,java$io$Closeable,java$io$Flushable,java$io$Writer,java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$io$OutputStream$$Ljava$nio$charset$Charset$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    java$io$Writer.prototype.V$$init$$Ljava$lang$Object$.call(th,arg0);
-    if (arg1 != null) {
-     var1 = th;
-     var2 = (java$io$OutputStreamWriter.Ljava$lang$Object$$lockFor$Ljava$io$OutputStreamWriter$(th));
-     sun$nio$cs$StreamEncoder.$i;
-     var1.se = (sun$nio$cs$StreamEncoder.Lsun$nio$cs$StreamEncoder$$forOutputStreamWriter$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$(arg0,var2,arg1));
-     return;
-    } else {
-     var0 = new java$lang$NullPointerException();
-     java$lang$NullPointerException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[62]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  static Ljava$lang$Object$$lockFor$Ljava$io$OutputStreamWriter$(arg0) {
-    var var0 = null;
-    var0 = ((arg0).constructor.$rt);
-    If_7_0: {
-     if (var0 == java$io$OutputStreamWriter.$rt) {
-      break If_7_0;
-     } else {
-      if (var0 != java$io$FileWriter.$rt) {
-       return arg0;
-      } else {
-       break If_7_0;
-      }
-     }
-    }
-    jdk$internal$misc$InternalLock.$i;
-    return (jdk$internal$misc$InternalLock.Ljava$lang$Object$$newLockOr$Ljava$lang$Object$(arg0));
   }
 }
 
@@ -14577,7 +13508,7 @@ class java$util$Collections$SynchronizedSet extends java$util$Collections$Synchr
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$Collections$SynchronizedSet,
         'java.util.Collections$SynchronizedSet',
-         [java$util$Collections$SynchronizedSet,java$lang$Iterable,java$util$Collections$SynchronizedCollection,java$io$Serializable,java$util$Collection,java$util$Set,java$lang$Object]);
+         [java$util$Collections$SynchronizedSet,java$util$Set,java$util$Collections$SynchronizedCollection,java$util$Collection,java$lang$Iterable,java$io$Serializable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -14655,6 +13586,1390 @@ class java$util$Collections$SynchronizedSet extends java$util$Collections$Synchr
 }
 
 
+class java$lang$IndexOutOfBoundsException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$IndexOutOfBoundsException,
+        'java.lang.IndexOutOfBoundsException',
+         [java$lang$IndexOutOfBoundsException,java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$io$FileOutputStream extends java$io$OutputStream {
+  nativeObject = null;
+
+  fd = null;
+  path = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$FileOutputStream,
+        'java.io.FileOutputStream',
+         [java$io$Flushable,java$io$FileOutputStream,java$io$Closeable,java$lang$AutoCloseable,java$io$OutputStream,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$io$FileDescriptor$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    java$io$OutputStream.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.fd = arg0;
+    var1 = th;
+    var1.path = null;
+    return;
+  }
+}
+
+
+class java$lang$IllegalStateException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$IllegalStateException,
+        'java.lang.IllegalStateException',
+         [java$lang$Exception,java$lang$IllegalStateException,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$io$FilterOutputStream extends java$io$OutputStream {
+  nativeObject = null;
+
+  closeLock = null;
+  out = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$FilterOutputStream,
+        'java.io.FilterOutputStream',
+         [java$io$Flushable,java$io$Closeable,java$lang$AutoCloseable,java$io$FilterOutputStream,java$io$OutputStream,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$io$OutputStream$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$io$OutputStream.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var1 = new java$lang$Object();
+    java$lang$Object.prototype.V$$init$$$.call(var1);
+    var0.closeLock = var1;
+    var2 = th;
+    var2.out = arg0;
+    return;
+  }
+}
+
+
+class java$io$BufferedWriter extends java$io$Writer {
+  nativeObject = null;
+
+  out = null;
+  cb = null;
+  nChars = 0;
+  maxChars = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$BufferedWriter,
+        'java.io.BufferedWriter',
+         [java$io$Flushable,java$io$Writer,java$lang$Appendable,java$io$Closeable,java$lang$AutoCloseable,java$io$BufferedWriter,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$io$Writer$(arg0) {
+    var th = this;
+    java$io$BufferedWriter.prototype.V$$init$$Ljava$io$Writer$$I$I.call(th,arg0,(java$io$BufferedWriter.I$initialBufferSize$$()),8192);
+    return;
+  }
+
+  static I$initialBufferSize$$() {
+    var var0 = null;
+    jdk$internal$misc$VM.$i;
+    If_4_0: {
+     if ((jdk$internal$misc$VM.Z$isBooted$$()) == 0) {
+      break If_4_0;
+     } else {
+      var0 = (java$lang$Thread.Ljava$lang$Thread$$currentThread$$());
+      if ((java$lang$Thread.prototype.Z$isVirtual$$.call(var0)) == 0) {
+       break If_4_0;
+      } else {
+       return 512;
+      }
+     }
+    }
+    return 8192;
+  }
+
+  V$$init$$Ljava$io$Writer$$I$I(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    java$io$Writer.prototype.V$$init$$Ljava$io$Writer$.call(th,arg0);
+    if (arg1 > 0) {
+     var1 = th;
+     var1.out = arg0;
+     var2 = th;
+     var2.cb = bytecoder.newarray((arg1),0);
+     var3 = th;
+     var3.nChars = arg1;
+     var4 = th;
+     var4.maxChars = arg2;
+     return;
+    } else {
+     var0 = new java$lang$IllegalArgumentException();
+     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[68]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+}
+
+
+class java$io$OutputStreamWriter extends java$io$Writer {
+  nativeObject = null;
+
+  se = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$OutputStreamWriter,
+        'java.io.OutputStreamWriter',
+         [java$io$Flushable,java$io$Writer,java$lang$Appendable,java$io$OutputStreamWriter,java$io$Closeable,java$lang$AutoCloseable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$io$OutputStream$$Ljava$nio$charset$Charset$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$io$Writer.prototype.V$$init$$Ljava$lang$Object$.call(th,arg0);
+    if (arg1 != null) {
+     var1 = th;
+     var2 = (java$io$OutputStreamWriter.Ljava$lang$Object$$lockFor$Ljava$io$OutputStreamWriter$(th));
+     sun$nio$cs$StreamEncoder.$i;
+     var1.se = (sun$nio$cs$StreamEncoder.Lsun$nio$cs$StreamEncoder$$forOutputStreamWriter$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$(arg0,var2,arg1));
+     return;
+    } else {
+     var0 = new java$lang$NullPointerException();
+     java$lang$NullPointerException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[62]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  static Ljava$lang$Object$$lockFor$Ljava$io$OutputStreamWriter$(arg0) {
+    var var0 = null;
+    var0 = ((arg0).constructor.$rt);
+    If_7_0: {
+     if (var0 == java$io$OutputStreamWriter.$rt) {
+      break If_7_0;
+     } else {
+      if (var0 != java$io$FileWriter.$rt) {
+       return arg0;
+      } else {
+       break If_7_0;
+      }
+     }
+    }
+    jdk$internal$misc$InternalLock.$i;
+    return (jdk$internal$misc$InternalLock.Ljava$lang$Object$$newLockOr$Ljava$lang$Object$(arg0));
+  }
+}
+
+
+class java$nio$BufferUnderflowException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$BufferUnderflowException,
+        'java.nio.BufferUnderflowException',
+         [java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$nio$BufferUnderflowException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$lang$ClassCastException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$ClassCastException,
+        'java.lang.ClassCastException',
+         [java$lang$ClassCastException,java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$util$AbstractList extends java$util$AbstractCollection {
+  nativeObject = null;
+
+  modCount = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$AbstractList,
+        'java.util.AbstractList',
+         [java$util$AbstractCollection,java$util$List,java$util$Collection,java$util$AbstractList,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    var var0 = null;
+    java$util$AbstractCollection.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.modCount = 0;
+    return;
+  }
+
+  Z$add$Ljava$lang$Object$(arg0) {
+    var th = this;
+    th.V$add$I$Ljava$lang$Object$((th.I$size$$()),arg0);
+    return 1;
+  }
+
+  V$add$I$Ljava$lang$Object$(arg0,arg1) {
+    var var0 = null;
+    var0 = new java$lang$UnsupportedOperationException();
+    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg0,arg1) {
+    var var0 = null;
+    var0 = new java$lang$UnsupportedOperationException();
+    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(var0);
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  I$indexOf$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var0 = (th.Ljava$util$ListIterator$$listIterator$$());
+    If_6_0: {
+     If_6_1: {
+      If_6_2: {
+       if (arg0 != null) {
+        break If_6_2;
+       } else {
+        break If_6_1;
+       }
+      }
+      L716396784: while(true) {
+       if ((var0.Z$hasNext$$()) == 0) {
+        break If_6_0;
+       } else {
+        var1 = (var0.Ljava$lang$Object$$next$$());
+        if ((arg0.Z$equals$Ljava$lang$Object$(var1)) == 0) {
+         continue L716396784;
+        } else {
+         return (var0.I$previousIndex$$());
+        }
+       }
+      }
+     }
+     L261034189: while(true) {
+      if ((var0.Z$hasNext$$()) == 0) {
+       break If_6_0;
+      } else {
+       if ((var0.Ljava$lang$Object$$next$$()) != null) {
+        continue L261034189;
+       } else {
+        return (var0.I$previousIndex$$());
+       }
+      }
+     }
+    }
+    return -1;
+  }
+
+  Ljava$util$ListIterator$$listIterator$$() {
+    var th = this;
+    return (th.Ljava$util$ListIterator$$listIterator$I(0));
+  }
+
+  Ljava$util$ListIterator$$listIterator$I(arg0) {
+    var th = this;
+    var var0 = null;
+    th.V$rangeCheckForAdd$I(arg0);
+    var0 = new java$util$AbstractList$ListItr();
+    java$util$AbstractList$ListItr.prototype.V$$init$$Ljava$util$AbstractList$$I.call(var0,th,arg0);
+    return var0;
+  }
+
+  V$rangeCheckForAdd$I(arg0) {
+    var th = this;
+    var var0 = null;
+    If_3_0: {
+     if (arg0 < 0) {
+      break If_3_0;
+     } else {
+      if (arg0 <= (th.I$size$$())) {
+       return;
+      } else {
+       break If_3_0;
+      }
+     }
+    }
+    var0 = new java$lang$IndexOutOfBoundsException();
+    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,(th.Ljava$lang$String$$outOfBoundsMsg$I(arg0)));
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  Ljava$lang$String$$outOfBoundsMsg$I(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = 0;
+    var var5 = null;
+    var0 = new java$lang$StringBuilder();
+    java$lang$StringBuilder.prototype.V$$init$$$.call(var0);
+    var1 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var0,bytecoder.stringconstants[88]));
+    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var1,arg0));
+    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var2,bytecoder.stringconstants[94]));
+    var4 = ((th.I$size$$())) | 0;
+    var5 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var3,var4));
+    return (java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var5));
+  }
+}
+
+
+class java$lang$UnsupportedOperationException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$UnsupportedOperationException,
+        'java.lang.UnsupportedOperationException',
+         [java$lang$Exception,java$lang$Throwable,java$lang$UnsupportedOperationException,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$util$NoSuchElementException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$NoSuchElementException,
+        'java.util.NoSuchElementException',
+         [java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$util$NoSuchElementException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$lang$OutOfMemoryError extends java$lang$VirtualMachineError {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$OutOfMemoryError,
+        'java.lang.OutOfMemoryError',
+         [java$lang$VirtualMachineError,java$lang$Throwable,java$lang$Error,java$lang$OutOfMemoryError,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$VirtualMachineError.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$VirtualMachineError.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$lang$IllegalArgumentException extends java$lang$RuntimeException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$IllegalArgumentException,
+        'java.lang.IllegalArgumentException',
+         [java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$IllegalArgumentException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
+class java$util$ImmutableCollections$MapN extends java$util$ImmutableCollections$AbstractImmutableMap {
+  nativeObject = null;
+
+  size = 0;
+  table = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ImmutableCollections$MapN,
+        'java.util.ImmutableCollections$MapN',
+         [java$util$ImmutableCollections$MapN,java$util$AbstractMap,java$io$Serializable,java$util$Map,java$util$ImmutableCollections$AbstractImmutableMap,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = 0;
+    var var3 = null;
+    var phi4 = 0;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = 0;
+    var var10 = null;
+    var var11 = null;
+    var var12 = null;
+    var var13 = null;
+    var var14 = 0;
+    var var15 = null;
+    var var16 = null;
+    var var17 = 0;
+    java$util$ImmutableCollections$AbstractImmutableMap.prototype.V$$init$$$.call(th);
+    if ((arg0.data.length & 1) == 0) {
+     var1 = th;
+     var1.size = (arg0.data.length >> 1);
+     var2 = ((((2 * arg0.data.length) + 1) & -2)) | 0;
+     var3 = th;
+     var3.table = bytecoder.newarray((var2),null);
+     phi4 = (0) | 0;
+     L2005524871: while(true) {
+      if (phi4 >= arg0.data.length) {
+       return;
+      } else {
+       var5 = (arg0.data[phi4]);
+       var6 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(var5));
+       var7 = (arg0.data[(phi4 + 1)]);
+       var8 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(var7));
+       var9 = ((java$util$ImmutableCollections$MapN.prototype.I$probe$Ljava$lang$Object$.call(th,var6))) | 0;
+       if (var9 < 0) {
+        var14 = ((0 - (var9 + 1))) | 0;
+        var15 = (th.table);
+        var15.data[var14] = var6;
+        var16 = (th.table);
+        var17 = ((var14 + 1)) | 0;
+        var16.data[var17] = var8;
+        phi4 = ((phi4 + 2)) | 0;
+        // Here was a goto statement
+        continue L2005524871;
+       } else {
+        var10 = new java$lang$IllegalArgumentException();
+        var11 = new java$lang$StringBuilder();
+        java$lang$StringBuilder.prototype.V$$init$$$.call(var11);
+        var12 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var11,bytecoder.stringconstants[72]));
+        var13 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var12,var6));
+        java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var10,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var13)));
+        throw bytecoder.registerStack(var10, new Error().stack);
+       }
+      }
+     }
+    } else {
+     var0 = new java$lang$InternalError();
+     java$lang$InternalError.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[71]);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  I$probe$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var var3 = null;
+    var phi4 = 0;
+    var0 = ((arg0.I$hashCode$$())) | 0;
+    var1 = (((th.table).data.length >> 1)) | 0;
+    java$lang$Math.$i;
+    phi2 = (((java$lang$Math.I$floorMod$I$I(var0,var1)) << 1)) | 0;
+    L1776161541: while(true) {
+     var3 = ((th.table).data[phi2]);
+     if (var3 != null) {
+      if ((arg0.Z$equals$Ljava$lang$Object$(var3)) == 0) {
+       phi2 = ((phi2 + 2)) | 0;
+       If_39_0: {
+        if (phi2 != (th.table).data.length) {
+         phi4 = (phi2) | 0;
+         break If_39_0;
+        } else {
+         phi4 = (0) | 0;
+         break If_39_0;
+        }
+       }
+       phi2 = (phi4) | 0;
+       continue L1776161541;
+      } else {
+       return phi2;
+      }
+     } else {
+      return ((0 - phi2) - 1);
+     }
+    }
+  }
+
+  Ljava$lang$Object$$get$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = null;
+    if ((th.size) != 0) {
+     var1 = ((java$util$ImmutableCollections$MapN.prototype.I$probe$Ljava$lang$Object$.call(th,arg0))) | 0;
+     if (var1 < 0) {
+      return null;
+     } else {
+      var2 = (th.table);
+      return (var2.data[(var1 + 1)]);
+     }
+    } else {
+     var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
+     return null;
+    }
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var phi0 = 0;
+    var phi1 = 0;
+    var var2 = null;
+    var var3 = 0;
+    var var4 = 0;
+    var var5 = null;
+    var phi6 = 0;
+    phi0 = (0) | 0;
+    phi1 = (0) | 0;
+    L1709663161: while(true) {
+     if (phi1 >= (th.table).data.length) {
+      return phi0;
+     } else {
+      var2 = ((th.table).data[phi1]);
+      If_15_0: {
+       if (var2 == null) {
+        phi6 = (phi0) | 0;
+        break If_15_0;
+       } else {
+        var3 = (phi0) | 0;
+        var4 = ((var2.I$hashCode$$())) | 0;
+        var5 = ((th.table).data[(phi1 + 1)]);
+        phi6 = ((var3 + (var4 ^ (var5.I$hashCode$$())))) | 0;
+        break If_15_0;
+       }
+      }
+      phi1 = ((phi1 + 2)) | 0;
+      phi0 = (phi6) | 0;
+      continue L1709663161;
+     }
+    }
+  }
+
+  Z$isEmpty$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.size) != 0) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
+  }
+
+  I$size$$() {
+    var th = this;
+    return (th.size);
+  }
+
+  Z$containsKey$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var phi1 = 0;
+    var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
+    If_8_0: {
+     If_8_1: {
+      if ((th.size) <= 0) {
+       break If_8_1;
+      } else {
+       if ((java$util$ImmutableCollections$MapN.prototype.I$probe$Ljava$lang$Object$.call(th,arg0)) < 0) {
+        break If_8_1;
+       } else {
+        phi1 = (1) | 0;
+        break If_8_0;
+       }
+      }
+     }
+     phi1 = (0) | 0;
+     break If_8_0;
+    }
+    return phi1;
+  }
+
+  Ljava$util$Set$$entrySet$$() {
+    var th = this;
+    var var0 = null;
+    var0 = new java$util$ImmutableCollections$MapN$1();
+    java$util$ImmutableCollections$MapN$1.prototype.V$$init$$Ljava$util$ImmutableCollections$MapN$.call(var0,th);
+    return var0;
+  }
+}
+
+
+class java$util$AbstractSet extends java$util$AbstractCollection {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$AbstractSet,
+        'java.util.AbstractSet',
+         [java$util$AbstractCollection,java$util$Set,java$util$AbstractSet,java$util$Collection,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$util$AbstractCollection.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var var2 = 0;
+    if (arg0 != th) {
+     if (bytecoder.instanceOf(arg0,java$util$Set) != 0) {
+      var0 = arg0;
+      var1 = ((var0.I$size$$())) | 0;
+      if (var1 == (th.I$size$$())) {
+       TryCatch_25_0: {
+        try {
+         var2 = (th.Z$containsAll$Ljava$util$Collection$(var0));
+         break TryCatch_25_0;
+        } catch (__ex) {
+         if (__ex instanceof java$lang$ClassCastException) {
+          return 0;
+         }
+         if (__ex instanceof java$lang$NullPointerException) {
+          return 0;
+         }
+         throw __ex;
+        }
+       }
+       return var2;
+      } else {
+       return 0;
+      }
+     } else {
+      return 0;
+     }
+    } else {
+     return 1;
+    }
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var var0 = null;
+    var phi1 = 0;
+    var var2 = null;
+    var var3 = 0;
+    var phi4 = 0;
+    var0 = (th.Ljava$util$Iterator$$iterator$$());
+    phi1 = (0) | 0;
+    L883029346: while(true) {
+     if ((var0.Z$hasNext$$()) == 0) {
+      return phi1;
+     } else {
+      var2 = (var0.Ljava$lang$Object$$next$$());
+      If_15_0: {
+       if (var2 == null) {
+        phi4 = (phi1) | 0;
+        break If_15_0;
+       } else {
+        var3 = (phi1) | 0;
+        phi4 = ((var3 + (var2.I$hashCode$$()))) | 0;
+        break If_15_0;
+       }
+      }
+      phi1 = (phi4) | 0;
+      continue L883029346;
+     }
+    }
+  }
+}
+
+
+class java$io$FileInputStream extends java$io$InputStream {
+  nativeObject = null;
+
+  fd = null;
+  path = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$io$FileInputStream,
+        'java.io.FileInputStream',
+         [java$io$Closeable,java$lang$AutoCloseable,java$io$FileInputStream,java$io$InputStream,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$io$FileDescriptor$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    java$io$InputStream.prototype.V$$init$$$.call(th);
+    if (arg0 != null) {
+     var1 = th;
+     var1.fd = arg0;
+     var2 = th;
+     var2.path = null;
+     return;
+    } else {
+     var0 = new java$lang$NullPointerException();
+     java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+}
+
+
+class sun$nio$cs$StreamEncoder extends java$io$Writer {
+  nativeObject = null;
+
+  haveLeftoverChar = 0;
+  lcb = null;
+  out = null;
+  ch = null;
+  cs = null;
+  encoder = null;
+  bb = null;
+  maxBufferCapacity = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        sun$nio$cs$StreamEncoder,
+        'sun.nio.cs.StreamEncoder',
+         [java$io$Flushable,java$io$Writer,java$lang$Appendable,java$io$Closeable,java$lang$AutoCloseable,sun$nio$cs$StreamEncoder,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    sun$nio$cs$StreamEncoder.$i;
+    return;
+  }
+
+  static Lsun$nio$cs$StreamEncoder$$forOutputStreamWriter$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$(arg0,arg1,arg2) {
+    var var0 = null;
+    sun$nio$cs$StreamEncoder.$i;
+    var0 = new sun$nio$cs$StreamEncoder();
+    sun$nio$cs$StreamEncoder.prototype.V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$.call(var0,arg0,arg1,arg2);
+    return var0;
+  }
+
+  V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$Charset$(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var0 = (arg2.Ljava$nio$charset$CharsetEncoder$$newEncoder$$());
+    java$nio$charset$CodingErrorAction.$i;
+    var1 = (java$nio$charset$CodingErrorAction.REPLACE);
+    var2 = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$CharsetEncoder$$onMalformedInput$Ljava$nio$charset$CodingErrorAction$.call(var0,var1));
+    var3 = (java$nio$charset$CodingErrorAction.REPLACE);
+    sun$nio$cs$StreamEncoder.prototype.V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$CharsetEncoder$.call(th,arg0,arg1,(java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$CharsetEncoder$$onUnmappableCharacter$Ljava$nio$charset$CodingErrorAction$.call(var2,var3)));
+    return;
+  }
+
+  V$$init$$Ljava$io$OutputStream$$Ljava$lang$Object$$Ljava$nio$charset$CharsetEncoder$(arg0,arg1,arg2) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    java$io$Writer.prototype.V$$init$$Ljava$lang$Object$.call(th,arg1);
+    var0 = th;
+    var0.haveLeftoverChar = 0;
+    var1 = th;
+    var1.lcb = null;
+    var2 = th;
+    var2.out = arg0;
+    var3 = th;
+    var3.ch = null;
+    var4 = th;
+    var4.cs = (java$nio$charset$CharsetEncoder.prototype.Ljava$nio$charset$Charset$$charset$$.call(arg2));
+    var5 = th;
+    var5.encoder = arg2;
+    var6 = th;
+    java$nio$ByteBuffer.$i;
+    var6.bb = (java$nio$ByteBuffer.Ljava$nio$ByteBuffer$$allocate$I(512));
+    var7 = th;
+    var7.maxBufferCapacity = 8192;
+    return;
+  }
+}
+
+
+class java$util$ImmutableCollections$AbstractImmutableCollection extends java$util$AbstractCollection {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ImmutableCollections$AbstractImmutableCollection,
+        'java.util.ImmutableCollections$AbstractImmutableCollection',
+         [java$util$AbstractCollection,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableCollection,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$util$AbstractCollection.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$clear$$() {
+    java$util$ImmutableCollections.$i;
+    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
+  }
+
+  Z$add$Ljava$lang$Object$(arg0) {
+    java$util$ImmutableCollections.$i;
+    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
+  }
+}
+
+
+class java$lang$NullPointerException extends java$lang$RuntimeException {
+  nativeObject = null;
+
+  extendedMessageState = 0;
+  extendedMessage = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$NullPointerException,
+        'java.lang.NullPointerException',
+         [java$lang$NullPointerException,java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  Ljava$lang$String$$getMessage$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var0 = (java$lang$RuntimeException.prototype.Ljava$lang$String$$getMessage$$.call(th));
+    if (var0 != null) {
+     return var0;
+    } else {
+     // Monitor enter on th
+     TryCatch_8_0: {
+      try {
+       If_18_0: {
+        if ((th.extendedMessageState) != 1) {
+         break If_18_0;
+        } else {
+         var2 = th;
+         var2.extendedMessage = (java$lang$NullPointerException.prototype.Ljava$lang$String$$getExtendedNPEMessage$$.call(th));
+         var3 = th;
+         var3.extendedMessageState = 2;
+         break If_18_0;
+        }
+       }
+       var4 = (th.extendedMessage);
+       // Monitor exit on th
+       break TryCatch_8_0;
+      } catch (__ex) {
+       if (__ex instanceof java$lang$Throwable) {
+        TryCatch_9_0: {
+         var1 = __ex;
+         // Monitor exit on th
+         break TryCatch_9_0;
+        }
+        throw bytecoder.registerStack(var1, new Error().stack);
+       }
+       throw __ex;
+      }
+     }
+     return var4;
+    }
+  }
+
+  Ljava$lang$String$$getExtendedNPEMessage$$() {
+    return bytecoder.imports['java.lang.NullPointerException'].Ljava$lang$String$$getExtendedNPEMessage$$(this);
+  }
+}
+
+
+class java$util$Properties$EntrySet extends java$lang$Object {
+  nativeObject = null;
+
+  entrySet = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$Properties$EntrySet,
+        'java.util.Properties$EntrySet',
+         [java$util$Set,java$util$Properties$EntrySet,java$util$Collection,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$Set$(arg0) {
+    var th = this;
+    var var0 = null;
+    java$lang$Object.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.entrySet = arg0;
+    return;
+  }
+
+  Ljava$util$Iterator$$iterator$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.entrySet);
+    return (var0.Ljava$util$Iterator$$iterator$$());
+  }
+
+  I$size$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.entrySet);
+    return (var0.I$size$$());
+  }
+
+  Z$isEmpty$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.entrySet);
+    return (var0.Z$isEmpty$$());
+  }
+
+  Ljava$lang$String$$toString$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.entrySet);
+    return (var0.Ljava$lang$String$$toString$$());
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var phi1 = 0;
+    If_3_0: {
+     If_3_1: {
+      if (arg0 == th) {
+       break If_3_1;
+      } else {
+       var0 = (th.entrySet);
+       if ((var0.Z$equals$Ljava$lang$Object$(arg0)) == 0) {
+        phi1 = (0) | 0;
+        break If_3_0;
+       } else {
+        break If_3_1;
+       }
+      }
+     }
+     phi1 = (1) | 0;
+     break If_3_0;
+    }
+    return phi1;
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var var0 = null;
+    var0 = (th.entrySet);
+    return (var0.I$hashCode$$());
+  }
+}
+
+
+class java$lang$InternalError extends java$lang$VirtualMachineError {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$InternalError,
+        'java.lang.InternalError',
+         [java$lang$InternalError,java$lang$VirtualMachineError,java$lang$Throwable,java$lang$Error,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$VirtualMachineError.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$VirtualMachineError.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  V$$init$$Ljava$lang$Throwable$(arg0) {
+    var th = this;
+    java$lang$VirtualMachineError.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
+    return;
+  }
+}
+
+
 class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
   nativeObject = null;
 
@@ -14674,7 +14989,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$HashMap$TreeNode,
         'java.util.HashMap$TreeNode',
-         [java$util$HashMap$TreeNode,java$util$HashMap$Node,java$util$Map$Entry,java$util$LinkedHashMap$Entry,java$lang$Object]);
+         [java$util$LinkedHashMap$Entry,java$util$HashMap$TreeNode,java$util$Map$Entry,java$util$HashMap$Node,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -14728,7 +15043,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     phi4 = (0) | 0;
     phi5 = (0) | 0;
     phi6 = th;
-    L2651185: while(true) {
+    L1495856202: while(true) {
      if (phi6 == null) {
       If_71_0: {
        if (phi0 == null) {
@@ -14821,7 +15136,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
       phi0 = phi11;
       phi1 = phi13;
       phi6 = var7;
-      continue L2651185;
+      continue L1495856202;
      }
     }
   }
@@ -14839,7 +15154,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     phi0 = null;
     phi1 = null;
     phi2 = th;
-    L1631963719: while(true) {
+    L1053190754: while(true) {
      if (phi2 == null) {
       return phi0;
      } else {
@@ -14860,7 +15175,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
       phi0 = phi5;
       phi1 = var4;
       phi2 = var6;
-      continue L1631963719;
+      continue L1053190754;
      }
     }
   }
@@ -14897,7 +15212,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     var var27 = null;
     phi0 = null;
     phi1 = th;
-    L50890008: while(true) {
+    L1310595430: while(true) {
      if (phi1 == null) {
       var27 = phi0;
       java$util$HashMap$TreeNode.$i;
@@ -14916,7 +15231,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
         var10 = phi0;
         phi11 = null;
         phi12 = var10;
-        L692216608: while(true) {
+        L1339609364: while(true) {
          var13 = (phi12.key);
          var14 = ((phi12.hash)) | 0;
          If_50_0: {
@@ -14975,7 +15290,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
          var18 = phi17;
          if (phi17 != null) {
           phi12 = var18;
-          continue L692216608;
+          continue L1339609364;
          } else {
           var19 = phi1;
           var19.parent = var16;
@@ -15006,7 +15321,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
       }
       phi0 = phi7;
       phi1 = var2;
-      continue L50890008;
+      continue L1310595430;
      }
     }
   }
@@ -15050,7 +15365,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     var0.red = 1;
     phi1 = arg0;
     phi2 = arg1;
-    L1952798300: while(true) {
+    L483244882: while(true) {
      var3 = (phi2.parent);
      if (var3 != null) {
       If_21_0: {
@@ -15072,7 +15387,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
              var3.red = 0;
              var5.red = 1;
              phi2 = var5;
-             continue L1952798300;
+             continue L483244882;
             }
            }
           }
@@ -15111,14 +15426,14 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
           if (phi26 == null) {
            phi1 = phi24;
            phi2 = phi25;
-           continue L1952798300;
+           continue L483244882;
           } else {
            var29 = phi26;
            var29.red = 0;
            if (phi28 == null) {
             phi1 = phi24;
             phi2 = phi25;
-            continue L1952798300;
+            continue L483244882;
            } else {
             var30 = phi28;
             var30.red = 1;
@@ -15127,7 +15442,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
             java$util$HashMap$TreeNode.$i;
             phi1 = (java$util$HashMap$TreeNode.Ljava$util$HashMap$TreeNode$$rotateLeft$Ljava$util$HashMap$TreeNode$$Ljava$util$HashMap$TreeNode$(var31,var32));
             phi2 = phi25;
-            continue L1952798300;
+            continue L483244882;
            }
           }
          } else {
@@ -15143,7 +15458,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
              var3.red = 0;
              var5.red = 1;
              phi2 = var5;
-             continue L1952798300;
+             continue L483244882;
             }
            }
           }
@@ -15182,14 +15497,14 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
           if (phi13 == null) {
            phi1 = phi11;
            phi2 = phi12;
-           continue L1952798300;
+           continue L483244882;
           } else {
            var16 = phi13;
            var16.red = 0;
            if (phi15 == null) {
             phi1 = phi11;
             phi2 = phi12;
-            continue L1952798300;
+            continue L483244882;
            } else {
             var17 = phi15;
             var17.red = 1;
@@ -15198,7 +15513,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
             java$util$HashMap$TreeNode.$i;
             phi1 = (java$util$HashMap$TreeNode.Ljava$util$HashMap$TreeNode$$rotateRight$Ljava$util$HashMap$TreeNode$$Ljava$util$HashMap$TreeNode$(var18,var19));
             phi2 = phi12;
-            continue L1952798300;
+            continue L483244882;
            }
           }
          }
@@ -15608,11 +15923,11 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     var phi0 = null;
     var var1 = null;
     phi0 = th;
-    L2040778315: while(true) {
+    L1942789934: while(true) {
      var1 = (phi0.parent);
      if (var1 != null) {
       phi0 = var1;
-      continue L2040778315;
+      continue L1942789934;
      } else {
       return phi0;
      }
@@ -15638,7 +15953,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     var var14 = null;
     phi0 = arg2;
     phi1 = th;
-    L318235998: while(true) {
+    L1504314078: while(true) {
      var2 = (phi1.left);
      var3 = (phi1.right);
      var4 = ((phi1.hash)) | 0;
@@ -15730,7 +16045,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
      }
      if (phi5 != null) {
       phi1 = phi5;
-      continue L318235998;
+      continue L1504314078;
      } else {
       return null;
      }
@@ -15786,7 +16101,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
     }
     var4 = phi3;
     phi5 = var4;
-    L571772435: while(true) {
+    L310345635: while(true) {
      var6 = ((phi5.hash)) | 0;
      If_26_0: {
       if (var6 <= arg2) {
@@ -15909,7 +16224,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
      var10 = phi9;
      if (phi9 != null) {
       phi5 = var10;
-      continue L571772435;
+      continue L310345635;
      } else {
       var11 = (var8.next);
       var12 = (java$util$HashMap.prototype.Ljava$util$HashMap$TreeNode$$newTreeNode$I$Ljava$lang$Object$$Ljava$lang$Object$$Ljava$util$HashMap$Node$.call(arg0,arg2,arg3,arg4,var11));
@@ -15950,7 +16265,7 @@ class java$util$HashMap$TreeNode extends java$util$LinkedHashMap$Entry {
 }
 
 
-class java$lang$OutOfMemoryError extends java$lang$VirtualMachineError {
+class java$nio$BufferOverflowException extends java$lang$RuntimeException {
   nativeObject = null;
   constructor() {
     super();
@@ -15960,43 +16275,9 @@ class java$lang$OutOfMemoryError extends java$lang$VirtualMachineError {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$OutOfMemoryError,
-        'java.lang.OutOfMemoryError',
-         [java$lang$Throwable,java$lang$OutOfMemoryError,java$lang$Error,java$lang$VirtualMachineError,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$VirtualMachineError.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$VirtualMachineError.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
-class java$util$NoSuchElementException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$NoSuchElementException,
-        'java.util.NoSuchElementException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$RuntimeException,java$util$NoSuchElementException,java$lang$Object]);
+        java$nio$BufferOverflowException,
+        'java.nio.BufferOverflowException',
+         [java$lang$Exception,java$nio$BufferOverflowException,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -16007,287 +16288,6 @@ class java$util$NoSuchElementException extends java$lang$RuntimeException {
   V$$init$$$() {
     var th = this;
     java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$util$ImmutableCollections$AbstractImmutableCollection extends java$util$AbstractCollection {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$AbstractImmutableCollection,
-        'java.util.ImmutableCollections$AbstractImmutableCollection',
-         [java$util$ImmutableCollections$AbstractImmutableCollection,java$util$AbstractCollection,java$lang$Iterable,java$util$Collection,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$util$AbstractCollection.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$clear$$() {
-    java$util$ImmutableCollections.$i;
-    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
-  }
-
-  Z$add$Ljava$lang$Object$(arg0) {
-    java$util$ImmutableCollections.$i;
-    throw bytecoder.registerStack((java$util$ImmutableCollections.Ljava$lang$UnsupportedOperationException$$uoe$$()), new Error().stack);
-  }
-}
-
-
-class java$lang$IndexOutOfBoundsException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$IndexOutOfBoundsException,
-        'java.lang.IndexOutOfBoundsException',
-         [java$lang$Throwable,java$lang$IndexOutOfBoundsException,java$lang$Exception,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$io$BufferedWriter extends java$io$Writer {
-  nativeObject = null;
-
-  out = null;
-  cb = null;
-  nChars = 0;
-  maxChars = 0;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$BufferedWriter,
-        'java.io.BufferedWriter',
-         [java$lang$Appendable,java$io$Closeable,java$io$Flushable,java$io$Writer,java$lang$AutoCloseable,java$io$BufferedWriter,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$io$Writer$(arg0) {
-    var th = this;
-    java$io$BufferedWriter.prototype.V$$init$$Ljava$io$Writer$$I$I.call(th,arg0,(java$io$BufferedWriter.I$initialBufferSize$$()),8192);
-    return;
-  }
-
-  static I$initialBufferSize$$() {
-    var var0 = null;
-    jdk$internal$misc$VM.$i;
-    If_4_0: {
-     if ((jdk$internal$misc$VM.Z$isBooted$$()) == 0) {
-      break If_4_0;
-     } else {
-      var0 = (java$lang$Thread.Ljava$lang$Thread$$currentThread$$());
-      if ((java$lang$Thread.prototype.Z$isVirtual$$.call(var0)) == 0) {
-       break If_4_0;
-      } else {
-       return 512;
-      }
-     }
-    }
-    return 8192;
-  }
-
-  V$$init$$Ljava$io$Writer$$I$I(arg0,arg1,arg2) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    java$io$Writer.prototype.V$$init$$Ljava$io$Writer$.call(th,arg0);
-    if (arg1 > 0) {
-     var1 = th;
-     var1.out = arg0;
-     var2 = th;
-     var2.cb = bytecoder.newarray((arg1),0);
-     var3 = th;
-     var3.nChars = arg1;
-     var4 = th;
-     var4.maxChars = arg2;
-     return;
-    } else {
-     var0 = new java$lang$IllegalArgumentException();
-     java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var0,bytecoder.stringconstants[68]);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-}
-
-
-class java$util$ConcurrentModificationException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ConcurrentModificationException,
-        'java.util.ConcurrentModificationException',
-         [java$lang$Throwable,java$lang$Exception,java$util$ConcurrentModificationException,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$lang$IllegalStateException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$IllegalStateException,
-        'java.lang.IllegalStateException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$IllegalStateException,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
-    return;
-  }
-}
-
-
-class java$lang$UnsupportedOperationException extends java$lang$RuntimeException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$UnsupportedOperationException,
-        'java.lang.UnsupportedOperationException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$UnsupportedOperationException,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$Ljava$lang$Throwable$(arg0) {
-    var th = this;
-    java$lang$RuntimeException.prototype.V$$init$$Ljava$lang$Throwable$.call(th,arg0);
     return;
   }
 }
@@ -16305,7 +16305,7 @@ class java$util$Collections$EmptySet extends java$util$AbstractSet {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$Collections$EmptySet,
         'java.util.Collections$EmptySet',
-         [java$util$AbstractCollection,java$lang$Iterable,java$io$Serializable,java$util$Collection,java$util$AbstractSet,java$util$Set,java$util$Collections$EmptySet,java$lang$Object]);
+         [java$util$AbstractCollection,java$util$Set,java$util$AbstractSet,java$util$Collection,java$util$Collections$EmptySet,java$io$Serializable,java$lang$Iterable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -16346,17 +16346,8 @@ class java$util$Collections$EmptySet extends java$util$AbstractSet {
 }
 
 
-class java$io$PrintStream extends java$io$FilterOutputStream {
+class java$util$ImmutableCollections$AbstractImmutableSet extends java$util$ImmutableCollections$AbstractImmutableCollection {
   nativeObject = null;
-
-  trouble = 0;
-  closing = 0;
-  autoFlush = 0;
-  charset = null;
-  charOut = null;
-  textOut = null;
-  lock = null;
-
   constructor() {
     super();
   }
@@ -16365,141 +16356,9 @@ class java$io$PrintStream extends java$io$FilterOutputStream {
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$PrintStream,
-        'java.io.PrintStream',
-         [java$lang$Appendable,java$io$Closeable,java$io$OutputStream,java$io$Flushable,java$io$FilterOutputStream,java$lang$AutoCloseable,java$lang$Object,java$io$PrintStream]);
-    }
-    return this.#rt;
-  }
-
-  static #iguard = false;
-  static get $i() {
-    if (!this.#iguard) {
-      this.#iguard = true;
-      this.V$$clinit$$$();
-    }
-    return this;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  static V$$clinit$$$() {
-    var var0 = null;
-    var0 = new java$io$PrintStream$1();
-    java$io$PrintStream$1.prototype.V$$init$$$.call(var0);
-    jdk$internal$access$SharedSecrets.V$setJavaIOCPrintStreamAccess$Ljdk$internal$access$JavaIOPrintStreamAccess$(var0);
-    return;
-  }
-
-  V$$init$$Ljava$io$OutputStream$(arg0) {
-    var th = this;
-    java$io$PrintStream.prototype.V$$init$$Ljava$io$OutputStream$$Z.call(th,arg0,0);
-    return;
-  }
-
-  V$$init$$Ljava$io$OutputStream$$Z(arg0,arg1) {
-    var th = this;
-    java$io$PrintStream.$i;
-    java$io$PrintStream.prototype.V$$init$$Z$Ljava$io$OutputStream$.call(th,arg1,(java$io$PrintStream.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$$Ljava$lang$String$(arg0,bytecoder.stringconstants[61])));
-    return;
-  }
-
-  static Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$$Ljava$lang$String$(arg0,arg1) {
-    var var0 = null;
-    if (arg0 != null) {
-     return arg0;
-    } else {
-     var0 = new java$lang$NullPointerException();
-     java$lang$NullPointerException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg1);
-     throw bytecoder.registerStack(var0, new Error().stack);
-    }
-  }
-
-  V$$init$$Z$Ljava$io$OutputStream$(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var phi5 = null;
-    var phi6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = null;
-    var var10 = null;
-    var var11 = null;
-    var var12 = null;
-    var var13 = null;
-    java$io$FilterOutputStream.prototype.V$$init$$Ljava$io$OutputStream$.call(th,arg1);
-    var0 = th;
-    var0.trouble = 0;
-    var1 = th;
-    var1.closing = 0;
-    var2 = th;
-    var2.autoFlush = arg0;
-    If_18_0: {
-     if (bytecoder.instanceOf(arg1,java$io$PrintStream) == 0) {
-      var13 = (java$nio$charset$Charset.Ljava$nio$charset$Charset$$defaultCharset$$());
-      phi5 = th;
-      phi6 = var13;
-      break If_18_0;
-     } else {
-      var3 = arg1;
-      var4 = (java$io$PrintStream.prototype.Ljava$nio$charset$Charset$$charset$$.call(var3));
-      phi5 = th;
-      phi6 = var4;
-      break If_18_0;
-     }
-    }
-    phi5.charset = phi6;
-    var7 = th;
-    var8 = new java$io$OutputStreamWriter();
-    java$io$OutputStreamWriter.prototype.V$$init$$Ljava$io$OutputStream$$Ljava$nio$charset$Charset$.call(var8,th,(th.charset));
-    var7.charOut = var8;
-    var9 = th;
-    var10 = new java$io$BufferedWriter();
-    java$io$BufferedWriter.prototype.V$$init$$Ljava$io$Writer$.call(var10,(th.charOut));
-    var9.textOut = var10;
-    If_51_0: {
-     if (((th).constructor.$rt) != java$io$PrintStream.$rt) {
-      var12 = th;
-      var12.lock = null;
-      break If_51_0;
-     } else {
-      var11 = th;
-      jdk$internal$misc$InternalLock.$i;
-      var11.lock = (jdk$internal$misc$InternalLock.Ljdk$internal$misc$InternalLock$$newLockOrNull$$());
-      break If_51_0;
-     }
-    }
-    return;
-  }
-
-  Ljava$nio$charset$Charset$$charset$$() {
-    var th = this;
-    return (th.charset);
-  }
-}
-
-
-class java$util$HashMap$EntrySet extends java$util$AbstractSet {
-  nativeObject = null;
-
-  this$0 = null;
-
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$HashMap$EntrySet,
-        'java.util.HashMap$EntrySet',
-         [java$util$AbstractCollection,java$lang$Iterable,java$util$Collection,java$util$AbstractSet,java$util$Set,java$lang$Object,java$util$HashMap$EntrySet]);
+        java$util$ImmutableCollections$AbstractImmutableSet,
+        'java.util.ImmutableCollections$AbstractImmutableSet',
+         [java$util$AbstractCollection,java$util$Set,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableSet,java$util$ImmutableCollections$AbstractImmutableCollection,java$lang$Iterable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -16507,59 +16366,52 @@ class java$util$HashMap$EntrySet extends java$util$AbstractSet {
   set $lambdaimpl(impl) {
   }
 
-  V$$init$$Ljava$util$HashMap$(arg0) {
+  V$$init$$$() {
     var th = this;
-    var var0 = null;
-    var0 = th;
-    var0.this$0 = arg0;
-    java$util$AbstractSet.prototype.V$$init$$$.call(th);
+    java$util$ImmutableCollections$AbstractImmutableCollection.prototype.V$$init$$$.call(th);
     return;
   }
 
-  Ljava$util$Iterator$$iterator$$() {
+  Z$equals$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
-    var0 = new java$util$HashMap$EntryIterator();
-    java$util$HashMap$EntryIterator.prototype.V$$init$$Ljava$util$HashMap$.call(var0,(th.this$0));
-    return var0;
-  }
-
-  I$size$$() {
-    var th = this;
-    return ((th.this$0).size);
-  }
-
-  Z$contains$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
+    var var1 = 0;
     var var2 = null;
     var var3 = null;
-    var phi4 = 0;
-    if (bytecoder.instanceOf(arg0,java$util$Map$Entry) == 0) {
-     return 0;
-    } else {
-     var0 = arg0;
-     var1 = (var0.Ljava$lang$Object$$getKey$$());
-     var2 = (th.this$0);
-     var3 = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$.call(var2,var1));
-     If_20_0: {
-      If_20_1: {
-       if (var3 == null) {
-        break If_20_1;
-       } else {
-        if ((java$util$HashMap$Node.prototype.Z$equals$Ljava$lang$Object$.call(var3,var0)) == 0) {
-         break If_20_1;
+    if (arg0 != th) {
+     if (bytecoder.instanceOf(arg0,java$util$Set) != 0) {
+      var0 = arg0;
+      var1 = ((var0.I$size$$())) | 0;
+      if (var1 == (th.I$size$$())) {
+       var2 = (var0.Ljava$util$Iterator$$iterator$$());
+       L2062174200: while(true) {
+        if ((var2.Z$hasNext$$()) == 0) {
+         return 1;
         } else {
-         phi4 = (1) | 0;
-         break If_20_0;
+         var3 = (var2.Ljava$lang$Object$$next$$());
+         If_36_0: {
+          if (var3 == null) {
+           break If_36_0;
+          } else {
+           if ((th.Z$contains$Ljava$lang$Object$(var3)) != 0) {
+            // Here was a goto statement
+            continue L2062174200;
+           } else {
+            break If_36_0;
+           }
+          }
+         }
+         return 0;
         }
        }
+      } else {
+       return 0;
       }
-      phi4 = (0) | 0;
-      break If_20_0;
+     } else {
+      return 0;
      }
-     return phi4;
+    } else {
+     return 1;
     }
   }
 }
@@ -16580,7 +16432,7 @@ class java$util$ImmutableCollections$MapN$1 extends java$util$AbstractSet {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$ImmutableCollections$MapN$1,
         'java.util.ImmutableCollections$MapN$1',
-         [java$util$ImmutableCollections$MapN$1,java$util$AbstractCollection,java$lang$Iterable,java$util$Collection,java$util$AbstractSet,java$util$Set,java$lang$Object]);
+         [java$util$AbstractCollection,java$util$ImmutableCollections$MapN$1,java$util$Set,java$util$AbstractSet,java$util$Collection,java$lang$Iterable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -16612,56 +16464,6 @@ class java$util$ImmutableCollections$MapN$1 extends java$util$AbstractSet {
 }
 
 
-class java$io$FileWriter extends java$io$OutputStreamWriter {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$io$FileWriter,
-        'java.io.FileWriter',
-         [java$lang$Appendable,java$io$OutputStreamWriter,java$io$Closeable,java$io$FileWriter,java$io$Flushable,java$io$Writer,java$lang$AutoCloseable,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-}
-
-
-class java$nio$ReadOnlyBufferException extends java$lang$UnsupportedOperationException {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$nio$ReadOnlyBufferException,
-        'java.nio.ReadOnlyBufferException',
-         [java$lang$Throwable,java$lang$Exception,java$lang$UnsupportedOperationException,java$nio$ReadOnlyBufferException,java$lang$RuntimeException,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(th);
-    return;
-  }
-}
-
-
 class java$lang$ArrayIndexOutOfBoundsException extends java$lang$IndexOutOfBoundsException {
   nativeObject = null;
   constructor() {
@@ -16674,7 +16476,7 @@ class java$lang$ArrayIndexOutOfBoundsException extends java$lang$IndexOutOfBound
       this.#rt = bytecoder.newRuntimeClassFor(
         java$lang$ArrayIndexOutOfBoundsException,
         'java.lang.ArrayIndexOutOfBoundsException',
-         [java$lang$Throwable,java$lang$IndexOutOfBoundsException,java$lang$Exception,java$lang$ArrayIndexOutOfBoundsException,java$lang$RuntimeException,java$lang$Object]);
+         [java$lang$IndexOutOfBoundsException,java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$ArrayIndexOutOfBoundsException,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -16692,109 +16494,6 @@ class java$lang$ArrayIndexOutOfBoundsException extends java$lang$IndexOutOfBound
     var th = this;
     java$lang$IndexOutOfBoundsException.prototype.V$$init$$$.call(th);
     return;
-  }
-}
-
-
-class java$util$Collections$EmptyList extends java$util$AbstractList {
-  nativeObject = null;
-  constructor() {
-    super();
-  }
-
-  static #rt = undefined;
-  static get $rt() {
-    if (!this.#rt) {
-      this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$Collections$EmptyList,
-        'java.util.Collections$EmptyList',
-         [java$util$AbstractCollection,java$lang$Iterable,java$io$Serializable,java$util$List,java$util$Collection,java$util$Collections$EmptyList,java$util$RandomAccess,java$util$AbstractList,java$lang$Object]);
-    }
-    return this.#rt;
-  }
-
-  set $lambdaimpl(impl) {
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$util$AbstractList.prototype.V$$init$$$.call(th);
-    return;
-  }
-
-  V$clear$$() {
-    return;
-  }
-
-  I$size$$() {
-    return 0;
-  }
-
-  Ljava$lang$Object$$get$I(arg0) {
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var0 = new java$lang$IndexOutOfBoundsException();
-    var1 = new java$lang$StringBuilder();
-    java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
-    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,bytecoder.stringconstants[88]));
-    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var2,arg0));
-    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var3)));
-    throw bytecoder.registerStack(var0, new Error().stack);
-  }
-
-  $Ljava$lang$Object$$toArray$$() {
-    return bytecoder.newarray((0),null);
-  }
-
-  Ljava$util$ListIterator$$listIterator$$() {
-    java$util$Collections.$i;
-    return (java$util$Collections.Ljava$util$ListIterator$$emptyListIterator$$());
-  }
-
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var var0 = null;
-    var phi1 = 0;
-    If_4_0: {
-     If_4_1: {
-      if (bytecoder.instanceOf(arg0,java$util$List) == 0) {
-       break If_4_1;
-      } else {
-       var0 = arg0;
-       if ((var0.Z$isEmpty$$()) == 0) {
-        break If_4_1;
-       } else {
-        phi1 = (1) | 0;
-        break If_4_0;
-       }
-      }
-     }
-     phi1 = (0) | 0;
-     break If_4_0;
-    }
-    return phi1;
-  }
-
-  I$hashCode$$() {
-    return 1;
-  }
-
-  Ljava$util$Iterator$$iterator$$() {
-    java$util$Collections.$i;
-    return (java$util$Collections.Ljava$util$Iterator$$emptyIterator$$());
-  }
-
-  Z$containsAll$Ljava$util$Collection$(arg0) {
-    return (arg0.Z$isEmpty$$());
-  }
-
-  Z$contains$Ljava$lang$Object$(arg0) {
-    return 0;
-  }
-
-  Z$isEmpty$$() {
-    return 1;
   }
 }
 
@@ -16817,7 +16516,7 @@ class java$util$ArrayList extends java$util$AbstractList {
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$ArrayList,
         'java.util.ArrayList',
-         [java$util$AbstractCollection,java$lang$Iterable,java$io$Serializable,java$util$List,java$util$Collection,java$lang$Cloneable,java$util$RandomAccess,java$util$AbstractList,java$util$ArrayList,java$lang$Object]);
+         [java$util$AbstractCollection,java$util$ArrayList,java$util$List,java$util$RandomAccess,java$util$Collection,java$util$AbstractList,java$lang$Iterable,java$io$Serializable,java$lang$Cloneable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -16867,14 +16566,14 @@ class java$util$ArrayList extends java$util$AbstractList {
     var3 = th;
     var3.size = 0;
     phi4 = (0) | 0;
-    L1455013203: while(true) {
+    L574400156: while(true) {
      if (phi4 >= var2) {
       return;
      } else {
       var1.data[phi4] = null;
       phi4 = ((phi4 + 1)) | 0;
       // Here was a goto statement
-      continue L1455013203;
+      continue L574400156;
      }
     }
   }
@@ -17142,7 +16841,7 @@ class java$util$ArrayList extends java$util$AbstractList {
        } else {
         if (var1 <= var4.data.length) {
          phi7 = (0) | 0;
-         L1482708562: while(true) {
+         L2142401661: while(true) {
           if (phi7 >= var1) {
            phi10 = (var3) | 0;
            break If_17_0;
@@ -17152,7 +16851,7 @@ class java$util$ArrayList extends java$util$AbstractList {
            if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var8,var9)) != 0) {
             phi7 = ((phi7 + 1)) | 0;
             // Here was a goto statement
-            continue L1482708562;
+            continue L2142401661;
            } else {
             phi10 = (0) | 0;
             break If_17_0;
@@ -17198,7 +16897,7 @@ class java$util$ArrayList extends java$util$AbstractList {
     if (arg2 <= var0.data.length) {
      var2 = (arg0.Ljava$util$Iterator$$iterator$$());
      phi3 = (arg1) | 0;
-     L757892427: while(true) {
+     L1467835232: while(true) {
       if (phi3 >= arg2) {
        If_47_0: {
         if ((var2.Z$hasNext$$()) != 0) {
@@ -17220,7 +16919,7 @@ class java$util$ArrayList extends java$util$AbstractList {
          if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var4,var5)) != 0) {
           phi3 = ((phi3 + 1)) | 0;
           // Here was a goto statement
-          continue L757892427;
+          continue L1467835232;
          } else {
           break If_25_0;
          }
@@ -17262,7 +16961,7 @@ class java$util$ArrayList extends java$util$AbstractList {
     if (arg1 <= var0.data.length) {
      phi2 = (1) | 0;
      phi3 = (arg0) | 0;
-     L1464700871: while(true) {
+     L1893577552: while(true) {
       if (phi3 >= arg1) {
        return phi2;
       } else {
@@ -17280,7 +16979,7 @@ class java$util$ArrayList extends java$util$AbstractList {
        var7 = ((var5 + phi6)) | 0;
        phi3 = ((phi3 + 1)) | 0;
        phi2 = (var7) | 0;
-       continue L1464700871;
+       continue L1893577552;
       }
      }
     } else {
@@ -17330,7 +17029,7 @@ class java$util$ArrayList extends java$util$AbstractList {
     If_8_0: {
      if (arg0 != null) {
       phi2 = (arg1) | 0;
-      L1399283476: while(true) {
+      L1271199977: while(true) {
        if (phi2 >= arg2) {
         phi1 = (phi2) | 0;
         break If_8_0;
@@ -17339,7 +17038,7 @@ class java$util$ArrayList extends java$util$AbstractList {
         if ((arg0.Z$equals$Ljava$lang$Object$(var3)) == 0) {
          phi2 = ((phi2 + 1)) | 0;
          // Here was a goto statement
-         continue L1399283476;
+         continue L1271199977;
         } else {
          return phi2;
         }
@@ -17347,14 +17046,14 @@ class java$util$ArrayList extends java$util$AbstractList {
       }
      } else {
       phi1 = (arg1) | 0;
-      L977292786: while(true) {
+      L1002673635: while(true) {
        if (phi1 >= arg2) {
         break If_8_0;
        } else {
         if ((var0.data[phi1]) != null) {
          phi1 = ((phi1 + 1)) | 0;
          // Here was a goto statement
-         continue L977292786;
+         continue L1002673635;
         } else {
          return phi1;
         }
@@ -17391,7 +17090,7 @@ class java$util$ArrayList extends java$util$AbstractList {
 }
 
 
-class java$lang$StringIndexOutOfBoundsException extends java$lang$IndexOutOfBoundsException {
+class java$io$FileWriter extends java$io$OutputStreamWriter {
   nativeObject = null;
   constructor() {
     super();
@@ -17401,31 +17100,19 @@ class java$lang$StringIndexOutOfBoundsException extends java$lang$IndexOutOfBoun
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$lang$StringIndexOutOfBoundsException,
-        'java.lang.StringIndexOutOfBoundsException',
-         [java$lang$Throwable,java$lang$IndexOutOfBoundsException,java$lang$Exception,java$lang$StringIndexOutOfBoundsException,java$lang$RuntimeException,java$lang$Object]);
+        java$io$FileWriter,
+        'java.io.FileWriter',
+         [java$io$Flushable,java$io$Writer,java$lang$Appendable,java$io$OutputStreamWriter,java$io$Closeable,java$lang$AutoCloseable,java$io$FileWriter,java$lang$Object]);
     }
     return this.#rt;
   }
 
   set $lambdaimpl(impl) {
-  }
-
-  V$$init$$Ljava$lang$String$(arg0) {
-    var th = this;
-    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
-    return;
-  }
-
-  V$$init$$$() {
-    var th = this;
-    java$lang$IndexOutOfBoundsException.prototype.V$$init$$$.call(th);
-    return;
   }
 }
 
 
-class java$util$ImmutableCollections$AbstractImmutableSet extends java$util$ImmutableCollections$AbstractImmutableCollection {
+class java$util$Collections$EmptyList extends java$util$AbstractList {
   nativeObject = null;
   constructor() {
     super();
@@ -17435,9 +17122,9 @@ class java$util$ImmutableCollections$AbstractImmutableSet extends java$util$Immu
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$AbstractImmutableSet,
-        'java.util.ImmutableCollections$AbstractImmutableSet',
-         [java$util$ImmutableCollections$AbstractImmutableCollection,java$util$AbstractCollection,java$lang$Iterable,java$util$ImmutableCollections$AbstractImmutableSet,java$util$Collection,java$util$Set,java$lang$Object]);
+        java$util$Collections$EmptyList,
+        'java.util.Collections$EmptyList',
+         [java$util$AbstractCollection,java$util$List,java$util$Collections$EmptyList,java$util$RandomAccess,java$util$Collection,java$util$AbstractList,java$io$Serializable,java$lang$Iterable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -17447,50 +17134,163 @@ class java$util$ImmutableCollections$AbstractImmutableSet extends java$util$Immu
 
   V$$init$$$() {
     var th = this;
-    java$util$ImmutableCollections$AbstractImmutableCollection.prototype.V$$init$$$.call(th);
+    java$util$AbstractList.prototype.V$$init$$$.call(th);
     return;
   }
 
-  Z$equals$Ljava$lang$Object$(arg0) {
-    var th = this;
+  V$clear$$() {
+    return;
+  }
+
+  I$size$$() {
+    return 0;
+  }
+
+  Ljava$lang$Object$$get$I(arg0) {
     var var0 = null;
-    var var1 = 0;
+    var var1 = null;
     var var2 = null;
     var var3 = null;
-    if (arg0 != th) {
-     if (bytecoder.instanceOf(arg0,java$util$Set) != 0) {
-      var0 = arg0;
-      var1 = ((var0.I$size$$())) | 0;
-      if (var1 == (th.I$size$$())) {
-       var2 = (var0.Ljava$util$Iterator$$iterator$$());
-       L1982616081: while(true) {
-        if ((var2.Z$hasNext$$()) == 0) {
-         return 1;
+    var0 = new java$lang$IndexOutOfBoundsException();
+    var1 = new java$lang$StringBuilder();
+    java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
+    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,bytecoder.stringconstants[88]));
+    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var2,arg0));
+    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var3)));
+    throw bytecoder.registerStack(var0, new Error().stack);
+  }
+
+  $Ljava$lang$Object$$toArray$$() {
+    return bytecoder.newarray((0),null);
+  }
+
+  Ljava$util$ListIterator$$listIterator$$() {
+    java$util$Collections.$i;
+    return (java$util$Collections.Ljava$util$ListIterator$$emptyListIterator$$());
+  }
+
+  Z$equals$Ljava$lang$Object$(arg0) {
+    var var0 = null;
+    var phi1 = 0;
+    If_4_0: {
+     If_4_1: {
+      if (bytecoder.instanceOf(arg0,java$util$List) == 0) {
+       break If_4_1;
+      } else {
+       var0 = arg0;
+       if ((var0.Z$isEmpty$$()) == 0) {
+        break If_4_1;
+       } else {
+        phi1 = (1) | 0;
+        break If_4_0;
+       }
+      }
+     }
+     phi1 = (0) | 0;
+     break If_4_0;
+    }
+    return phi1;
+  }
+
+  I$hashCode$$() {
+    return 1;
+  }
+
+  Ljava$util$Iterator$$iterator$$() {
+    java$util$Collections.$i;
+    return (java$util$Collections.Ljava$util$Iterator$$emptyIterator$$());
+  }
+
+  Z$containsAll$Ljava$util$Collection$(arg0) {
+    return (arg0.Z$isEmpty$$());
+  }
+
+  Z$contains$Ljava$lang$Object$(arg0) {
+    return 0;
+  }
+
+  Z$isEmpty$$() {
+    return 1;
+  }
+}
+
+
+class java$util$HashMap$EntrySet extends java$util$AbstractSet {
+  nativeObject = null;
+
+  this$0 = null;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$HashMap$EntrySet,
+        'java.util.HashMap$EntrySet',
+         [java$util$AbstractCollection,java$util$Set,java$util$AbstractSet,java$util$Collection,java$util$HashMap$EntrySet,java$lang$Iterable,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$util$HashMap$(arg0) {
+    var th = this;
+    var var0 = null;
+    var0 = th;
+    var0.this$0 = arg0;
+    java$util$AbstractSet.prototype.V$$init$$$.call(th);
+    return;
+  }
+
+  Ljava$util$Iterator$$iterator$$() {
+    var th = this;
+    var var0 = null;
+    var0 = new java$util$HashMap$EntryIterator();
+    java$util$HashMap$EntryIterator.prototype.V$$init$$Ljava$util$HashMap$.call(var0,(th.this$0));
+    return var0;
+  }
+
+  I$size$$() {
+    var th = this;
+    return ((th.this$0).size);
+  }
+
+  Z$contains$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var phi4 = 0;
+    if (bytecoder.instanceOf(arg0,java$util$Map$Entry) == 0) {
+     return 0;
+    } else {
+     var0 = arg0;
+     var1 = (var0.Ljava$lang$Object$$getKey$$());
+     var2 = (th.this$0);
+     var3 = (java$util$HashMap.prototype.Ljava$util$HashMap$Node$$getNode$Ljava$lang$Object$.call(var2,var1));
+     If_20_0: {
+      If_20_1: {
+       if (var3 == null) {
+        break If_20_1;
+       } else {
+        if ((java$util$HashMap$Node.prototype.Z$equals$Ljava$lang$Object$.call(var3,var0)) == 0) {
+         break If_20_1;
         } else {
-         var3 = (var2.Ljava$lang$Object$$next$$());
-         If_36_0: {
-          if (var3 == null) {
-           break If_36_0;
-          } else {
-           if ((th.Z$contains$Ljava$lang$Object$(var3)) != 0) {
-            // Here was a goto statement
-            continue L1982616081;
-           } else {
-            break If_36_0;
-           }
-          }
-         }
-         return 0;
+         phi4 = (1) | 0;
+         break If_20_0;
         }
        }
-      } else {
-       return 0;
       }
-     } else {
-      return 0;
+      phi4 = (0) | 0;
+      break If_20_0;
      }
-    } else {
-     return 1;
+     return phi4;
     }
   }
 }
@@ -17508,7 +17308,7 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$ImmutableCollections$AbstractImmutableList,
         'java.util.ImmutableCollections$AbstractImmutableList',
-         [java$util$ImmutableCollections$AbstractImmutableCollection,java$util$AbstractCollection,java$lang$Iterable,java$util$List,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableList,java$util$RandomAccess,java$lang$Object]);
+         [java$util$AbstractCollection,java$util$List,java$util$RandomAccess,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableCollection,java$lang$Iterable,java$util$ImmutableCollections$AbstractImmutableList,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -17520,27 +17320,6 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
     var th = this;
     java$util$ImmutableCollections$AbstractImmutableCollection.prototype.V$$init$$$.call(th);
     return;
-  }
-
-  Ljava$lang$IndexOutOfBoundsException$$outOfBounds$I(arg0) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    var var2 = null;
-    var var3 = null;
-    var var4 = null;
-    var var5 = 0;
-    var var6 = null;
-    var0 = new java$lang$IndexOutOfBoundsException();
-    var1 = new java$lang$StringBuilder();
-    java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
-    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,bytecoder.stringconstants[88]));
-    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var2,arg0));
-    var4 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var3,bytecoder.stringconstants[89]));
-    var5 = ((th.I$size$$())) | 0;
-    var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var4,var5));
-    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var6)));
-    return var0;
   }
 
   Ljava$lang$Object$$set$I$Ljava$lang$Object$(arg0,arg1) {
@@ -17574,6 +17353,27 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
     throw bytecoder.registerStack((java$util$ImmutableCollections$AbstractImmutableList.prototype.Ljava$lang$IndexOutOfBoundsException$$outOfBounds$I.call(th,arg0)), new Error().stack);
   }
 
+  Ljava$lang$IndexOutOfBoundsException$$outOfBounds$I(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var var5 = 0;
+    var var6 = null;
+    var0 = new java$lang$IndexOutOfBoundsException();
+    var1 = new java$lang$StringBuilder();
+    java$lang$StringBuilder.prototype.V$$init$$$.call(var1);
+    var2 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var1,bytecoder.stringconstants[88]));
+    var3 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var2,arg0));
+    var4 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var3,bytecoder.stringconstants[89]));
+    var5 = ((th.I$size$$())) | 0;
+    var6 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$I.call(var4,var5));
+    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(var0,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var6)));
+    return var0;
+  }
+
   Z$equals$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
@@ -17590,7 +17390,7 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
       var1 = (var0.Ljava$util$Iterator$$iterator$$());
       var2 = ((th.I$size$$())) | 0;
       phi3 = (0) | 0;
-      L1018112690: while(true) {
+      L2045978826: while(true) {
        if (phi3 >= var2) {
         If_53_0: {
          if ((var1.Z$hasNext$$()) != 0) {
@@ -17613,7 +17413,7 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
           if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(var5,var6)) != 0) {
            phi3 = ((phi3 + 1)) | 0;
            // Here was a goto statement
-           continue L1018112690;
+           continue L2045978826;
           } else {
            break If_29_0;
           }
@@ -17642,7 +17442,7 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
     var0 = ((th.I$size$$())) | 0;
     phi1 = (1) | 0;
     phi2 = (0) | 0;
-    L1735511234: while(true) {
+    L1906689832: while(true) {
      if (phi2 >= var0) {
       return phi1;
      } else {
@@ -17652,7 +17452,7 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
       var6 = ((var3 + (java$util$Objects.I$hashCode$Ljava$lang$Object$(var5)))) | 0;
       phi2 = ((phi2 + 1)) | 0;
       phi1 = (var6) | 0;
-      continue L1735511234;
+      continue L1906689832;
      }
     }
   }
@@ -17682,11 +17482,78 @@ class java$util$ImmutableCollections$AbstractImmutableList extends java$util$Imm
 }
 
 
-class java$util$ImmutableCollections$SetN extends java$util$ImmutableCollections$AbstractImmutableSet {
+class java$lang$StringIndexOutOfBoundsException extends java$lang$IndexOutOfBoundsException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$lang$StringIndexOutOfBoundsException,
+        'java.lang.StringIndexOutOfBoundsException',
+         [java$lang$StringIndexOutOfBoundsException,java$lang$IndexOutOfBoundsException,java$lang$Exception,java$lang$Throwable,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$Ljava$lang$String$(arg0) {
+    var th = this;
+    java$lang$IndexOutOfBoundsException.prototype.V$$init$$Ljava$lang$String$.call(th,arg0);
+    return;
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$IndexOutOfBoundsException.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$nio$ReadOnlyBufferException extends java$lang$UnsupportedOperationException {
+  nativeObject = null;
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$nio$ReadOnlyBufferException,
+        'java.nio.ReadOnlyBufferException',
+         [java$lang$Exception,java$nio$ReadOnlyBufferException,java$lang$Throwable,java$lang$UnsupportedOperationException,java$lang$RuntimeException,java$lang$Object]);
+    }
+    return this.#rt;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  V$$init$$$() {
+    var th = this;
+    java$lang$UnsupportedOperationException.prototype.V$$init$$$.call(th);
+    return;
+  }
+}
+
+
+class java$io$PrintStream extends java$io$FilterOutputStream {
   nativeObject = null;
 
-  size = 0;
-  elements = null;
+  trouble = 0;
+  closing = 0;
+  autoFlush = 0;
+  charset = null;
+  charOut = null;
+  textOut = null;
+  lock = null;
 
   constructor() {
     super();
@@ -17696,9 +17563,142 @@ class java$util$ImmutableCollections$SetN extends java$util$ImmutableCollections
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$SetN,
-        'java.util.ImmutableCollections$SetN',
-         [java$util$ImmutableCollections$AbstractImmutableCollection,java$util$AbstractCollection,java$lang$Iterable,java$util$ImmutableCollections$AbstractImmutableSet,java$util$ImmutableCollections$SetN,java$io$Serializable,java$util$Collection,java$util$Set,java$lang$Object]);
+        java$io$PrintStream,
+        'java.io.PrintStream',
+         [java$io$Flushable,java$lang$Appendable,java$io$PrintStream,java$io$Closeable,java$lang$AutoCloseable,java$io$FilterOutputStream,java$lang$Object,java$io$OutputStream]);
+    }
+    return this.#rt;
+  }
+
+  static #iguard = false;
+  static get $i() {
+    if (!this.#iguard) {
+      this.#iguard = true;
+      this.V$$clinit$$$();
+    }
+    return this;
+  }
+
+  set $lambdaimpl(impl) {
+  }
+
+  static V$$clinit$$$() {
+    var var0 = null;
+    var0 = new java$io$PrintStream$1();
+    java$io$PrintStream$1.prototype.V$$init$$$.call(var0);
+    jdk$internal$access$SharedSecrets.V$setJavaIOCPrintStreamAccess$Ljdk$internal$access$JavaIOPrintStreamAccess$(var0);
+    return;
+  }
+
+  V$$init$$Ljava$io$OutputStream$(arg0) {
+    var th = this;
+    java$io$PrintStream.prototype.V$$init$$Ljava$io$OutputStream$$Z.call(th,arg0,0);
+    return;
+  }
+
+  V$$init$$Ljava$io$OutputStream$$Z(arg0,arg1) {
+    var th = this;
+    java$io$PrintStream.$i;
+    java$io$PrintStream.prototype.V$$init$$Z$Ljava$io$OutputStream$.call(th,arg1,(java$io$PrintStream.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$$Ljava$lang$String$(arg0,bytecoder.stringconstants[61])));
+    return;
+  }
+
+  static Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$$Ljava$lang$String$(arg0,arg1) {
+    var var0 = null;
+    if (arg0 != null) {
+     return arg0;
+    } else {
+     var0 = new java$lang$NullPointerException();
+     java$lang$NullPointerException.prototype.V$$init$$Ljava$lang$String$.call(var0,arg1);
+     throw bytecoder.registerStack(var0, new Error().stack);
+    }
+  }
+
+  V$$init$$Z$Ljava$io$OutputStream$(arg0,arg1) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var var2 = null;
+    var var3 = null;
+    var var4 = null;
+    var phi5 = null;
+    var phi6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = null;
+    var var10 = null;
+    var var11 = null;
+    var var12 = null;
+    var var13 = null;
+    java$io$FilterOutputStream.prototype.V$$init$$Ljava$io$OutputStream$.call(th,arg1);
+    var0 = th;
+    var0.trouble = 0;
+    var1 = th;
+    var1.closing = 0;
+    var2 = th;
+    var2.autoFlush = arg0;
+    If_18_0: {
+     if (bytecoder.instanceOf(arg1,java$io$PrintStream) == 0) {
+      var13 = (java$nio$charset$Charset.Ljava$nio$charset$Charset$$defaultCharset$$());
+      phi5 = th;
+      phi6 = var13;
+      break If_18_0;
+     } else {
+      var3 = arg1;
+      var4 = (java$io$PrintStream.prototype.Ljava$nio$charset$Charset$$charset$$.call(var3));
+      phi5 = th;
+      phi6 = var4;
+      break If_18_0;
+     }
+    }
+    phi5.charset = phi6;
+    var7 = th;
+    var8 = new java$io$OutputStreamWriter();
+    java$io$OutputStreamWriter.prototype.V$$init$$Ljava$io$OutputStream$$Ljava$nio$charset$Charset$.call(var8,th,(th.charset));
+    var7.charOut = var8;
+    var9 = th;
+    var10 = new java$io$BufferedWriter();
+    java$io$BufferedWriter.prototype.V$$init$$Ljava$io$Writer$.call(var10,(th.charOut));
+    var9.textOut = var10;
+    If_51_0: {
+     if (((th).constructor.$rt) != java$io$PrintStream.$rt) {
+      var12 = th;
+      var12.lock = null;
+      break If_51_0;
+     } else {
+      var11 = th;
+      jdk$internal$misc$InternalLock.$i;
+      var11.lock = (jdk$internal$misc$InternalLock.Ljdk$internal$misc$InternalLock$$newLockOrNull$$());
+      break If_51_0;
+     }
+    }
+    return;
+  }
+
+  Ljava$nio$charset$Charset$$charset$$() {
+    var th = this;
+    return (th.charset);
+  }
+}
+
+
+class java$util$ImmutableCollections$ListN extends java$util$ImmutableCollections$AbstractImmutableList {
+  nativeObject = null;
+
+  elements = null;
+  allowNulls = 0;
+
+  constructor() {
+    super();
+  }
+
+  static #rt = undefined;
+  static get $rt() {
+    if (!this.#rt) {
+      this.#rt = bytecoder.newRuntimeClassFor(
+        java$util$ImmutableCollections$ListN,
+        'java.util.ImmutableCollections$ListN',
+         [java$util$ImmutableCollections$ListN,java$util$AbstractCollection,java$util$List,java$util$RandomAccess,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableCollection,java$io$Serializable,java$lang$Iterable,java$lang$Object,java$util$ImmutableCollections$AbstractImmutableList]);
     }
     return this.#rt;
   }
@@ -17706,172 +17706,88 @@ class java$util$ImmutableCollections$SetN extends java$util$ImmutableCollections
   set $lambdaimpl(impl) {
   }
 
-  V$$init$$$Ljava$lang$Object$(arg0) {
+  V$$init$$$Ljava$lang$Object$$Z(arg0,arg1) {
     var th = this;
     var var0 = null;
     var var1 = null;
-    var phi2 = 0;
-    var var3 = null;
-    var var4 = 0;
-    var var5 = null;
-    var var6 = null;
-    var var7 = null;
-    var var8 = null;
-    var var9 = null;
-    var var10 = 0;
-    java$util$ImmutableCollections$AbstractImmutableSet.prototype.V$$init$$$.call(th);
+    java$util$ImmutableCollections$AbstractImmutableList.prototype.V$$init$$$.call(th);
     var0 = th;
-    var0.size = arg0.data.length;
+    var0.elements = arg0;
     var1 = th;
-    var1.elements = bytecoder.newarray(((2 * arg0.data.length)),null);
-    phi2 = (0) | 0;
-    L341778848: while(true) {
-     if (phi2 >= arg0.data.length) {
-      return;
-     } else {
-      var3 = (arg0.data[phi2]);
-      var4 = ((java$util$ImmutableCollections$SetN.prototype.I$probe$Ljava$lang$Object$.call(th,var3))) | 0;
-      if (var4 < 0) {
-       var9 = (th.elements);
-       var10 = ((0 - (var4 + 1))) | 0;
-       var9.data[var10] = var3;
-       phi2 = ((phi2 + 1)) | 0;
-       // Here was a goto statement
-       continue L341778848;
-      } else {
-       var5 = new java$lang$IllegalArgumentException();
-       var6 = new java$lang$StringBuilder();
-       java$lang$StringBuilder.prototype.V$$init$$$.call(var6);
-       var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[70]));
-       var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var7,var3));
-       java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var5,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var8)));
-       throw bytecoder.registerStack(var5, new Error().stack);
-      }
-     }
-    }
-  }
-
-  I$probe$Ljava$lang$Object$(arg0) {
-    var th = this;
-    var var0 = 0;
-    var var1 = 0;
-    var phi2 = 0;
-    var var3 = null;
-    var phi4 = 0;
-    var0 = ((arg0.I$hashCode$$())) | 0;
-    var1 = ((th.elements).data.length) | 0;
-    java$lang$Math.$i;
-    phi2 = ((java$lang$Math.I$floorMod$I$I(var0,var1))) | 0;
-    L487767297: while(true) {
-     var3 = ((th.elements).data[phi2]);
-     if (var3 != null) {
-      if ((arg0.Z$equals$Ljava$lang$Object$(var3)) == 0) {
-       phi2 = ((phi2 + 1)) | 0;
-       If_35_0: {
-        if (phi2 != (th.elements).data.length) {
-         phi4 = (phi2) | 0;
-         break If_35_0;
-        } else {
-         phi4 = (0) | 0;
-         break If_35_0;
-        }
-       }
-       phi2 = (phi4) | 0;
-       continue L487767297;
-      } else {
-       return phi2;
-      }
-     } else {
-      return ((0 - phi2) - 1);
-     }
-    }
-  }
-
-  I$hashCode$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var phi2 = 0;
-    var phi3 = 0;
-    var var4 = null;
-    var var5 = 0;
-    var phi6 = 0;
-    var0 = (th.elements);
-    var1 = (var0.data.length) | 0;
-    phi2 = (0) | 0;
-    phi3 = (0) | 0;
-    L123490144: while(true) {
-     if (phi3 >= var1) {
-      return phi2;
-     } else {
-      var4 = (var0.data[phi3]);
-      If_18_0: {
-       if (var4 == null) {
-        phi6 = (phi2) | 0;
-        break If_18_0;
-       } else {
-        var5 = (phi2) | 0;
-        phi6 = ((var5 + (var4.I$hashCode$$()))) | 0;
-        break If_18_0;
-       }
-      }
-      phi3 = ((phi3 + 1)) | 0;
-      phi2 = (phi6) | 0;
-      continue L123490144;
-     }
-    }
-  }
-
-  Ljava$util$Iterator$$iterator$$() {
-    var th = this;
-    var var0 = null;
-    var0 = new java$util$ImmutableCollections$SetN$SetNIterator();
-    java$util$ImmutableCollections$SetN$SetNIterator.prototype.V$$init$$Ljava$util$ImmutableCollections$SetN$.call(var0,th);
-    return var0;
+    var1.allowNulls = arg1;
+    return;
   }
 
   I$size$$() {
     var th = this;
-    return (th.size);
+    return (th.elements).data.length;
   }
 
-  Z$contains$Ljava$lang$Object$(arg0) {
+  Ljava$lang$Object$$get$I(arg0) {
+    var th = this;
+    return ((th.elements).data[arg0]);
+  }
+
+  $Ljava$lang$Object$$toArray$$() {
     var th = this;
     var var0 = null;
-    var phi1 = 0;
-    var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
-    If_8_0: {
-     If_8_1: {
-      if ((th.size) <= 0) {
-       break If_8_1;
-      } else {
-       if ((java$util$ImmutableCollections$SetN.prototype.I$probe$Ljava$lang$Object$.call(th,arg0)) < 0) {
-        break If_8_1;
-       } else {
-        phi1 = (1) | 0;
-        break If_8_0;
-       }
-      }
-     }
-     phi1 = (0) | 0;
-     break If_8_0;
-    }
-    return phi1;
+    var var1 = 0;
+    var0 = (th.elements);
+    var1 = ((th.elements).data.length) | 0;
+    java$util$Arrays.$i;
+    return (java$util$Arrays.$Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I(var0,var1));
   }
 
   Z$isEmpty$$() {
     var th = this;
     var phi0 = 0;
-    If_3_0: {
-     if ((th.size) != 0) {
+    If_4_0: {
+     if ((th.elements).data.length != 0) {
       phi0 = (0) | 0;
-      break If_3_0;
+      break If_4_0;
      } else {
       phi0 = (1) | 0;
-      break If_3_0;
+      break If_4_0;
      }
     }
     return phi0;
+  }
+
+  I$indexOf$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var var1 = null;
+    var phi2 = 0;
+    var var3 = null;
+    If_4_0: {
+     if ((th.allowNulls) != 0) {
+      break If_4_0;
+     } else {
+      if (arg0 != null) {
+       break If_4_0;
+      } else {
+       var0 = new java$lang$NullPointerException();
+       java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
+       throw bytecoder.registerStack(var0, new Error().stack);
+      }
+     }
+    }
+    var1 = (th.elements);
+    phi2 = (0) | 0;
+    L183537076: while(true) {
+     if (phi2 >= var1.data.length) {
+      return -1;
+     } else {
+      var3 = (var1.data[phi2]);
+      if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(arg0,var3)) == 0) {
+       phi2 = ((phi2 + 1)) | 0;
+       // Here was a goto statement
+       continue L183537076;
+      } else {
+       return phi2;
+      }
+     }
+    }
   }
 }
 
@@ -17892,7 +17808,7 @@ class java$util$ImmutableCollections$List12 extends java$util$ImmutableCollectio
       this.#rt = bytecoder.newRuntimeClassFor(
         java$util$ImmutableCollections$List12,
         'java.util.ImmutableCollections$List12',
-         [java$util$ImmutableCollections$AbstractImmutableCollection,java$util$AbstractCollection,java$lang$Iterable,java$io$Serializable,java$util$List,java$util$Collection,java$util$ImmutableCollections$List12,java$util$ImmutableCollections$AbstractImmutableList,java$util$RandomAccess,java$lang$Object]);
+         [java$util$ImmutableCollections$List12,java$util$AbstractCollection,java$util$List,java$util$RandomAccess,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableCollection,java$io$Serializable,java$lang$Iterable,java$lang$Object,java$util$ImmutableCollections$AbstractImmutableList]);
     }
     return this.#rt;
   }
@@ -18020,11 +17936,11 @@ class java$util$ImmutableCollections$List12 extends java$util$ImmutableCollectio
 }
 
 
-class java$util$ImmutableCollections$ListN extends java$util$ImmutableCollections$AbstractImmutableList {
+class java$util$ImmutableCollections$SetN extends java$util$ImmutableCollections$AbstractImmutableSet {
   nativeObject = null;
 
+  size = 0;
   elements = null;
-  allowNulls = 0;
 
   constructor() {
     super();
@@ -18034,9 +17950,9 @@ class java$util$ImmutableCollections$ListN extends java$util$ImmutableCollection
   static get $rt() {
     if (!this.#rt) {
       this.#rt = bytecoder.newRuntimeClassFor(
-        java$util$ImmutableCollections$ListN,
-        'java.util.ImmutableCollections$ListN',
-         [java$util$ImmutableCollections$AbstractImmutableCollection,java$util$AbstractCollection,java$lang$Iterable,java$io$Serializable,java$util$List,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableList,java$util$RandomAccess,java$util$ImmutableCollections$ListN,java$lang$Object]);
+        java$util$ImmutableCollections$SetN,
+        'java.util.ImmutableCollections$SetN',
+         [java$util$AbstractCollection,java$util$Set,java$util$ImmutableCollections$SetN,java$util$Collection,java$util$ImmutableCollections$AbstractImmutableSet,java$util$ImmutableCollections$AbstractImmutableCollection,java$io$Serializable,java$lang$Iterable,java$lang$Object]);
     }
     return this.#rt;
   }
@@ -18044,88 +17960,172 @@ class java$util$ImmutableCollections$ListN extends java$util$ImmutableCollection
   set $lambdaimpl(impl) {
   }
 
-  V$$init$$$Ljava$lang$Object$$Z(arg0,arg1) {
-    var th = this;
-    var var0 = null;
-    var var1 = null;
-    java$util$ImmutableCollections$AbstractImmutableList.prototype.V$$init$$$.call(th);
-    var0 = th;
-    var0.elements = arg0;
-    var1 = th;
-    var1.allowNulls = arg1;
-    return;
-  }
-
-  I$size$$() {
-    var th = this;
-    return (th.elements).data.length;
-  }
-
-  Ljava$lang$Object$$get$I(arg0) {
-    var th = this;
-    return ((th.elements).data[arg0]);
-  }
-
-  $Ljava$lang$Object$$toArray$$() {
-    var th = this;
-    var var0 = null;
-    var var1 = 0;
-    var0 = (th.elements);
-    var1 = ((th.elements).data.length) | 0;
-    java$util$Arrays.$i;
-    return (java$util$Arrays.$Ljava$lang$Object$$copyOf$$Ljava$lang$Object$$I(var0,var1));
-  }
-
-  Z$isEmpty$$() {
-    var th = this;
-    var phi0 = 0;
-    If_4_0: {
-     if ((th.elements).data.length != 0) {
-      phi0 = (0) | 0;
-      break If_4_0;
-     } else {
-      phi0 = (1) | 0;
-      break If_4_0;
-     }
-    }
-    return phi0;
-  }
-
-  I$indexOf$Ljava$lang$Object$(arg0) {
+  V$$init$$$Ljava$lang$Object$(arg0) {
     var th = this;
     var var0 = null;
     var var1 = null;
     var phi2 = 0;
     var var3 = null;
-    If_4_0: {
-     if ((th.allowNulls) != 0) {
-      break If_4_0;
+    var var4 = 0;
+    var var5 = null;
+    var var6 = null;
+    var var7 = null;
+    var var8 = null;
+    var var9 = null;
+    var var10 = 0;
+    java$util$ImmutableCollections$AbstractImmutableSet.prototype.V$$init$$$.call(th);
+    var0 = th;
+    var0.size = arg0.data.length;
+    var1 = th;
+    var1.elements = bytecoder.newarray(((2 * arg0.data.length)),null);
+    phi2 = (0) | 0;
+    L1860694088: while(true) {
+     if (phi2 >= arg0.data.length) {
+      return;
      } else {
-      if (arg0 != null) {
-       break If_4_0;
+      var3 = (arg0.data[phi2]);
+      var4 = ((java$util$ImmutableCollections$SetN.prototype.I$probe$Ljava$lang$Object$.call(th,var3))) | 0;
+      if (var4 < 0) {
+       var9 = (th.elements);
+       var10 = ((0 - (var4 + 1))) | 0;
+       var9.data[var10] = var3;
+       phi2 = ((phi2 + 1)) | 0;
+       // Here was a goto statement
+       continue L1860694088;
       } else {
-       var0 = new java$lang$NullPointerException();
-       java$lang$NullPointerException.prototype.V$$init$$$.call(var0);
-       throw bytecoder.registerStack(var0, new Error().stack);
+       var5 = new java$lang$IllegalArgumentException();
+       var6 = new java$lang$StringBuilder();
+       java$lang$StringBuilder.prototype.V$$init$$$.call(var6);
+       var7 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$String$.call(var6,bytecoder.stringconstants[70]));
+       var8 = (java$lang$StringBuilder.prototype.Ljava$lang$StringBuilder$$append$Ljava$lang$Object$.call(var7,var3));
+       java$lang$IllegalArgumentException.prototype.V$$init$$Ljava$lang$String$.call(var5,(java$lang$StringBuilder.prototype.Ljava$lang$String$$toString$$.call(var8)));
+       throw bytecoder.registerStack(var5, new Error().stack);
       }
      }
     }
-    var1 = (th.elements);
-    phi2 = (0) | 0;
-    L70391730: while(true) {
-     if (phi2 >= var1.data.length) {
-      return -1;
-     } else {
-      var3 = (var1.data[phi2]);
-      if ((java$util$Objects.Z$equals$Ljava$lang$Object$$Ljava$lang$Object$(arg0,var3)) == 0) {
+  }
+
+  I$probe$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = 0;
+    var var1 = 0;
+    var phi2 = 0;
+    var var3 = null;
+    var phi4 = 0;
+    var0 = ((arg0.I$hashCode$$())) | 0;
+    var1 = ((th.elements).data.length) | 0;
+    java$lang$Math.$i;
+    phi2 = ((java$lang$Math.I$floorMod$I$I(var0,var1))) | 0;
+    L1020502733: while(true) {
+     var3 = ((th.elements).data[phi2]);
+     if (var3 != null) {
+      if ((arg0.Z$equals$Ljava$lang$Object$(var3)) == 0) {
        phi2 = ((phi2 + 1)) | 0;
-       // Here was a goto statement
-       continue L70391730;
+       If_35_0: {
+        if (phi2 != (th.elements).data.length) {
+         phi4 = (phi2) | 0;
+         break If_35_0;
+        } else {
+         phi4 = (0) | 0;
+         break If_35_0;
+        }
+       }
+       phi2 = (phi4) | 0;
+       continue L1020502733;
       } else {
        return phi2;
       }
+     } else {
+      return ((0 - phi2) - 1);
      }
     }
+  }
+
+  I$hashCode$$() {
+    var th = this;
+    var var0 = null;
+    var var1 = 0;
+    var phi2 = 0;
+    var phi3 = 0;
+    var var4 = null;
+    var var5 = 0;
+    var phi6 = 0;
+    var0 = (th.elements);
+    var1 = (var0.data.length) | 0;
+    phi2 = (0) | 0;
+    phi3 = (0) | 0;
+    L1591117910: while(true) {
+     if (phi3 >= var1) {
+      return phi2;
+     } else {
+      var4 = (var0.data[phi3]);
+      If_18_0: {
+       if (var4 == null) {
+        phi6 = (phi2) | 0;
+        break If_18_0;
+       } else {
+        var5 = (phi2) | 0;
+        phi6 = ((var5 + (var4.I$hashCode$$()))) | 0;
+        break If_18_0;
+       }
+      }
+      phi3 = ((phi3 + 1)) | 0;
+      phi2 = (phi6) | 0;
+      continue L1591117910;
+     }
+    }
+  }
+
+  Ljava$util$Iterator$$iterator$$() {
+    var th = this;
+    var var0 = null;
+    var0 = new java$util$ImmutableCollections$SetN$SetNIterator();
+    java$util$ImmutableCollections$SetN$SetNIterator.prototype.V$$init$$Ljava$util$ImmutableCollections$SetN$.call(var0,th);
+    return var0;
+  }
+
+  I$size$$() {
+    var th = this;
+    return (th.size);
+  }
+
+  Z$contains$Ljava$lang$Object$(arg0) {
+    var th = this;
+    var var0 = null;
+    var phi1 = 0;
+    var0 = (java$util$Objects.Ljava$lang$Object$$requireNonNull$Ljava$lang$Object$(arg0));
+    If_8_0: {
+     If_8_1: {
+      if ((th.size) <= 0) {
+       break If_8_1;
+      } else {
+       if ((java$util$ImmutableCollections$SetN.prototype.I$probe$Ljava$lang$Object$.call(th,arg0)) < 0) {
+        break If_8_1;
+       } else {
+        phi1 = (1) | 0;
+        break If_8_0;
+       }
+      }
+     }
+     phi1 = (0) | 0;
+     break If_8_0;
+    }
+    return phi1;
+  }
+
+  Z$isEmpty$$() {
+    var th = this;
+    var phi0 = 0;
+    If_3_0: {
+     if ((th.size) != 0) {
+      phi0 = (0) | 0;
+      break If_3_0;
+     } else {
+      phi0 = (1) | 0;
+      break If_3_0;
+     }
+    }
+    return phi0;
   }
 }
 
@@ -18224,16 +18224,16 @@ bytecoder.stringconstants[91] = bytecoder.toBytecoderString('Required array leng
 bytecoder.stringconstants[92] = bytecoder.toBytecoderString(' + ');
 bytecoder.stringconstants[93] = bytecoder.toBytecoderString(' is too large');
 bytecoder.stringconstants[94] = bytecoder.toBytecoderString(', Size: ');
-bytecoder.stringconstants[95] = bytecoder.toBytecoderString('[pos=');
-bytecoder.stringconstants[96] = bytecoder.toBytecoderString(' lim=');
-bytecoder.stringconstants[97] = bytecoder.toBytecoderString(' cap=');
-bytecoder.stringconstants[98] = bytecoder.toBytecoderString('[]');
-bytecoder.stringconstants[99] = bytecoder.toBytecoderString('(this Collection)');
-bytecoder.stringconstants[100] = bytecoder.toBytecoderString('{}');
-bytecoder.stringconstants[101] = bytecoder.toBytecoderString('(this Map)');
-bytecoder.stringconstants[102] = bytecoder.toBytecoderString('=');
-bytecoder.stringconstants[103] = bytecoder.toBytecoderString('No java.util.Objects instances for you!');
-bytecoder.stringconstants[104] = bytecoder.toBytecoderString('UNKNOWN');
+bytecoder.stringconstants[95] = bytecoder.toBytecoderString('[]');
+bytecoder.stringconstants[96] = bytecoder.toBytecoderString('(this Collection)');
+bytecoder.stringconstants[97] = bytecoder.toBytecoderString('{}');
+bytecoder.stringconstants[98] = bytecoder.toBytecoderString('(this Map)');
+bytecoder.stringconstants[99] = bytecoder.toBytecoderString('UNKNOWN');
+bytecoder.stringconstants[100] = bytecoder.toBytecoderString('No java.util.Objects instances for you!');
+bytecoder.stringconstants[101] = bytecoder.toBytecoderString('[pos=');
+bytecoder.stringconstants[102] = bytecoder.toBytecoderString(' lim=');
+bytecoder.stringconstants[103] = bytecoder.toBytecoderString(' cap=');
+bytecoder.stringconstants[104] = bytecoder.toBytecoderString('=');
 bytecoder.generated[0] = function(linkArg,dynArg0) {
     let str = '';
     str = str + 's';
