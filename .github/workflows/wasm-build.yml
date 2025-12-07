@@ -12,14 +12,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK 17 and cache Maven
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
+          cache: 'maven'
 
-      - name: Build WASM with Maven
-        run: mvn -f wasm/pom.xml -B package -DskipTests
+      - name: Build WASM with Maven (parallel + cached deps)
+        env:
+          MAVEN_OPTS: -Xmx2G
+        run: |
+          # Use parallel threads to speed up build and rely on cached ~/.m2
+          mvn -T 1C -f wasm/pom.xml -B package -DskipTests
 
       - name: Upload wasm artifacts
         uses: actions/upload-artifact@v4
