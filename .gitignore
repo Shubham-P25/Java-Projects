@@ -1,0 +1,39 @@
+# Gradle
+/.gradle
+/build
+/**/build
+/.idea
+/.classpath
+/.project
+/.settings
+/.vscode
+*.iml
+
+# NetBeans
+nbproject/
+*.nbattrs
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.metadata/
+bin/
+
+# IntelliJ
+out/
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

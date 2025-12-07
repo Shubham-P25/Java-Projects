@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>javap-wasm</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <!-- Bytecoder release tag; may be adjusted if plugin version changes -->
+        <bytecoder.version>2024-05-10</bytecoder.version>
+    </properties>
+
+    <dependencies>
+        <!-- No external deps; the GameEngine is included in this module for the POC -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>de.mirkosertic.bytecoder</groupId>
+                <artifactId>bytecoder-mavenplugin</artifactId>
+                <version>${bytecoder.version}</version>
+                <executions>
+                    <execution>
+                        <id>bytecoder</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- Target the WebAssembly backend -->
+                    <target>wasm</target>
+                    <!-- The main class to expose; WasmBridge contains static access methods -->
+                    <mainClass>com.example.wasm.WasmBridge</mainClass>
+                    <outputDirectory>${project.build.directory}/bytecoder</outputDirectory>
+                    <!-- enable debug mapping if needed -->
+                    <debug>true</debug>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
