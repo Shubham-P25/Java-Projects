@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Javap WASM POC</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #board { display:grid; grid-template-columns: repeat(5, 90px); gap:8px; }
+    .tile { width:90px; height:128px; background:#ccc; display:flex; align-items:center; justify-content:center; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <h1>Javap WASM POC</h1>
+  <p>This demo attempts to load the generated WASM/JS from the wasm build and call the exported functions.</p>
+  <div id="status">Not loaded</div>
+  <button id="init">Init Engine</button>
+  <div id="board"></div>
+
+  <script>
+    // Placeholder JS loader: Bytecoder will produce a JS/WASM artifact in the wasm module target folder.
+    // Update the paths below after running the Maven build to point to the generated files.
+
+    const status = document.getElementById('status');
+    const board = document.getElementById('board');
+    const initButton = document.getElementById('init');
+
+    initButton.addEventListener('click', async () => {
+      status.textContent = 'Please build the wasm module first with: mvn -f wasm/pom.xml package';
+      alert('Build the wasm module (mvn package) and then refresh this page.');
+    });
+  </script>
+</body>
+</html>
