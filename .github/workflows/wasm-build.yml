@@ -45,5 +45,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Prefer a user PAT stored in repo secret PAGES_PAT (create one with repo scope)
+          # If not provided, the action will fall back to the GITHUB_TOKEN (may be read-only).
+          personal_token: ${{ secrets.PAGES_PAT }}
           publish_dir: ./site
+          publish_branch: gh-pages
+          keep_files: false
