@@ -35,6 +35,11 @@
     async function waitForBytecoder(timeoutMs = 5000){
       const start = Date.now();
       while(Date.now() - start < timeoutMs){
+        // Bytecoder runtime may be exposed as a global `bytecoder` (const/let)
+        // or as `window.bytecoder` depending on the generated script. Check
+        // both forms and return whichever exists.
+        if(typeof bytecoder !== 'undefined') return bytecoder;
+        if(window.bytecoder) return window.bytecoder;
         if(window.bytecoder) return window.bytecoder;
         await sleep(100);
       }
