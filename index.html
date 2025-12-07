@@ -51,74 +51,49 @@
       status.textContent = 'Waiting for bytecoder runtime...';
       const bc = await waitForBytecoder(8000);
       if(!bc){
-        status.textContent = 'bytecoder runtime not found. Ensure the wasm build produced bytecoderclasses.js and wasm files.';
+        status.textContent = '❌ bytecoder runtime not found. Ensure bytecoderclasses.js is present.';
         console.error('bytecoder not found. window.bytecoder is undefined.');
         return;
       }
 
       try{
         status.textContent = 'Initializing runtime...';
+        console.log('Available exports:', Object.keys(bc.exports || {}));
 
-        // Preferred: helper that runs a Java main
-        if(typeof bc.runMain === 'function'){
-          // Many builds expose runMain(className)
-          console.log('Calling bytecoder.runMain("com.example.wasm.WasmBridge")');
-          bc.runMain('com.example.wasm.WasmBridge');
-        }
-        // Fallback: exported symbol named 'main'
-        else if(bc.exports && typeof bc.exports['main'] === 'function'){
-          console.log('Calling bytecoder.exports["main"]()');
-          try{ bc.exports['main']([]); } catch(e){
-            // Some builds expect null or other signatures
-            try{ bc.exports['main'](null); } catch(e2){ console.warn('main call failed', e, e2); }
-          }
+        // Call the exported main function with an empty string array
+        if(bc.exports && typeof bc.exports['main'] === 'function'){
+          console.log('Calling bytecoder.exports["main"] to initialize engine...');
+          // Create a proper Java String array (Bytecoder expects array wrapper)
+          const emptyStringArray = bc.newarray(0, null);
+          bc.exports['main'](emptyStringArray);
+          status.textContent = '✅ Runtime initialized! Game engine is ready.';
         }
         else{
-          console.log('No runMain or main export found. Dumping bytecoder object:');
+          console.log('No main export found. Dumping bytecoder object:');
           console.log(bc);
-          status.textContent = 'Runtime loaded but no known entrypoint found; see console.';
+          status.textContent = '⚠️ Runtime loaded but no main export found; see console.';
           return;
         }
-
-        status.textContent = 'Runtime initialized';
       }catch(e){
-        status.textContent = 'Initialization failed (see console)';
-        console.error(e);
+        status.textContent = '❌ Initialization failed (see console)';
+        console.error('Initialization error:', e);
       }
 
-      // Basic UI: try to render a board if an exported function provides the size.
+      // Render a simple board (for now just showing init worked)
       try{
-        let size = 16;
-        if(bc.exports && typeof bc.exports['boardSize'] === 'function'){
-          try{ size = bc.exports['boardSize'](); } catch(e){ console.warn('boardSize call failed', e); }
-        }
-        // render tiles
-        board.innerHTML = '';
-        const cols = Math.ceil(Math.sqrt(size));
-        board.style.gridTemplateColumns = `repeat(${cols}, 90px)`;
-        for(let i=0;i<size;i++){
-          const t = document.createElement('div');
-          t.className = 'tile';
-          t.textContent = '?';
-          t.dataset.index = i;
-          t.addEventListener('click', () => onTileClick(i, t));
-          board.appendChild(t);
-        }
+        board.innerHTML = '<div style="padding:20px; background:#e8f5e9; border-radius:8px;">' +
+          '<h3>🎮 Game Engine Initialized</h3>' +
+          '<p>The Java game engine (compiled to JS via Bytecoder) has been loaded and initialized.</p>' +
+          '<p><strong>Next step:</strong> Update WasmBridge.java to export game methods (boardSize, selectCard, etc.) and rebuild.</p>' +
+          '<p><em>Currently only the init() method was traced by Bytecoder. To make the game interactive, we need to call the other methods from main() or mark them for export.</em></p>' +
+          '</div>';
       }catch(e){ console.warn('UI render failed', e); }
     }
 
     function onTileClick(index, elem){
-      const bc = window.bytecoder;
-      if(!bc || !bc.exports) { alert('Runtime not initialized'); return; }
-      // Try calling selectCard export if available
-      if(typeof bc.exports['selectCard'] === 'function'){
-        try{
-          const res = bc.exports['selectCard'](index);
-          console.log('selectCard result', res);
-        }catch(e){ console.warn('selectCard call failed', e); }
-      } else {
-        console.log('Tile clicked', index, '— no selectCard export available.');
-      }
+      // Placeholder - will be implemented once WasmBridge exports game methods
+      console.log('Tile clicked', index, '— selectCard export not yet available.');
+      status.textContent = '⚠️ Game methods not yet exported. See console for details.';
     }
 
     initButton.addEventListener('click', startRuntime);
