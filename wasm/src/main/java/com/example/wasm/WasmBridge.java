@@ -34,4 +34,15 @@ public class WasmBridge {
 
     public static int getErrorCount() { return engine == null ? 0 : engine.getErrorCount(); }
     public static int getRemainingTime() { return engine == null ? 0 : engine.getRemainingTime(); }
+    
+    /**
+     * Minimal entrypoint required by Bytecoder when a mainClass is configured.
+     * Bytecoder needs a public static void main(String[]) to start analysis.
+     * We keep it no-op (initializes the engine) because runtime will call
+     * other exported methods directly.
+     */
+    public static void main(String[] args) {
+        // initialize engine so analysis sees the types used
+        init();
+    }
 }
