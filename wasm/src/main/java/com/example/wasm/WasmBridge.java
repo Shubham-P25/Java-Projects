@@ -38,11 +38,21 @@ public class WasmBridge {
     /**
      * Minimal entrypoint required by Bytecoder when a mainClass is configured.
      * Bytecoder needs a public static void main(String[]) to start analysis.
-     * We keep it no-op (initializes the engine) because runtime will call
-     * other exported methods directly.
+     * We call all methods here so Bytecoder traces them and includes them
+     * in the generated JS/WASM output.
      */
     public static void main(String[] args) {
         // initialize engine so analysis sees the types used
         init();
+        
+        // Call all methods so Bytecoder includes them in output
+        // (These won't execute at runtime, just ensure they're compiled)
+        if (engine != null) {
+            boardSize();
+            cardNameLength(0);
+            selectCard(0);
+            getErrorCount();
+            getRemainingTime();
+        }
     }
 }
