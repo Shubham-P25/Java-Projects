@@ -22,23 +22,27 @@ public class GameEngine {
     }
 
     public void init(int rows, int columns) {
-        boardSize = rows * columns;
-        cardIds = new int[boardSize];
-        cardTypes = new int[boardSize];
-        matched = new boolean[boardSize];
+        int sz = rows * columns;
+        boardSize = sz;
+        cardIds = new int[sz];
+        cardTypes = new int[sz];
+        matched = new boolean[sz];
         
-        int pairs = boardSize / 2;
+        int pairs = sz / 2;
         int idx = 0;
-        for (int i = 1; i <= pairs; i++) {
-            cardIds[idx] = i;
-            cardTypes[idx] = 0; // syntax
+        int pairNum = 1;
+        while (pairNum <= pairs) {
+            cardIds[idx] = pairNum;
+            cardTypes[idx] = 0;
             matched[idx] = false;
-            idx++;
+            idx = idx + 1;
             
-            cardIds[idx] = i;
-            cardTypes[idx] = 1; // head
+            cardIds[idx] = pairNum;
+            cardTypes[idx] = 1;
             matched[idx] = false;
-            idx++;
+            idx = idx + 1;
+            
+            pairNum = pairNum + 1;
         }
         
         errorCount = 0;
@@ -48,45 +52,80 @@ public class GameEngine {
     }
 
     public void shuffle() {
-        // Simple Fisher-Yates shuffle using basic math
-        for (int i = boardSize - 1; i > 0; i--) {
-            int j = (int)(Math.random() * (i + 1));
-            // Swap cardIds
+        int sz = boardSize;
+        int i = sz - 1;
+        while (i > 0) {
+            double rand = Math.random();
+            int range = i + 1;
+            int j = (int)(rand * range);
+            
             int tmpId = cardIds[i];
             cardIds[i] = cardIds[j];
             cardIds[j] = tmpId;
-            // Swap cardTypes
+            
             int tmpType = cardTypes[i];
             cardTypes[i] = cardTypes[j];
             cardTypes[j] = tmpType;
+            
+            i = i - 1;
         }
     }
 
     public int size() {
-        return boardSize;
+        int sz = boardSize;
+        return sz;
     }
 
     public int getCardId(int index) {
-        if (index < 0 || index >= boardSize) return -1;
-        return cardIds[index];
+        int sz = boardSize;
+        boolean tooLow = index < 0;
+        if (tooLow) {
+            return -1;
+        }
+        boolean tooHigh = index >= sz;
+        if (tooHigh) {
+            return -1;
+        }
+        int id = cardIds[index];
+        return id;
     }
 
     public int getCardType(int index) {
-        if (index < 0 || index >= boardSize) return -1;
-        return cardTypes[index];
+        int sz = boardSize;
+        boolean tooLow = index < 0;
+        if (tooLow) {
+            return -1;
+        }
+        boolean tooHigh = index >= sz;
+        if (tooHigh) {
+            return -1;
+        }
+        int t = cardTypes[index];
+        return t;
     }
 
     public boolean isMatched(int index) {
-        if (index < 0 || index >= boardSize) return false;
-        return matched[index];
+        int sz = boardSize;
+        boolean tooLow = index < 0;
+        if (tooLow) {
+            return false;
+        }
+        boolean tooHigh = index >= sz;
+        if (tooHigh) {
+            return false;
+        }
+        boolean m = matched[index];
+        return m;
     }
 
     public int getErrorCount() {
-        return errorCount;
+        int e = errorCount;
+        return e;
     }
 
     public int getRemainingTime() {
-        return remainingTime;
+        int t = remainingTime;
+        return t;
     }
 
     public void setRemainingTime(int t) {
@@ -102,67 +141,105 @@ public class GameEngine {
      *  2 = match found
      *  3 = game won (all matched)
      */
-    public int select(int index) {
-        // Validate index
-        if (index < 0) return -1;
-        if (index >= boardSize) return -1;
+    public int select(int idx) {
+        int result = doSelect(idx);
+        return result;
+    }
+    
+    private int doSelect(int idx) {
+        // Use local variables to help Bytecoder
+        int sz = boardSize;
+        int fi = firstIndex;
+        
+        // Validate index - split conditions
+        boolean tooLow = idx < 0;
+        if (tooLow) {
+            return -1;
+        }
+        boolean tooHigh = idx >= sz;
+        if (tooHigh) {
+            return -1;
+        }
         
         // Already matched?
-        if (matched[index]) return -2;
+        boolean alreadyMatched = matched[idx];
+        if (alreadyMatched) {
+            return -2;
+        }
         
         // First selection
-        if (firstIndex == -1) {
-            firstIndex = index;
+        boolean noFirst = fi == -1;
+        if (noFirst) {
+            firstIndex = idx;
             return 1;
         }
         
         // Same card clicked twice
-        if (index == firstIndex) return -1;
+        boolean sameCard = idx == fi;
+        if (sameCard) {
+            return -1;
+        }
         
         // Second selection
-        secondIndex = index;
+        secondIndex = idx;
+        int si = idx;
         
         // Check if same type (both syntax or both head) - no match possible
-        if (cardTypes[firstIndex] == cardTypes[secondIndex]) {
-            errorCount++;
+        int type1 = cardTypes[fi];
+        int type2 = cardTypes[si];
+        boolean sameType = type1 == type2;
+        if (sameType) {
+            errorCount = errorCount + 1;
             firstIndex = -1;
             secondIndex = -1;
             return 0;
         }
         
         // Check if same pair ID
-        if (cardIds[firstIndex] == cardIds[secondIndex]) {
-            matched[firstIndex] = true;
-            matched[secondIndex] = true;
+        int id1 = cardIds[fi];
+        int id2 = cardIds[si];
+        boolean samePair = id1 == id2;
+        if (samePair) {
+            matched[fi] = true;
+            matched[si] = true;
             firstIndex = -1;
             secondIndex = -1;
             
             // Check if all matched
-            if (checkAllMatched()) {
+            boolean allDone = checkAllMatched();
+            if (allDone) {
                 return 3;
             }
             return 2;
         }
         
         // Different pair IDs - mismatch
-        errorCount++;
+        errorCount = errorCount + 1;
         firstIndex = -1;
         secondIndex = -1;
         return 0;
     }
 
     public boolean checkAllMatched() {
-        for (int i = 0; i < boardSize; i++) {
-            if (!matched[i]) return false;
+        int sz = boardSize;
+        int i = 0;
+        while (i < sz) {
+            boolean m = matched[i];
+            if (!m) {
+                return false;
+            }
+            i = i + 1;
         }
         return true;
     }
 
     public int getFirstIndex() {
-        return firstIndex;
+        int fi = firstIndex;
+        return fi;
     }
 
     public int getSecondIndex() {
-        return secondIndex;
+        int si = secondIndex;
+        return si;
     }
 }
