@@ -42,12 +42,22 @@ jobs:
           # copy the demo web files (index.html and assets)
           if [ -d "web" ]; then cp -r web/* site/ || true; fi
 
+      - name: Check deploy tokens
+        run: |
+          echo "Checking deploy tokens..."
+          if [ -z "${{ secrets.PAGES_PAT }}" ] && [ -z "${{ secrets.GITHUB_TOKEN }}" ]; then
+            echo "::error::No PAGES_PAT secret or GITHUB_TOKEN available for deployment. Add a repo secret named PAGES_PAT or enable Actions write permissions.";
+            exit 1;
+          else
+            echo "Deploy token(s) present (secret presence masked). Proceeding to deploy step.";
+          fi
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # Prefer a user PAT stored in repo secret PAGES_PAT (create one with repo scope)
-          # If not provided, the action will fall back to the GITHUB_TOKEN (may be read-only).
+          # Use a user PAT if provided, otherwise the action will accept the GITHUB_TOKEN
           personal_token: ${{ secrets.PAGES_PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           publish_branch: gh-pages
           keep_files: false
